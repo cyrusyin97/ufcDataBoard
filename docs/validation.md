@@ -190,5 +190,7 @@ All 24 pipeline tests pass.
 The production dependency audit reports zero advisories.
 The complete audit retains five high-severity development dependency findings.
 The media inventory retains 512 unknown publication rights statuses.
+GitHub source CI passes after removing local interpreter and dataset dependencies from tests.
+Remote build and browser checks remain skipped until the artifact URL is configured.
 M5 remains in progress. No hosting release occurred.
 Read [the M5 report](m5-report.md) for remaining inputs and limits.

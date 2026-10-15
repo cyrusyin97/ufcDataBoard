@@ -47,6 +47,14 @@ The bundled Barlow font families include their original copyright and OFL notice
 | Production dependency audit | Pass    | Zero reported advisories                                                |
 | Complete dependency audit   | Warning | Five high-severity reports in the existing development dependency chain |
 
+[GitHub source checks pass](https://github.com/cyrusyin97/ufcDataBoard/actions/runs/38704887007) on a clean Linux runner.
+They include lint, TypeScript, 27 unit tests, 24 pipeline tests, six research tests, and formatting.
+The remote production build and browser tests are explicitly skipped until `UFC_DATASET_URL` is configured.
+This CI success does not certify a deployed release.
+The clean runner exposed two test dependencies on the local environment.
+Subprocess tests now use the active Python interpreter without resolving its virtualenv symlink.
+Fighter-store unit tests now use a synthetic bundle instead of the ignored public dataset.
+
 The earlier dataset rebuild is a local recovery exercise.
 It is not a Vercel rollback exercise.
 Read [the HTTP receipt](evidence/m5/http-validation.json) and [the M5 receipt](evidence/m5-validation.json).

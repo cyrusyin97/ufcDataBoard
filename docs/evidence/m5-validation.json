@@ -50,10 +50,17 @@
       "blockers": ["512 media roles lack approved publication rights."]
     },
     "remoteCi": {
-      "status": "in progress",
-      "url": "https://github.com/cyrusyin97/ufcDataBoard/actions/runs/38704565414",
-      "scope": "Source checks only until the artifact URL is configured"
-    }
+      "status": "passed",
+      "headSha": "6696b9b4253e3019a6ff7bbf366dcbcd7ba55697",
+      "url": "https://github.com/cyrusyin97/ufcDataBoard/actions/runs/38704887007",
+      "scope": "Lint, TypeScript, 27 unit tests, 24 pipeline tests, six research tests, and format checks",
+      "skipped": ["Production build", "Browser tests"],
+      "skipReason": "UFC_DATASET_URL is not configured"
+    },
+    "resolvedRemoteCiFailures": [
+      "Use sys.executable to keep the active Python virtualenv in subprocess tests",
+      "Use a synthetic fighter bundle for unit tests without local public data"
+    ]
   },
   "publicationRights": {
     "totalMediaRoles": 512,
