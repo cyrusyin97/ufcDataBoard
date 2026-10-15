@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-10-14",
+  "datasetVersion": "2026-10-14-7c5ad4426abf6d1a",
+  "sourceUrl": "https://www.ufc.com/rankings",
+  "sourceHtmlSha256": "133d81b68477f87d40a418308f96966eb0f8b32d274b3e4acc57141c7683fd81",
+  "sourceDatabaseSha256": "4516eec0f095e13c1a39ae5452850ce34326a8c702753831c978c84e4b66925f",
+  "additionalDivisions": 9,
+  "additionalFighters": 144,
+  "additionalApprovedAssets": 432,
+  "additionalVariants": 864,
+  "remainingFailures": 0,
+  "visualReviewBatches": 18,
+  "totalMedia": {
+    "fighters": 176,
+    "headshots": 160,
+    "halfBody": 176,
+    "fullBody": 176,
+    "assets": 512,
+    "variants": 1024,
+    "fightersWithoutMedia": 4405
+  },
+  "datasetCounts": {
+    "bouts": 11559,
+    "divisions": 2,
+    "fieldConflicts": 54,
+    "fighters": 4581,
+    "mediaAssets": 512,
+    "records": 23118
+  },
+  "checks": {
+    "pythonPipelineTests": 24,
+    "candidateExtractionTests": 7,
+    "vitestTests": 6,
+    "browserTests": 3,
+    "runtimeContracts": "passed",
+    "rawHashReviews": "passed",
+    "variantDecodeDimensionsAlpha": "passed",
+    "sourceDatabaseUnchanged": true,
+    "sourceCredentialPrivacy": "passed",
+    "productionBuild": "passed",
+    "node24Export": "passed"
+  },
+  "browserEnvironment": "Local Chromium production server. The sandbox rejected port binding. The approved rerun outside the sandbox passed.",
+  "remoteCI": "not run",
+  "artifact": "outputs/datasets/ufc-data-2026-10-14-7c5ad4426abf6d1a.tar.gz",
+  "artifactBytes": 53892686,
+  "releaseBytes": 65695972,
+  "limits": [
+    "The published interface registry still contains the two initial divisions.",
+    "The captured source lists define this media scope. This is not a live ranking feed.",
+    "The 16 initial Featherweight fighters still use half-body avatar fallbacks.",
+    "Media rights remain unknown until M5."
+  ]
+}

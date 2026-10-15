@@ -1,0 +1,918 @@
+{
+  "capturedAt": "2026-10-14T05:20:24.883712+00:00",
+  "displayId": "block_1",
+  "divisions": [
+    {
+      "entries": [
+        {
+          "fighterId": "17e97649403ba428",
+          "name": "Joshua Van",
+          "position": 0,
+          "sourcePageUrl": "https://www.ufc.com/athlete/joshua-van"
+        },
+        {
+          "fighterId": "a0f0004aadf10b71",
+          "name": "Alexandre Pantoja",
+          "position": 1,
+          "sourcePageUrl": "https://www.ufc.com/athlete/alexandre-pantoja"
+        },
+        {
+          "fighterId": "5d1b7e3dd9e11074",
+          "name": "Manel Kape",
+          "position": 2,
+          "sourcePageUrl": "https://www.ufc.com/athlete/manel-kape"
+        },
+        {
+          "fighterId": "6e15f63b6c2e2c15",
+          "name": "Brandon Royval",
+          "position": 3,
+          "sourcePageUrl": "https://www.ufc.com/athlete/brandon-royval"
+        },
+        {
+          "fighterId": "4461d7e47375a895",
+          "name": "Tatsuro Taira",
+          "position": 4,
+          "sourcePageUrl": "https://www.ufc.com/athlete/tatsuro-taira"
+        },
+        {
+          "fighterId": "98aa60cf58071fd6",
+          "name": "Kyoji Horiguchi",
+          "position": 5,
+          "sourcePageUrl": "https://www.ufc.com/athlete/kyoji-horiguchi"
+        },
+        {
+          "fighterId": "bb2c3c3a466224af",
+          "name": "Lone’er Kavanagh",
+          "position": 6,
+          "sourcePageUrl": "https://www.ufc.com/athlete/loneer-kavanagh"
+        },
+        {
+          "fighterId": "8d3273573b85be09",
+          "name": "Asu Almabayev",
+          "position": 7,
+          "sourcePageUrl": "https://www.ufc.com/athlete/asu-almabayev"
+        },
+        {
+          "fighterId": "792be9a24df82ed6",
+          "name": "Brandon Moreno",
+          "position": 8,
+          "sourcePageUrl": "https://www.ufc.com/athlete/brandon-moreno"
+        },
+        {
+          "fighterId": "6d35bf94f7d30241",
+          "name": "Amir Albazi",
+          "position": 9,
+          "sourcePageUrl": "https://www.ufc.com/athlete/amir-albazi"
+        },
+        {
+          "fighterId": "7d0a1968b38ca439",
+          "name": "Ramazan Temirov",
+          "position": 10,
+          "sourcePageUrl": "https://www.ufc.com/athlete/ramazan-temirov"
+        },
+        {
+          "fighterId": "c96d9178c9ed9e62",
+          "name": "Tim Elliott",
+          "position": 11,
+          "sourcePageUrl": "https://www.ufc.com/athlete/tim-elliott"
+        },
+        {
+          "fighterId": "32ab52e5de93092d",
+          "name": "Steve Erceg",
+          "position": 12,
+          "sourcePageUrl": "https://www.ufc.com/athlete/steve-erceg"
+        },
+        {
+          "fighterId": "3cf18e01cb6cbde3",
+          "name": "Sumudaerji",
+          "position": 13,
+          "sourcePageUrl": "https://www.ufc.com/athlete/sumudaerji"
+        },
+        {
+          "fighterId": "f00ac08ab056af5d",
+          "name": "Tagir Ulanbekov",
+          "position": 14,
+          "sourcePageUrl": "https://www.ufc.com/athlete/tagir-ulanbekov"
+        },
+        {
+          "fighterId": "ab2b4ff41d6ebe0f",
+          "name": "Alex Perez",
+          "position": 15,
+          "sourcePageUrl": "https://www.ufc.com/athlete/alex-perez"
+        }
+      ],
+      "label": "Flyweight"
+    },
+    {
+      "entries": [
+        {
+          "fighterId": "d661ce4da776fc20",
+          "name": "Petr Yan",
+          "position": 0,
+          "sourcePageUrl": "https://www.ufc.com/athlete/petr-yan"
+        },
+        {
+          "fighterId": "c03520b5c88ed6b4",
+          "name": "Merab Dvalishvili",
+          "position": 1,
+          "sourcePageUrl": "https://www.ufc.com/athlete/merab-dvalishvili"
+        },
+        {
+          "fighterId": "b50a426a33da0012",
+          "name": "Sean O'Malley",
+          "position": 2,
+          "sourcePageUrl": "https://www.ufc.com/athlete/sean-omalley"
+        },
+        {
+          "fighterId": "efb96bf3e9ada36f",
+          "name": "Song Yadong",
+          "position": 3,
+          "sourcePageUrl": "https://www.ufc.com/athlete/song-yadong"
+        },
+        {
+          "fighterId": "2b6fc1c02736833d",
+          "name": "Umar Nurmagomedov",
+          "position": 4,
+          "sourcePageUrl": "https://www.ufc.com/athlete/umar-nurmagomedov"
+        },
+        {
+          "fighterId": "bc711b6dd95c1af6",
+          "name": "Mario Bautista",
+          "position": 5,
+          "sourcePageUrl": "https://www.ufc.com/athlete/mario-bautista"
+        },
+        {
+          "fighterId": "65f09bacd3957381",
+          "name": "Cory Sandhagen",
+          "position": 6,
+          "sourcePageUrl": "https://www.ufc.com/athlete/cory-sandhagen"
+        },
+        {
+          "fighterId": "6e743a33d56bdaa4",
+          "name": "Payton Talbott",
+          "position": 7,
+          "sourcePageUrl": "https://www.ufc.com/athlete/payton-talbott"
+        },
+        {
+          "fighterId": "24656ef4d605c96f",
+          "name": "Aiemann Zahabi",
+          "position": 8,
+          "sourcePageUrl": "https://www.ufc.com/athlete/aiemann-zahabi"
+        },
+        {
+          "fighterId": "9a97acbfd5a08bfa",
+          "name": "David Martinez",
+          "position": 9,
+          "sourcePageUrl": "https://www.ufc.com/athlete/david-martinez"
+        },
+        {
+          "fighterId": "fe2babf95de24fb1",
+          "name": "Raul Rosas Jr.",
+          "position": 10,
+          "sourcePageUrl": "https://www.ufc.com/athlete/raul-rosas-jr"
+        },
+        {
+          "fighterId": "7c7332319c14094c",
+          "name": "Marlon Vera",
+          "position": 11,
+          "sourcePageUrl": "https://www.ufc.com/athlete/marlon-vera"
+        },
+        {
+          "fighterId": "aa72b0f831d0bfe5",
+          "name": "Deiveson Figueiredo",
+          "position": 12,
+          "sourcePageUrl": "https://www.ufc.com/athlete/deiveson-figueiredo"
+        },
+        {
+          "fighterId": "a09ed60aa67a3f67",
+          "name": "Farid Basharat",
+          "position": 13,
+          "sourcePageUrl": "https://www.ufc.com/athlete/farid-basharat"
+        },
+        {
+          "fighterId": "c0ac37a4a1133da9",
+          "name": "Marcus McGhee",
+          "position": 14,
+          "sourcePageUrl": "https://www.ufc.com/athlete/marcus-mcghee"
+        },
+        {
+          "fighterId": "b9f28e7045fdfce7",
+          "name": "Raoni Barcelos",
+          "position": 15,
+          "sourcePageUrl": "https://www.ufc.com/athlete/raoni-barcelos"
+        }
+      ],
+      "label": "Bantamweight"
+    },
+    {
+      "entries": [
+        {
+          "fighterId": "275aca31f61ba28c",
+          "name": "Islam Makhachev",
+          "position": 0,
+          "sourcePageUrl": "https://www.ufc.com/athlete/islam-makhachev"
+        },
+        {
+          "fighterId": "442c9011034ae1fd",
+          "name": "Ian Machado Garry",
+          "position": 1,
+          "sourcePageUrl": "https://www.ufc.com/athlete/ian-machado-garry"
+        },
+        {
+          "fighterId": "7ee0fd831c0fe7c3",
+          "name": "Carlos Prates",
+          "position": 2,
+          "sourcePageUrl": "https://www.ufc.com/athlete/carlos-prates"
+        },
+        {
+          "fighterId": "c32aeb1a59e6272d",
+          "name": "Michael Morales",
+          "position": 3,
+          "sourcePageUrl": "https://www.ufc.com/athlete/michael-morales"
+        },
+        {
+          "fighterId": "6b453bc35a823c3f",
+          "name": "Jack Della Maddalena",
+          "position": 4,
+          "sourcePageUrl": "https://www.ufc.com/athlete/jack-della-maddalena"
+        },
+        {
+          "fighterId": "01641ba5df0c69b0",
+          "name": "Gabriel Bonfim",
+          "position": 5,
+          "sourcePageUrl": "https://www.ufc.com/athlete/gabriel-bonfim"
+        },
+        {
+          "fighterId": "45f7cb591c3ab00b",
+          "name": "Sean Brady",
+          "position": 6,
+          "sourcePageUrl": "https://www.ufc.com/athlete/sean-brady"
+        },
+        {
+          "fighterId": "b1b0729d27936f2f",
+          "name": "Belal Muhammad",
+          "position": 7,
+          "sourcePageUrl": "https://www.ufc.com/athlete/belal-muhammad"
+        },
+        {
+          "fighterId": "f1fac969a1d70b08",
+          "name": "Leon Edwards",
+          "position": 8,
+          "sourcePageUrl": "https://www.ufc.com/athlete/leon-edwards"
+        },
+        {
+          "fighterId": "f1b2aa7853d1ed6e",
+          "name": "Kamaru Usman",
+          "position": 9,
+          "sourcePageUrl": "https://www.ufc.com/athlete/kamaru-usman"
+        },
+        {
+          "fighterId": "b9437600497350f3",
+          "name": "Joaquin Buckley",
+          "position": 10,
+          "sourcePageUrl": "https://www.ufc.com/athlete/joaquin-buckley"
+        },
+        {
+          "fighterId": "f139d6836efd43dd",
+          "name": "Yaroslav Amosov",
+          "position": 11,
+          "sourcePageUrl": "https://www.ufc.com/athlete/yaroslav-amosov"
+        },
+        {
+          "fighterId": "681399317dbf4701",
+          "name": "Uroš Medić",
+          "position": 12,
+          "sourcePageUrl": "https://www.ufc.com/athlete/uros-medic"
+        },
+        {
+          "fighterId": "dd6103dd7127db1d",
+          "name": "Mike Malott",
+          "position": 13,
+          "sourcePageUrl": "https://www.ufc.com/athlete/mike-malott"
+        },
+        {
+          "fighterId": "8a1f3b5c526cd6e6",
+          "name": "Daniel Rodriguez",
+          "position": 14,
+          "sourcePageUrl": "https://www.ufc.com/athlete/daniel-rodriguez"
+        },
+        {
+          "fighterId": "84b3e7d38f2d2ec5",
+          "name": "Neil Magny",
+          "position": 15,
+          "sourcePageUrl": "https://www.ufc.com/athlete/neil-magny"
+        }
+      ],
+      "label": "Welterweight"
+    },
+    {
+      "entries": [
+        {
+          "fighterId": "0d8011111be000b2",
+          "name": "Sean Strickland",
+          "position": 0,
+          "sourcePageUrl": "https://www.ufc.com/athlete/sean-strickland"
+        },
+        {
+          "fighterId": "767755fd74662dbf",
+          "name": "Khamzat Chimaev",
+          "position": 1,
+          "sourcePageUrl": "https://www.ufc.com/athlete/khamzat-chimaev"
+        },
+        {
+          "fighterId": "0d7b51c9d2649a6e",
+          "name": "Dricus Du Plessis",
+          "position": 2,
+          "sourcePageUrl": "https://www.ufc.com/athlete/dricus-du-plessis"
+        },
+        {
+          "fighterId": "881bf86d4cba8578",
+          "name": "Nassourdine Imavov",
+          "position": 3,
+          "sourcePageUrl": "https://www.ufc.com/athlete/nassourdine-imavov"
+        },
+        {
+          "fighterId": "2f181c0467965b98",
+          "name": "Brendan Allen",
+          "position": 4,
+          "sourcePageUrl": "https://www.ufc.com/athlete/brendan-allen"
+        },
+        {
+          "fighterId": "4126a78111c0855a",
+          "name": "Caio Borralho",
+          "position": 5,
+          "sourcePageUrl": "https://www.ufc.com/athlete/caio-borralho"
+        },
+        {
+          "fighterId": "c1085e1701b13eca",
+          "name": "Joe Pyfer",
+          "position": 6,
+          "sourcePageUrl": "https://www.ufc.com/athlete/joe-pyfer"
+        },
+        {
+          "fighterId": "d1c65d2cf2925ddd",
+          "name": "Gregory Rodrigues",
+          "position": 7,
+          "sourcePageUrl": "https://www.ufc.com/athlete/gregory-rodrigues"
+        },
+        {
+          "fighterId": "093e1f5bb73850be",
+          "name": "Anthony Hernandez",
+          "position": 8,
+          "sourcePageUrl": "https://www.ufc.com/athlete/anthony-hernandez"
+        },
+        {
+          "fighterId": "1338e2c7480bdf9e",
+          "name": "Israel Adesanya",
+          "position": 9,
+          "sourcePageUrl": "https://www.ufc.com/athlete/israel-adesanya"
+        },
+        {
+          "fighterId": "a93f94c923c3a9cb",
+          "name": "Christian Leroy Duncan",
+          "position": 10,
+          "sourcePageUrl": "https://www.ufc.com/athlete/christian-leroy-duncan"
+        },
+        {
+          "fighterId": "13a0275fa13c4d26",
+          "name": "Jared Cannonier",
+          "position": 11,
+          "sourcePageUrl": "https://www.ufc.com/athlete/jared-cannonier"
+        },
+        {
+          "fighterId": "36b8f265bcd1b7a4",
+          "name": "Abus Magomedov",
+          "position": 12,
+          "sourcePageUrl": "https://www.ufc.com/athlete/abus-magomedov"
+        },
+        {
+          "fighterId": "b07aed698fba8624",
+          "name": "Ikram Aliskerov",
+          "position": 13,
+          "sourcePageUrl": "https://www.ufc.com/athlete/ikram-aliskerov"
+        },
+        {
+          "fighterId": "35673bf5204524ee",
+          "name": "Bo Nickal",
+          "position": 14,
+          "sourcePageUrl": "https://www.ufc.com/athlete/bo-nickal"
+        },
+        {
+          "fighterId": "06734ca9d88dec3a",
+          "name": "Shara Magomedov",
+          "position": 15,
+          "sourcePageUrl": "https://www.ufc.com/athlete/shara-magomedov"
+        }
+      ],
+      "label": "Middleweight"
+    },
+    {
+      "entries": [
+        {
+          "fighterId": "9014c02eff8b3d62",
+          "name": "Carlos Ulberg",
+          "position": 0,
+          "sourcePageUrl": "https://www.ufc.com/athlete/carlos-ulberg"
+        },
+        {
+          "fighterId": "d802174b0c0c1f4e",
+          "name": "Magomed Ankalaev",
+          "position": 1,
+          "sourcePageUrl": "https://www.ufc.com/athlete/magomed-ankalaev"
+        },
+        {
+          "fighterId": "009341ed974bad72",
+          "name": "Jiří Procházka",
+          "position": 2,
+          "sourcePageUrl": "https://www.ufc.com/athlete/jiri-prochazka"
+        },
+        {
+          "fighterId": "e5549c82bfb5582d",
+          "name": "Alex Pereira",
+          "position": 3,
+          "sourcePageUrl": "https://www.ufc.com/athlete/alex-pereira"
+        },
+        {
+          "fighterId": "749f572d1d3161fb",
+          "name": "Khalil Rountree Jr.",
+          "position": 4,
+          "sourcePageUrl": "https://www.ufc.com/athlete/khalil-rountree-jr"
+        },
+        {
+          "fighterId": "b4b496ec2197ee3e",
+          "name": "Navajo Stirling",
+          "position": 5,
+          "sourcePageUrl": "https://www.ufc.com/athlete/navajo-stirling"
+        },
+        {
+          "fighterId": "2e5c2aa8e4ab9d82",
+          "name": "Paulo Costa",
+          "position": 6,
+          "sourcePageUrl": "https://www.ufc.com/athlete/paulo-costa"
+        },
+        {
+          "fighterId": "e90a2f22417af68e",
+          "name": "Azamat Murzakanov",
+          "position": 7,
+          "sourcePageUrl": "https://www.ufc.com/athlete/azamat-murzakanov"
+        },
+        {
+          "fighterId": "2e19380f34871c6a",
+          "name": "Dominick Reyes",
+          "position": 8,
+          "sourcePageUrl": "https://www.ufc.com/athlete/dominick-reyes"
+        },
+        {
+          "fighterId": "99df7d0a2a08a8a8",
+          "name": "Jan Błachowicz",
+          "position": 9,
+          "sourcePageUrl": "https://www.ufc.com/athlete/jan-blachowicz"
+        },
+        {
+          "fighterId": "ef5dcb10d2bd4b0f",
+          "name": "Bogdan Guskov",
+          "position": 10,
+          "sourcePageUrl": "https://www.ufc.com/athlete/bogdan-guskov"
+        },
+        {
+          "fighterId": "e1147d3d2dabe1ce",
+          "name": "Robert Whittaker",
+          "position": 11,
+          "sourcePageUrl": "https://www.ufc.com/athlete/robert-whittaker"
+        },
+        {
+          "fighterId": "a495f599e787614f",
+          "name": "Alonzo Menifield",
+          "position": 12,
+          "sourcePageUrl": "https://www.ufc.com/athlete/alonzo-menifield"
+        },
+        {
+          "fighterId": "b01a5e0dcd9f231d",
+          "name": "Muhammad Saidov",
+          "position": 13,
+          "sourcePageUrl": "https://www.ufc.com/athlete/muhammad-said"
+        },
+        {
+          "fighterId": "d549cefc7c54ab78",
+          "name": "Reinier de Ridder",
+          "position": 14,
+          "sourcePageUrl": "https://www.ufc.com/athlete/reinier-de-ridder"
+        },
+        {
+          "fighterId": "1091d4d957141094",
+          "name": "Nikita Krylov",
+          "position": 15,
+          "sourcePageUrl": "https://www.ufc.com/athlete/nikita-krylov"
+        }
+      ],
+      "label": "Light Heavyweight"
+    },
+    {
+      "entries": [
+        {
+          "fighterId": "787bb1f087ccff8a",
+          "name": "Ciryl Gane",
+          "position": 0,
+          "sourcePageUrl": "https://www.ufc.com/athlete/ciryl-gane"
+        },
+        {
+          "fighterId": "399afbabc02376b5",
+          "name": "Tom Aspinall",
+          "position": 1,
+          "sourcePageUrl": "https://www.ufc.com/athlete/tom-aspinall"
+        },
+        {
+          "fighterId": "279566840aa55bf2",
+          "name": "Alexander Volkov",
+          "position": 2,
+          "sourcePageUrl": "https://www.ufc.com/athlete/alexander-volkov"
+        },
+        {
+          "fighterId": "f14cf73e51b29254",
+          "name": "Sergei Pavlovich",
+          "position": 3,
+          "sourcePageUrl": "https://www.ufc.com/athlete/sergei-pavlovich"
+        },
+        {
+          "fighterId": "955da1675ad58a50",
+          "name": "Josh Hokit",
+          "position": 4,
+          "sourcePageUrl": "https://www.ufc.com/athlete/josh-hokit"
+        },
+        {
+          "fighterId": "fa6796c55d6c5440",
+          "name": "Curtis Blaydes",
+          "position": 5,
+          "sourcePageUrl": "https://www.ufc.com/athlete/curtis-blaydes"
+        },
+        {
+          "fighterId": "fc08099550072fe4",
+          "name": "Waldo Cortes Acosta",
+          "position": 6,
+          "sourcePageUrl": "https://www.ufc.com/athlete/waldo-cortes-acosta"
+        },
+        {
+          "fighterId": "739fd4fbb5d862f4",
+          "name": "Rizvan Kuniev",
+          "position": 7,
+          "sourcePageUrl": "https://www.ufc.com/athlete/rizvan-kuniev"
+        },
+        {
+          "fighterId": "71171fc96445bf65",
+          "name": "Vitor Petrino",
+          "position": 8,
+          "sourcePageUrl": "https://www.ufc.com/athlete/vitor-petrino"
+        },
+        {
+          "fighterId": "e2f6b2769aaedd6c",
+          "name": "Serghei Spivac",
+          "position": 9,
+          "sourcePageUrl": "https://www.ufc.com/athlete/serghei-spivac"
+        },
+        {
+          "fighterId": "7d8435c56043b0ae",
+          "name": "Ante Delija",
+          "position": 10,
+          "sourcePageUrl": "https://www.ufc.com/athlete/ante-delija"
+        },
+        {
+          "fighterId": "f5779a2303ed76ec",
+          "name": "Valter Walker",
+          "position": 11,
+          "sourcePageUrl": "https://www.ufc.com/athlete/valter-walker"
+        },
+        {
+          "fighterId": "bc7f4b2d4c2724a2",
+          "name": "Tyrell Fortune",
+          "position": 12,
+          "sourcePageUrl": "https://www.ufc.com/athlete/tyrell-fortune"
+        },
+        {
+          "fighterId": "d3df1add9d9a7efb",
+          "name": "Derrick Lewis",
+          "position": 13,
+          "sourcePageUrl": "https://www.ufc.com/athlete/derrick-lewis"
+        },
+        {
+          "fighterId": "333b9e5c723ac873",
+          "name": "Aleksandar Rakić",
+          "position": 14,
+          "sourcePageUrl": "https://www.ufc.com/athlete/aleksandar-rakic"
+        },
+        {
+          "fighterId": "39d309957c5c210d",
+          "name": "Mario Pinto",
+          "position": 15,
+          "sourcePageUrl": "https://www.ufc.com/athlete/mario-pinto"
+        }
+      ],
+      "label": "Heavyweight"
+    },
+    {
+      "entries": [
+        {
+          "fighterId": "7447e9f28508106a",
+          "name": "Mackenzie Dern",
+          "position": 0,
+          "sourcePageUrl": "https://www.ufc.com/athlete/mackenzie-dern"
+        },
+        {
+          "fighterId": "1ebe20ebbfa15e29",
+          "name": "Zhang Weili",
+          "position": 1,
+          "sourcePageUrl": "https://www.ufc.com/athlete/zhang-weili"
+        },
+        {
+          "fighterId": "b08012bbe542592a",
+          "name": "Tatiana Suarez",
+          "position": 2,
+          "sourcePageUrl": "https://www.ufc.com/athlete/tatiana-suarez"
+        },
+        {
+          "fighterId": "7dda2cf308f24a02",
+          "name": "Virna Jandiroba",
+          "position": 3,
+          "sourcePageUrl": "https://www.ufc.com/athlete/virna-jandiroba"
+        },
+        {
+          "fighterId": "cffb87059e645bd1",
+          "name": "Denise Gomes",
+          "position": 4,
+          "sourcePageUrl": "https://www.ufc.com/athlete/denise-gomes"
+        },
+        {
+          "fighterId": "38c7f72747f4f712",
+          "name": "Gillian Robertson",
+          "position": 5,
+          "sourcePageUrl": "https://www.ufc.com/athlete/gillian-robertson"
+        },
+        {
+          "fighterId": "c41d426cc7326d1b",
+          "name": "Yan Xiaonan",
+          "position": 6,
+          "sourcePageUrl": "https://www.ufc.com/athlete/yan-xiaonan"
+        },
+        {
+          "fighterId": "745fa7b605f8e2da",
+          "name": "Fatima Kline",
+          "position": 7,
+          "sourcePageUrl": "https://www.ufc.com/athlete/fatima-kline"
+        },
+        {
+          "fighterId": "8e5d953bdb9ae5e7",
+          "name": "Loopy Godinez",
+          "position": 8,
+          "sourcePageUrl": "https://www.ufc.com/athlete/loopy-godinez"
+        },
+        {
+          "fighterId": "545092d13c67aa49",
+          "name": "Alexia Thainara",
+          "position": 9,
+          "sourcePageUrl": "https://www.ufc.com/athlete/alexia-thainara"
+        },
+        {
+          "fighterId": "6a1901c62ab3870f",
+          "name": "Jéssica Andrade",
+          "position": 10,
+          "sourcePageUrl": "https://www.ufc.com/athlete/jessica-andrade"
+        },
+        {
+          "fighterId": "d25240135aee03e5",
+          "name": "Tabatha Ricci",
+          "position": 11,
+          "sourcePageUrl": "https://www.ufc.com/athlete/tabatha-ricci"
+        },
+        {
+          "fighterId": "3df5493bb279226f",
+          "name": "Amanda Lemos",
+          "position": 12,
+          "sourcePageUrl": "https://www.ufc.com/athlete/amanda-lemos"
+        },
+        {
+          "fighterId": "beecb672a279223e",
+          "name": "Amanda Ribas",
+          "position": 13,
+          "sourcePageUrl": "https://www.ufc.com/athlete/amanda-ribas"
+        },
+        {
+          "fighterId": "f0feeb2192937424",
+          "name": "Angela Hill",
+          "position": 14,
+          "sourcePageUrl": "https://www.ufc.com/athlete/angela-hill"
+        },
+        {
+          "fighterId": "43a59ce3bb40449e",
+          "name": "Mizuki",
+          "position": 15,
+          "sourcePageUrl": "https://www.ufc.com/athlete/mizuki-inoue"
+        }
+      ],
+      "label": "Women's Strawweight"
+    },
+    {
+      "entries": [
+        {
+          "fighterId": "262d32ebda89efc4",
+          "name": "Natalia Silva",
+          "position": 0,
+          "sourcePageUrl": "https://www.ufc.com/athlete/natalia-silva"
+        },
+        {
+          "fighterId": "132deb59abae64b1",
+          "name": "Valentina Shevchenko",
+          "position": 1,
+          "sourcePageUrl": "https://www.ufc.com/athlete/valentina-shevchenko"
+        },
+        {
+          "fighterId": "e8b731feff72294b",
+          "name": "Alexa Grasso",
+          "position": 2,
+          "sourcePageUrl": "https://www.ufc.com/athlete/alexa-grasso"
+        },
+        {
+          "fighterId": "34ff304266360297",
+          "name": "Manon Fiorot",
+          "position": 3,
+          "sourcePageUrl": "https://www.ufc.com/athlete/manon-fiorot"
+        },
+        {
+          "fighterId": "669970f7feba8ecd",
+          "name": "Erin Blanchfield",
+          "position": 4,
+          "sourcePageUrl": "https://www.ufc.com/athlete/erin-blanchfield"
+        },
+        {
+          "fighterId": "47b63240018d5d86",
+          "name": "Rose Namajunas",
+          "position": 5,
+          "sourcePageUrl": "https://www.ufc.com/athlete/rose-namajunas"
+        },
+        {
+          "fighterId": "a9e260472d321361",
+          "name": "Jasmine Jasudavicius",
+          "position": 6,
+          "sourcePageUrl": "https://www.ufc.com/athlete/jasmine-jasudavicius"
+        },
+        {
+          "fighterId": "6a740daf1b279661",
+          "name": "Maycee Barber",
+          "position": 7,
+          "sourcePageUrl": "https://www.ufc.com/athlete/maycee-barber"
+        },
+        {
+          "fighterId": "2997e7fe3c9d3d4a",
+          "name": "Wang Cong",
+          "position": 8,
+          "sourcePageUrl": "https://www.ufc.com/athlete/wang-cong"
+        },
+        {
+          "fighterId": "68d4a891e5cf2029",
+          "name": "Tracy Cortez",
+          "position": 9,
+          "sourcePageUrl": "https://www.ufc.com/athlete/tracy-cortez"
+        },
+        {
+          "fighterId": "f29a6350c69f4a33",
+          "name": "Miranda Maverick",
+          "position": 10,
+          "sourcePageUrl": "https://www.ufc.com/athlete/miranda-maverick"
+        },
+        {
+          "fighterId": "9d62c2d8ee151f08",
+          "name": "Karine Silva",
+          "position": 11,
+          "sourcePageUrl": "https://www.ufc.com/athlete/karine-silva"
+        },
+        {
+          "fighterId": "04835018f90b118c",
+          "name": "Casey O'Neill",
+          "position": 12,
+          "sourcePageUrl": "https://www.ufc.com/athlete/casey-oneill"
+        },
+        {
+          "fighterId": "de594b35c45c2e9a",
+          "name": "Eduarda Moura",
+          "position": 13,
+          "sourcePageUrl": "https://www.ufc.com/athlete/eduarda-moura"
+        },
+        {
+          "fighterId": "9f5609dba6584ab2",
+          "name": "Regina Tarin",
+          "position": 14,
+          "sourcePageUrl": "https://www.ufc.com/athlete/regina-malpica-rivera"
+        },
+        {
+          "fighterId": "a6eb54ae17a551be",
+          "name": "Gabriella Fernandes",
+          "position": 15,
+          "sourcePageUrl": "https://www.ufc.com/athlete/gabriella-fernandes"
+        }
+      ],
+      "label": "Women's Flyweight"
+    },
+    {
+      "entries": [
+        {
+          "fighterId": "1af1170ed937cba7",
+          "name": "Kayla Harrison",
+          "position": 0,
+          "sourcePageUrl": "https://www.ufc.com/athlete/kayla-harrison"
+        },
+        {
+          "fighterId": "3253b16d38ae087d",
+          "name": "Julianna Peña",
+          "position": 1,
+          "sourcePageUrl": "https://www.ufc.com/athlete/julianna-pena"
+        },
+        {
+          "fighterId": "f9ab66e67240db7b",
+          "name": "Joselyne Edwards",
+          "position": 2,
+          "sourcePageUrl": "https://www.ufc.com/athlete/joselyne-edwards"
+        },
+        {
+          "fighterId": "06e4245d16fc5315",
+          "name": "Ailin Perez",
+          "position": 3,
+          "sourcePageUrl": "https://www.ufc.com/athlete/ailin-perez"
+        },
+        {
+          "fighterId": "fc169c387b4b465d",
+          "name": "Raquel Pennington",
+          "position": 4,
+          "sourcePageUrl": "https://www.ufc.com/athlete/raquel-pennington"
+        },
+        {
+          "fighterId": "d3f5d33d61cd00c9",
+          "name": "Norma Dumont",
+          "position": 5,
+          "sourcePageUrl": "https://www.ufc.com/athlete/norma-dumont"
+        },
+        {
+          "fighterId": "3143bf892608139a",
+          "name": "Yana Santos",
+          "position": 6,
+          "sourcePageUrl": "https://www.ufc.com/athlete/yana-santos"
+        },
+        {
+          "fighterId": "5078e1dacf9d25f4",
+          "name": "Luana Santos",
+          "position": 7,
+          "sourcePageUrl": "https://www.ufc.com/athlete/luana-santos"
+        },
+        {
+          "fighterId": "e3964ece586e0635",
+          "name": "Jacqueline Cavalcanti",
+          "position": 8,
+          "sourcePageUrl": "https://www.ufc.com/athlete/jacqueline-cavalcanti"
+        },
+        {
+          "fighterId": "9cdd2da1a9104a0b",
+          "name": "Macy Chiasson",
+          "position": 9,
+          "sourcePageUrl": "https://www.ufc.com/athlete/macy-chiasson"
+        },
+        {
+          "fighterId": "351c4ec637380ad5",
+          "name": "Karol Rosa",
+          "position": 10,
+          "sourcePageUrl": "https://www.ufc.com/athlete/karol-rosa"
+        },
+        {
+          "fighterId": "eff9074bc066f0f2",
+          "name": "Bia Mesquita",
+          "position": 11,
+          "sourcePageUrl": "https://www.ufc.com/athlete/bia-mesquita"
+        },
+        {
+          "fighterId": "ca80d72da81d7224",
+          "name": "Michelle Montague",
+          "position": 12,
+          "sourcePageUrl": "https://www.ufc.com/athlete/michelle-montague"
+        },
+        {
+          "fighterId": "f2b3f4ef3f780168",
+          "name": "Nora Cornolle",
+          "position": 13,
+          "sourcePageUrl": "https://www.ufc.com/athlete/nora-cornolle"
+        },
+        {
+          "fighterId": "51e2f44a8dbf6984",
+          "name": "Melissa Croden",
+          "position": 14,
+          "sourcePageUrl": "https://www.ufc.com/athlete/melissa-croden"
+        },
+        {
+          "fighterId": "07047eb7d17fb0a2",
+          "name": "Daria Zhelezniakova",
+          "position": 15,
+          "sourcePageUrl": "https://www.ufc.com/athlete/dariya-zheleznyakova"
+        }
+      ],
+      "label": "Women's Bantamweight"
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceHtmlSha256": "133d81b68477f87d40a418308f96966eb0f8b32d274b3e4acc57141c7683fd81",
+  "sourceUrl": "https://www.ufc.com/rankings"
+}

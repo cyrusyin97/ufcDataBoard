@@ -1,0 +1,28 @@
+{
+  "browser": "156.0.8078.4",
+  "runtime": "v24.22.0",
+  "platform": "darwin",
+  "viewport": {
+    "width": 1318,
+    "height": 808
+  },
+  "initialGzipBytes": 207948,
+  "lab": {
+    "lcp": 60,
+    "cls": 0.03570804100257918,
+    "interactions": [48, 48, 48, 16, 16, 16],
+    "longTasks": []
+  },
+  "trace": {
+    "events": 205538,
+    "schedulerThread": "37169:18225230",
+    "schedulerFrames": 367,
+    "schedulerMedianMs": 16.668,
+    "schedulerP95Ms": 17.577,
+    "droppedBeginFrames": 0,
+    "taskEventsAvailable": true,
+    "longTasks": 0,
+    "maximumTaskMs": 0
+  },
+  "note": "Headless lab measurements. Scheduler cadence does not certify native 60 FPS or field INP."
+}

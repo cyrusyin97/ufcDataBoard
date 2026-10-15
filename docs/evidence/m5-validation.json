@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-15",
+  "milestone": "M5",
+  "status": "in-progress-release-not-deployed",
+  "repository": "https://github.com/cyrusyin97/ufcDataBoard",
+  "repositoryDelivery": "prepared",
+  "runtime": "v24.22.0",
+  "dataset": {
+    "datasetVersion": "2026-10-14-7c5ad4426abf6d1a",
+    "sha256": "ef6a938e570ddd4caec539c139e74283fac9d461a2f2972a468a4220af95eea4"
+  },
+  "checks": {
+    "lint": "pass",
+    "typecheck": "pass",
+    "unitTests": {
+      "passed": 27,
+      "files": 5
+    },
+    "productionBuild": "pass",
+    "chromiumTests": {
+      "passed": 21
+    },
+    "previewTargetTests": {
+      "passed": 2,
+      "origin": "http://127.0.0.1:3000"
+    },
+    "httpChecks": {
+      "passed": 17,
+      "origin": "http://127.0.0.1:3000"
+    },
+    "restoreEmptyRoot": "pass",
+    "restoreIdempotency": "pass",
+    "previousVersionRebuild": {
+      "status": "pass",
+      "version": "2026-10-14-555dda3397f54a57",
+      "isolated": true
+    },
+    "pipelineTests": {
+      "passed": 24
+    },
+    "productionDependencyAdvisories": 0,
+    "developmentDependencyAdvisories": {
+      "high": 5,
+      "status": "unresolved"
+    },
+    "documentFormat": "pass",
+    "localDocumentLinks": "pass"
+  },
+  "publicationRights": {
+    "totalMediaRoles": 512,
+    "approved": 0,
+    "unknown": 512,
+    "releaseGate": "blocked"
+  },
+  "deployment": {
+    "previewUrl": null,
+    "productionUrl": null,
+    "domain": null,
+    "artifactUrlConfigured": false,
+    "remoteRollback": "not performed"
+  },
+  "remaining": [
+    "Vercel account and project",
+    "Public name, domain, and update frequency",
+    "Media publication rights and new checked release",
+    "Approved artifact host and CI secret",
+    "Preview acceptance matrix",
+    "Firefox compatibility and release-device performance",
+    "DNS, HTTPS, deployment rollback, and release approval"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-14",
+  "milestone": "M3",
+  "status": "passed",
+  "datasetVersion": "2026-10-14-7c5ad4426abf6d1a",
+  "environment": {
+    "browser": "156.0.8078.4",
+    "runtime": "v25.6.1",
+    "viewport": {
+      "width": 1084,
+      "height": 854
+    },
+    "datasetVersion": "2026-10-14-7c5ad4426abf6d1a",
+    "rowCount": 18
+  },
+  "checks": {
+    "lint": "pass",
+    "typecheck": "pass",
+    "productionBuild": "pass",
+    "unitTests": {
+      "passed": 21,
+      "files": 4
+    },
+    "browserTests": {
+      "passed": 17,
+      "m3Tests": 10,
+      "m2AndDataTests": 7
+    },
+    "documentFormat": "pass",
+    "localDocumentLinks": "pass"
+  },
+  "coverage": [
+    "B07",
+    "B08",
+    "B09",
+    "B10",
+    "B11",
+    "B12",
+    "U02",
+    "U05",
+    "U06",
+    "U09",
+    "U10"
+  ],
+  "serverTrace": {
+    "rankedBundles": 32,
+    "publicMediaFiles": 0
+  },
+  "remainingMilestones": ["M4", "M5"],
+  "unavailableChecks": [
+    "Node.js 24 local run",
+    "Firefox",
+    "WebKit",
+    "Remote CI"
+  ]
+}

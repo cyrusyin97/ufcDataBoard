@@ -1,0 +1,5 @@
+{
+  "protocolUrl": "http://127.0.0.1:3000/m4-probe?next",
+  "nativeUrl": "http://127.0.0.1:3000/m4-probe?home",
+  "browser": "157.0"
+}

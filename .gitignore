@@ -1,0 +1,27 @@
+node_modules/
+.next/
+out/
+coverage/
+playwright-report/
+test-results/
+.env*
+!.env.example
+*.tsbuildinfo
+.DS_Store
+work/
+outputs/
+public/data/
+public/media/
+*.db
+*.db-*
+.venv/
+__pycache__/
+*.pyc
+
+# Local visual captures and browser traces need publication review.
+docs/evidence/**/*.png
+docs/evidence/**/*.jpg
+docs/evidence/**/*.webp
+docs/evidence/**/*.zip
+docs/evidence/**/*.gz
+.vercel/

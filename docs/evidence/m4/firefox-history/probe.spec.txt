@@ -1,0 +1,16 @@
+import { test, expect } from '@playwright/test';
+import { writeFileSync } from 'node:fs';
+test('isolate Firefox same-document traversal after reload', async ({page}, testInfo)=>{
+ await page.route('**/m4-probe**', route=>route.fulfill({contentType:'text/html',body:`<!DOCTYPE html><button id="next">next</button><script>
+ if(!history.state?.owned){history.replaceState({owned:true},'', '/m4-probe?home');history.pushState({owned:true},'', '/m4-probe?detail');}
+ document.querySelector('button').onclick=()=>{history.replaceState({owned:true},'', '/m4-probe?next');};
+ </script>`}));
+ await page.goto('/m4-probe');await page.reload();await page.locator('button').click();
+ await page.waitForTimeout(1100);await page.goBack();
+ const protocolUrl=page.url();
+ if(!protocolUrl.endsWith('?home')) await page.evaluate(()=>history.back());
+ await expect(page).toHaveURL(/home/);
+ const result={protocolUrl,nativeUrl:page.url(),browser:page.context().browser()?.version()};
+ console.log(JSON.stringify(result));
+ writeFileSync(`test-results/m4-firefox-history-probe-${testInfo.repeatEachIndex}.json`,JSON.stringify(result,null,2)+'\n');
+});

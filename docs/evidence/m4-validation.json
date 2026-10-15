@@ -1,0 +1,182 @@
+{
+  "date": "2026-10-15",
+  "milestone": "M4",
+  "status": "accepted",
+  "datasetVersion": "2026-10-14-7c5ad4426abf6d1a",
+  "environment": {
+    "device": "MacBook Air, Apple M3, 16 GB",
+    "platform": "macOS arm64",
+    "runtime": "v25.6.1",
+    "desktopViewport": {
+      "width": 1318,
+      "height": 808
+    },
+    "historyViewport": {
+      "width": 1084,
+      "height": 854
+    },
+    "mobileViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "browsers": {
+      "chromium": "156.0.8078.4",
+      "firefox": "157.0",
+      "webkit": "27.2"
+    },
+    "capture": "Headless Playwright, live animation-frame samples, screenshots, Chromium CDP trace"
+  },
+  "checks": {
+    "lint": "pass",
+    "typecheck": "pass",
+    "productionBuild": "pass",
+    "unitTests": {
+      "passed": 21,
+      "files": 4
+    },
+    "chromiumBrowserTests": {
+      "passed": 21,
+      "failed": 0
+    },
+    "focusedCrossBrowserTests": {
+      "scope": "Five checks per engine: fresh selection, direct archive reload and Back, category drawers, glyph frames, interruption cleanup",
+      "firefox": {
+        "passed": 5,
+        "failed": 0
+      },
+      "webkit": {
+        "passed": 5,
+        "failed": 0
+      }
+    },
+    "documentFormat": "pass",
+    "localDocumentLinks": "pass"
+  },
+  "baselineUiCoverage": [
+    "U01",
+    "U02",
+    "U03",
+    "U04",
+    "U05",
+    "U06",
+    "U07",
+    "U08",
+    "U09",
+    "U10",
+    "U11",
+    "U12",
+    "U13",
+    "U14",
+    "U15",
+    "U16",
+    "U17",
+    "U18"
+  ],
+  "frameSamples": [
+    {
+      "requestedMs": 900,
+      "actualMs": 915.2999999523163,
+      "maximumGeometryDifferencePx": 0.014400482177734375,
+      "portraitOpacity": "1",
+      "earlyTransformedGlyphs": 39
+    },
+    {
+      "requestedMs": 950,
+      "actualMs": 964.0999999046326,
+      "maximumGeometryDifferencePx": 0.0001220703125,
+      "portraitOpacity": "1",
+      "earlyTransformedGlyphs": 39
+    },
+    {
+      "requestedMs": 983,
+      "actualMs": 997.1000001430511,
+      "maximumGeometryDifferencePx": 0,
+      "portraitOpacity": "1",
+      "earlyTransformedGlyphs": 39
+    },
+    {
+      "requestedMs": 1000,
+      "actualMs": 1012.8999998569489,
+      "maximumGeometryDifferencePx": 0,
+      "portraitOpacity": "1",
+      "earlyTransformedGlyphs": 39
+    }
+  ],
+  "performance": {
+    "browser": "156.0.8078.4",
+    "runtime": "v25.6.1",
+    "platform": "darwin",
+    "viewport": {
+      "width": 1318,
+      "height": 808
+    },
+    "initialGzipBytes": 207721,
+    "lab": {
+      "lcp": 368,
+      "cls": 0.03641235183331133,
+      "interactions": [184, 184, 184, 120, 120, 120],
+      "longTasks": [153, 66, 81]
+    },
+    "trace": {
+      "events": 161276,
+      "schedulerThread": "32343:18017610",
+      "schedulerFrames": 295,
+      "schedulerMedianMs": 22.291,
+      "schedulerP95Ms": 108.377,
+      "droppedBeginFrames": 0,
+      "taskEventsAvailable": true,
+      "longTasks": 11,
+      "maximumTaskMs": 153.807
+    },
+    "note": "Headless lab measurements. Scheduler cadence does not certify native 60 FPS or field INP."
+  },
+  "otherLabRuns": {
+    "fullSuite": "docs/evidence/m4/m4-performance-full-suite.json",
+    "earlierConcurrent": "docs/evidence/m4/m4-performance-concurrent.json"
+  },
+  "performanceLimits": {
+    "fieldInp": "not measured",
+    "native60Fps": "not certified",
+    "maximumLabInteractionWithin200Ms": true,
+    "releaseDeviceAndDeployment": "pending M5"
+  },
+  "knownBrowserDifference": {
+    "browser": "Firefox 157.0",
+    "check": "Direct archive entry, reload, replace opponent, browser-level Back",
+    "status": "intermittent failure in earlier focused runs; latest focused run passes",
+    "nativeHistoryBack": "passes, including during motion",
+    "isolatedProbe": {
+      "protocolTraversalFailed": 3,
+      "nativeTraversalPassedInSameDocuments": 3
+    },
+    "relatedMozillaRecord": "https://bugzilla.mozilla.org/show_bug.cgi?id=1981019",
+    "releaseAction": "Confirm in visible Firefox. Resolve or approve the difference before release."
+  },
+  "serverTrace": {
+    "rankedBundles": 32,
+    "publicMediaFiles": 0
+  },
+  "mobileReview": {
+    "status": "approved",
+    "path": "outputs/designs/ufc-m4-review/mobile-review.html",
+    "url": "http://127.0.0.1:4312/mobile-review.html",
+    "approvalReceived": true,
+    "approvedAt": "2026-10-15T04:41:45Z",
+    "approvalText": "接受当前布局",
+    "approvalSource": "User reply to the mobile composition review question"
+  },
+  "artifacts": {
+    "report": "docs/m4-report.md",
+    "motionAndPerformance": "docs/evidence/m4/",
+    "crossBrowser": "docs/evidence/m4/cross-browser/",
+    "firefoxProbe": "docs/evidence/m4/firefox-history/"
+  },
+  "unavailableChecks": [
+    "Node.js 24 local run",
+    "Remote CI",
+    "Field INP",
+    "Native 60 FPS certification"
+  ],
+  "remainingMilestones": ["M5"],
+  "acceptanceScope": "Agreed desktop baseline and approved mobile composition. Remaining release checks stay open."
+}

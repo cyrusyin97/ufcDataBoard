@@ -1,0 +1,59 @@
+{
+  "name": "ufc-rankings",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "dev": "next dev --webpack --hostname 127.0.0.1 --port 3000",
+    "build": "next build --webpack",
+    "start": "next start --hostname 127.0.0.1 --port 3000",
+    "lint": "eslint src tests playwright.config.ts scripts/*.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "check": "npm run lint && npm run typecheck && npm test && npm run build",
+    "format:check": "prettier --check src tests docs AGENTS.md README.md scripts/README.md data/config data/schemas scripts/*.ts data/release.json vercel.json .github/workflows/*.yml",
+    "format": "prettier --write src tests docs AGENTS.md README.md scripts/README.md data/config data/schemas scripts/*.ts data/release.json vercel.json .github/workflows/*.yml",
+    "data:export": "node scripts/run-data.ts export",
+    "data:check": "node scripts/check-data.ts",
+    "data:schemas": "node scripts/check-data.ts --schemas",
+    "data:media": "node scripts/run-data.ts media",
+    "test:pipeline": ".venv/bin/python -m unittest discover -s tests/pipeline -p \"test_*.py\"",
+    "data:discover": "node scripts/run-data.ts discover",
+    "data:media:candidates": "node scripts/run-data.ts candidates",
+    "data:media:review": "node scripts/run-data.ts review",
+    "data:pack": "node scripts/run-data.ts pack",
+    "data:media:ranked": "node scripts/run-data.ts ranked",
+    "data:restore": "node scripts/restore-data.ts",
+    "release:check": "node scripts/release-check.ts",
+    "release:build": "npm run data:restore && npm run release:check && npm run build",
+    "release:http": "node scripts/check-deployment.ts"
+  },
+  "dependencies": {
+    "@gsap/react": "2.1.2",
+    "gsap": "3.15.0",
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "server-only": "0.0.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.0",
+    "postcss": "8.5.30",
+    "prettier": "3.9.10",
+    "tailwindcss": "4.3.3",
+    "tar": "7.5.22",
+    "typescript": "6.0.3",
+    "vitest": "4.1.11"
+  },
+  "type": "module"
+}

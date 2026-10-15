@@ -1,0 +1,103 @@
+{
+  "snapshotAt": "2026-10-13",
+  "division": "featherweight",
+  "source": "https://www.ufc.com/rankings",
+  "fighters": [
+    {
+      "id": "e1248941344b3288",
+      "slug": "alexander-volkanovski",
+      "name": "Alexander Volkanovski",
+      "rank": 0
+    },
+    {
+      "id": "76e2870ffafbe38f",
+      "slug": "movsar-evloev",
+      "name": "Movsar Evloev",
+      "rank": 1
+    },
+    {
+      "id": "f166e93d04a8c274",
+      "slug": "diego-lopes",
+      "name": "Diego Lopes",
+      "rank": 2
+    },
+    {
+      "id": "396fe87b84ac2e1c",
+      "slug": "lerone-murphy",
+      "name": "Lerone Murphy",
+      "rank": 3
+    },
+    {
+      "id": "cb696ebfb6598724",
+      "slug": "aljamain-sterling",
+      "name": "Aljamain Sterling",
+      "rank": 4
+    },
+    {
+      "id": "52ef95b5860fb28c",
+      "slug": "jean-silva",
+      "name": "Jean Silva",
+      "rank": 5
+    },
+    {
+      "id": "cbf5e6f231b55443",
+      "slug": "yair-rodriguez",
+      "name": "Yair Rodriguez",
+      "rank": 6
+    },
+    {
+      "id": "040a74bb0a465c54",
+      "slug": "arnold-allen",
+      "name": "Arnold Allen",
+      "rank": 7
+    },
+    {
+      "id": "52c2ae6d2f2d2613",
+      "slug": "youssef-zalal",
+      "name": "Youssef Zalal",
+      "rank": 8
+    },
+    {
+      "id": "239d8e5359022f3b",
+      "slug": "kevin-vallejos",
+      "name": "Kevin Vallejos",
+      "rank": 9
+    },
+    {
+      "id": "97cf1a2c7c5e7889",
+      "slug": "steve-garcia",
+      "name": "Steve Garcia",
+      "rank": 10
+    },
+    {
+      "id": "5537efc6e496dd84",
+      "slug": "aaron-pico",
+      "name": "Aaron Pico",
+      "rank": 11
+    },
+    {
+      "id": "20bccc9bb4ceb23e",
+      "slug": "melquizael-costa",
+      "name": "Melquizael Costa",
+      "rank": 12
+    },
+    {
+      "id": "def8166ff24bd237",
+      "slug": "brian-ortega",
+      "name": "Brian Ortega",
+      "rank": 13
+    },
+    {
+      "id": "98a58c26c5b1ed17",
+      "slug": "patricio-freire",
+      "name": "Patricio Pitbull",
+      "rank": 14
+    },
+    {
+      "id": "ffe9703408fb5964",
+      "slug": "david-onama",
+      "name": "David Onama",
+      "rank": 15
+    }
+  ]
+}

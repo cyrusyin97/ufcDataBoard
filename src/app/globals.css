@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@source "../components";
+
+@font-face {
+  font-family: Barlow;
+  src: url("/fonts/font-0.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("/fonts/font-5.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: Barlow;
+  src: url("/fonts/font-1.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: Barlow;
+  src: url("/fonts/font-2.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: Barlow;
+  src: url("/fonts/font-3.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("/fonts/font-4.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("/fonts/font-6.ttf") format("truetype");
+  font-weight: 800;
+  font-display: swap;
+}
+@theme {
+  --color-canvas: #111112;
+  --color-panel: #151516;
+  --color-cream: #eeeae2;
+  --color-muted: #9b9996;
+  --color-line: #323232;
+  --color-accent: #e83c39;
+  --font-body: Barlow, sans-serif;
+  --font-display: "Barlow Condensed", sans-serif;
+}
+body {
+  background: var(--color-canvas);
+  color: var(--color-cream);
+  font-family: var(--font-body);
+}
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+body {
+  margin: 0;
+  line-height: normal;
+  -webkit-font-smoothing: antialiased;
+}

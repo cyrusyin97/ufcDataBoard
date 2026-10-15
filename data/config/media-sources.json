@@ -1,0 +1,3654 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "fighterId": "009341ed974bad72",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/jiri-prochazka",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-04/PROCHAZKA_JIRI_L_04-11.png"
+    },
+    {
+      "fighterId": "009341ed974bad72",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/jiri-prochazka",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/PROCHAZKA_JIRI_L_04-11.png?itok=kzDQfMFd"
+    },
+    {
+      "fighterId": "009341ed974bad72",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/jiri-prochazka",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-04/PROCHAZKA_JIRI_04-11.png"
+    },
+    {
+      "fighterId": "01641ba5df0c69b0",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/gabriel-bonfim",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-11/BONFIM_GABRIEL_L_11-08.png"
+    },
+    {
+      "fighterId": "01641ba5df0c69b0",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/gabriel-bonfim",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-11/BONFIM_GABRIEL_L_11-08.png?itok=FGdOTced"
+    },
+    {
+      "fighterId": "01641ba5df0c69b0",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/gabriel-bonfim",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-06/BONFIM_GABRIEL_06-06.png"
+    },
+    {
+      "fighterId": "040a74bb0a465c54",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/arnold-allen",
+      "role": "full_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/arnold-allen-full.png",
+      "sourceUrl": "https://www.ufc.com/images/2026-05/ALLEN_ARNOLD_L_05-16.png"
+    },
+    {
+      "fighterId": "040a74bb0a465c54",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/arnold-allen",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/arnold-allen.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-05/ALLEN_ARNOLD_L_05-16.png?itok=d2l8gVp-"
+    },
+    {
+      "fighterId": "04835018f90b118c",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/casey-oneill",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-09/ONEILL_CASEY_L_09-19.png"
+    },
+    {
+      "fighterId": "04835018f90b118c",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/casey-oneill",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-09/ONEILL_CASEY_L_09-19.png?itok=Z7PuO0GL"
+    },
+    {
+      "fighterId": "04835018f90b118c",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/casey-oneill",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-09/ONEILL_CASEY_09-19.png"
+    },
+    {
+      "fighterId": "06734ca9d88dec3a",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/shara-magomedov",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-06/MAGOMEDOV_SHARA_L_06-27.png"
+    },
+    {
+      "fighterId": "06734ca9d88dec3a",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/shara-magomedov",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/MAGOMEDOV_SHARA_L_06-27.png?itok=_iIAbX5t"
+    },
+    {
+      "fighterId": "06734ca9d88dec3a",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/shara-magomedov",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-06/MAGOMEDOV_SHARA_06-27.png"
+    },
+    {
+      "fighterId": "06e4245d16fc5315",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/ailin-perez",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-02/PEREZ_AILIN_L_02-28.png"
+    },
+    {
+      "fighterId": "06e4245d16fc5315",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/ailin-perez",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-02/PEREZ_AILIN_L_02-28.png?itok=sPy9HJ2B"
+    },
+    {
+      "fighterId": "06e4245d16fc5315",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/ailin-perez",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-09/PEREZ_AILIN_09-26.png"
+    },
+    {
+      "fighterId": "07047eb7d17fb0a2",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/dariya-zheleznyakova",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-06/ZHELEZNIAKOVA_DARIA_L_06-21.png"
+    },
+    {
+      "fighterId": "07047eb7d17fb0a2",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/dariya-zheleznyakova",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-06/ZHELEZNIAKOVA_DARIA_L_06-21.png?itok=2_fWceIz"
+    },
+    {
+      "fighterId": "07047eb7d17fb0a2",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/dariya-zheleznyakova",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-10/ZHELEZNIAKOVA_DARIA_10-10.png"
+    },
+    {
+      "fighterId": "07225ba28ae309b6",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/charles-oliveira",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-03/OLIVEIRA_CHARLES_L_BMFMOCK.png"
+    },
+    {
+      "fighterId": "07225ba28ae309b6",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/charles-oliveira",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/charles-oliveira-v7.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/OLIVEIRA_CHARLES_L_BMFMOCK.png?itok=Up-QPLgQ"
+    },
+    {
+      "fighterId": "07225ba28ae309b6",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/charles-oliveira",
+      "role": "headshot",
+      "seedFile": "outputs/designs/ufc-rankings/assets/charles-oliveira-full-v7.png",
+      "sourceUrl": "https://ufc.com/images/2026-03/OLIVEIRA_CHARLES_BMFMOCK.png"
+    },
+    {
+      "fighterId": "08af939f41b5a57b",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/beneil-dariush",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-04/DARIUSH_BENEIL_L_05-02.png"
+    },
+    {
+      "fighterId": "08af939f41b5a57b",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/beneil-dariush",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/beneil-dariush-v7.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/DARIUSH_BENEIL_L_05-02.png?itok=EGBjHKgU"
+    },
+    {
+      "fighterId": "08af939f41b5a57b",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/beneil-dariush",
+      "role": "headshot",
+      "seedFile": "outputs/designs/ufc-rankings/assets/beneil-dariush-full-v7.png",
+      "sourceUrl": "https://ufc.com/images/2026-04/DARIUSH_BENEIL_05-02.png"
+    },
+    {
+      "fighterId": "093e1f5bb73850be",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/anthony-hernandez",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-08/HERNANDEZ_ANTHONY_L_08-22.png"
+    },
+    {
+      "fighterId": "093e1f5bb73850be",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/anthony-hernandez",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-08/HERNANDEZ_ANTHONY_L_08-22.png?itok=3lBUdA4_"
+    },
+    {
+      "fighterId": "093e1f5bb73850be",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/anthony-hernandez",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-08/HERNANDEZ_ANTHONY_08-22.png"
+    },
+    {
+      "fighterId": "0d7b51c9d2649a6e",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/dricus-du-plessis",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-07/DU_PLESSIS_DRICUS_L_07-18.png"
+    },
+    {
+      "fighterId": "0d7b51c9d2649a6e",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/dricus-du-plessis",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/DU_PLESSIS_DRICUS_L_07-18.png?itok=ms17eNrc"
+    },
+    {
+      "fighterId": "0d7b51c9d2649a6e",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/dricus-du-plessis",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/DU_PLESSIS_DRICUS_07-18.png"
+    },
+    {
+      "fighterId": "0d8011111be000b2",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/sean-strickland",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2024-01/STRICKLAND_SEAN_L_BELT_01-20.png"
+    },
+    {
+      "fighterId": "0d8011111be000b2",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/sean-strickland",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2024-01/STRICKLAND_SEAN_L_BELT_01-20.png?itok=4lpTjgRZ"
+    },
+    {
+      "fighterId": "0d8011111be000b2",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/sean-strickland",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2024-01/STRICKLAND_SEAN_BELT_01-20.png"
+    },
+    {
+      "fighterId": "1091d4d957141094",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/nikita-krylov",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-07/KRYLOV_NIKITA_L_07-11.png"
+    },
+    {
+      "fighterId": "1091d4d957141094",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/nikita-krylov",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/KRYLOV_NIKITA_L_07-11.png?itok=G-SKEXs5"
+    },
+    {
+      "fighterId": "1091d4d957141094",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/nikita-krylov",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/KRYLOV_NIKITA_07-11.png"
+    },
+    {
+      "fighterId": "132deb59abae64b1",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/valentina-shevchenko",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-11/SHEVCHENKO_VALENTINA_L_BELT_11-15.png"
+    },
+    {
+      "fighterId": "132deb59abae64b1",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/valentina-shevchenko",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-11/SHEVCHENKO_VALENTINA_L_BELT_11-15.png?itok=4KuKr99O"
+    },
+    {
+      "fighterId": "132deb59abae64b1",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/valentina-shevchenko",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-11/SHEVCHENKO_VALENTINA_BELT_11-15.png"
+    },
+    {
+      "fighterId": "1338e2c7480bdf9e",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/israel-adesanya",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-03/ADESANYA_ISRAEL_L_03-28.png"
+    },
+    {
+      "fighterId": "1338e2c7480bdf9e",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/israel-adesanya",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/ADESANYA_ISRAEL_L_03-28.png?itok=RopFx9gx"
+    },
+    {
+      "fighterId": "1338e2c7480bdf9e",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/israel-adesanya",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-03/ADESANYA_ISRAEL_03-28.png"
+    },
+    {
+      "fighterId": "13a0275fa13c4d26",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/jared-cannonier",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-07/CANNONIER_JARED_L_07-18.png"
+    },
+    {
+      "fighterId": "13a0275fa13c4d26",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/jared-cannonier",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/CANNONIER_JARED_L_07-18.png?itok=_lep6e-l"
+    },
+    {
+      "fighterId": "13a0275fa13c4d26",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/jared-cannonier",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/CANNONIER_JARED_07-18.png"
+    },
+    {
+      "fighterId": "150ff4cc642270b9",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/max-holloway",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2024-04/HOLLOWAY_MAX_L_04-13.png"
+    },
+    {
+      "fighterId": "150ff4cc642270b9",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/max-holloway",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/max-holloway-v7.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2024-04/HOLLOWAY_MAX_L_04-13.png?itok=mcRfmIq0"
+    },
+    {
+      "fighterId": "150ff4cc642270b9",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/max-holloway",
+      "role": "headshot",
+      "seedFile": "outputs/designs/ufc-rankings/assets/max-holloway-full-v7.png",
+      "sourceUrl": "https://ufc.com/images/2024-04/HOLLOWAY_MAX_04-13.png"
+    },
+    {
+      "fighterId": "17734443a833cdf7",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/quillan-salkilld",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-01/SALKILLD_QUILLAN_L_01-31.png"
+    },
+    {
+      "fighterId": "17734443a833cdf7",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/quillan-salkilld",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/quillan-salkilld-v7.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-01/SALKILLD_QUILLAN_L_01-31.png?itok=FT1z9B_U"
+    },
+    {
+      "fighterId": "17734443a833cdf7",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/quillan-salkilld",
+      "role": "headshot",
+      "seedFile": "outputs/designs/ufc-rankings/assets/quillan-salkilld-full-v7.png",
+      "sourceUrl": "https://ufc.com/images/2026-08/SALKILLD_QUILLAN_08-08.png"
+    },
+    {
+      "fighterId": "17e97649403ba428",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/joshua-van",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-09/VAN_JOSHUA_L_BELT_09-19.png"
+    },
+    {
+      "fighterId": "17e97649403ba428",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/joshua-van",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-09/VAN_JOSHUA_L_BELT_09-19.png?itok=wZMR9MdV"
+    },
+    {
+      "fighterId": "17e97649403ba428",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/joshua-van",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-09/VAN_JOSHUA_09-19.png"
+    },
+    {
+      "fighterId": "193b9d1858bc4df3",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/dan-hooker",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-09/HOOKER_DAN_L_09-05.png"
+    },
+    {
+      "fighterId": "193b9d1858bc4df3",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/dan-hooker",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/dan-hooker-v7.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-09/HOOKER_DAN_L_09-05.png?itok=cLfQlP6e"
+    },
+    {
+      "fighterId": "193b9d1858bc4df3",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/dan-hooker",
+      "role": "headshot",
+      "seedFile": "outputs/designs/ufc-rankings/assets/dan-hooker-full-v7.png",
+      "sourceUrl": "https://ufc.com/images/2026-09/HOOKER_DAN_09-05.png"
+    },
+    {
+      "fighterId": "1af1170ed937cba7",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/kayla-harrison",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-06/HARRISON_KAYLA_L_BELTMOCK.png"
+    },
+    {
+      "fighterId": "1af1170ed937cba7",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/kayla-harrison",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-06/HARRISON_KAYLA_L_BELTMOCK.png?itok=goxu4s1i"
+    },
+    {
+      "fighterId": "1af1170ed937cba7",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/kayla-harrison",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-06/HARRISON_KAYLA_BELTMOCK.png"
+    },
+    {
+      "fighterId": "1ebe20ebbfa15e29",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/zhang-weili",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2022-06/d6bd47bc-d423-4ae8-9073-f0abd7777751%252FWEILI_ZHANG_L_06-11.png"
+    },
+    {
+      "fighterId": "1ebe20ebbfa15e29",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/zhang-weili",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2022-06/d6bd47bc-d423-4ae8-9073-f0abd7777751%252FWEILI_ZHANG_L_06-11.png?itok=QDyjRoZ7"
+    },
+    {
+      "fighterId": "1ebe20ebbfa15e29",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/zhang-weili",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-11/WEILI_ZHANG_11-15.png"
+    },
+    {
+      "fighterId": "20bccc9bb4ceb23e",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/melquizael-costa",
+      "role": "full_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/melquizael-costa-full.png",
+      "sourceUrl": "https://www.ufc.com/images/2025-12/COSTA_MELQUIZAEL_L_12-13.png"
+    },
+    {
+      "fighterId": "20bccc9bb4ceb23e",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/melquizael-costa",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/melquizael-costa.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-12/COSTA_MELQUIZAEL_L_12-13.png?itok=4B7irp2h"
+    },
+    {
+      "fighterId": "239d8e5359022f3b",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/kevin-vallejos",
+      "role": "full_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/kevin-vallejos-full.png",
+      "sourceUrl": "https://www.ufc.com/images/2025-12/VALLEJOS_KEVIN_R_12-13.png"
+    },
+    {
+      "fighterId": "239d8e5359022f3b",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/kevin-vallejos",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/kevin-vallejos.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-12/VALLEJOS_KEVIN_R_12-13.png?itok=-h2gdx6Y"
+    },
+    {
+      "fighterId": "24656ef4d605c96f",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/aiemann-zahabi",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-06/ZAHABI_AIEMANN_R_06-14.png"
+    },
+    {
+      "fighterId": "24656ef4d605c96f",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/aiemann-zahabi",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/ZAHABI_AIEMANN_R_06-14.png?itok=Rkew0wVb"
+    },
+    {
+      "fighterId": "24656ef4d605c96f",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/aiemann-zahabi",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-06/ZAHABI_AIEMANN_06-14.png"
+    },
+    {
+      "fighterId": "262d32ebda89efc4",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/natalia-silva",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-10/SILVA_NATALIA_L_BELT.png"
+    },
+    {
+      "fighterId": "262d32ebda89efc4",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/natalia-silva",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-10/SILVA_NATALIA_L_BELT.png?itok=5plvSdDF"
+    },
+    {
+      "fighterId": "262d32ebda89efc4",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/natalia-silva",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-10/SILVA_NATALIA_BELT.png"
+    },
+    {
+      "fighterId": "275aca31f61ba28c",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/islam-makhachev",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-01/7/MAKHACHEV_ISLAM_L_BELT_01-18.png"
+    },
+    {
+      "fighterId": "275aca31f61ba28c",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/islam-makhachev",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/7/MAKHACHEV_ISLAM_L_BELT_01-18.png?itok=crqbSRmt"
+    },
+    {
+      "fighterId": "275aca31f61ba28c",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/islam-makhachev",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-01/7/MAKHACHEV_ISLAM_BELT_01-18.png"
+    },
+    {
+      "fighterId": "279566840aa55bf2",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/alexander-volkov",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-05/VOLKOV_ALEXANDER_L_05-09.png"
+    },
+    {
+      "fighterId": "279566840aa55bf2",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/alexander-volkov",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-05/VOLKOV_ALEXANDER_L_05-09.png?itok=Z7Pt4p3a"
+    },
+    {
+      "fighterId": "279566840aa55bf2",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/alexander-volkov",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-05/VOLKOV_ALEXANDER_05-09.png"
+    },
+    {
+      "fighterId": "2997e7fe3c9d3d4a",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/wang-cong",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-02/CONG_WANG_L_02-07.png"
+    },
+    {
+      "fighterId": "2997e7fe3c9d3d4a",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/wang-cong",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-02/CONG_WANG_L_02-07.png?itok=LBnTljRc"
+    },
+    {
+      "fighterId": "2997e7fe3c9d3d4a",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/wang-cong",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-10/CONG_WANG_10-03.png"
+    },
+    {
+      "fighterId": "2b6fc1c02736833d",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/umar-nurmagomedov",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-08/NURMAGOMEDOV_UMAR_L_08-29.png"
+    },
+    {
+      "fighterId": "2b6fc1c02736833d",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/umar-nurmagomedov",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-08/NURMAGOMEDOV_UMAR_L_08-29.png?itok=JyBT4AfR"
+    },
+    {
+      "fighterId": "2b6fc1c02736833d",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/umar-nurmagomedov",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-08/NURMAGOMEDOV_UMAR_08-29.png"
+    },
+    {
+      "fighterId": "2e19380f34871c6a",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/dominick-reyes",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-04/REYES_DOMINICK_L_04-11.png"
+    },
+    {
+      "fighterId": "2e19380f34871c6a",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/dominick-reyes",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/REYES_DOMINICK_L_04-11.png?itok=7HSVtv1p"
+    },
+    {
+      "fighterId": "2e19380f34871c6a",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/dominick-reyes",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-04/REYES_DOMINICK_04-11.png"
+    },
+    {
+      "fighterId": "2e5c2aa8e4ab9d82",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/paulo-costa",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-07/COSTA_PAULO_L_07-19.png"
+    },
+    {
+      "fighterId": "2e5c2aa8e4ab9d82",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/paulo-costa",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-07/COSTA_PAULO_L_07-19.png?itok=Z_3tTUCi"
+    },
+    {
+      "fighterId": "2e5c2aa8e4ab9d82",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/paulo-costa",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-04/COSTA_PAULO_04-11.png"
+    },
+    {
+      "fighterId": "2f181c0467965b98",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/brendan-allen",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-10/ALLEN_BRENDAN_L_10-10.png"
+    },
+    {
+      "fighterId": "2f181c0467965b98",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/brendan-allen",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-10/ALLEN_BRENDAN_L_10-10.png?itok=NcJZsiBb"
+    },
+    {
+      "fighterId": "2f181c0467965b98",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/brendan-allen",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-10/ALLEN_BRENDAN_10-10.png"
+    },
+    {
+      "fighterId": "3143bf892608139a",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/yana-santos",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-05/SANTOS_YANA_L_05-03.png"
+    },
+    {
+      "fighterId": "3143bf892608139a",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/yana-santos",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-05/SANTOS_YANA_L_05-03.png?itok=pkR_XniN"
+    },
+    {
+      "fighterId": "3143bf892608139a",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/yana-santos",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-10/SANTOS_YANA_10-04.png"
+    },
+    {
+      "fighterId": "3253b16d38ae087d",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/julianna-pena",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2022-08/PENA_JULIANNA_L_12-11.png"
+    },
+    {
+      "fighterId": "3253b16d38ae087d",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/julianna-pena",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2022-08/PENA_JULIANNA_L_12-11.png?itok=sk8A1suM"
+    },
+    {
+      "fighterId": "3253b16d38ae087d",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/julianna-pena",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2024-10/PENA_JULIANNA_10-05.png"
+    },
+    {
+      "fighterId": "32ab52e5de93092d",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/steve-erceg",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-07/ERCEG_STEVE_L_07-25.png"
+    },
+    {
+      "fighterId": "32ab52e5de93092d",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/steve-erceg",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/ERCEG_STEVE_L_07-25.png?itok=L0455cpA"
+    },
+    {
+      "fighterId": "32ab52e5de93092d",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/steve-erceg",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/ERCEG_STEVE_07-25.png"
+    },
+    {
+      "fighterId": "333b9e5c723ac873",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/aleksandar-rakic",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-07/RAKIC_ALEKSANDAR_L_08-01.png"
+    },
+    {
+      "fighterId": "333b9e5c723ac873",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/aleksandar-rakic",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/RAKIC_ALEKSANDAR_L_08-01.png?itok=BC0F8HQV"
+    },
+    {
+      "fighterId": "333b9e5c723ac873",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/aleksandar-rakic",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/RAKIC_ALEKSANDAR_08-01.png"
+    },
+    {
+      "fighterId": "34ff304266360297",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/manon-fiorot",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-09/FIOROT_MANON_L_09-12.png"
+    },
+    {
+      "fighterId": "34ff304266360297",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/manon-fiorot",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-09/FIOROT_MANON_L_09-12.png?itok=lxR1mJIt"
+    },
+    {
+      "fighterId": "34ff304266360297",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/manon-fiorot",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-09/FIOROT_MANON_09-12.png"
+    },
+    {
+      "fighterId": "351c4ec637380ad5",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/karol-rosa",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-06/ROSA_KAROL_L_06-20.png"
+    },
+    {
+      "fighterId": "351c4ec637380ad5",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/karol-rosa",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/ROSA_KAROL_L_06-20.png?itok=YUHa84_9"
+    },
+    {
+      "fighterId": "351c4ec637380ad5",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/karol-rosa",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-06/ROSA_KAROL_06-20.png"
+    },
+    {
+      "fighterId": "35673bf5204524ee",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/bo-nickal",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-06/NICKAL_BO_L_06-14.png"
+    },
+    {
+      "fighterId": "35673bf5204524ee",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/bo-nickal",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/NICKAL_BO_L_06-14.png?itok=h1bBmnmS"
+    },
+    {
+      "fighterId": "35673bf5204524ee",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/bo-nickal",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-06/NICKAL_BO_06-14.png"
+    },
+    {
+      "fighterId": "36b8f265bcd1b7a4",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/abus-magomedov",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-06/MAGOMEDOV_ABUS_L_06-27.png"
+    },
+    {
+      "fighterId": "36b8f265bcd1b7a4",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/abus-magomedov",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/MAGOMEDOV_ABUS_L_06-27.png?itok=SLmzXjWp"
+    },
+    {
+      "fighterId": "36b8f265bcd1b7a4",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/abus-magomedov",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-06/MAGOMEDOV_ABUS_06-27.png"
+    },
+    {
+      "fighterId": "38c7f72747f4f712",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/gillian-robertson",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-01/5/ROBERTSON_GILLIAN_L_01-20.png"
+    },
+    {
+      "fighterId": "38c7f72747f4f712",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/gillian-robertson",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/5/ROBERTSON_GILLIAN_L_01-20.png?itok=yw3RX2mI"
+    },
+    {
+      "fighterId": "38c7f72747f4f712",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/gillian-robertson",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-08/ROBERTSON_GILLIAN_08-15.png"
+    },
+    {
+      "fighterId": "396fe87b84ac2e1c",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/lerone-murphy",
+      "role": "full_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/lerone-murphy-full.png",
+      "sourceUrl": "https://www.ufc.com/images/2025-08/MURPHY_LERONE_L_08-16.png"
+    },
+    {
+      "fighterId": "396fe87b84ac2e1c",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/lerone-murphy",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/lerone-murphy.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-08/MURPHY_LERONE_L_08-16.png?itok=gmWbl1-Y"
+    },
+    {
+      "fighterId": "399afbabc02376b5",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/tom-aspinall",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2023-07/ASPINALL_TOM_L_07-22.png"
+    },
+    {
+      "fighterId": "399afbabc02376b5",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/tom-aspinall",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2023-07/ASPINALL_TOM_L_07-22.png?itok=XWQCc5cc"
+    },
+    {
+      "fighterId": "399afbabc02376b5",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/tom-aspinall",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2023-11/ASPINALL_TOM_11-11.png"
+    },
+    {
+      "fighterId": "39d309957c5c210d",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/mario-pinto",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-09/PINTO_MARIO_L_09-05.png"
+    },
+    {
+      "fighterId": "39d309957c5c210d",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/mario-pinto",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-09/PINTO_MARIO_L_09-05.png?itok=yfqOVPAV"
+    },
+    {
+      "fighterId": "39d309957c5c210d",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/mario-pinto",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-09/PINTO_MARIO_09-05.png"
+    },
+    {
+      "fighterId": "3cf18e01cb6cbde3",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/sumudaerji",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-03/SUMUDAERJI_L_03-07.png"
+    },
+    {
+      "fighterId": "3cf18e01cb6cbde3",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/sumudaerji",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/SUMUDAERJI_L_03-07.png?itok=NyopQV5l"
+    },
+    {
+      "fighterId": "3cf18e01cb6cbde3",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/sumudaerji",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-08/SUMUDAERJI_08-29.png"
+    },
+    {
+      "fighterId": "3df5493bb279226f",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/amanda-lemos",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-08/LEMOS_AMANDA_L_08-08.png"
+    },
+    {
+      "fighterId": "3df5493bb279226f",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/amanda-lemos",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-08/LEMOS_AMANDA_L_08-08.png?itok=tJiVRMjJ"
+    },
+    {
+      "fighterId": "3df5493bb279226f",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/amanda-lemos",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-08/LEMOS_AMANDA_08-08.png"
+    },
+    {
+      "fighterId": "4126a78111c0855a",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/caio-borralho",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-03/BORRALHO_CAIO_L_03-07.png"
+    },
+    {
+      "fighterId": "4126a78111c0855a",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/caio-borralho",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/BORRALHO_CAIO_L_03-07.png?itok=uKHF4K2U"
+    },
+    {
+      "fighterId": "4126a78111c0855a",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/caio-borralho",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-03/BORRALHO_CAIO_03-07.png"
+    },
+    {
+      "fighterId": "43a59ce3bb40449e",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/mizuki-inoue",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-10/MIZUKI_R_10-25.png"
+    },
+    {
+      "fighterId": "43a59ce3bb40449e",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/mizuki-inoue",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-10/MIZUKI_R_10-25.png?itok=CpbTHLy2"
+    },
+    {
+      "fighterId": "43a59ce3bb40449e",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/mizuki-inoue",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-10/MIZUKI_10-25.png"
+    },
+    {
+      "fighterId": "442c9011034ae1fd",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/ian-machado-garry",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-04/MACHADO_GARRY_IAN_L_04-26.png"
+    },
+    {
+      "fighterId": "442c9011034ae1fd",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/ian-machado-garry",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-04/MACHADO_GARRY_IAN_L_04-26.png?itok=DVG8yebN"
+    },
+    {
+      "fighterId": "442c9011034ae1fd",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/ian-machado-garry",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-08/MACHADO_GARRY_IAN_08-15.png"
+    },
+    {
+      "fighterId": "4461d7e47375a895",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/tatsuro-taira",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-07/TAIRA_TATSURO_L_08-02.png"
+    },
+    {
+      "fighterId": "4461d7e47375a895",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/tatsuro-taira",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-07/TAIRA_TATSURO_L_08-02.png?itok=pMtfQ6S3"
+    },
+    {
+      "fighterId": "4461d7e47375a895",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/tatsuro-taira",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-05/TAIRA_TATSURO_05-09.png"
+    },
+    {
+      "fighterId": "45f7cb591c3ab00b",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/sean-brady",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-05/BRADY_SEAN_L_05-09.png"
+    },
+    {
+      "fighterId": "45f7cb591c3ab00b",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/sean-brady",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-05/BRADY_SEAN_L_05-09.png?itok=lfpHN5PX"
+    },
+    {
+      "fighterId": "45f7cb591c3ab00b",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/sean-brady",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-05/BRADY_SEAN_05-09.png"
+    },
+    {
+      "fighterId": "47b63240018d5d86",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/rose-namajunas",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-06/NAMAJUNAS_ROSE_L_06-14.png"
+    },
+    {
+      "fighterId": "47b63240018d5d86",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/rose-namajunas",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-06/NAMAJUNAS_ROSE_L_06-14.png?itok=SA42vJhp"
+    },
+    {
+      "fighterId": "47b63240018d5d86",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/rose-namajunas",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-01/NAMAJUNAS_ROSE_01-24.png"
+    },
+    {
+      "fighterId": "5078e1dacf9d25f4",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/luana-santos",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-05/SANTOS_LUANA_L_05-17.png"
+    },
+    {
+      "fighterId": "5078e1dacf9d25f4",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/luana-santos",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-05/SANTOS_LUANA_L_05-17.png?itok=F9R3I5g7"
+    },
+    {
+      "fighterId": "5078e1dacf9d25f4",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/luana-santos",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-06/SANTOS_LUANA_06-20.png"
+    },
+    {
+      "fighterId": "51e2f44a8dbf6984",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/melissa-croden",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-10/CRODEN_MELISSA_L_10-18.png"
+    },
+    {
+      "fighterId": "51e2f44a8dbf6984",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/melissa-croden",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-10/CRODEN_MELISSA_L_10-18.png?itok=0xkEkNiU"
+    },
+    {
+      "fighterId": "51e2f44a8dbf6984",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/melissa-croden",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-10/CRODEN_MELISSA_10-18.png"
+    },
+    {
+      "fighterId": "52c2ae6d2f2d2613",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/youssef-zalal",
+      "role": "full_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/youssef-zalal-full.png",
+      "sourceUrl": "https://www.ufc.com/images/2024-08/ZALAL_YOUSSEF_L_08-10.png"
+    },
+    {
+      "fighterId": "52c2ae6d2f2d2613",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/youssef-zalal",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/youssef-zalal.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2024-08/ZALAL_YOUSSEF_L_08-10.png?itok=pZreInuR"
+    },
+    {
+      "fighterId": "52ef95b5860fb28c",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/jean-silva",
+      "role": "full_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/jean-silva-full.png",
+      "sourceUrl": "https://www.ufc.com/images/2026-09/SILVA_JEAN_L_09-12.png"
+    },
+    {
+      "fighterId": "52ef95b5860fb28c",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/jean-silva",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/jean-silva.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-09/SILVA_JEAN_L_09-12.png?itok=Mwc0Nn9B"
+    },
+    {
+      "fighterId": "545092d13c67aa49",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/alexia-thainara",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-03/THAINARA_ALEXIA_L_03-28.png"
+    },
+    {
+      "fighterId": "545092d13c67aa49",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/alexia-thainara",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/THAINARA_ALEXIA_L_03-28.png?itok=Z448AVao"
+    },
+    {
+      "fighterId": "545092d13c67aa49",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/alexia-thainara",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-08/THAINARA_ALEXIA_08-08.png"
+    },
+    {
+      "fighterId": "54f64b5e283b0ce7",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/ilia-topuria",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-06/TOPURIA_ILIA_L_06-28.png"
+    },
+    {
+      "fighterId": "54f64b5e283b0ce7",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/ilia-topuria",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/ilia-topuria-v7.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-06/TOPURIA_ILIA_L_06-28.png?itok=DRPWPNCZ"
+    },
+    {
+      "fighterId": "54f64b5e283b0ce7",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/ilia-topuria",
+      "role": "headshot",
+      "seedFile": "outputs/designs/ufc-rankings/assets/ilia-topuria-full-v7.png",
+      "sourceUrl": "https://ufc.com/images/2025-06/TOPURIA_ILIA_06-28.png"
+    },
+    {
+      "fighterId": "5537efc6e496dd84",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/aaron-pico",
+      "role": "full_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/aaron-pico-full.png",
+      "sourceUrl": "https://www.ufc.com/images/2025-08/PICO_AARON_R_08-16.png"
+    },
+    {
+      "fighterId": "5537efc6e496dd84",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/aaron-pico",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/aaron-pico.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-08/PICO_AARON_R_08-16.png?itok=90xvvwSZ"
+    },
+    {
+      "fighterId": "5d1b7e3dd9e11074",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/manel-kape",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-06/KAPE_MANEL_L_06-20.png"
+    },
+    {
+      "fighterId": "5d1b7e3dd9e11074",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/manel-kape",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/KAPE_MANEL_L_06-20.png?itok=hx-69Gee"
+    },
+    {
+      "fighterId": "5d1b7e3dd9e11074",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/manel-kape",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-06/KAPE_MANEL_06-20.png"
+    },
+    {
+      "fighterId": "65f09bacd3957381",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/cory-sandhagen",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-07/SANDHAGEN_CORY_L_07-11.png"
+    },
+    {
+      "fighterId": "65f09bacd3957381",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/cory-sandhagen",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/SANDHAGEN_CORY_L_07-11.png?itok=js9SxyWU"
+    },
+    {
+      "fighterId": "65f09bacd3957381",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/cory-sandhagen",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/SANDHAGEN_CORY_07-11.png"
+    },
+    {
+      "fighterId": "669970f7feba8ecd",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/erin-blanchfield",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-11/BLANCHFIELD_ERIN_L_11-15.png"
+    },
+    {
+      "fighterId": "669970f7feba8ecd",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/erin-blanchfield",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-11/BLANCHFIELD_ERIN_L_11-15.png?itok=pwhXp_G4"
+    },
+    {
+      "fighterId": "669970f7feba8ecd",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/erin-blanchfield",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-11/BLANCHFIELD_ERIN_11-15.png"
+    },
+    {
+      "fighterId": "681399317dbf4701",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/uros-medic",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-07/MEDIC_UROS_L_08-01.png"
+    },
+    {
+      "fighterId": "681399317dbf4701",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/uros-medic",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/MEDIC_UROS_L_08-01.png?itok=UUANmsOU"
+    },
+    {
+      "fighterId": "681399317dbf4701",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/uros-medic",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/MEDIC_UROS_08-01.png"
+    },
+    {
+      "fighterId": "68d4a891e5cf2029",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/tracy-cortez",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-07/CORTEZ_TRACY_L_07-11.png"
+    },
+    {
+      "fighterId": "68d4a891e5cf2029",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/tracy-cortez",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/CORTEZ_TRACY_L_07-11.png?itok=Yp7AqE4a"
+    },
+    {
+      "fighterId": "68d4a891e5cf2029",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/tracy-cortez",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/CORTEZ_TRACY_07-11.png"
+    },
+    {
+      "fighterId": "6a1901c62ab3870f",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/jessica-andrade",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-08/ANDRADE_JESSICA_L_08-16.png"
+    },
+    {
+      "fighterId": "6a1901c62ab3870f",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/jessica-andrade",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-08/ANDRADE_JESSICA_L_08-16.png?itok=EG1JyXfD"
+    },
+    {
+      "fighterId": "6a1901c62ab3870f",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/jessica-andrade",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-08/ANDRADE_JESSICA_08-16.png"
+    },
+    {
+      "fighterId": "6a740daf1b279661",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/maycee-barber",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-12/BARBER_MAYCEE_L_12-06.png"
+    },
+    {
+      "fighterId": "6a740daf1b279661",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/maycee-barber",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-12/BARBER_MAYCEE_L_12-06.png?itok=QdNfHNom"
+    },
+    {
+      "fighterId": "6a740daf1b279661",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/maycee-barber",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-03/1/BARBER_MAYCEE_03-28.png"
+    },
+    {
+      "fighterId": "6b453bc35a823c3f",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/jack-della-maddalena",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-04/DELLA_MADDALENA_JACK_L_05-02.png"
+    },
+    {
+      "fighterId": "6b453bc35a823c3f",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/jack-della-maddalena",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/DELLA_MADDALENA_JACK_L_05-02.png?itok=csEbKpt6"
+    },
+    {
+      "fighterId": "6b453bc35a823c3f",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/jack-della-maddalena",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-04/DELLA_MADDALENA_JACK_05-02.png"
+    },
+    {
+      "fighterId": "6c3b2525436cf5d4",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/tom-nolan",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-09/NOLAN_TOM_L_09-27.png"
+    },
+    {
+      "fighterId": "6c3b2525436cf5d4",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/tom-nolan",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/tom-nolan-v7.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-09/NOLAN_TOM_L_09-27.png?itok=MyU46nSD"
+    },
+    {
+      "fighterId": "6c3b2525436cf5d4",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/tom-nolan",
+      "role": "headshot",
+      "seedFile": "outputs/designs/ufc-rankings/assets/tom-nolan-full-v7.png",
+      "sourceUrl": "https://ufc.com/images/2026-06/NOLAN_TOM_06-06.png"
+    },
+    {
+      "fighterId": "6d35bf94f7d30241",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/amir-albazi",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-02/ALBAZI_AMIR_L_02-07.png"
+    },
+    {
+      "fighterId": "6d35bf94f7d30241",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/amir-albazi",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-02/ALBAZI_AMIR_L_02-07.png?itok=eWJL3Orf"
+    },
+    {
+      "fighterId": "6d35bf94f7d30241",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/amir-albazi",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-02/ALBAZI_AMIR_02-07.png"
+    },
+    {
+      "fighterId": "6e15f63b6c2e2c15",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/brandon-royval",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-07/ROYVAL_BRANDON_L_07-11.png"
+    },
+    {
+      "fighterId": "6e15f63b6c2e2c15",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/brandon-royval",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/ROYVAL_BRANDON_L_07-11.png?itok=3E0xqRoW"
+    },
+    {
+      "fighterId": "6e15f63b6c2e2c15",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/brandon-royval",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/ROYVAL_BRANDON_07-11.png"
+    },
+    {
+      "fighterId": "6e743a33d56bdaa4",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/payton-talbott",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-06/TALBOTT_PAYTON_L_06-28.png"
+    },
+    {
+      "fighterId": "6e743a33d56bdaa4",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/payton-talbott",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-06/TALBOTT_PAYTON_L_06-28.png?itok=SCY_KVRR"
+    },
+    {
+      "fighterId": "6e743a33d56bdaa4",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/payton-talbott",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-10/TALBOTT_PAYTON_10-03.png"
+    },
+    {
+      "fighterId": "71171fc96445bf65",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/vitor-petrino",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-03/PETRINO_VITOR_L_03-14.png"
+    },
+    {
+      "fighterId": "71171fc96445bf65",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/vitor-petrino",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/PETRINO_VITOR_L_03-14.png?itok=pNmeTfOY"
+    },
+    {
+      "fighterId": "71171fc96445bf65",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/vitor-petrino",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-08/PETRINO_VITOR_08-22.png"
+    },
+    {
+      "fighterId": "72db2a14ffa73ece",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/mateusz-gamrot",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-08/GAMROT_MATEUSZ_L_08-08.png"
+    },
+    {
+      "fighterId": "72db2a14ffa73ece",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/mateusz-gamrot",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/mateusz-gamrot-v7.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-08/GAMROT_MATEUSZ_L_08-08.png?itok=7jQV7xpa"
+    },
+    {
+      "fighterId": "72db2a14ffa73ece",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/mateusz-gamrot",
+      "role": "headshot",
+      "seedFile": "outputs/designs/ufc-rankings/assets/mateusz-gamrot-full-v7.png",
+      "sourceUrl": "https://ufc.com/images/2026-08/GAMROT_MATEUSZ_08-08.png"
+    },
+    {
+      "fighterId": "739fd4fbb5d862f4",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/rizvan-kuniev",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-07/KUNIEV_RIZVAN_L_07-25.png"
+    },
+    {
+      "fighterId": "739fd4fbb5d862f4",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/rizvan-kuniev",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/KUNIEV_RIZVAN_L_07-25.png?itok=PSzxdGmY"
+    },
+    {
+      "fighterId": "739fd4fbb5d862f4",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/rizvan-kuniev",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/KUNIEV_RIZVAN_07-25.png"
+    },
+    {
+      "fighterId": "7447e9f28508106a",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/mackenzie-dern",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-08/DERN_MACKENZIE_L_BELT_08-15.png"
+    },
+    {
+      "fighterId": "7447e9f28508106a",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/mackenzie-dern",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-08/DERN_MACKENZIE_L_BELT_08-15.png?itok=F25i7KdB"
+    },
+    {
+      "fighterId": "7447e9f28508106a",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/mackenzie-dern",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-08/DERN_MACKENZIE_BELT_08-15.png"
+    },
+    {
+      "fighterId": "745fa7b605f8e2da",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/fatima-kline",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-07/KLINE_FATIMA_L_07-12.png"
+    },
+    {
+      "fighterId": "745fa7b605f8e2da",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/fatima-kline",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-07/KLINE_FATIMA_L_07-12.png?itok=DGxlAmsY"
+    },
+    {
+      "fighterId": "745fa7b605f8e2da",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/fatima-kline",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/KLINE_FATIMA_07-18.png"
+    },
+    {
+      "fighterId": "749f572d1d3161fb",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/khalil-rountree-jr",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-01/5/ROUNTREE_KHALIL_L_12-09.png"
+    },
+    {
+      "fighterId": "749f572d1d3161fb",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/khalil-rountree-jr",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/5/ROUNTREE_KHALIL_L_12-09.png?itok=jdBjK2dO"
+    },
+    {
+      "fighterId": "749f572d1d3161fb",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/khalil-rountree-jr",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-10/ROUNTREE_KHALIL_10-04.png"
+    },
+    {
+      "fighterId": "767755fd74662dbf",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/khamzat-chimaev",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-05/CHIMAEV_KHAMZAT_L_10-26.png"
+    },
+    {
+      "fighterId": "767755fd74662dbf",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/khamzat-chimaev",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-05/CHIMAEV_KHAMZAT_L_10-26.png?itok=j3RFR7hz"
+    },
+    {
+      "fighterId": "767755fd74662dbf",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/khamzat-chimaev",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-05/CHIMAEV_KHAMZAT_10-26.png"
+    },
+    {
+      "fighterId": "76e2870ffafbe38f",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/movsar-evloev",
+      "role": "full_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/movsar-evloev-full.png",
+      "sourceUrl": "https://www.ufc.com/images/2026-03/EVLOEV_MOVSAR_L_03-21.png"
+    },
+    {
+      "fighterId": "76e2870ffafbe38f",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/movsar-evloev",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/movsar-evloev.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/EVLOEV_MOVSAR_L_03-21.png?itok=X2qAuG7T"
+    },
+    {
+      "fighterId": "7826923b47f8d72a",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/paddy-pimblett",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-01/5/PIMBLETT_PADDY_L_07-27.png"
+    },
+    {
+      "fighterId": "7826923b47f8d72a",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/paddy-pimblett",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/paddy-pimblett-v7.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/5/PIMBLETT_PADDY_L_07-27.png?itok=SOnIEjUC"
+    },
+    {
+      "fighterId": "7826923b47f8d72a",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/paddy-pimblett",
+      "role": "headshot",
+      "seedFile": "outputs/designs/ufc-rankings/assets/paddy-pimblett-full-v7.png",
+      "sourceUrl": "https://ufc.com/images/2026-07/PIMBLETT_PADDY_07-11.png"
+    },
+    {
+      "fighterId": "787bb1f087ccff8a",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/ciryl-gane",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-06/GANE_CIRYL_L_BELT_01-22.png"
+    },
+    {
+      "fighterId": "787bb1f087ccff8a",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/ciryl-gane",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/GANE_CIRYL_L_BELT_01-22.png?itok=6Dy6iwAT"
+    },
+    {
+      "fighterId": "787bb1f087ccff8a",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/ciryl-gane",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-06/GANE_CIRYL_BELT_01-22.png"
+    },
+    {
+      "fighterId": "792be9a24df82ed6",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/brandon-moreno",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-09/MORENO_BRANDON_L_09-12.png"
+    },
+    {
+      "fighterId": "792be9a24df82ed6",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/brandon-moreno",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-09/MORENO_BRANDON_L_09-12.png?itok=tIqGDEZU"
+    },
+    {
+      "fighterId": "792be9a24df82ed6",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/brandon-moreno",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-09/MORENO_BRANDON_09-12.png"
+    },
+    {
+      "fighterId": "7c7332319c14094c",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/marlon-vera",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-09/VERA_MARLON_L_09-19.png"
+    },
+    {
+      "fighterId": "7c7332319c14094c",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/marlon-vera",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-09/VERA_MARLON_L_09-19.png?itok=Rvs2dM33"
+    },
+    {
+      "fighterId": "7c7332319c14094c",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/marlon-vera",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-09/VERA_MARLON_09-19.png"
+    },
+    {
+      "fighterId": "7d0a1968b38ca439",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/ramazan-temirov",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2024-11/TEMIROV_RAMAZAN_L_10-12.png"
+    },
+    {
+      "fighterId": "7d0a1968b38ca439",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/ramazan-temirov",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2024-11/TEMIROV_RAMAZAN_L_10-12.png?itok=K_Er6WPQ"
+    },
+    {
+      "fighterId": "7d0a1968b38ca439",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/ramazan-temirov",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/TEMIROV_RAMAZAN_07-25.png"
+    },
+    {
+      "fighterId": "7d8435c56043b0ae",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/ante-delija",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-09/DELIJA_ANTE_R_09-06.png"
+    },
+    {
+      "fighterId": "7d8435c56043b0ae",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/ante-delija",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-09/DELIJA_ANTE_R_09-06.png?itok=oHlO2_kY"
+    },
+    {
+      "fighterId": "7d8435c56043b0ae",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/ante-delija",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-02/DELIJA_ANTE_02-21.png"
+    },
+    {
+      "fighterId": "7dda2cf308f24a02",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/virna-jandiroba",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-04/JANDIROBA_VIRNA_L_04-04.png"
+    },
+    {
+      "fighterId": "7dda2cf308f24a02",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/virna-jandiroba",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/JANDIROBA_VIRNA_L_04-04.png?itok=AL1UZCHe"
+    },
+    {
+      "fighterId": "7dda2cf308f24a02",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/virna-jandiroba",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-04/JANDIROBA_VIRNA_04-04.png"
+    },
+    {
+      "fighterId": "7ee0fd831c0fe7c3",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/carlos-prates",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-01/5/PRATES_CARLOS_L_08-17.png"
+    },
+    {
+      "fighterId": "7ee0fd831c0fe7c3",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/carlos-prates",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/5/PRATES_CARLOS_L_08-17.png?itok=_Hqd6Xfd"
+    },
+    {
+      "fighterId": "7ee0fd831c0fe7c3",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/carlos-prates",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-04/PRATES_CARLOS_05-02.png"
+    },
+    {
+      "fighterId": "84b3e7d38f2d2ec5",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/neil-magny",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-08/MAGNY_NEIL_L_08-15.png"
+    },
+    {
+      "fighterId": "84b3e7d38f2d2ec5",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/neil-magny",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-08/MAGNY_NEIL_L_08-15.png?itok=HZBmL-4-"
+    },
+    {
+      "fighterId": "84b3e7d38f2d2ec5",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/neil-magny",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-08/MAGNY_NEIL_08-15.png"
+    },
+    {
+      "fighterId": "881bf86d4cba8578",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/nassourdine-imavov",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-09/IMAVOV_NASSOURDINE_L_09-06.png"
+    },
+    {
+      "fighterId": "881bf86d4cba8578",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/nassourdine-imavov",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-09/IMAVOV_NASSOURDINE_L_09-06.png?itok=gNf34xg2"
+    },
+    {
+      "fighterId": "881bf86d4cba8578",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/nassourdine-imavov",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-09/IMAVOV_NASSOURDINE_09-06.png"
+    },
+    {
+      "fighterId": "8a1f3b5c526cd6e6",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/daniel-rodriguez",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2024-10/RODRIGUEZ_DANIEL_L_10-12.png"
+    },
+    {
+      "fighterId": "8a1f3b5c526cd6e6",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/daniel-rodriguez",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2024-10/RODRIGUEZ_DANIEL_L_10-12.png?itok=zE9JhfZS"
+    },
+    {
+      "fighterId": "8a1f3b5c526cd6e6",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/daniel-rodriguez",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/RODRIGUEZ_DANIEL_08-01.png"
+    },
+    {
+      "fighterId": "8d3273573b85be09",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/asu-almabayev",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-06/ALMABAYEV_ASU_L_06-27.png"
+    },
+    {
+      "fighterId": "8d3273573b85be09",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/asu-almabayev",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/ALMABAYEV_ASU_L_06-27.png?itok=Y0SjNrdV"
+    },
+    {
+      "fighterId": "8d3273573b85be09",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/asu-almabayev",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-06/ALMABAYEV_ASU_06-27.png"
+    },
+    {
+      "fighterId": "8e5d953bdb9ae5e7",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/loopy-godinez",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-10/GODINEZ_LOOPY_L_10-10.png"
+    },
+    {
+      "fighterId": "8e5d953bdb9ae5e7",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/loopy-godinez",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-10/GODINEZ_LOOPY_L_10-10.png?itok=TUS1boe9"
+    },
+    {
+      "fighterId": "8e5d953bdb9ae5e7",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/loopy-godinez",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-10/GODINEZ_LOOPY_10-10.png"
+    },
+    {
+      "fighterId": "9014c02eff8b3d62",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/carlos-ulberg",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-04/ULBERG_CARLOS_L_BELTMOCK.png"
+    },
+    {
+      "fighterId": "9014c02eff8b3d62",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/carlos-ulberg",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/ULBERG_CARLOS_L_BELTMOCK.png?itok=fE8o1Ek2"
+    },
+    {
+      "fighterId": "9014c02eff8b3d62",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/carlos-ulberg",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-04/ULBERG_CARLOS_BELTMOCK.png"
+    },
+    {
+      "fighterId": "955da1675ad58a50",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/josh-hokit",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-06/HOKIT_JOSH_L_06-14.png"
+    },
+    {
+      "fighterId": "955da1675ad58a50",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/josh-hokit",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/HOKIT_JOSH_L_06-14.png?itok=Es1_9BbW"
+    },
+    {
+      "fighterId": "955da1675ad58a50",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/josh-hokit",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-06/HOKIT_JOSH_06-14.png"
+    },
+    {
+      "fighterId": "97cf1a2c7c5e7889",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/steve-garcia",
+      "role": "full_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/steve-garcia-full.png",
+      "sourceUrl": "https://www.ufc.com/images/2026-06/GARCIA_STEVE_R_06-14.png"
+    },
+    {
+      "fighterId": "97cf1a2c7c5e7889",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/steve-garcia",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/steve-garcia.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/GARCIA_STEVE_R_06-14.png?itok=Xi8Pxast"
+    },
+    {
+      "fighterId": "98a58c26c5b1ed17",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/patricio-freire",
+      "role": "full_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/patricio-freire-full.png",
+      "sourceUrl": "https://www.ufc.com/images/2026-09/PITBULL_PATRICIO_L_09-19.png"
+    },
+    {
+      "fighterId": "98a58c26c5b1ed17",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/patricio-freire",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/patricio-freire.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-09/PITBULL_PATRICIO_L_09-19.png?itok=TXOsI6Fi"
+    },
+    {
+      "fighterId": "98aa60cf58071fd6",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/kyoji-horiguchi",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-11/HORIGUCHI_KYOJI_R_11-22.png"
+    },
+    {
+      "fighterId": "98aa60cf58071fd6",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/kyoji-horiguchi",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-11/HORIGUCHI_KYOJI_R_11-22.png?itok=Dn6SxnwP"
+    },
+    {
+      "fighterId": "98aa60cf58071fd6",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/kyoji-horiguchi",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-11/HORIGUCHI_KYOJI_11-22.png"
+    },
+    {
+      "fighterId": "99df7d0a2a08a8a8",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/jan-blachowicz",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-07/BLACHOWICZ_JAN_L_08-01.png"
+    },
+    {
+      "fighterId": "99df7d0a2a08a8a8",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/jan-blachowicz",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/BLACHOWICZ_JAN_L_08-01.png?itok=ESS7apdi"
+    },
+    {
+      "fighterId": "99df7d0a2a08a8a8",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/jan-blachowicz",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/BLACHOWICZ_JAN_08-01.png"
+    },
+    {
+      "fighterId": "9a97acbfd5a08bfa",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/david-martinez",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-09/MARTINEZ_DAVID_L_09-12.png"
+    },
+    {
+      "fighterId": "9a97acbfd5a08bfa",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/david-martinez",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-09/MARTINEZ_DAVID_L_09-12.png?itok=12Ecb6KY"
+    },
+    {
+      "fighterId": "9a97acbfd5a08bfa",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/david-martinez",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-09/MARTINEZ_DAVID_09-12.png"
+    },
+    {
+      "fighterId": "9c393e836a852f30",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/mauricio-ruffy",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-06/RUFFY_MAURICIO_L_06-14.png"
+    },
+    {
+      "fighterId": "9c393e836a852f30",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/mauricio-ruffy",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/mauricio-ruffy-v7.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/RUFFY_MAURICIO_L_06-14.png?itok=CtSQD7Ui"
+    },
+    {
+      "fighterId": "9c393e836a852f30",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/mauricio-ruffy",
+      "role": "headshot",
+      "seedFile": "outputs/designs/ufc-rankings/assets/mauricio-ruffy-full-v7.png",
+      "sourceUrl": "https://ufc.com/images/2026-09/RUFFY_MAURICIO_09-19.png"
+    },
+    {
+      "fighterId": "9cdd2da1a9104a0b",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/macy-chiasson",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-10/CHIASSON_MACY_L_10-04.png"
+    },
+    {
+      "fighterId": "9cdd2da1a9104a0b",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/macy-chiasson",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-10/CHIASSON_MACY_L_10-04.png?itok=BRfzm0GS"
+    },
+    {
+      "fighterId": "9cdd2da1a9104a0b",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/macy-chiasson",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-02/CHIASSON_MACY_02-28.png"
+    },
+    {
+      "fighterId": "9d62c2d8ee151f08",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/karine-silva",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-08/SILVA_KARINE_L_08-16.png"
+    },
+    {
+      "fighterId": "9d62c2d8ee151f08",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/karine-silva",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-08/SILVA_KARINE_L_08-16.png?itok=6JdZdcEV"
+    },
+    {
+      "fighterId": "9d62c2d8ee151f08",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/karine-silva",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-04/SILVA_KARINE_04-18.png"
+    },
+    {
+      "fighterId": "9e8f6c728eb01124",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/justin-gaethje",
+      "role": "full_body",
+      "seedFile": "work/media-investigation/justin-hero-original-candidate.bin",
+      "sourceUrl": "https://ufc.com/images/2026-06/GAETHJE_JUSTIN_R_BELT_06-14.png"
+    },
+    {
+      "fighterId": "9e8f6c728eb01124",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/justin-gaethje",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/justin-gaethje-v7.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/GAETHJE_JUSTIN_R_BELT_06-14.png?itok=cyzUtrXX"
+    },
+    {
+      "fighterId": "9e8f6c728eb01124",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/justin-gaethje",
+      "role": "headshot",
+      "seedFile": "outputs/designs/ufc-rankings/assets/justin-gaethje-full-v7.png",
+      "sourceUrl": "https://ufc.com/images/2026-06/GAETHJE_JUSTIN_BELT_06-14.png"
+    },
+    {
+      "fighterId": "9f5609dba6584ab2",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/regina-malpica-rivera",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-02/TARIN_REGINA_L_02-28.png"
+    },
+    {
+      "fighterId": "9f5609dba6584ab2",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/regina-malpica-rivera",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-02/TARIN_REGINA_L_02-28.png?itok=LpWAerkt"
+    },
+    {
+      "fighterId": "9f5609dba6584ab2",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/regina-malpica-rivera",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-09/TARIN_REGINA_09-12.png"
+    },
+    {
+      "fighterId": "a09ed60aa67a3f67",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/farid-basharat",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-07/BASHARAT_FARID_L_07-11.png"
+    },
+    {
+      "fighterId": "a09ed60aa67a3f67",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/farid-basharat",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/BASHARAT_FARID_L_07-11.png?itok=KVMMn6Y2"
+    },
+    {
+      "fighterId": "a09ed60aa67a3f67",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/farid-basharat",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/BASHARAT_FARID_07-11.png"
+    },
+    {
+      "fighterId": "a0f0004aadf10b71",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/alexandre-pantoja",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-09/PANTOJA_ALEXANDRE_L_09-19.png"
+    },
+    {
+      "fighterId": "a0f0004aadf10b71",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/alexandre-pantoja",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-09/PANTOJA_ALEXANDRE_L_09-19.png?itok=-DU8CxfT"
+    },
+    {
+      "fighterId": "a0f0004aadf10b71",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/alexandre-pantoja",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-09/PANTOJA_ALEXANDRE_09-19.png"
+    },
+    {
+      "fighterId": "a495f599e787614f",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/alonzo-menifield",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-09/MENIFIELD_ALONZO_L_09-19.png"
+    },
+    {
+      "fighterId": "a495f599e787614f",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/alonzo-menifield",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-09/MENIFIELD_ALONZO_L_09-19.png?itok=YNK1f7Ue"
+    },
+    {
+      "fighterId": "a495f599e787614f",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/alonzo-menifield",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-09/MENIFIELD_ALONZO_09-19.png"
+    },
+    {
+      "fighterId": "a6eb54ae17a551be",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/gabriella-fernandes",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-08/FERNANDES_GABRIELLA_L_08-09.png"
+    },
+    {
+      "fighterId": "a6eb54ae17a551be",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/gabriella-fernandes",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-08/FERNANDES_GABRIELLA_L_08-09.png?itok=sUYuxLOm"
+    },
+    {
+      "fighterId": "a6eb54ae17a551be",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/gabriella-fernandes",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-03/FERNANDES_GABRIELLA_03-28.png"
+    },
+    {
+      "fighterId": "a93f94c923c3a9cb",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/christian-leroy-duncan",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-11/DUNCAN_CHRISTIAN_LEROY_L_11-08.png"
+    },
+    {
+      "fighterId": "a93f94c923c3a9cb",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/christian-leroy-duncan",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-11/DUNCAN_CHRISTIAN_LEROY_L_11-08.png?itok=YYD6jKSM"
+    },
+    {
+      "fighterId": "a93f94c923c3a9cb",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/christian-leroy-duncan",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-10/DUNCAN_CHRISTIAN_LEROY_10-10.png"
+    },
+    {
+      "fighterId": "a9e260472d321361",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/jasmine-jasudavicius",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-04/JASUDAVICIUS_JASMINE_L_04-18.png"
+    },
+    {
+      "fighterId": "a9e260472d321361",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/jasmine-jasudavicius",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/JASUDAVICIUS_JASMINE_L_04-18.png?itok=brWuBeJK"
+    },
+    {
+      "fighterId": "a9e260472d321361",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/jasmine-jasudavicius",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-04/JASUDAVICIUS_JASMINE_04-18.png"
+    },
+    {
+      "fighterId": "aa72b0f831d0bfe5",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/deiveson-figueiredo",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-10/FIGUEIREDO_DEIVESON_L_10-03.png"
+    },
+    {
+      "fighterId": "aa72b0f831d0bfe5",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/deiveson-figueiredo",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-10/FIGUEIREDO_DEIVESON_L_10-03.png?itok=EGUr0olh"
+    },
+    {
+      "fighterId": "aa72b0f831d0bfe5",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/deiveson-figueiredo",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-10/FIGUEIREDO_DEIVESON_10-03.png"
+    },
+    {
+      "fighterId": "ab2b4ff41d6ebe0f",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/alex-perez",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-08/PEREZ_ALEX_L_08-29.png"
+    },
+    {
+      "fighterId": "ab2b4ff41d6ebe0f",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/alex-perez",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-08/PEREZ_ALEX_L_08-29.png?itok=hDi458D_"
+    },
+    {
+      "fighterId": "ab2b4ff41d6ebe0f",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/alex-perez",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-08/PEREZ_ALEX_08-29.png"
+    },
+    {
+      "fighterId": "b01a5e0dcd9f231d",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/muhammad-said",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-07/SAIDOV_MUHAMMAD_R_07-25.png"
+    },
+    {
+      "fighterId": "b01a5e0dcd9f231d",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/muhammad-said",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/SAIDOV_MUHAMMAD_R_07-25.png?itok=xjIjNi3y"
+    },
+    {
+      "fighterId": "b01a5e0dcd9f231d",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/muhammad-said",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/SAIDOV_MUHAMMAD_07-25.png"
+    },
+    {
+      "fighterId": "b07aed698fba8624",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/ikram-aliskerov",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-06/ALISKEROV_IKRAM_L_06-27.png"
+    },
+    {
+      "fighterId": "b07aed698fba8624",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/ikram-aliskerov",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/ALISKEROV_IKRAM_L_06-27.png?itok=3ij01m2a"
+    },
+    {
+      "fighterId": "b07aed698fba8624",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/ikram-aliskerov",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-06/ALISKEROV_IKRAM_06-27.png"
+    },
+    {
+      "fighterId": "b08012bbe542592a",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/tatiana-suarez",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-04/SUAREZ_TATIANA_L_04-11.png"
+    },
+    {
+      "fighterId": "b08012bbe542592a",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/tatiana-suarez",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/SUAREZ_TATIANA_L_04-11.png?itok=hkAiQqtr"
+    },
+    {
+      "fighterId": "b08012bbe542592a",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/tatiana-suarez",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-04/SUAREZ_TATIANA_04-11.png"
+    },
+    {
+      "fighterId": "b1b0729d27936f2f",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/belal-muhammad",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-06/MUHAMMAD_BELAL_L_06-06.png"
+    },
+    {
+      "fighterId": "b1b0729d27936f2f",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/belal-muhammad",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/MUHAMMAD_BELAL_L_06-06.png?itok=sZ00w5IQ"
+    },
+    {
+      "fighterId": "b1b0729d27936f2f",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/belal-muhammad",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-06/MUHAMMAD_BELAL_06-06.png"
+    },
+    {
+      "fighterId": "b3cb9dfccff3be76",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/salahdine-parnasse",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-09/PARNASSE_SALAHDINE_R_09-05.png"
+    },
+    {
+      "fighterId": "b3cb9dfccff3be76",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/salahdine-parnasse",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/salahdine-parnasse-v7.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-09/PARNASSE_SALAHDINE_R_09-05.png?itok=vr379U53"
+    },
+    {
+      "fighterId": "b3cb9dfccff3be76",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/salahdine-parnasse",
+      "role": "headshot",
+      "seedFile": "outputs/designs/ufc-rankings/assets/salahdine-parnasse-full-v7.png",
+      "sourceUrl": "https://ufc.com/images/2026-09/PARNASSE_SALAHDINE_09-05.png"
+    },
+    {
+      "fighterId": "b4b496ec2197ee3e",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/navajo-stirling",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-03/STIRLING_NAVAJO_L_03-28.png"
+    },
+    {
+      "fighterId": "b4b496ec2197ee3e",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/navajo-stirling",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/STIRLING_NAVAJO_L_03-28.png?itok=BVUQTbQ5"
+    },
+    {
+      "fighterId": "b4b496ec2197ee3e",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/navajo-stirling",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/STIRLING_NAVAJO_08-01.png"
+    },
+    {
+      "fighterId": "b50a426a33da0012",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/sean-omalley",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-06/OMALLEY_SEAN_L_06-14.png"
+    },
+    {
+      "fighterId": "b50a426a33da0012",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/sean-omalley",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/OMALLEY_SEAN_L_06-14.png?itok=mk-P63ge"
+    },
+    {
+      "fighterId": "b50a426a33da0012",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/sean-omalley",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-06/OMALLEY_SEAN_06-14.png"
+    },
+    {
+      "fighterId": "b6452706b373eea1",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/renato-moicano",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-04/MOICANO_RENATO_L_04-04.png"
+    },
+    {
+      "fighterId": "b6452706b373eea1",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/renato-moicano",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/renato-moicano-v7.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/MOICANO_RENATO_L_04-04.png?itok=2zj_9GSb"
+    },
+    {
+      "fighterId": "b6452706b373eea1",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/renato-moicano",
+      "role": "headshot",
+      "seedFile": "outputs/designs/ufc-rankings/assets/renato-moicano-full-v7.png",
+      "sourceUrl": "https://ufc.com/images/2026-04/MOICANO_RENATO_04-04.png"
+    },
+    {
+      "fighterId": "b9437600497350f3",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/joaquin-buckley",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-01/5/BUCKLEY_JOAQUIN_L_05-11.png"
+    },
+    {
+      "fighterId": "b9437600497350f3",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/joaquin-buckley",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/5/BUCKLEY_JOAQUIN_L_05-11.png?itok=yyjyefDC"
+    },
+    {
+      "fighterId": "b9437600497350f3",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/joaquin-buckley",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-05/BUCKLEY_JOAQUIN_05-09.png"
+    },
+    {
+      "fighterId": "b9f28e7045fdfce7",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/raoni-barcelos",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-01/BARCELOS_RAONI_L_01-18.png"
+    },
+    {
+      "fighterId": "b9f28e7045fdfce7",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/raoni-barcelos",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/BARCELOS_RAONI_L_01-18.png?itok=wbdKRVUn"
+    },
+    {
+      "fighterId": "b9f28e7045fdfce7",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/raoni-barcelos",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-09/BARCELOS_RAONI_09-26.png"
+    },
+    {
+      "fighterId": "bb2c3c3a466224af",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/loneer-kavanagh",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-03/KAVANAGH_LONEER_L_03-22.png"
+    },
+    {
+      "fighterId": "bb2c3c3a466224af",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/loneer-kavanagh",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-03/KAVANAGH_LONEER_L_03-22.png?itok=TudzQ-4b"
+    },
+    {
+      "fighterId": "bb2c3c3a466224af",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/loneer-kavanagh",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/KAVANAGH_LONEER_07-11.png"
+    },
+    {
+      "fighterId": "bc711b6dd95c1af6",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/mario-bautista",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-02/BAUTISTA_MARIO_L_02-07.png"
+    },
+    {
+      "fighterId": "bc711b6dd95c1af6",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/mario-bautista",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-02/BAUTISTA_MARIO_L_02-07.png?itok=Wpsbk8fU"
+    },
+    {
+      "fighterId": "bc711b6dd95c1af6",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/mario-bautista",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/BAUTISTA_MARIO_07-11.png"
+    },
+    {
+      "fighterId": "bc7f4b2d4c2724a2",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/tyrell-fortune",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-07/FORTUNE_TYRELL_R_07-25.png"
+    },
+    {
+      "fighterId": "bc7f4b2d4c2724a2",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/tyrell-fortune",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/FORTUNE_TYRELL_R_07-25.png?itok=h-o_jKcL"
+    },
+    {
+      "fighterId": "bc7f4b2d4c2724a2",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/tyrell-fortune",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/FORTUNE_TYRELL_07-25.png"
+    },
+    {
+      "fighterId": "beecb672a279223e",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/amanda-ribas",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-07/RIBAS_AMANDA_L_07-26.png"
+    },
+    {
+      "fighterId": "beecb672a279223e",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/amanda-ribas",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-07/RIBAS_AMANDA_L_07-26.png?itok=3dIeCYcl"
+    },
+    {
+      "fighterId": "beecb672a279223e",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/amanda-ribas",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-07/RIBAS_AMANDA_07-26.png"
+    },
+    {
+      "fighterId": "c03520b5c88ed6b4",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/merab-dvalishvili",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2022-08/DVALISHVILI_MERAB_L_08-20.png"
+    },
+    {
+      "fighterId": "c03520b5c88ed6b4",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/merab-dvalishvili",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2022-08/DVALISHVILI_MERAB_L_08-20.png?itok=UNfxCucB"
+    },
+    {
+      "fighterId": "c03520b5c88ed6b4",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/merab-dvalishvili",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2024-09/DVALISHVILI_MERAB_CG_09-14.png"
+    },
+    {
+      "fighterId": "c0ac37a4a1133da9",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/marcus-mcghee",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-10/MCGHEE_MARCUS_L_10-03.png"
+    },
+    {
+      "fighterId": "c0ac37a4a1133da9",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/marcus-mcghee",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-10/MCGHEE_MARCUS_L_10-03.png?itok=cosM5Jgp"
+    },
+    {
+      "fighterId": "c0ac37a4a1133da9",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/marcus-mcghee",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-10/MCGHEE_MARCUS_10-03.png"
+    },
+    {
+      "fighterId": "c1085e1701b13eca",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/joe-pyfer",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2024-06/PYFER_JOE_L_06-29.png"
+    },
+    {
+      "fighterId": "c1085e1701b13eca",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/joe-pyfer",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2024-06/PYFER_JOE_L_06-29.png?itok=sM3GEwSu"
+    },
+    {
+      "fighterId": "c1085e1701b13eca",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/joe-pyfer",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-03/PYFER_JOE_03-28.png"
+    },
+    {
+      "fighterId": "c2299ec916bc7c56",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/benoit-saint-denis",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-07/SAINT_DENIS_BENOIT_L_07-11.png"
+    },
+    {
+      "fighterId": "c2299ec916bc7c56",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/benoit-saint-denis",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/benoit-saint-denis-v7.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/SAINT_DENIS_BENOIT_L_07-11.png?itok=vdOsXo4G"
+    },
+    {
+      "fighterId": "c2299ec916bc7c56",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/benoit-saint-denis",
+      "role": "headshot",
+      "seedFile": "outputs/designs/ufc-rankings/assets/benoit-saint-denis-full-v7.png",
+      "sourceUrl": "https://ufc.com/images/2026-07/SAINT_DENIS_BENOIT_07-11.png"
+    },
+    {
+      "fighterId": "c32aeb1a59e6272d",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/michael-morales",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-01/5/MORALES_MICHAEL_L_08-24.png"
+    },
+    {
+      "fighterId": "c32aeb1a59e6272d",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/michael-morales",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/5/MORALES_MICHAEL_L_08-24.png?itok=CCXil9g6"
+    },
+    {
+      "fighterId": "c32aeb1a59e6272d",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/michael-morales",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-11/MORALES_MICHAEL_11-15.png"
+    },
+    {
+      "fighterId": "c41d426cc7326d1b",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/yan-xiaonan",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-08/XIAONAN_YAN_L_08-29.png"
+    },
+    {
+      "fighterId": "c41d426cc7326d1b",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/yan-xiaonan",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-08/XIAONAN_YAN_L_08-29.png?itok=ITVMjKS5"
+    },
+    {
+      "fighterId": "c41d426cc7326d1b",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/yan-xiaonan",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-08/XIAONAN_YAN_08-29.png"
+    },
+    {
+      "fighterId": "c814b4c899793af6",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/rafael-fiziev",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-06/FIZIEV_RAFAEL_L_06-27.png"
+    },
+    {
+      "fighterId": "c814b4c899793af6",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/rafael-fiziev",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/rafael-fiziev-v7.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/FIZIEV_RAFAEL_L_06-27.png?itok=9yGMUIvE"
+    },
+    {
+      "fighterId": "c814b4c899793af6",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/rafael-fiziev",
+      "role": "headshot",
+      "seedFile": "outputs/designs/ufc-rankings/assets/rafael-fiziev-full-v7.png",
+      "sourceUrl": "https://ufc.com/images/2026-06/FIZIEV_RAFAEL_06-27.png"
+    },
+    {
+      "fighterId": "c96d9178c9ed9e62",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/tim-elliott",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-09/ELLIOTT_TIM_L_09-12.png"
+    },
+    {
+      "fighterId": "c96d9178c9ed9e62",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/tim-elliott",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-09/ELLIOTT_TIM_L_09-12.png?itok=ig5zg9at"
+    },
+    {
+      "fighterId": "c96d9178c9ed9e62",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/tim-elliott",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-09/ELLIOTT_TIM_09-12.png"
+    },
+    {
+      "fighterId": "ca80d72da81d7224",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/michelle-montague",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-09/MONTAGUE_MICHELLE_L_09-27.png"
+    },
+    {
+      "fighterId": "ca80d72da81d7224",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/michelle-montague",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-09/MONTAGUE_MICHELLE_L_09-27.png?itok=hREMtg7j"
+    },
+    {
+      "fighterId": "ca80d72da81d7224",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/michelle-montague",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-04/MONTAGUE_MICHELLE_04-25.png"
+    },
+    {
+      "fighterId": "cb696ebfb6598724",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/aljamain-sterling",
+      "role": "full_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/aljamain-sterling-full.png",
+      "sourceUrl": "https://www.ufc.com/images/2026-04/STERLING_ALJAMAIN_L_04-25.png"
+    },
+    {
+      "fighterId": "cb696ebfb6598724",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/aljamain-sterling",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/aljamain-sterling.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/STERLING_ALJAMAIN_L_04-25.png?itok=lJPFybAO"
+    },
+    {
+      "fighterId": "cbf5e6f231b55443",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/yair-rodriguez",
+      "role": "full_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/yair-rodriguez-full.png",
+      "sourceUrl": "https://www.ufc.com/images/2025-04/RODRIGUEZ_YAIR_L_04-12.png"
+    },
+    {
+      "fighterId": "cbf5e6f231b55443",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/yair-rodriguez",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/yair-rodriguez.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-04/RODRIGUEZ_YAIR_L_04-12.png?itok=MbCovx1T"
+    },
+    {
+      "fighterId": "cffb87059e645bd1",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/denise-gomes",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2024-11/GOMES_DENISE_L_11-04.png"
+    },
+    {
+      "fighterId": "cffb87059e645bd1",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/denise-gomes",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2024-11/GOMES_DENISE_L_11-04.png?itok=TD3_gJ1z"
+    },
+    {
+      "fighterId": "cffb87059e645bd1",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/denise-gomes",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-08/GOMES_DENISE_08-29.png"
+    },
+    {
+      "fighterId": "d1c65d2cf2925ddd",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/gregory-rodrigues",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-03/RODRIGUES_GREGORY_L_03-07.png"
+    },
+    {
+      "fighterId": "d1c65d2cf2925ddd",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/gregory-rodrigues",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/RODRIGUES_GREGORY_L_03-07.png?itok=klxiW8-p"
+    },
+    {
+      "fighterId": "d1c65d2cf2925ddd",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/gregory-rodrigues",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-08/RODRIGUES_GREGORY_08-22.png"
+    },
+    {
+      "fighterId": "d25240135aee03e5",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/tabatha-ricci",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-07/RICCI_TABATHA_L_07-18.png"
+    },
+    {
+      "fighterId": "d25240135aee03e5",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/tabatha-ricci",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/RICCI_TABATHA_L_07-18.png?itok=aQRpl-cY"
+    },
+    {
+      "fighterId": "d25240135aee03e5",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/tabatha-ricci",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/RICCI_TABATHA_07-18.png"
+    },
+    {
+      "fighterId": "d3df1add9d9a7efb",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/derrick-lewis",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-06/LEWIS_DERRICK_R_06-14.png"
+    },
+    {
+      "fighterId": "d3df1add9d9a7efb",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/derrick-lewis",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/LEWIS_DERRICK_R_06-14.png?itok=MYYFS9tO"
+    },
+    {
+      "fighterId": "d3df1add9d9a7efb",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/derrick-lewis",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-06/LEWIS_DERRICK_06-14.png"
+    },
+    {
+      "fighterId": "d3f5d33d61cd00c9",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/norma-dumont",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-09/DUMONT_NORMA_L_09-26.png"
+    },
+    {
+      "fighterId": "d3f5d33d61cd00c9",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/norma-dumont",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-09/DUMONT_NORMA_L_09-26.png?itok=dgRHr2qv"
+    },
+    {
+      "fighterId": "d3f5d33d61cd00c9",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/norma-dumont",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-09/DUMONT_NORMA_09-26.png"
+    },
+    {
+      "fighterId": "d549cefc7c54ab78",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/reinier-de-ridder",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-08/DE-RIDDER_REINIER_L_08-22.png"
+    },
+    {
+      "fighterId": "d549cefc7c54ab78",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/reinier-de-ridder",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-08/DE-RIDDER_REINIER_L_08-22.png?itok=w6zf-4Ka"
+    },
+    {
+      "fighterId": "d549cefc7c54ab78",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/reinier-de-ridder",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-08/DE-RIDDER_REINIER_08-22.png"
+    },
+    {
+      "fighterId": "d661ce4da776fc20",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/petr-yan",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-12/YAN_PETR_L_BELT_04-09.png"
+    },
+    {
+      "fighterId": "d661ce4da776fc20",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/petr-yan",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-12/YAN_PETR_L_BELT_04-09.png?itok=rEIQhNvw"
+    },
+    {
+      "fighterId": "d661ce4da776fc20",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/petr-yan",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-12/YAN_PETR_BELT.png"
+    },
+    {
+      "fighterId": "d802174b0c0c1f4e",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/magomed-ankalaev",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-07/ANKALAEV_MAGOMED_L_07-25.png"
+    },
+    {
+      "fighterId": "d802174b0c0c1f4e",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/magomed-ankalaev",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/ANKALAEV_MAGOMED_L_07-25.png?itok=LWk-G7kA"
+    },
+    {
+      "fighterId": "d802174b0c0c1f4e",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/magomed-ankalaev",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/ANKALAEV_MAGOMED_07-25.png"
+    },
+    {
+      "fighterId": "dd6103dd7127db1d",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/mike-malott",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-05/MALOTT_MIKE_L_05-10.png"
+    },
+    {
+      "fighterId": "dd6103dd7127db1d",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/mike-malott",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-05/MALOTT_MIKE_L_05-10.png?itok=d0J2-On7"
+    },
+    {
+      "fighterId": "dd6103dd7127db1d",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/mike-malott",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-04/MALOTT_MIKE_04-18.png"
+    },
+    {
+      "fighterId": "de594b35c45c2e9a",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/eduarda-moura",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2024-11/MOURA_EDUARDA_L_06-08.png"
+    },
+    {
+      "fighterId": "de594b35c45c2e9a",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/eduarda-moura",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2024-11/MOURA_EDUARDA_L_06-08.png?itok=jiGCZaUM"
+    },
+    {
+      "fighterId": "de594b35c45c2e9a",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/eduarda-moura",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-09/MOURA_EDUARDA_09-19.png"
+    },
+    {
+      "fighterId": "def8166ff24bd237",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/brian-ortega",
+      "role": "full_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/brian-ortega-full.png",
+      "sourceUrl": "https://www.ufc.com/images/2025-08/ORTEGA_BRIAN_L_08-23.png"
+    },
+    {
+      "fighterId": "def8166ff24bd237",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/brian-ortega",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/brian-ortega.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-08/ORTEGA_BRIAN_L_08-23.png?itok=OQf_S2Es"
+    },
+    {
+      "fighterId": "e1147d3d2dabe1ce",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/robert-whittaker",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-07/WHITTAKER_ROBERT_L_07-26.png"
+    },
+    {
+      "fighterId": "e1147d3d2dabe1ce",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/robert-whittaker",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-07/WHITTAKER_ROBERT_L_07-26.png?itok=9PCu_K6-"
+    },
+    {
+      "fighterId": "e1147d3d2dabe1ce",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/robert-whittaker",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/WHITTAKER_ROBERT_07-11.png"
+    },
+    {
+      "fighterId": "e1248941344b3288",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/alexander-volkanovski",
+      "role": "full_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/alexander-volkanovski-full.png",
+      "sourceUrl": "https://www.ufc.com/images/2026-01/VOLKANOVSKI_ALEXANDER_L_BELT_01-31.png"
+    },
+    {
+      "fighterId": "e1248941344b3288",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/alexander-volkanovski",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/alexander-volkanovski.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-01/VOLKANOVSKI_ALEXANDER_L_BELT_01-31.png?itok=hfZR81xh"
+    },
+    {
+      "fighterId": "e2f6b2769aaedd6c",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/serghei-spivac",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-08/SPIVAC_SERGHEI_L_08-22.png"
+    },
+    {
+      "fighterId": "e2f6b2769aaedd6c",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/serghei-spivac",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-08/SPIVAC_SERGHEI_L_08-22.png?itok=4Bn2kGKb"
+    },
+    {
+      "fighterId": "e2f6b2769aaedd6c",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/serghei-spivac",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-08/SPIVAC_SERGHEI_08-22.png"
+    },
+    {
+      "fighterId": "e3964ece586e0635",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/jacqueline-cavalcanti",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-01/5/CAVALCANTI_JACQUELINE_L_08-24.png"
+    },
+    {
+      "fighterId": "e3964ece586e0635",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/jacqueline-cavalcanti",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/5/CAVALCANTI_JACQUELINE_L_08-24.png?itok=NQZ5w4CU"
+    },
+    {
+      "fighterId": "e3964ece586e0635",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/jacqueline-cavalcanti",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-05/CAVALCANTI_JACQUELINE_05-16.png"
+    },
+    {
+      "fighterId": "e5549c82bfb5582d",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/alex-pereira",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-03/PEREIRA_ALEX_L.png"
+    },
+    {
+      "fighterId": "e5549c82bfb5582d",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/alex-pereira",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-03/PEREIRA_ALEX_L.png?itok=AMZ6OfEA"
+    },
+    {
+      "fighterId": "e5549c82bfb5582d",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/alex-pereira",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-10/PEREIRA_ALEX_10-04.png"
+    },
+    {
+      "fighterId": "e8b731feff72294b",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/alexa-grasso",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-03/GRASSO_ALEXA_L_03-28.png"
+    },
+    {
+      "fighterId": "e8b731feff72294b",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/alexa-grasso",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/GRASSO_ALEXA_L_03-28.png?itok=O9csNdaV"
+    },
+    {
+      "fighterId": "e8b731feff72294b",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/alexa-grasso",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-09/GRASSO_ALEXA_09-12.png"
+    },
+    {
+      "fighterId": "e90a2f22417af68e",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/azamat-murzakanov",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-04/MURZAKANOV_AZAMAT_L_04-11.png"
+    },
+    {
+      "fighterId": "e90a2f22417af68e",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/azamat-murzakanov",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/MURZAKANOV_AZAMAT_L_04-11.png?itok=mqQa9nra"
+    },
+    {
+      "fighterId": "e90a2f22417af68e",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/azamat-murzakanov",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-04/MURZAKANOV_AZAMAT_04-11.png"
+    },
+    {
+      "fighterId": "eae48ff31db420c2",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/arman-tsarukyan",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-09/TSARUKYAN_ARMAN_L_09-19.png"
+    },
+    {
+      "fighterId": "eae48ff31db420c2",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/arman-tsarukyan",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/arman-tsarukyan-v7.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-09/TSARUKYAN_ARMAN_L_09-19.png?itok=JpsTu1xz"
+    },
+    {
+      "fighterId": "eae48ff31db420c2",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/arman-tsarukyan",
+      "role": "headshot",
+      "seedFile": "outputs/designs/ufc-rankings/assets/arman-tsarukyan-full-v7.png",
+      "sourceUrl": "https://ufc.com/images/2026-09/TSARUKYAN_ARMAN_09-19.png"
+    },
+    {
+      "fighterId": "ef5dcb10d2bd4b0f",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/bogdan-guskov",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-01/7/GUSKOV_BOGDAN_L_01-18.png"
+    },
+    {
+      "fighterId": "ef5dcb10d2bd4b0f",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/bogdan-guskov",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/7/GUSKOV_BOGDAN_L_01-18.png?itok=IAOAajQf"
+    },
+    {
+      "fighterId": "ef5dcb10d2bd4b0f",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/bogdan-guskov",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-12/GUSKOV_BOGDAN_12-06.png"
+    },
+    {
+      "fighterId": "efb96bf3e9ada36f",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/song-yadong",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-05/YADONG_SONG_L_05-30.png"
+    },
+    {
+      "fighterId": "efb96bf3e9ada36f",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/song-yadong",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-05/YADONG_SONG_L_05-30.png?itok=yMtLdKZS"
+    },
+    {
+      "fighterId": "efb96bf3e9ada36f",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/song-yadong",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-08/YADONG_SONG_08-29.png"
+    },
+    {
+      "fighterId": "eff9074bc066f0f2",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/bia-mesquita",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-10/MESQUITA_BIA_L_10-11.png"
+    },
+    {
+      "fighterId": "eff9074bc066f0f2",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/bia-mesquita",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-10/MESQUITA_BIA_L_10-11.png?itok=W3FwWXNQ"
+    },
+    {
+      "fighterId": "eff9074bc066f0f2",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/bia-mesquita",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-10/MESQUITA_BIA_10-11.png"
+    },
+    {
+      "fighterId": "f00ac08ab056af5d",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/tagir-ulanbekov",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-11/ULANBEKOV_TAGIR_L_11-22.png"
+    },
+    {
+      "fighterId": "f00ac08ab056af5d",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/tagir-ulanbekov",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-11/ULANBEKOV_TAGIR_L_11-22.png?itok=GvelhCHd"
+    },
+    {
+      "fighterId": "f00ac08ab056af5d",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/tagir-ulanbekov",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-11/ULANBEKOV_TAGIR_11-22.png"
+    },
+    {
+      "fighterId": "f0feeb2192937424",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/angela-hill",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-05/HILL_ANGELA_L_05-30.png"
+    },
+    {
+      "fighterId": "f0feeb2192937424",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/angela-hill",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-05/HILL_ANGELA_L_05-30.png?itok=CwRO3dvX"
+    },
+    {
+      "fighterId": "f0feeb2192937424",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/angela-hill",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-05/HILL_ANGELA_05-30.png"
+    },
+    {
+      "fighterId": "f139d6836efd43dd",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/yaroslav-amosov",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-12/AMOSOV_YAROSLAV_R_12-13.png"
+    },
+    {
+      "fighterId": "f139d6836efd43dd",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/yaroslav-amosov",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-12/AMOSOV_YAROSLAV_R_12-13.png?itok=ykKn1cKu"
+    },
+    {
+      "fighterId": "f139d6836efd43dd",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/yaroslav-amosov",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-12/AMOSOV_YAROSLAV_12-13.png"
+    },
+    {
+      "fighterId": "f14cf73e51b29254",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/sergei-pavlovich",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-05/PAVLOVICH_SERGEI_L_05-30.png"
+    },
+    {
+      "fighterId": "f14cf73e51b29254",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/sergei-pavlovich",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-05/PAVLOVICH_SERGEI_L_05-30.png?itok=4VRfER2s"
+    },
+    {
+      "fighterId": "f14cf73e51b29254",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/sergei-pavlovich",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-05/PAVLOVICH_SERGEI_05-30.png"
+    },
+    {
+      "fighterId": "f166e93d04a8c274",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/diego-lopes",
+      "role": "full_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/diego-lopes-full.png",
+      "sourceUrl": "https://www.ufc.com/images/2026-06/LOPES_DIEGO_L_06-14.png"
+    },
+    {
+      "fighterId": "f166e93d04a8c274",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/diego-lopes",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/diego-lopes.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/LOPES_DIEGO_L_06-14.png?itok=UQIuHbZC"
+    },
+    {
+      "fighterId": "f1b2aa7853d1ed6e",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/kamaru-usman",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-06/USMAN_KAMARU_L_06-14.png"
+    },
+    {
+      "fighterId": "f1b2aa7853d1ed6e",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/kamaru-usman",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-06/USMAN_KAMARU_L_06-14.png?itok=_E2PDHo4"
+    },
+    {
+      "fighterId": "f1b2aa7853d1ed6e",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/kamaru-usman",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/USMAN_KAMARU_07-18.png"
+    },
+    {
+      "fighterId": "f1fac969a1d70b08",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/leon-edwards",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-11/EDWARDS_LEON_L_11-15.png"
+    },
+    {
+      "fighterId": "f1fac969a1d70b08",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/leon-edwards",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-11/EDWARDS_LEON_L_11-15.png?itok=sqp_GH1G"
+    },
+    {
+      "fighterId": "f1fac969a1d70b08",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/leon-edwards",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-11/EDWARDS_LEON_11-15.png"
+    },
+    {
+      "fighterId": "f29a6350c69f4a33",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/miranda-maverick",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-01/5/MAVERICK_MIRANDA_L_12-14.png"
+    },
+    {
+      "fighterId": "f29a6350c69f4a33",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/miranda-maverick",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/5/MAVERICK_MIRANDA_L_12-14.png?itok=Og7YekgL"
+    },
+    {
+      "fighterId": "f29a6350c69f4a33",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/miranda-maverick",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-06/MAVERICK_MIRANDA_06-14.png"
+    },
+    {
+      "fighterId": "f2b3f4ef3f780168",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/nora-cornolle",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-09/CORNOLLE_NORA_L_09-05.png"
+    },
+    {
+      "fighterId": "f2b3f4ef3f780168",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/nora-cornolle",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-09/CORNOLLE_NORA_L_09-05.png?itok=C8MxF9So"
+    },
+    {
+      "fighterId": "f2b3f4ef3f780168",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/nora-cornolle",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-09/CORNOLLE_NORA_09-05.png"
+    },
+    {
+      "fighterId": "f5779a2303ed76ec",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/valter-walker",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-07/WALKER_VALTER_L_07-25.png"
+    },
+    {
+      "fighterId": "f5779a2303ed76ec",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/valter-walker",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-07/WALKER_VALTER_L_07-25.png?itok=giF99HlH"
+    },
+    {
+      "fighterId": "f5779a2303ed76ec",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/valter-walker",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-07/WALKER_VALTER_07-25.png"
+    },
+    {
+      "fighterId": "f9ab66e67240db7b",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/joselyne-edwards",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-08/EDWARDS_JOSELYNE_L_08-09.png"
+    },
+    {
+      "fighterId": "f9ab66e67240db7b",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/joselyne-edwards",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-08/EDWARDS_JOSELYNE_L_08-09.png?itok=k2CkSa7C"
+    },
+    {
+      "fighterId": "f9ab66e67240db7b",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/joselyne-edwards",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-04/EDWARDS_JOSELYNE_04-25.png"
+    },
+    {
+      "fighterId": "fa6796c55d6c5440",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/curtis-blaydes",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-04/BLAYDES_CURTIS_L_04-11.png"
+    },
+    {
+      "fighterId": "fa6796c55d6c5440",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/curtis-blaydes",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-04/BLAYDES_CURTIS_L_04-11.png?itok=Qv7hfvDn"
+    },
+    {
+      "fighterId": "fa6796c55d6c5440",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/curtis-blaydes",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-09/BLAYDES_CURTIS_09-12.png"
+    },
+    {
+      "fighterId": "fc08099550072fe4",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/waldo-cortes-acosta",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-09/CORTES_ACOSTA_WALDO_L_09-12.png"
+    },
+    {
+      "fighterId": "fc08099550072fe4",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/waldo-cortes-acosta",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-09/CORTES_ACOSTA_WALDO_L_09-12.png?itok=PSa--Nt9"
+    },
+    {
+      "fighterId": "fc08099550072fe4",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/waldo-cortes-acosta",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-09/CORTES_ACOSTA_WALDO_09-12.png"
+    },
+    {
+      "fighterId": "fc169c387b4b465d",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/raquel-pennington",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2025-01/5/PENNINGTON_RAQUEL_L_01-20.png"
+    },
+    {
+      "fighterId": "fc169c387b4b465d",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/raquel-pennington",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/5/PENNINGTON_RAQUEL_L_01-20.png?itok=QF26tOJG"
+    },
+    {
+      "fighterId": "fc169c387b4b465d",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/raquel-pennington",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2025-01/5/PENNINGTON_RAQUEL_01-20.png"
+    },
+    {
+      "fighterId": "fe2babf95de24fb1",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/raul-rosas-jr",
+      "role": "full_body",
+      "sourceUrl": "https://ufc.com/images/2026-09/ROSAS_JR_RAUL_L_09-26.png"
+    },
+    {
+      "fighterId": "fe2babf95de24fb1",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/raul-rosas-jr",
+      "role": "half_body",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-09/ROSAS_JR_RAUL_L_09-26.png?itok=S-uXrCrJ"
+    },
+    {
+      "fighterId": "fe2babf95de24fb1",
+      "method": "social_metadata",
+      "pageUrl": "https://www.ufc.com/athlete/raul-rosas-jr",
+      "role": "headshot",
+      "sourceUrl": "https://ufc.com/images/2026-09/ROSAS_JR_RAUL_09-26.png"
+    },
+    {
+      "fighterId": "ffe9703408fb5964",
+      "method": "derived_hero_path",
+      "pageUrl": "https://www.ufc.com/athlete/david-onama",
+      "role": "full_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/david-onama-full.png",
+      "sourceUrl": "https://www.ufc.com/images/2024-11/ONAMA_DAVID_L_11-16.png"
+    },
+    {
+      "fighterId": "ffe9703408fb5964",
+      "method": "hero_image",
+      "pageUrl": "https://www.ufc.com/athlete/david-onama",
+      "role": "half_body",
+      "seedFile": "outputs/designs/ufc-rankings/assets/david-onama.png",
+      "sourceUrl": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2024-11/ONAMA_DAVID_L_11-16.png?itok=NVO2yaF_"
+    }
+  ]
+}

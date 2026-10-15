@@ -1,0 +1,5983 @@
+{
+  "defaultDivisionId": "featherweight",
+  "divisions": [
+    {
+      "defaultFighterId": "e1248941344b3288",
+      "entries": [
+        { "fighterId": "e1248941344b3288", "isChampion": true, "rank": 0 },
+        { "fighterId": "76e2870ffafbe38f", "isChampion": false, "rank": 1 },
+        { "fighterId": "f166e93d04a8c274", "isChampion": false, "rank": 2 },
+        { "fighterId": "396fe87b84ac2e1c", "isChampion": false, "rank": 3 },
+        { "fighterId": "cb696ebfb6598724", "isChampion": false, "rank": 4 },
+        { "fighterId": "52ef95b5860fb28c", "isChampion": false, "rank": 5 },
+        { "fighterId": "cbf5e6f231b55443", "isChampion": false, "rank": 6 },
+        { "fighterId": "040a74bb0a465c54", "isChampion": false, "rank": 7 },
+        { "fighterId": "52c2ae6d2f2d2613", "isChampion": false, "rank": 8 },
+        { "fighterId": "239d8e5359022f3b", "isChampion": false, "rank": 9 },
+        { "fighterId": "97cf1a2c7c5e7889", "isChampion": false, "rank": 10 },
+        { "fighterId": "5537efc6e496dd84", "isChampion": false, "rank": 11 },
+        { "fighterId": "20bccc9bb4ceb23e", "isChampion": false, "rank": 12 },
+        { "fighterId": "def8166ff24bd237", "isChampion": false, "rank": 13 },
+        { "fighterId": "98a58c26c5b1ed17", "isChampion": false, "rank": 14 },
+        { "fighterId": "ffe9703408fb5964", "isChampion": false, "rank": 15 }
+      ],
+      "id": "featherweight",
+      "label": "Featherweight",
+      "publicationState": "published",
+      "snapshotAt": "2026-10-13",
+      "sourceUrl": "https://www.ufc.com/rankings",
+      "weightLb": 145
+    },
+    {
+      "defaultFighterId": "9e8f6c728eb01124",
+      "entries": [
+        { "fighterId": "9e8f6c728eb01124", "isChampion": true, "rank": 0 },
+        { "fighterId": "54f64b5e283b0ce7", "isChampion": false, "rank": 1 },
+        { "fighterId": "eae48ff31db420c2", "isChampion": false, "rank": 2 },
+        { "fighterId": "07225ba28ae309b6", "isChampion": false, "rank": 3 },
+        { "fighterId": "150ff4cc642270b9", "isChampion": false, "rank": 4 },
+        { "fighterId": "7826923b47f8d72a", "isChampion": false, "rank": 5 },
+        { "fighterId": "c2299ec916bc7c56", "isChampion": false, "rank": 6 },
+        { "fighterId": "17734443a833cdf7", "isChampion": false, "rank": 7 },
+        { "fighterId": "9c393e836a852f30", "isChampion": false, "rank": 8 },
+        { "fighterId": "b3cb9dfccff3be76", "isChampion": false, "rank": 9 },
+        { "fighterId": "72db2a14ffa73ece", "isChampion": false, "rank": 10 },
+        { "fighterId": "c814b4c899793af6", "isChampion": false, "rank": 11 },
+        { "fighterId": "b6452706b373eea1", "isChampion": false, "rank": 12 },
+        { "fighterId": "193b9d1858bc4df3", "isChampion": false, "rank": 13 },
+        { "fighterId": "6c3b2525436cf5d4", "isChampion": false, "rank": 14 },
+        { "fighterId": "08af939f41b5a57b", "isChampion": false, "rank": 15 }
+      ],
+      "id": "lightweight",
+      "label": "Lightweight",
+      "publicationState": "published",
+      "snapshotAt": "2026-10-14",
+      "sourceUrl": "https://www.ufc.com/rankings",
+      "weightLb": 155
+    }
+  ],
+  "mappings": [
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "009341ed974bad72",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "33",
+          "Fighting style": "Karate",
+          "Height": "75.00",
+          "Leg reach": "45.00",
+          "Octagon Debut": "Jul. 11, 2020",
+          "Place of Birth": "Hostěradice, Czechia",
+          "Reach": "80.00",
+          "Status": "Active",
+          "Trains at": "JETSAAM GYM",
+          "Weight": "206.00"
+        },
+        "careerRecord": "32-6-1",
+        "finishCounts": {
+          "First Round Finishes": "23",
+          "Wins by Knockout": "28",
+          "Wins by Submission": "3"
+        },
+        "name": "Jiří Procházka"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/jiri-prochazka",
+      "ufcSlug": "jiri-prochazka"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "01641ba5df0c69b0",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "29",
+          "Fighting style": "Striker",
+          "Height": "73.00",
+          "Leg reach": "40.50",
+          "Octagon Debut": "Jan. 21, 2023",
+          "Place of Birth": "Brasilia, Brazil",
+          "Reach": "72.50",
+          "Status": "Active",
+          "Trains at": "Bonfim Brothers Academy",
+          "Weight": "170.50"
+        },
+        "careerRecord": "20-1-0",
+        "finishCounts": {
+          "First Round Finishes": "8",
+          "Wins by Knockout": "4",
+          "Wins by Submission": "13"
+        },
+        "name": "Gabriel Bonfim"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/gabriel-bonfim",
+      "ufcSlug": "gabriel-bonfim"
+    },
+    {
+      "capturedAt": "2026-10-13",
+      "fighterId": "040a74bb0a465c54",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "32",
+          "Fighting style": "MMA",
+          "Height": "68.00",
+          "Leg reach": "39.00",
+          "Octagon Debut": "Jun. 20, 2015",
+          "Place of Birth": "Ipswich, England",
+          "Reach": "70.00",
+          "Status": "Active",
+          "Trains at": "BKK / Tristar",
+          "Weight": "145.50"
+        },
+        "careerRecord": "21-4-0",
+        "finishCounts": {
+          "First Round Finishes": "4",
+          "Wins by Knockout": "7",
+          "Wins by Submission": "4"
+        },
+        "name": "Arnold Allen"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/arnold-allen",
+      "ufcSlug": "arnold-allen"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "04835018f90b118c",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "29",
+          "Fighting style": "MMA",
+          "Height": "66.00",
+          "Leg reach": "37.00",
+          "Octagon Debut": "Feb. 20, 2021",
+          "Place of Birth": "Irvine, Scotland",
+          "Reach": "69.00",
+          "Status": "Active",
+          "Trains at": "Bangtao Muay Thai",
+          "Weight": "125.50"
+        },
+        "careerRecord": "12-2-0",
+        "finishCounts": {
+          "First Round Finishes": "3",
+          "Wins by Knockout": "4",
+          "Wins by Submission": "3"
+        },
+        "name": "Casey O'Neill"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/casey-oneill",
+      "ufcSlug": "casey-oneill"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "06734ca9d88dec3a",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "32",
+          "Height": "74.00",
+          "Leg reach": "41.50",
+          "Octagon Debut": "Oct. 21, 2023",
+          "Place of Birth": "Republic of Dagestan, Russia",
+          "Reach": "73.00",
+          "Status": "Active",
+          "Weight": "186.00"
+        },
+        "careerRecord": "17-1-0",
+        "finishCounts": {
+          "First Round Finishes": "7",
+          "Wins by Knockout": "12"
+        },
+        "name": "Shara Magomedov"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/shara-magomedov",
+      "ufcSlug": "shara-magomedov"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "06e4245d16fc5315",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "32",
+          "Fighting style": "Kung Fu",
+          "Height": "65.00",
+          "Leg reach": "36.00",
+          "Octagon Debut": "Sep. 3, 2022",
+          "Place of Birth": "CABA, Argentina",
+          "Reach": "66.00",
+          "Status": "Active",
+          "Trains at": "Goat Shed Academy",
+          "Weight": "135.00"
+        },
+        "careerRecord": "14-2-0",
+        "finishCounts": {
+          "First Round Finishes": "4",
+          "Wins by Knockout": "4",
+          "Wins by Submission": "2"
+        },
+        "name": "Ailin Perez"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/ailin-perez",
+      "ufcSlug": "ailin-perez"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "07047eb7d17fb0a2",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "30",
+          "Fighting style": "Striker",
+          "Height": "69.00",
+          "Leg reach": "41.00",
+          "Octagon Debut": "Mar. 23, 2024",
+          "Place of Birth": "Saint Petersburg, Russia",
+          "Reach": "68.00",
+          "Status": "Active",
+          "Weight": "136.00"
+        },
+        "careerRecord": "10-4-0",
+        "finishCounts": {
+          "First Round Finishes": "2",
+          "Wins by Knockout": "5"
+        },
+        "name": "Daria Zhelezniakova"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/dariya-zheleznyakova",
+      "ufcSlug": "dariya-zheleznyakova"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "07225ba28ae309b6",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": 36,
+          "Fighting style": "Jiu-Jitsu",
+          "Height": "70.00",
+          "Leg reach": "41.00",
+          "Octagon Debut": "Aug. 1, 2010",
+          "Place of Birth": "State of São Paulo, Brazil",
+          "Reach": "74.00",
+          "Status": "Active",
+          "Trains at": "Bronx's Gold Team",
+          "Weight": "156.00"
+        },
+        "careerRecord": "37-11-0",
+        "finishCounts": {
+          "Wins by Knockout": "10",
+          "Wins by Submission": "22"
+        },
+        "name": "Charles Oliveira"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/charles-oliveira",
+      "ufcSlug": "charles-oliveira"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "08af939f41b5a57b",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": 37,
+          "Fighting style": "MMA",
+          "Height": "70.00",
+          "Leg reach": "40.50",
+          "Octagon Debut": "Jan. 15, 2014",
+          "Place of Birth": "Iran",
+          "Reach": "72.00",
+          "Status": "Active",
+          "Trains at": "Kings MMA - Huntington Beach, CA",
+          "Weight": "157.20"
+        },
+        "careerRecord": "23-8-1",
+        "finishCounts": {
+          "First Round Finishes": "8",
+          "Wins by Knockout": "5",
+          "Wins by Submission": "8"
+        },
+        "name": "Beneil Dariush"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/beneil-dariush",
+      "ufcSlug": "beneil-dariush"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "093e1f5bb73850be",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "32",
+          "Fighting style": "Striker",
+          "Height": "72.00",
+          "Leg reach": "40.00",
+          "Octagon Debut": "Feb. 2, 2019",
+          "Place of Birth": "Oakland, United States",
+          "Reach": "75.00",
+          "Status": "Active",
+          "Trains at": "Team Fluffy",
+          "Weight": "186.00"
+        },
+        "careerRecord": "15-4-0",
+        "finishCounts": {
+          "First Round Finishes": "5",
+          "Wins by Knockout": "3",
+          "Wins by Submission": "9"
+        },
+        "name": "Anthony Hernandez"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/anthony-hernandez",
+      "ufcSlug": "anthony-hernandez"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "0d7b51c9d2649a6e",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "32",
+          "Fighting style": "MMA",
+          "Height": "73.00",
+          "Leg reach": "43.00",
+          "Octagon Debut": "Oct. 10, 2020",
+          "Place of Birth": "Welkom, South Africa",
+          "Reach": "76.00",
+          "Status": "Active",
+          "Trains at": "CIT MMA",
+          "Weight": "185.00"
+        },
+        "careerRecord": "24-3-0",
+        "finishCounts": {
+          "First Round Finishes": "8",
+          "Wins by Knockout": "9",
+          "Wins by Submission": "11"
+        },
+        "name": "Dricus Du Plessis"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/dricus-du-plessis",
+      "ufcSlug": "dricus-du-plessis"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "0d8011111be000b2",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "35",
+          "Fighting style": "MMA",
+          "Height": "73.00",
+          "Leg reach": "41.50",
+          "Octagon Debut": "Mar. 15, 2014",
+          "Place of Birth": "United States",
+          "Reach": "76.00",
+          "Status": "Active",
+          "Trains at": "Millennia MMA, Rancho, CA",
+          "Weight": "185.00"
+        },
+        "careerRecord": "31-7-0",
+        "finishCounts": {
+          "First Round Finishes": "9",
+          "Wins by Knockout": "12",
+          "Wins by Submission": "4"
+        },
+        "name": "Sean Strickland"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/sean-strickland",
+      "ufcSlug": "sean-strickland"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "1091d4d957141094",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "34",
+          "Fighting style": "Karate",
+          "Height": "75.00",
+          "Leg reach": "44.50",
+          "Octagon Debut": "Sep. 1, 2013",
+          "Place of Birth": "Donetsk, Ukraine",
+          "Reach": "77.50",
+          "Status": "Active",
+          "Trains at": "Fight Club No1 - Moscow, Russia",
+          "Weight": "205.50"
+        },
+        "careerRecord": "31-12-0",
+        "finishCounts": {
+          "First Round Finishes": "23",
+          "Wins by Knockout": "13",
+          "Wins by Submission": "16"
+        },
+        "name": "Nikita Krylov"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/nikita-krylov",
+      "ufcSlug": "nikita-krylov"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "132deb59abae64b1",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "38",
+          "Fighting style": "Muay Thai",
+          "Height": "65.00",
+          "Leg reach": "38.00",
+          "Octagon Debut": "Dec. 19, 2015",
+          "Place of Birth": "Bishkek, Kyrgyzstan",
+          "Reach": "67.00",
+          "Status": "Active",
+          "Trains at": "Tiger Muay Thai - Phuket, Thailand",
+          "Weight": "124.60"
+        },
+        "careerRecord": "26-4-1",
+        "finishCounts": {
+          "First Round Finishes": "5",
+          "Wins by Knockout": "8",
+          "Wins by Submission": "7"
+        },
+        "name": "Valentina Shevchenko"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/valentina-shevchenko",
+      "ufcSlug": "valentina-shevchenko"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "1338e2c7480bdf9e",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "37",
+          "Fighting style": "Freestyle",
+          "Height": "76.00",
+          "Leg reach": "44.50",
+          "Octagon Debut": "Feb. 11, 2018",
+          "Place of Birth": "Lagos, Nigeria",
+          "Reach": "80.00",
+          "Status": "Active",
+          "Trains at": "City Kickboxing",
+          "Weight": "185.00"
+        },
+        "careerRecord": "24-6-0",
+        "finishCounts": {
+          "First Round Finishes": "7",
+          "Wins by Knockout": "16"
+        },
+        "name": "Israel Adesanya"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/israel-adesanya",
+      "ufcSlug": "israel-adesanya"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "13a0275fa13c4d26",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "42",
+          "Fighting style": "Striker",
+          "Height": "71.00",
+          "Leg reach": "41.50",
+          "Octagon Debut": "Jan. 3, 2015",
+          "Place of Birth": "Dallas, United States",
+          "Reach": "77.50",
+          "Status": "Active",
+          "Trains at": "ABJJ + Gracie Barra Alaska",
+          "Weight": "186.00"
+        },
+        "careerRecord": "18-10-0",
+        "finishCounts": {
+          "First Round Finishes": "7",
+          "Wins by Knockout": "11",
+          "Wins by Submission": "2"
+        },
+        "name": "Jared Cannonier"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/jared-cannonier",
+      "ufcSlug": "jared-cannonier"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "150ff4cc642270b9",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": 34,
+          "Fighting style": "Muay Thai",
+          "Height": "71.00",
+          "Leg reach": "42.00",
+          "Octagon Debut": "Feb. 4, 2012",
+          "Place of Birth": "Waianae, United States",
+          "Reach": "69.00",
+          "Status": "Active",
+          "Trains at": "Hawaii Elite MMA - Hawaii",
+          "Weight": "155.00"
+        },
+        "careerRecord": "27-9-0",
+        "finishCounts": { "Wins by Knockout": "13", "Wins by Submission": "2" },
+        "name": "Max Holloway"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/max-holloway",
+      "ufcSlug": "max-holloway"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "17734443a833cdf7",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": 26,
+          "Fighting style": "MMA",
+          "Height": "72.00",
+          "Leg reach": "42.00",
+          "Octagon Debut": "Feb. 8, 2025",
+          "Place of Birth": "Pinjarra, Australia",
+          "Reach": "75.00",
+          "Status": "Active",
+          "Trains at": "Luistro Combat Academy",
+          "Weight": "171.50"
+        },
+        "careerRecord": "13-1-0",
+        "finishCounts": {
+          "First Round Finishes": "8",
+          "Wins by Knockout": "5",
+          "Wins by Submission": "5"
+        },
+        "name": "Quillan Salkilld"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/quillan-salkilld",
+      "ufcSlug": "quillan-salkilld"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "17e97649403ba428",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "24",
+          "Fighting style": "Freestyle",
+          "Height": "65.00",
+          "Leg reach": "35.00",
+          "Octagon Debut": "Jun. 24, 2023",
+          "Place of Birth": "Hakha , Myanmar",
+          "Reach": "65.00",
+          "Status": "Active",
+          "Trains at": "4oz Fight Club",
+          "Weight": "124.50"
+        },
+        "careerRecord": "18-2-0",
+        "finishCounts": {
+          "First Round Finishes": "3",
+          "Wins by Knockout": "9",
+          "Wins by Submission": "2"
+        },
+        "name": "Joshua Van"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/joshua-van",
+      "ufcSlug": "joshua-van"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "193b9d1858bc4df3",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": 36,
+          "Fighting style": "MMA",
+          "Height": "72.00",
+          "Leg reach": "42.50",
+          "Octagon Debut": "Jun. 28, 2014",
+          "Place of Birth": "Aukland, New Zealand",
+          "Reach": "75.00",
+          "Status": "Active",
+          "Trains at": "Saigon Sports Club- Vietnam",
+          "Weight": "169.70"
+        },
+        "careerRecord": "24-15-0",
+        "finishCounts": {
+          "First Round Finishes": "12",
+          "Wins by Knockout": "11",
+          "Wins by Submission": "7"
+        },
+        "name": "Dan Hooker"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/dan-hooker",
+      "ufcSlug": "dan-hooker"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "1af1170ed937cba7",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "36",
+          "Fighting style": "Judo",
+          "Height": "68.00",
+          "Leg reach": "37.00",
+          "Octagon Debut": "Apr. 13, 2024",
+          "Place of Birth": "Middletown, United States",
+          "Reach": "66.00",
+          "Status": "Active",
+          "Trains at": "American Top Team",
+          "Weight": "135.00"
+        },
+        "careerRecord": "19-1-0",
+        "finishCounts": {
+          "First Round Finishes": "9",
+          "Wins by Knockout": "6",
+          "Wins by Submission": "8"
+        },
+        "name": "Kayla Harrison"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/kayla-harrison",
+      "ufcSlug": "kayla-harrison"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "1ebe20ebbfa15e29",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "37",
+          "Fighting style": "Muay Thai",
+          "Height": "64.00",
+          "Leg reach": "36.00",
+          "Octagon Debut": "Aug. 4, 2018",
+          "Place of Birth": "Hebei, China",
+          "Reach": "63.00",
+          "Status": "Active",
+          "Trains at": "Team Zhang",
+          "Weight": "124.60"
+        },
+        "careerRecord": "26-4-0",
+        "finishCounts": {
+          "First Round Finishes": "11",
+          "Wins by Knockout": "11",
+          "Wins by Submission": "8"
+        },
+        "name": "Zhang Weili"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/zhang-weili",
+      "ufcSlug": "zhang-weili"
+    },
+    {
+      "capturedAt": "2026-10-13",
+      "fighterId": "20bccc9bb4ceb23e",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "29",
+          "Fighting style": "MMA",
+          "Height": "70.00",
+          "Leg reach": "40.50",
+          "Octagon Debut": "Jan. 21, 2023",
+          "Place of Birth": "Porto de Moz, Brazil",
+          "Reach": "71.00",
+          "Status": "Active",
+          "Trains at": "Chute Boxe",
+          "Weight": "145.50"
+        },
+        "careerRecord": "26-7-0",
+        "finishCounts": {
+          "First Round Finishes": "11",
+          "Wins by Knockout": "9",
+          "Wins by Submission": "8"
+        },
+        "name": "Melquizael Costa"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/melquizael-costa",
+      "ufcSlug": "melquizael-costa"
+    },
+    {
+      "capturedAt": "2026-10-13",
+      "fighterId": "239d8e5359022f3b",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "24",
+          "Fighting style": "Striker",
+          "Height": "67.00",
+          "Leg reach": "37.00",
+          "Octagon Debut": "Mar. 15, 2025",
+          "Place of Birth": "Mar del Plata, Argentina",
+          "Reach": "68.00",
+          "Status": "Active",
+          "Trains at": "Team Lucas Mineiro",
+          "Weight": "145.00"
+        },
+        "careerRecord": "17-1-0",
+        "finishCounts": {
+          "First Round Finishes": "9",
+          "Wins by Knockout": "13",
+          "Wins by Submission": "2"
+        },
+        "name": "Kevin Vallejos"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/kevin-vallejos",
+      "ufcSlug": "kevin-vallejos"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "24656ef4d605c96f",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "38",
+          "Fighting style": "MMA",
+          "Height": "68.00",
+          "Leg reach": "38.00",
+          "Octagon Debut": "Feb. 20, 2017",
+          "Place of Birth": "Laval, Canada",
+          "Reach": "68.50",
+          "Status": "Active",
+          "Trains at": "Tristar Gym - Montreal",
+          "Weight": "135.00"
+        },
+        "careerRecord": "14-3-0",
+        "finishCounts": {
+          "First Round Finishes": "8",
+          "Wins by Knockout": "6",
+          "Wins by Submission": "2"
+        },
+        "name": "Aiemann Zahabi"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/aiemann-zahabi",
+      "ufcSlug": "aiemann-zahabi"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "262d32ebda89efc4",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "29",
+          "Fighting style": "Taekwondo",
+          "Height": "64.00",
+          "Leg reach": "36.00",
+          "Octagon Debut": "Jun. 18, 2022",
+          "Place of Birth": "Timóteo, Brazil",
+          "Reach": "65.00",
+          "Status": "Active",
+          "Trains at": "Team Borracha",
+          "Weight": "126.00"
+        },
+        "careerRecord": "21-5-1",
+        "finishCounts": {
+          "Fight Win Streak": "15",
+          "Wins by Knockout": "5",
+          "Wins by Submission": "7"
+        },
+        "name": "Natalia Silva"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/natalia-silva",
+      "ufcSlug": "natalia-silva"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "275aca31f61ba28c",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "34",
+          "Fighting style": "Sambo",
+          "Height": "70.00",
+          "Leg reach": "40.50",
+          "Octagon Debut": "May. 23, 2015",
+          "Place of Birth": "Dagestan, Russia",
+          "Reach": "70.50",
+          "Status": "Active",
+          "Trains at": "AKA (American Kickboxing Academy) San Jose",
+          "Weight": "170.00"
+        },
+        "careerRecord": "29-1-0",
+        "finishCounts": {
+          "Fight Win Streak": "17",
+          "Wins by Knockout": "5",
+          "Wins by Submission": "13"
+        },
+        "name": "Islam Makhachev"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/islam-makhachev",
+      "ufcSlug": "islam-makhachev"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "279566840aa55bf2",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "37",
+          "Fighting style": "Brazilian Jiu-Jitsu",
+          "Height": "79.00",
+          "Leg reach": "47.50",
+          "Octagon Debut": "Nov. 19, 2016",
+          "Place of Birth": "Moscow, Russia",
+          "Reach": "80.00",
+          "Status": "Active",
+          "Trains at": "Global Fight Gym",
+          "Weight": "261.50"
+        },
+        "careerRecord": "40-11-0",
+        "finishCounts": {
+          "First Round Finishes": "17",
+          "Wins by Knockout": "24",
+          "Wins by Submission": "4"
+        },
+        "name": "Alexander Volkov"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/alexander-volkov",
+      "ufcSlug": "alexander-volkov"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "2997e7fe3c9d3d4a",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "34",
+          "Fighting style": "Striker",
+          "Height": "66.00",
+          "Leg reach": "36.50",
+          "Octagon Debut": "Aug. 24, 2024",
+          "Place of Birth": "Liaoning, China",
+          "Reach": "65.50",
+          "Status": "Active",
+          "Trains at": "UFC PI Shanghai",
+          "Weight": "125.00"
+        },
+        "careerRecord": "10-2-0",
+        "finishCounts": {
+          "First Round Finishes": "3",
+          "Wins by Knockout": "2",
+          "Wins by Submission": "2"
+        },
+        "name": "Wang Cong"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/wang-cong",
+      "ufcSlug": "wang-cong"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "2b6fc1c02736833d",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "30",
+          "Fighting style": "MMA",
+          "Height": "68.00",
+          "Leg reach": "39.00",
+          "Octagon Debut": "Jan. 20, 2021",
+          "Place of Birth": "Republic of Dagestan, Russia",
+          "Reach": "69.00",
+          "Status": "Active",
+          "Weight": "136.00"
+        },
+        "careerRecord": "20-2-0",
+        "finishCounts": {
+          "First Round Finishes": "5",
+          "Wins by Knockout": "2",
+          "Wins by Submission": "7"
+        },
+        "name": "Umar Nurmagomedov"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/umar-nurmagomedov",
+      "ufcSlug": "umar-nurmagomedov"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "2e19380f34871c6a",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "36",
+          "Fighting style": "Kickboxer",
+          "Height": "76.00",
+          "Leg reach": "43.50",
+          "Octagon Debut": "Jun. 26, 2017",
+          "Place of Birth": "Apple Valley, United States",
+          "Reach": "77.00",
+          "Status": "Active",
+          "Trains at": "Cobra Kai Victorville",
+          "Weight": "206.00"
+        },
+        "careerRecord": "16-5-0",
+        "finishCounts": {
+          "First Round Finishes": "11",
+          "Wins by Knockout": "10",
+          "Wins by Submission": "2"
+        },
+        "name": "Dominick Reyes"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/dominick-reyes",
+      "ufcSlug": "dominick-reyes"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "2e5c2aa8e4ab9d82",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "35",
+          "Fighting style": "Striker",
+          "Height": "73.00",
+          "Leg reach": "39.50",
+          "Octagon Debut": "Mar. 12, 2017",
+          "Place of Birth": "State of Minas Gerais, Brazil",
+          "Reach": "72.00",
+          "Status": "Active",
+          "Trains at": "Team Borracha",
+          "Weight": "185.00"
+        },
+        "careerRecord": "16-4-0",
+        "finishCounts": {
+          "First Round Finishes": "9",
+          "Wins by Knockout": "12",
+          "Wins by Submission": "1"
+        },
+        "name": "Paulo Costa"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/paulo-costa",
+      "ufcSlug": "paulo-costa"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "2f181c0467965b98",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "30",
+          "Fighting style": "MMA",
+          "Height": "74.00",
+          "Leg reach": "42.00",
+          "Octagon Debut": "Oct. 18, 2019",
+          "Place of Birth": "Beaufort, United States",
+          "Reach": "75.00",
+          "Status": "Active",
+          "Trains at": "Kill Cliff FC",
+          "Weight": "186.00"
+        },
+        "careerRecord": "28-7-0",
+        "finishCounts": {
+          "First Round Finishes": "11",
+          "Wins by Knockout": "6",
+          "Wins by Submission": "15"
+        },
+        "name": "Brendan Allen"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/brendan-allen",
+      "ufcSlug": "brendan-allen"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "3143bf892608139a",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "36",
+          "Fighting style": "MMA",
+          "Height": "66.00",
+          "Leg reach": "40.00",
+          "Octagon Debut": "Mar. 3, 2018",
+          "Place of Birth": "Russia",
+          "Reach": "68.50",
+          "Status": "Active",
+          "Trains at": "American Top Team",
+          "Weight": "135.00"
+        },
+        "careerRecord": "17-8-0",
+        "finishCounts": {
+          "First Round Finishes": "7",
+          "Wins by Knockout": "7",
+          "Wins by Submission": "1"
+        },
+        "name": "Yana Santos"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/yana-santos",
+      "ufcSlug": "yana-santos"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "3253b16d38ae087d",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "37",
+          "Height": "66.00",
+          "Leg reach": "39.00",
+          "Octagon Debut": "Dec. 1, 2013",
+          "Place of Birth": "Spokane, United States",
+          "Reach": "69.00",
+          "Status": "Active",
+          "Trains at": "Sik-Jitsu Spokane, WA",
+          "Weight": "135.00"
+        },
+        "careerRecord": "13-6-0",
+        "finishCounts": {
+          "First Round Finishes": "4",
+          "Wins by Knockout": "3",
+          "Wins by Submission": "6"
+        },
+        "name": "Julianna Peña"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/julianna-pena",
+      "ufcSlug": "julianna-pena"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "32ab52e5de93092d",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "31",
+          "Fighting style": "MMA",
+          "Height": "68.00",
+          "Leg reach": "38.00",
+          "Octagon Debut": "May. 20, 2023",
+          "Place of Birth": "Perth, Australia",
+          "Reach": "68.00",
+          "Status": "Active",
+          "Trains at": "Wilkes Martial Arts & Fitness Academy",
+          "Weight": "135.50"
+        },
+        "careerRecord": "14-5-0",
+        "finishCounts": {
+          "First Round Finishes": "5",
+          "Wins by Knockout": "2",
+          "Wins by Submission": "6"
+        },
+        "name": "Steve Erceg"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/steve-erceg",
+      "ufcSlug": "steve-erceg"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "333b9e5c723ac873",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "34",
+          "Fighting style": "Freestyle",
+          "Height": "76.00",
+          "Leg reach": "46.00",
+          "Octagon Debut": "Sep. 2, 2017",
+          "Place of Birth": "Vienna, Austria",
+          "Reach": "78.00",
+          "Status": "Active",
+          "Trains at": "American Top Team Zagreb",
+          "Weight": "205.00"
+        },
+        "careerRecord": "15-6-0",
+        "finishCounts": {
+          "First Round Finishes": "8",
+          "Wins by Knockout": "9",
+          "Wins by Submission": "1"
+        },
+        "name": "Aleksandar Rakić"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/aleksandar-rakic",
+      "ufcSlug": "aleksandar-rakic"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "34ff304266360297",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "36",
+          "Fighting style": "Karate",
+          "Height": "67.00",
+          "Leg reach": "38.00",
+          "Octagon Debut": "Jan. 20, 2021",
+          "Place of Birth": "Nice, France",
+          "Reach": "65.00",
+          "Status": "Active",
+          "Weight": "125.50"
+        },
+        "careerRecord": "13-3-0",
+        "finishCounts": {
+          "First Round Finishes": "2",
+          "Wins by Knockout": "7"
+        },
+        "name": "Manon Fiorot"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/manon-fiorot",
+      "ufcSlug": "manon-fiorot"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "351c4ec637380ad5",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "31",
+          "Fighting style": "Muay Thai",
+          "Height": "65.00",
+          "Leg reach": "36.00",
+          "Octagon Debut": "Aug. 31, 2019",
+          "Place of Birth": "Vila Velha, Brazil",
+          "Reach": "67.50",
+          "Status": "Active",
+          "Trains at": "Gaea Project MMA",
+          "Weight": "136.00"
+        },
+        "careerRecord": "19-8-0",
+        "finishCounts": {
+          "First Round Finishes": "1",
+          "Wins by Knockout": "4",
+          "Wins by Submission": "2"
+        },
+        "name": "Karol Rosa"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/karol-rosa",
+      "ufcSlug": "karol-rosa"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "35673bf5204524ee",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "30",
+          "Fighting style": "Wrestler",
+          "Height": "73.00",
+          "Leg reach": "42.00",
+          "Octagon Debut": "Mar. 4, 2023",
+          "Place of Birth": "Rifle, United States",
+          "Reach": "76.00",
+          "Status": "Active",
+          "Trains at": "American Top Team",
+          "Weight": "185.80"
+        },
+        "careerRecord": "9-1-0",
+        "finishCounts": {
+          "First Round Finishes": "6",
+          "Wins by Knockout": "4",
+          "Wins by Submission": "4"
+        },
+        "name": "Bo Nickal"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/bo-nickal",
+      "ufcSlug": "bo-nickal"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "36b8f265bcd1b7a4",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "36",
+          "Fighting style": "MMA",
+          "Height": "74.00",
+          "Leg reach": "43.00",
+          "Octagon Debut": "Sep. 3, 2022",
+          "Place of Birth": "Argun, Russia",
+          "Reach": "78.00",
+          "Status": "Active",
+          "Weight": "185.50"
+        },
+        "careerRecord": "29-7-1",
+        "finishCounts": {
+          "First Round Finishes": "16",
+          "Wins by Knockout": "14",
+          "Wins by Submission": "8"
+        },
+        "name": "Abus Magomedov"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/abus-magomedov",
+      "ufcSlug": "abus-magomedov"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "38c7f72747f4f712",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "31",
+          "Fighting style": "MMA",
+          "Height": "65.00",
+          "Leg reach": "35.50",
+          "Octagon Debut": "Dec. 1, 2017",
+          "Place of Birth": "Niagara Falls, Canada",
+          "Reach": "63.00",
+          "Status": "Active",
+          "Trains at": "The Goat Shed",
+          "Weight": "116.00"
+        },
+        "careerRecord": "17-9-0",
+        "finishCounts": {
+          "First Round Finishes": "3",
+          "Wins by Knockout": "3",
+          "Wins by Submission": "9"
+        },
+        "name": "Gillian Robertson"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/gillian-robertson",
+      "ufcSlug": "gillian-robertson"
+    },
+    {
+      "capturedAt": "2026-10-13",
+      "fighterId": "396fe87b84ac2e1c",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "35",
+          "Fighting style": "Kickboxer",
+          "Height": "69.00",
+          "Leg reach": "39.00",
+          "Octagon Debut": "Sep. 7, 2019",
+          "Place of Birth": "Manchester, England",
+          "Reach": "73.50",
+          "Status": "Active",
+          "Trains at": "Manchester Top Team",
+          "Weight": "146.00"
+        },
+        "careerRecord": "17-1-1",
+        "finishCounts": {
+          "First Round Finishes": "7",
+          "Wins by Knockout": "8"
+        },
+        "name": "Lerone Murphy"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/lerone-murphy",
+      "ufcSlug": "lerone-murphy"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "399afbabc02376b5",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "33",
+          "Fighting style": "Freestyle",
+          "Height": "77.00",
+          "Leg reach": "44.00",
+          "Octagon Debut": "Mar. 21, 2020",
+          "Place of Birth": "Salford, England",
+          "Reach": "78.00",
+          "Status": "Active",
+          "Trains at": "Team Kaobon",
+          "Weight": "254.00"
+        },
+        "careerRecord": "15-3-0",
+        "finishCounts": {
+          "First Round Finishes": "14",
+          "Wins by Knockout": "12",
+          "Wins by Submission": "3"
+        },
+        "name": "Tom Aspinall"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/tom-aspinall",
+      "ufcSlug": "tom-aspinall"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "39d309957c5c210d",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "28",
+          "Fighting style": "MMA",
+          "Height": "77.00",
+          "Leg reach": "44.00",
+          "Octagon Debut": "Mar. 1, 2025",
+          "Place of Birth": "Lisbon, Portugal",
+          "Reach": "79.00",
+          "Status": "Active",
+          "Trains at": "Fightzone London",
+          "Weight": "255.00"
+        },
+        "careerRecord": "13-0-0",
+        "finishCounts": {
+          "First Round Finishes": "5",
+          "Wins by Knockout": "8",
+          "Wins by Submission": "1"
+        },
+        "name": "Mario Pinto"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/mario-pinto",
+      "ufcSlug": "mario-pinto"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "3cf18e01cb6cbde3",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "30",
+          "Fighting style": "Striker",
+          "Height": "68.00",
+          "Leg reach": "38.50",
+          "Octagon Debut": "Oct. 14, 2026",
+          "Place of Birth": "Sichuan, China",
+          "Reach": "72.00",
+          "Status": "Active",
+          "Trains at": "Team Alpha Male",
+          "Weight": "125.50"
+        },
+        "careerRecord": "20-7-0",
+        "finishCounts": {
+          "First Round Finishes": "10",
+          "Wins by Knockout": "13"
+        },
+        "name": "Sumudaerji"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/sumudaerji",
+      "ufcSlug": "sumudaerji"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "3df5493bb279226f",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "39",
+          "Fighting style": "Boxing",
+          "Height": "64.00",
+          "Leg reach": "36.00",
+          "Octagon Debut": "Jul. 16, 2017",
+          "Place of Birth": "belem, Brazil",
+          "Reach": "65.00",
+          "Status": "Active",
+          "Trains at": "Marajo Brothers",
+          "Weight": "115.50"
+        },
+        "careerRecord": "15-7-1",
+        "finishCounts": {
+          "First Round Finishes": "8",
+          "Wins by Knockout": "8",
+          "Wins by Submission": "3"
+        },
+        "name": "Amanda Lemos"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/amanda-lemos",
+      "ufcSlug": "amanda-lemos"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "4126a78111c0855a",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "33",
+          "Fighting style": "MMA",
+          "Height": "73.50",
+          "Leg reach": "42.00",
+          "Octagon Debut": "Apr. 16, 2022",
+          "Place of Birth": "State of Maranhão, Brazil",
+          "Reach": "75.00",
+          "Status": "Active",
+          "Trains at": "The Fighting Nerds",
+          "Weight": "185.00"
+        },
+        "careerRecord": "18-2-0",
+        "finishCounts": {
+          "First Round Finishes": "6",
+          "Wins by Knockout": "5",
+          "Wins by Submission": "4"
+        },
+        "name": "Caio Borralho"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/caio-borralho",
+      "ufcSlug": "caio-borralho"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "43a59ce3bb40449e",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "31",
+          "Fighting style": "Karate",
+          "Height": "63.00",
+          "Leg reach": "35.00",
+          "Octagon Debut": "Aug. 31, 2019",
+          "Place of Birth": "Fukuoka, Japan",
+          "Reach": "65.50",
+          "Status": "Active",
+          "Trains at": "Serra-Longo - Long Island, NY",
+          "Weight": "115.00"
+        },
+        "careerRecord": "16-6-0",
+        "finishCounts": {
+          "First Round Finishes": "4",
+          "Wins by Submission": "9"
+        },
+        "name": "Mizuki"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/mizuki-inoue",
+      "ufcSlug": "mizuki-inoue"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "442c9011034ae1fd",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "28",
+          "Height": "75.00",
+          "Leg reach": "42.00",
+          "Octagon Debut": "Nov. 6, 2021",
+          "Place of Birth": "Dublin, Ireland",
+          "Reach": "74.50",
+          "Status": "Active",
+          "Trains at": "Team Garry",
+          "Weight": "170.00"
+        },
+        "careerRecord": "17-2-0",
+        "finishCounts": {
+          "First Round Finishes": "4",
+          "Wins by Knockout": "7",
+          "Wins by Submission": "1"
+        },
+        "name": "Ian Machado Garry"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/ian-machado-garry",
+      "ufcSlug": "ian-machado-garry"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "4461d7e47375a895",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "26",
+          "Height": "67.00",
+          "Leg reach": "38.00",
+          "Octagon Debut": "Apr. 30, 2022",
+          "Place of Birth": "Japan",
+          "Reach": "70.00",
+          "Status": "Active",
+          "Weight": "126.00"
+        },
+        "careerRecord": "18-2-0",
+        "finishCounts": {
+          "First Round Finishes": "8",
+          "Wins by Knockout": "6",
+          "Wins by Submission": "8"
+        },
+        "name": "Tatsuro Taira"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/tatsuro-taira",
+      "ufcSlug": "tatsuro-taira"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "45f7cb591c3ab00b",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "33",
+          "Fighting style": "Jiu-Jitsu",
+          "Height": "70.00",
+          "Leg reach": "40.00",
+          "Octagon Debut": "Oct. 18, 2019",
+          "Place of Birth": "Philadelphia, United States",
+          "Reach": "72.00",
+          "Status": "Active",
+          "Trains at": "Marquez MMA",
+          "Weight": "169.40"
+        },
+        "careerRecord": "19-2-0",
+        "finishCounts": {
+          "First Round Finishes": "3",
+          "Wins by Knockout": "3",
+          "Wins by Submission": "6"
+        },
+        "name": "Sean Brady"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/sean-brady",
+      "ufcSlug": "sean-brady"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "47b63240018d5d86",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "34",
+          "Fighting style": "MMA",
+          "Height": "65.00",
+          "Leg reach": "39.50",
+          "Octagon Debut": "Dec. 12, 2014",
+          "Place of Birth": "Milwaukee, United States",
+          "Reach": "65.00",
+          "Status": "Active",
+          "Trains at": "Grudge Training Center",
+          "Weight": "125.50"
+        },
+        "careerRecord": "15-8-0",
+        "finishCounts": {
+          "First Round Finishes": "5",
+          "Wins by Knockout": "2",
+          "Wins by Submission": "6"
+        },
+        "name": "Rose Namajunas"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/rose-namajunas",
+      "ufcSlug": "rose-namajunas"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "5078e1dacf9d25f4",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "26",
+          "Fighting style": "Judo",
+          "Height": "66.00",
+          "Leg reach": "39.00",
+          "Octagon Debut": "Aug. 12, 2023",
+          "Place of Birth": "Brazil",
+          "Reach": "67.00",
+          "Status": "Active",
+          "Weight": "136.00"
+        },
+        "careerRecord": "11-2-0",
+        "finishCounts": {
+          "First Round Finishes": "4",
+          "Wins by Knockout": "1",
+          "Wins by Submission": "5"
+        },
+        "name": "Luana Santos"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/luana-santos",
+      "ufcSlug": "luana-santos"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "51e2f44a8dbf6984",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "35",
+          "Fighting style": "MMA",
+          "Height": "69.00",
+          "Leg reach": "42.00",
+          "Octagon Debut": "Oct. 18, 2025",
+          "Place of Birth": "Toronto, Canada",
+          "Reach": "68.50",
+          "Status": "Active",
+          "Trains at": "Alavanca",
+          "Weight": "135.00"
+        },
+        "careerRecord": "8-3-0",
+        "finishCounts": {
+          "First Round Finishes": "1",
+          "Wins by Knockout": "6",
+          "Wins by Submission": "1"
+        },
+        "name": "Melissa Croden"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/melissa-croden",
+      "ufcSlug": "melissa-croden"
+    },
+    {
+      "capturedAt": "2026-10-13",
+      "fighterId": "52c2ae6d2f2d2613",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "30",
+          "Fighting style": "Freestyle",
+          "Height": "70.00",
+          "Leg reach": "39.00",
+          "Octagon Debut": "Feb. 8, 2020",
+          "Place of Birth": "Casablanca, Morocco",
+          "Reach": "72.00",
+          "Status": "Active",
+          "Trains at": "Factory X",
+          "Weight": "146.00"
+        },
+        "careerRecord": "18-6-1",
+        "finishCounts": {
+          "First Round Finishes": "6",
+          "Wins by Knockout": "4",
+          "Wins by Submission": "10"
+        },
+        "name": "Youssef Zalal"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/youssef-zalal",
+      "ufcSlug": "youssef-zalal"
+    },
+    {
+      "capturedAt": "2026-10-13",
+      "fighterId": "52ef95b5860fb28c",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "29",
+          "Fighting style": "Striker",
+          "Height": "67.00",
+          "Leg reach": "36.50",
+          "Octagon Debut": "Jan. 13, 2024",
+          "Place of Birth": "Foz do Iguaçu, Brazil",
+          "Reach": "69.00",
+          "Status": "Active",
+          "Trains at": "The Fighting Nerds",
+          "Weight": "146.00"
+        },
+        "careerRecord": "18-3-0",
+        "finishCounts": {
+          "First Round Finishes": "10",
+          "Wins by Knockout": "12",
+          "Wins by Submission": "4"
+        },
+        "name": "Jean Silva"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/jean-silva",
+      "ufcSlug": "jean-silva"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "545092d13c67aa49",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "30",
+          "Fighting style": "MMA",
+          "Height": "64.00",
+          "Leg reach": "35.50",
+          "Octagon Debut": "Mar. 22, 2025",
+          "Place of Birth": "Paracambi, Brazil",
+          "Reach": "67.00",
+          "Status": "Active",
+          "Trains at": "Academia Ribas Family / Team LJ combat",
+          "Weight": "115.50"
+        },
+        "careerRecord": "15-1-0",
+        "finishCounts": {
+          "Fight Win Streak": "13",
+          "First Round Finishes": "4",
+          "Wins by Submission": "8"
+        },
+        "name": "Alexia Thainara"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/alexia-thainara",
+      "ufcSlug": "alexia-thainara"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "54f64b5e283b0ce7",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": 29,
+          "Fighting style": "Brazilian Jiu-Jitsu",
+          "Height": "67.00",
+          "Leg reach": "37.00",
+          "Octagon Debut": "Oct. 10, 2020",
+          "Place of Birth": "Germany",
+          "Reach": "69.00",
+          "Status": "Active",
+          "Trains at": "Team Topuria",
+          "Weight": "155.00"
+        },
+        "careerRecord": "17-1-0",
+        "finishCounts": {
+          "First Round Finishes": "10",
+          "Wins by Knockout": "7",
+          "Wins by Submission": "8"
+        },
+        "name": "Ilia Topuria"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/ilia-topuria",
+      "ufcSlug": "ilia-topuria"
+    },
+    {
+      "capturedAt": "2026-10-13",
+      "fighterId": "5537efc6e496dd84",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "29",
+          "Fighting style": "Boxing",
+          "Height": "68.00",
+          "Octagon Debut": "Jul. 26, 2025",
+          "Place of Birth": "Whittier, United States",
+          "Reach": "70.50",
+          "Status": "Active",
+          "Trains at": "Jackson Wink MMA Academy - NM",
+          "Weight": "145.00"
+        },
+        "careerRecord": "14-5-0",
+        "finishCounts": {
+          "First Round Finishes": "7",
+          "Wins by Knockout": "9",
+          "Wins by Submission": "2"
+        },
+        "name": "Aaron Pico"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/aaron-pico",
+      "ufcSlug": "aaron-pico"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "5d1b7e3dd9e11074",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "32",
+          "Fighting style": "MMA",
+          "Height": "65.00",
+          "Leg reach": "39.00",
+          "Octagon Debut": "Feb. 6, 2021",
+          "Place of Birth": "Angola",
+          "Reach": "68.00",
+          "Status": "Active",
+          "Trains at": "Kleber Repolho Jiujitsu MMA",
+          "Weight": "126.00"
+        },
+        "careerRecord": "23-7-0",
+        "finishCounts": {
+          "First Round Finishes": "10",
+          "Wins by Knockout": "15",
+          "Wins by Submission": "5"
+        },
+        "name": "Manel Kape"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/manel-kape",
+      "ufcSlug": "manel-kape"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "65f09bacd3957381",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "34",
+          "Fighting style": "MMA",
+          "Height": "71.00",
+          "Leg reach": "40.00",
+          "Octagon Debut": "Jan. 28, 2018",
+          "Place of Birth": "Aurora, United States",
+          "Reach": "70.00",
+          "Status": "Active",
+          "Weight": "134.50"
+        },
+        "careerRecord": "18-7-0",
+        "finishCounts": {
+          "First Round Finishes": "6",
+          "Wins by Knockout": "8",
+          "Wins by Submission": "3"
+        },
+        "name": "Cory Sandhagen"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/cory-sandhagen",
+      "ufcSlug": "cory-sandhagen"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "669970f7feba8ecd",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "27",
+          "Fighting style": "Jiu-Jitsu",
+          "Height": "64.00",
+          "Leg reach": "36.00",
+          "Octagon Debut": "Sep. 18, 2021",
+          "Place of Birth": "United States",
+          "Reach": "66.00",
+          "Status": "Active",
+          "Weight": "125.80"
+        },
+        "careerRecord": "14-2-0",
+        "finishCounts": {
+          "First Round Finishes": "3",
+          "Wins by Knockout": "2",
+          "Wins by Submission": "5"
+        },
+        "name": "Erin Blanchfield"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/erin-blanchfield",
+      "ufcSlug": "erin-blanchfield"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "681399317dbf4701",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "33",
+          "Fighting style": "MMA",
+          "Height": "73.00",
+          "Leg reach": "43.00",
+          "Octagon Debut": "Mar. 6, 2021",
+          "Place of Birth": "Novi Sad, Serbia",
+          "Reach": "71.00",
+          "Status": "Active",
+          "Trains at": "Anchorage Brazilian Jiu Jitsu",
+          "Weight": "171.00"
+        },
+        "careerRecord": "14-3-0",
+        "finishCounts": {
+          "First Round Finishes": "11",
+          "Wins by Knockout": "12",
+          "Wins by Submission": "2"
+        },
+        "name": "Uroš Medić"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/uros-medic",
+      "ufcSlug": "uros-medic"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "68d4a891e5cf2029",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "32",
+          "Fighting style": "MMA",
+          "Height": "65.00",
+          "Leg reach": "38.50",
+          "Octagon Debut": "Nov. 16, 2019",
+          "Place of Birth": "Phoenix, United States",
+          "Reach": "65.50",
+          "Status": "Active",
+          "Trains at": "Fight Ready",
+          "Weight": "125.60"
+        },
+        "careerRecord": "12-4-0",
+        "finishCounts": { "Wins by Knockout": "1", "Wins by Submission": "1" },
+        "name": "Tracy Cortez"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/tracy-cortez",
+      "ufcSlug": "tracy-cortez"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "6a1901c62ab3870f",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "35",
+          "Fighting style": "Muay Thai",
+          "Height": "61.50",
+          "Leg reach": "35.00",
+          "Octagon Debut": "Jul. 27, 2013",
+          "Place of Birth": "Umuarama, Brazil",
+          "Reach": "62.00",
+          "Status": "Active",
+          "Trains at": "PRVT Para Vale Tudo",
+          "Weight": "116.00"
+        },
+        "careerRecord": "26-15-0",
+        "finishCounts": {
+          "First Round Finishes": "11",
+          "Wins by Knockout": "10",
+          "Wins by Submission": "8"
+        },
+        "name": "Jéssica Andrade"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/jessica-andrade",
+      "ufcSlug": "jessica-andrade"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "6a740daf1b279661",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "28",
+          "Fighting style": "Freestyle",
+          "Height": "65.00",
+          "Leg reach": "38.00",
+          "Octagon Debut": "Nov. 10, 2018",
+          "Place of Birth": "Greeley, United States",
+          "Reach": "65.00",
+          "Status": "Active",
+          "Trains at": "High Altitude Martial Arts",
+          "Weight": "125.50"
+        },
+        "careerRecord": "15-3-0",
+        "finishCounts": {
+          "First Round Finishes": "3",
+          "Wins by Knockout": "6",
+          "Wins by Submission": "2"
+        },
+        "name": "Maycee Barber"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/maycee-barber",
+      "ufcSlug": "maycee-barber"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "6b453bc35a823c3f",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "30",
+          "Fighting style": "MMA",
+          "Height": "71.00",
+          "Leg reach": "40.50",
+          "Octagon Debut": "Jan. 22, 2022",
+          "Place of Birth": "Australia",
+          "Reach": "73.00",
+          "Status": "Active",
+          "Trains at": "Scrappy MMA",
+          "Weight": "169.80"
+        },
+        "careerRecord": "18-4-0",
+        "finishCounts": {
+          "First Round Finishes": "8",
+          "Wins by Knockout": "12",
+          "Wins by Submission": "2"
+        },
+        "name": "Jack Della Maddalena"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/jack-della-maddalena",
+      "ufcSlug": "jack-della-maddalena"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "6c3b2525436cf5d4",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": 26,
+          "Fighting style": "Southpaw",
+          "Height": "75.00",
+          "Leg reach": "43.00",
+          "Octagon Debut": "Jan. 13, 2024",
+          "Place of Birth": "Australia",
+          "Reach": "73.00",
+          "Status": "Active",
+          "Trains at": "Team Compton Training Centre",
+          "Weight": "155.00"
+        },
+        "careerRecord": "11-1-0",
+        "finishCounts": {
+          "First Round Finishes": "5",
+          "Wins by Knockout": "5",
+          "Wins by Submission": "1"
+        },
+        "name": "Tom Nolan"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/tom-nolan",
+      "ufcSlug": "tom-nolan"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "6d35bf94f7d30241",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "32",
+          "Fighting style": "Jiu-Jitsu",
+          "Height": "65.00",
+          "Leg reach": "38.00",
+          "Octagon Debut": "Jul. 18, 2020",
+          "Place of Birth": "Baghdad, Iraq",
+          "Reach": "68.00",
+          "Status": "Active",
+          "Trains at": "Atreus MMA",
+          "Weight": "125.50"
+        },
+        "careerRecord": "17-3-0",
+        "finishCounts": {
+          "First Round Finishes": "9",
+          "Wins by Knockout": "5",
+          "Wins by Submission": "9"
+        },
+        "name": "Amir Albazi"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/amir-albazi",
+      "ufcSlug": "amir-albazi"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "6e15f63b6c2e2c15",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "34",
+          "Fighting style": "Brawler",
+          "Height": "69.00",
+          "Leg reach": "38.50",
+          "Octagon Debut": "May. 30, 2020",
+          "Place of Birth": "Denver, United States",
+          "Reach": "68.00",
+          "Status": "Active",
+          "Trains at": "Mile High Militia",
+          "Weight": "126.00"
+        },
+        "careerRecord": "18-9-0",
+        "finishCounts": {
+          "First Round Finishes": "10",
+          "Wins by Knockout": "4",
+          "Wins by Submission": "10"
+        },
+        "name": "Brandon Royval"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/brandon-royval",
+      "ufcSlug": "brandon-royval"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "6e743a33d56bdaa4",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "28",
+          "Height": "70.00",
+          "Leg reach": "40.00",
+          "Octagon Debut": "Nov. 18, 2023",
+          "Place of Birth": "Las Vegas, United States",
+          "Reach": "70.50",
+          "Status": "Active",
+          "Trains at": "Reno Academy of Combat",
+          "Weight": "136.00"
+        },
+        "careerRecord": "12-1-0",
+        "finishCounts": {
+          "First Round Finishes": "2",
+          "Wins by Knockout": "8",
+          "Wins by Submission": "1"
+        },
+        "name": "Payton Talbott"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/payton-talbott",
+      "ufcSlug": "payton-talbott"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "71171fc96445bf65",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "29",
+          "Fighting style": "Striker",
+          "Height": "74.00",
+          "Leg reach": "42.50",
+          "Octagon Debut": "Dec. 17, 2022",
+          "Place of Birth": "Santa Luzia, Brazil",
+          "Reach": "77.50",
+          "Status": "Active",
+          "Trains at": "CM System",
+          "Weight": "250.00"
+        },
+        "careerRecord": "15-2-0",
+        "finishCounts": {
+          "First Round Finishes": "5",
+          "Wins by Knockout": "8",
+          "Wins by Submission": "2"
+        },
+        "name": "Vitor Petrino"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/vitor-petrino",
+      "ufcSlug": "vitor-petrino"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "72db2a14ffa73ece",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": 35,
+          "Fighting style": "Wrestling",
+          "Height": "70.00",
+          "Leg reach": "39.00",
+          "Octagon Debut": "Oct. 17, 2020",
+          "Place of Birth": "Bielsko, Biala, Poland",
+          "Reach": "70.50",
+          "Status": "Active",
+          "Trains at": "American Top Team",
+          "Weight": "156.00"
+        },
+        "careerRecord": "26-5-0",
+        "finishCounts": {
+          "First Round Finishes": "3",
+          "Wins by Knockout": "8",
+          "Wins by Submission": "6"
+        },
+        "name": "Mateusz Gamrot"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/mateusz-gamrot",
+      "ufcSlug": "mateusz-gamrot"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "739fd4fbb5d862f4",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "34",
+          "Height": "76.00",
+          "Leg reach": "41.00",
+          "Octagon Debut": "Feb. 22, 2025",
+          "Place of Birth": "Makhachkala, Dagestan, Russia",
+          "Reach": "76.00",
+          "Status": "Active",
+          "Trains at": "American Top Team",
+          "Weight": "264.50"
+        },
+        "careerRecord": "14-3-1",
+        "finishCounts": {
+          "First Round Finishes": "4",
+          "Wins by Knockout": "7",
+          "Wins by Submission": "2"
+        },
+        "name": "Rizvan Kuniev"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/rizvan-kuniev",
+      "ufcSlug": "rizvan-kuniev"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "7447e9f28508106a",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "33",
+          "Fighting style": "Brazilian Jiu-Jitsu",
+          "Height": "64.00",
+          "Leg reach": "37.50",
+          "Octagon Debut": "Mar. 3, 2018",
+          "Place of Birth": "United States",
+          "Reach": "63.00",
+          "Status": "Active",
+          "Trains at": "Megaton Dias BJJ",
+          "Weight": "115.00"
+        },
+        "careerRecord": "17-5-0",
+        "finishCounts": {
+          "First Round Finishes": "6",
+          "Wins by Submission": "8"
+        },
+        "name": "Mackenzie Dern"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/mackenzie-dern",
+      "ufcSlug": "mackenzie-dern"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "745fa7b605f8e2da",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "26",
+          "Fighting style": "Grappler",
+          "Height": "66.00",
+          "Leg reach": "37.00",
+          "Octagon Debut": "Jul. 13, 2024",
+          "Place of Birth": "Holbrook, United States",
+          "Reach": "67.00",
+          "Status": "Active",
+          "Trains at": "MK Muay Thai",
+          "Weight": "115.40"
+        },
+        "careerRecord": "10-1-0",
+        "finishCounts": {
+          "First Round Finishes": "1",
+          "Wins by Knockout": "4",
+          "Wins by Submission": "1"
+        },
+        "name": "Fatima Kline"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/fatima-kline",
+      "ufcSlug": "fatima-kline"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "749f572d1d3161fb",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "36",
+          "Fighting style": "MMA",
+          "Height": "73.00",
+          "Leg reach": "44.00",
+          "Octagon Debut": "Jul. 9, 2016",
+          "Place of Birth": "Los Angeles, United States",
+          "Reach": "76.50",
+          "Status": "Active",
+          "Trains at": "Syndicate MMA - Las Vegas, NV",
+          "Weight": "205.00"
+        },
+        "careerRecord": "15-7-0",
+        "finishCounts": {
+          "First Round Finishes": "7",
+          "Wins by Knockout": "9"
+        },
+        "name": "Khalil Rountree Jr."
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/khalil-rountree-jr",
+      "ufcSlug": "khalil-rountree-jr"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "767755fd74662dbf",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "32",
+          "Fighting style": "Wrestler",
+          "Height": "74.00",
+          "Leg reach": "40.00",
+          "Octagon Debut": "Jul. 15, 2020",
+          "Reach": "75.00",
+          "Status": "Active",
+          "Trains at": "TKMMA Fit, Akhmat MMA",
+          "Weight": "183.00"
+        },
+        "careerRecord": "15-1-0",
+        "finishCounts": {
+          "First Round Finishes": "9",
+          "Wins by Knockout": "6",
+          "Wins by Submission": "6"
+        },
+        "name": "Khamzat Chimaev"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/khamzat-chimaev",
+      "ufcSlug": "khamzat-chimaev"
+    },
+    {
+      "capturedAt": "2026-10-13",
+      "fighterId": "76e2870ffafbe38f",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "32",
+          "Fighting style": "Freestyle",
+          "Height": "67.00",
+          "Leg reach": "36.00",
+          "Octagon Debut": "Apr. 20, 2019",
+          "Place of Birth": "Ingushetia, Russia",
+          "Reach": "72.50",
+          "Status": "Active",
+          "Trains at": "American Top Team",
+          "Weight": "145.50"
+        },
+        "careerRecord": "20-0-0",
+        "finishCounts": {
+          "First Round Finishes": "2",
+          "Wins by Knockout": "3",
+          "Wins by Submission": "4"
+        },
+        "name": "Movsar Evloev"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/movsar-evloev",
+      "ufcSlug": "movsar-evloev"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "7826923b47f8d72a",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": 31,
+          "Fighting style": "Orthodox",
+          "Height": "70.00",
+          "Leg reach": "40.00",
+          "Octagon Debut": "Sep. 4, 2021",
+          "Place of Birth": "Liverpool, England",
+          "Reach": "73.00",
+          "Status": "Active",
+          "Trains at": "NEXT Generation MMA",
+          "Weight": "154.50"
+        },
+        "careerRecord": "24-4-0",
+        "finishCounts": { "Wins by Knockout": "7", "Wins by Submission": "11" },
+        "name": "Paddy Pimblett"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/paddy-pimblett",
+      "ufcSlug": "paddy-pimblett"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "787bb1f087ccff8a",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "36",
+          "Fighting style": "Muay Thai",
+          "Height": "76.00",
+          "Leg reach": "42.00",
+          "Octagon Debut": "Aug. 10, 2019",
+          "Place of Birth": "La Roche-sur-Yon, Vendée, France",
+          "Reach": "81.00",
+          "Status": "Active",
+          "Trains at": "MMA Factory - Paris, France",
+          "Weight": "247.50"
+        },
+        "careerRecord": "14-2-0",
+        "finishCounts": {
+          "First Round Finishes": "3",
+          "Wins by Knockout": "7",
+          "Wins by Submission": "3"
+        },
+        "name": "Ciryl Gane"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/ciryl-gane",
+      "ufcSlug": "ciryl-gane"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "792be9a24df82ed6",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "32",
+          "Fighting style": "Jiu-Jitsu",
+          "Height": "67.00",
+          "Leg reach": "38.00",
+          "Octagon Debut": "Oct. 2, 2016",
+          "Place of Birth": "Tijuana, Mexico",
+          "Reach": "70.00",
+          "Status": "Active",
+          "Trains at": "Team Moreno",
+          "Weight": "125.00"
+        },
+        "careerRecord": "24-10-2",
+        "finishCounts": {
+          "First Round Finishes": "8",
+          "Wins by Knockout": "5",
+          "Wins by Submission": "11"
+        },
+        "name": "Brandon Moreno"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/brandon-moreno",
+      "ufcSlug": "brandon-moreno"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "7c7332319c14094c",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "33",
+          "Fighting style": "Grappler",
+          "Height": "68.00",
+          "Leg reach": "40.50",
+          "Octagon Debut": "Nov. 15, 2014",
+          "Place of Birth": "Chone, Ecuador",
+          "Reach": "70.50",
+          "Status": "Active",
+          "Trains at": "Team 5050 Guayaquil Ecuador",
+          "Weight": "136.00"
+        },
+        "careerRecord": "24-12-1",
+        "finishCounts": {
+          "First Round Finishes": "8",
+          "Wins by Knockout": "9",
+          "Wins by Submission": "10"
+        },
+        "name": "Marlon Vera"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/marlon-vera",
+      "ufcSlug": "marlon-vera"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "7d0a1968b38ca439",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "29",
+          "Fighting style": "Striker",
+          "Height": "64.00",
+          "Leg reach": "36.00",
+          "Octagon Debut": "Oct. 12, 2024",
+          "Place of Birth": "Karshi, Uzbekistan",
+          "Reach": "63.00",
+          "Status": "Active",
+          "Trains at": "Legion Fight Club",
+          "Weight": "125.50"
+        },
+        "careerRecord": "20-3-0",
+        "finishCounts": {
+          "First Round Finishes": "11",
+          "Wins by Knockout": "12",
+          "Wins by Submission": "1"
+        },
+        "name": "Ramazan Temirov"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/ramazan-temirov",
+      "ufcSlug": "ramazan-temirov"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "7d8435c56043b0ae",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "36",
+          "Fighting style": "MMA",
+          "Height": "75.50",
+          "Leg reach": "45.50",
+          "Octagon Debut": "Oct. 17, 2020",
+          "Place of Birth": "Dubrovnik, Croatia",
+          "Reach": "78.00",
+          "Status": "Active",
+          "Trains at": "UFK Gladiator Maro Perak / Aspinall BJJ",
+          "Weight": "237.50"
+        },
+        "careerRecord": "26-8-0",
+        "finishCounts": {
+          "First Round Finishes": "15",
+          "Wins by Knockout": "12",
+          "Wins by Submission": "7"
+        },
+        "name": "Ante Delija"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/ante-delija",
+      "ufcSlug": "ante-delija"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "7dda2cf308f24a02",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "38",
+          "Fighting style": "Jiu-Jitsu",
+          "Height": "63.00",
+          "Leg reach": "37.00",
+          "Octagon Debut": "Apr. 27, 2019",
+          "Place of Birth": "State of Bahia, Brazil",
+          "Reach": "64.00",
+          "Status": "Active",
+          "Trains at": "Academia Fight House",
+          "Weight": "115.00"
+        },
+        "careerRecord": "23-4-0",
+        "finishCounts": {
+          "First Round Finishes": "8",
+          "Wins by Knockout": "1",
+          "Wins by Submission": "14"
+        },
+        "name": "Virna Jandiroba"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/virna-jandiroba",
+      "ufcSlug": "virna-jandiroba"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "7ee0fd831c0fe7c3",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "33",
+          "Fighting style": "Striker",
+          "Height": "73.00",
+          "Leg reach": "43.50",
+          "Octagon Debut": "Feb. 10, 2024",
+          "Place of Birth": "State of São Paulo, Brazil",
+          "Reach": "78.00",
+          "Status": "Active",
+          "Trains at": "The Fighting Nerds",
+          "Weight": "169.60"
+        },
+        "careerRecord": "24-7-0",
+        "finishCounts": {
+          "First Round Finishes": "10",
+          "Wins by Knockout": "19",
+          "Wins by Submission": "3"
+        },
+        "name": "Carlos Prates"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/carlos-prates",
+      "ufcSlug": "carlos-prates"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "84b3e7d38f2d2ec5",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "39",
+          "Height": "75.00",
+          "Leg reach": "45.00",
+          "Octagon Debut": "Feb. 23, 2013",
+          "Place of Birth": "Brooklyn, United States",
+          "Reach": "80.00",
+          "Status": "Active",
+          "Trains at": "Elevation Fight Team - Denver, CO",
+          "Weight": "171.00"
+        },
+        "careerRecord": "32-15-0",
+        "finishCounts": { "Wins by Knockout": "10", "Wins by Submission": "5" },
+        "name": "Neil Magny"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/neil-magny",
+      "ufcSlug": "neil-magny"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "881bf86d4cba8578",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "30",
+          "Fighting style": "Striker",
+          "Height": "75.00",
+          "Leg reach": "42.00",
+          "Octagon Debut": "Oct. 3, 2020",
+          "Place of Birth": "Russia",
+          "Reach": "75.00",
+          "Status": "Active",
+          "Trains at": "Venum Training Camp Paris",
+          "Weight": "185.00"
+        },
+        "careerRecord": "17-4-0",
+        "finishCounts": {
+          "First Round Finishes": "7",
+          "Wins by Knockout": "7",
+          "Wins by Submission": "4"
+        },
+        "name": "Nassourdine Imavov"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/nassourdine-imavov",
+      "ufcSlug": "nassourdine-imavov"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "8a1f3b5c526cd6e6",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "39",
+          "Fighting style": "Freestyle",
+          "Height": "73.00",
+          "Leg reach": "41.00",
+          "Octagon Debut": "Feb. 15, 2020",
+          "Place of Birth": "Los Angeles, United States",
+          "Reach": "74.00",
+          "Status": "Active",
+          "Trains at": "10th Planet Jiu-Jitsu",
+          "Weight": "170.00"
+        },
+        "careerRecord": "20-6-0",
+        "finishCounts": {
+          "First Round Finishes": "5",
+          "Wins by Knockout": "9",
+          "Wins by Submission": "4"
+        },
+        "name": "Daniel Rodriguez"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/daniel-rodriguez",
+      "ufcSlug": "daniel-rodriguez"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "8d3273573b85be09",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "32",
+          "Fighting style": "Jiu-Jitsu",
+          "Height": "64.00",
+          "Leg reach": "36.00",
+          "Octagon Debut": "Aug. 5, 2023",
+          "Place of Birth": "Kazakhstan",
+          "Reach": "65.00",
+          "Status": "Active",
+          "Trains at": "Dar Team",
+          "Weight": "125.50"
+        },
+        "careerRecord": "24-3-0",
+        "finishCounts": {
+          "First Round Finishes": "4",
+          "Wins by Knockout": "3",
+          "Wins by Submission": "11"
+        },
+        "name": "Asu Almabayev"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/asu-almabayev",
+      "ufcSlug": "asu-almabayev"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "8e5d953bdb9ae5e7",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "33",
+          "Height": "62.00",
+          "Leg reach": "35.00",
+          "Octagon Debut": "Apr. 17, 2021",
+          "Place of Birth": "Aguascalientes, Mexico",
+          "Reach": "61.00",
+          "Status": "Active",
+          "Trains at": "WKX / PT Team Vancouver",
+          "Weight": "115.00"
+        },
+        "careerRecord": "15-6-0",
+        "finishCounts": {
+          "First Round Finishes": "2",
+          "Wins by Knockout": "1",
+          "Wins by Submission": "2"
+        },
+        "name": "Loopy Godinez"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/loopy-godinez",
+      "ufcSlug": "loopy-godinez"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "9014c02eff8b3d62",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "35",
+          "Fighting style": "Kickboxer",
+          "Height": "76.00",
+          "Leg reach": "43.50",
+          "Octagon Debut": "Mar. 6, 2021",
+          "Place of Birth": "Auckland, New Zealand",
+          "Reach": "77.00",
+          "Status": "Active",
+          "Trains at": "City Kickboxing",
+          "Weight": "205.00"
+        },
+        "careerRecord": "15-1-0",
+        "finishCounts": {
+          "First Round Finishes": "8",
+          "Wins by Knockout": "10",
+          "Wins by Submission": "1"
+        },
+        "name": "Carlos Ulberg"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/carlos-ulberg",
+      "ufcSlug": "carlos-ulberg"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "955da1675ad58a50",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "28",
+          "Fighting style": "Wrestling",
+          "Height": "73.00",
+          "Leg reach": "43.00",
+          "Octagon Debut": "Nov. 8, 2025",
+          "Place of Birth": "Bakersfield, United States",
+          "Reach": "73.50",
+          "Status": "Active",
+          "Trains at": "Jackson Wink MMA Academy - NM",
+          "Weight": "234.50"
+        },
+        "careerRecord": "10-0-0",
+        "finishCounts": {
+          "First Round Finishes": "6",
+          "Wins by Knockout": "6",
+          "Wins by Submission": "3"
+        },
+        "name": "Josh Hokit"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/josh-hokit",
+      "ufcSlug": "josh-hokit"
+    },
+    {
+      "capturedAt": "2026-10-13",
+      "fighterId": "97cf1a2c7c5e7889",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "34",
+          "Fighting style": "Freestyle",
+          "Height": "72.00",
+          "Leg reach": "41.00",
+          "Octagon Debut": "Feb. 29, 2020",
+          "Place of Birth": "Albuquerque, United States",
+          "Reach": "75.00",
+          "Status": "Active",
+          "Trains at": "Jackson Wink MMA Academy - NM",
+          "Weight": "146.00"
+        },
+        "careerRecord": "19-6-0",
+        "finishCounts": {
+          "Fight Win Streak": "0",
+          "First Round Finishes": "8",
+          "Wins by Knockout": "15"
+        },
+        "name": "Steve Garcia"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/steve-garcia",
+      "ufcSlug": "steve-garcia"
+    },
+    {
+      "capturedAt": "2026-10-13",
+      "fighterId": "98a58c26c5b1ed17",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "39",
+          "Fighting style": "MMA",
+          "Height": "66.00",
+          "Leg reach": "37.00",
+          "Octagon Debut": "Apr. 12, 2025",
+          "Place of Birth": "Mossoró, Brazil",
+          "Reach": "67.00",
+          "Status": "Active",
+          "Trains at": "Pitbull Brothers",
+          "Weight": "145.00"
+        },
+        "careerRecord": "38-9-0",
+        "finishCounts": {
+          "First Round Finishes": "13",
+          "Wins by Knockout": "13",
+          "Wins by Submission": "12"
+        },
+        "name": "Patricio Pitbull"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/patricio-freire",
+      "ufcSlug": "patricio-freire"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "98aa60cf58071fd6",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "35",
+          "Fighting style": "MMA",
+          "Height": "64.00",
+          "Leg reach": "38.00",
+          "Octagon Debut": "Oct. 20, 2013",
+          "Place of Birth": "Takasaki, Japan",
+          "Reach": "69.00",
+          "Status": "Active",
+          "Trains at": "American Top Team",
+          "Weight": "125.00"
+        },
+        "careerRecord": "36-6-0",
+        "finishCounts": {
+          "First Round Finishes": "10",
+          "Wins by Knockout": "15",
+          "Wins by Submission": "6"
+        },
+        "name": "Kyoji Horiguchi"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/kyoji-horiguchi",
+      "ufcSlug": "kyoji-horiguchi"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "99df7d0a2a08a8a8",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "43",
+          "Fighting style": "MMA",
+          "Height": "74.00",
+          "Leg reach": "44.00",
+          "Octagon Debut": "Oct. 4, 2014",
+          "Place of Birth": "Cieszyn, Poland",
+          "Reach": "78.00",
+          "Status": "Active",
+          "Trains at": "Ankos MMA - Zapaśniczy 67, Warszawa",
+          "Weight": "206.00"
+        },
+        "careerRecord": "29-12-2",
+        "finishCounts": {
+          "First Round Finishes": "7",
+          "Wins by Knockout": "9",
+          "Wins by Submission": "9"
+        },
+        "name": "Jan Błachowicz"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/jan-blachowicz",
+      "ufcSlug": "jan-blachowicz"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "9a97acbfd5a08bfa",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "28",
+          "Height": "65.00",
+          "Leg reach": "37.50",
+          "Octagon Debut": "Mar. 29, 2025",
+          "Place of Birth": "Mexico City, Mexico",
+          "Reach": "67.50",
+          "Status": "Active",
+          "Trains at": "UFC Performance Institute",
+          "Weight": "135.50"
+        },
+        "careerRecord": "15-1-0",
+        "finishCounts": {
+          "Fight Win Streak": "11",
+          "First Round Finishes": "6",
+          "Wins by Knockout": "10"
+        },
+        "name": "David Martinez"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/david-martinez",
+      "ufcSlug": "david-martinez"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "9c393e836a852f30",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": 30,
+          "Fighting style": "Striker",
+          "Height": "71.00",
+          "Leg reach": "41.00",
+          "Octagon Debut": "May. 4, 2024",
+          "Place of Birth": "State of São Paulo, Brazil",
+          "Reach": "75.00",
+          "Status": "Active",
+          "Trains at": "Fusion X-Cel",
+          "Weight": "169.70"
+        },
+        "careerRecord": "14-3-0",
+        "finishCounts": {
+          "First Round Finishes": "9",
+          "Wins by Knockout": "13"
+        },
+        "name": "Mauricio Ruffy"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/mauricio-ruffy",
+      "ufcSlug": "mauricio-ruffy"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "9cdd2da1a9104a0b",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "35",
+          "Fighting style": "MMA",
+          "Height": "71.00",
+          "Leg reach": "42.00",
+          "Octagon Debut": "Nov. 30, 2018",
+          "Place of Birth": "United States",
+          "Reach": "72.00",
+          "Status": "Active",
+          "Weight": "137.50"
+        },
+        "careerRecord": "11-6-0",
+        "finishCounts": {
+          "First Round Finishes": "3",
+          "Wins by Knockout": "4",
+          "Wins by Submission": "3"
+        },
+        "name": "Macy Chiasson"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/macy-chiasson",
+      "ufcSlug": "macy-chiasson"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "9d62c2d8ee151f08",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "32",
+          "Fighting style": "Brazilian Jiu-Jitsu",
+          "Height": "65.00",
+          "Leg reach": "37.00",
+          "Octagon Debut": "Jun. 4, 2022",
+          "Place of Birth": "Dourados, Brazil",
+          "Reach": "67.00",
+          "Status": "Active",
+          "Trains at": "The Fighting Nerds",
+          "Weight": "125.50"
+        },
+        "careerRecord": "19-7-0",
+        "finishCounts": {
+          "First Round Finishes": "13",
+          "Wins by Knockout": "9",
+          "Wins by Submission": "8"
+        },
+        "name": "Karine Silva"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/karine-silva",
+      "ufcSlug": "karine-silva"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "9e8f6c728eb01124",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": 37,
+          "Fighting style": "MMA",
+          "Height": "71.00",
+          "Leg reach": "40.00",
+          "Octagon Debut": "Jul. 8, 2017",
+          "Place of Birth": "Tucson, United States",
+          "Reach": "70.00",
+          "Status": "Active",
+          "Trains at": "Genesis Training Center",
+          "Weight": "155.00"
+        },
+        "careerRecord": "28-5-0",
+        "finishCounts": {
+          "First Round Finishes": "9",
+          "Wins by Knockout": "21"
+        },
+        "name": "Justin Gaethje"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/justin-gaethje",
+      "ufcSlug": "justin-gaethje"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "9f5609dba6584ab2",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "21",
+          "Fighting style": "Striker",
+          "Height": "67.00",
+          "Leg reach": "38.50",
+          "Octagon Debut": "Feb. 28, 2026",
+          "Place of Birth": "Mexico City, Mexico",
+          "Reach": "66.00",
+          "Status": "Active",
+          "Trains at": "UFC Performance Institute Mexico City",
+          "Weight": "125.00"
+        },
+        "careerRecord": "9-0-0",
+        "finishCounts": {
+          "First Round Finishes": "4",
+          "Wins by Knockout": "4",
+          "Wins by Submission": "2"
+        },
+        "name": "Regina Tarin"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/regina-malpica-rivera",
+      "ufcSlug": "regina-malpica-rivera"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "a09ed60aa67a3f67",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "29",
+          "Fighting style": "MMA",
+          "Height": "68.00",
+          "Leg reach": "38.00",
+          "Octagon Debut": "Mar. 4, 2023",
+          "Place of Birth": "Paktia, Afghanistan",
+          "Reach": "71.00",
+          "Status": "Active",
+          "Trains at": "American Top Team",
+          "Weight": "136.00"
+        },
+        "careerRecord": "16-0-0",
+        "finishCounts": {
+          "First Round Finishes": "3",
+          "Wins by Knockout": "1",
+          "Wins by Submission": "6"
+        },
+        "name": "Farid Basharat"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/farid-basharat",
+      "ufcSlug": "farid-basharat"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "a0f0004aadf10b71",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "36",
+          "Fighting style": "MMA",
+          "Height": "65.00",
+          "Leg reach": "36.50",
+          "Octagon Debut": "Jan. 29, 2017",
+          "Place of Birth": "Brazil",
+          "Reach": "67.00",
+          "Status": "Active",
+          "Trains at": "American Top Team",
+          "Weight": "125.00"
+        },
+        "careerRecord": "30-7-0",
+        "finishCounts": {
+          "First Round Finishes": "10",
+          "Wins by Knockout": "8",
+          "Wins by Submission": "12"
+        },
+        "name": "Alexandre Pantoja"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/alexandre-pantoja",
+      "ufcSlug": "alexandre-pantoja"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "a495f599e787614f",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "38",
+          "Fighting style": "Freestyle",
+          "Height": "72.00",
+          "Leg reach": "41.00",
+          "Octagon Debut": "Jan. 19, 2019",
+          "Place of Birth": "Los Angeles, United States",
+          "Reach": "76.00",
+          "Status": "Active",
+          "Weight": "206.00"
+        },
+        "careerRecord": "19-6-1",
+        "finishCounts": {
+          "First Round Finishes": "11",
+          "Wins by Knockout": "11",
+          "Wins by Submission": "3"
+        },
+        "name": "Alonzo Menifield"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/alonzo-menifield",
+      "ufcSlug": "alonzo-menifield"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "a6eb54ae17a551be",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "33",
+          "Fighting style": "Striker",
+          "Height": "66.00",
+          "Leg reach": "37.50",
+          "Octagon Debut": "Feb. 25, 2023",
+          "Place of Birth": "São Gonçalo, Brazil",
+          "Reach": "66.00",
+          "Status": "Active",
+          "Trains at": "MMA Masters - Miami, FL",
+          "Weight": "125.50"
+        },
+        "careerRecord": "11-4-0",
+        "finishCounts": {
+          "First Round Finishes": "1",
+          "Wins by Knockout": "3",
+          "Wins by Submission": "3"
+        },
+        "name": "Gabriella Fernandes"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/gabriella-fernandes",
+      "ufcSlug": "gabriella-fernandes"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "a93f94c923c3a9cb",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "31",
+          "Fighting style": "MMA",
+          "Height": "74.00",
+          "Leg reach": "42.00",
+          "Octagon Debut": "Mar. 18, 2023",
+          "Place of Birth": "United Kingdom",
+          "Reach": "79.00",
+          "Status": "Active",
+          "Weight": "185.00"
+        },
+        "careerRecord": "15-3-0",
+        "finishCounts": {
+          "First Round Finishes": "5",
+          "Wins by Knockout": "10",
+          "Wins by Submission": "1"
+        },
+        "name": "Christian Leroy Duncan"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/christian-leroy-duncan",
+      "ufcSlug": "christian-leroy-duncan"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "a9e260472d321361",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "37",
+          "Fighting style": "Brawler",
+          "Height": "67.00",
+          "Leg reach": "38.00",
+          "Octagon Debut": "Jan. 22, 2022",
+          "Place of Birth": "St. Catharines, Canada",
+          "Reach": "68.00",
+          "Status": "Active",
+          "Trains at": "Niagara Top Team",
+          "Weight": "125.50"
+        },
+        "careerRecord": "15-4-0",
+        "finishCounts": {
+          "First Round Finishes": "3",
+          "Wins by Knockout": "2",
+          "Wins by Submission": "4"
+        },
+        "name": "Jasmine Jasudavicius"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/jasmine-jasudavicius",
+      "ufcSlug": "jasmine-jasudavicius"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "aa72b0f831d0bfe5",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "38",
+          "Fighting style": "Boxing",
+          "Height": "65.00",
+          "Leg reach": "38.00",
+          "Octagon Debut": "Jun. 3, 2017",
+          "Place of Birth": "Soure, Brazil",
+          "Reach": "68.00",
+          "Status": "Active",
+          "Trains at": "Team Figueiredo",
+          "Weight": "138.50"
+        },
+        "careerRecord": "25-8-1",
+        "finishCounts": {
+          "First Round Finishes": "11",
+          "Wins by Knockout": "9",
+          "Wins by Submission": "9"
+        },
+        "name": "Deiveson Figueiredo"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/deiveson-figueiredo",
+      "ufcSlug": "deiveson-figueiredo"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "ab2b4ff41d6ebe0f",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "34",
+          "Fighting style": "Freestyle",
+          "Height": "66.00",
+          "Leg reach": "38.00",
+          "Octagon Debut": "Aug. 8, 2017",
+          "Place of Birth": "Hanford, United States",
+          "Reach": "65.50",
+          "Status": "Active",
+          "Trains at": "Team Oyama",
+          "Weight": "128.50"
+        },
+        "careerRecord": "26-11-0",
+        "finishCounts": {
+          "First Round Finishes": "12",
+          "Wins by Knockout": "7",
+          "Wins by Submission": "7"
+        },
+        "name": "Alex Perez"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/alex-perez",
+      "ufcSlug": "alex-perez"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "b01a5e0dcd9f231d",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "30",
+          "Fighting style": "Striker",
+          "Height": "74.00",
+          "Octagon Debut": "Jul. 25, 2026",
+          "Place of Birth": "Republic of Dagestan, Russia",
+          "Status": "Active",
+          "Trains at": "Gor MMA",
+          "Weight": "205.00"
+        },
+        "careerRecord": "10-0-0",
+        "finishCounts": {
+          "First Round Finishes": "4",
+          "Wins by Knockout": "7",
+          "Wins by Submission": "2"
+        },
+        "name": "Muhammad Saidov"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/muhammad-said",
+      "ufcSlug": "muhammad-said"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "b07aed698fba8624",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "33",
+          "Fighting style": "Sambo",
+          "Height": "72.00",
+          "Leg reach": "40.00",
+          "Octagon Debut": "May. 6, 2023",
+          "Place of Birth": "Makhachkala, Dagestan, Russia",
+          "Reach": "76.00",
+          "Status": "Active",
+          "Weight": "185.50"
+        },
+        "careerRecord": "18-2-0",
+        "finishCounts": {
+          "First Round Finishes": "8",
+          "Wins by Knockout": "7",
+          "Wins by Submission": "5"
+        },
+        "name": "Ikram Aliskerov"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/ikram-aliskerov",
+      "ufcSlug": "ikram-aliskerov"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "b08012bbe542592a",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "35",
+          "Fighting style": "MMA",
+          "Height": "65.00",
+          "Leg reach": "39.00",
+          "Octagon Debut": "Jul. 9, 2016",
+          "Place of Birth": "Bellflower, United States",
+          "Reach": "66.00",
+          "Status": "Active",
+          "Trains at": "Millennia MMA - Rancho Cucamonga, CA",
+          "Weight": "115.50"
+        },
+        "careerRecord": "13-1-0",
+        "finishCounts": {
+          "First Round Finishes": "2",
+          "Wins by Knockout": "2",
+          "Wins by Submission": "7"
+        },
+        "name": "Tatiana Suarez"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/tatiana-suarez",
+      "ufcSlug": "tatiana-suarez"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "b1b0729d27936f2f",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "38",
+          "Height": "71.00",
+          "Leg reach": "40.00",
+          "Octagon Debut": "Jul. 7, 2016",
+          "Place of Birth": "Chicago, United States",
+          "Reach": "72.00",
+          "Status": "Active",
+          "Trains at": "Roufusport, (Mikwaukee, WI) & Chicago Fight Team (Chicago, IL)",
+          "Weight": "171.00"
+        },
+        "careerRecord": "24-6-0",
+        "finishCounts": { "Wins by Knockout": "5", "Wins by Submission": "1" },
+        "name": "Belal Muhammad"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/belal-muhammad",
+      "ufcSlug": "belal-muhammad"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "b3cb9dfccff3be76",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": 28,
+          "Fighting style": "MMA",
+          "Height": "70.00",
+          "Leg reach": "42.50",
+          "Octagon Debut": "Sep. 5, 2026",
+          "Place of Birth": "Aubervilliers, France",
+          "Reach": "71.50",
+          "Status": "Active",
+          "Trains at": "Atch Academy",
+          "Weight": "155.00"
+        },
+        "careerRecord": "24-2-0",
+        "finishCounts": {
+          "First Round Finishes": "5",
+          "Wins by Knockout": "9",
+          "Wins by Submission": "7"
+        },
+        "name": "Salahdine Parnasse"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/salahdine-parnasse",
+      "ufcSlug": "salahdine-parnasse"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "b4b496ec2197ee3e",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "28",
+          "Fighting style": "Kickboxer",
+          "Height": "76.00",
+          "Leg reach": "43.00",
+          "Octagon Debut": "Dec. 14, 2024",
+          "Place of Birth": "Upper Hutt, New Zealand",
+          "Reach": "79.00",
+          "Status": "Active",
+          "Trains at": "City Kickboxing",
+          "Weight": "205.50"
+        },
+        "careerRecord": "11-0-0",
+        "finishCounts": {
+          "First Round Finishes": "3",
+          "Wins by Knockout": "7"
+        },
+        "name": "Navajo Stirling"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/navajo-stirling",
+      "ufcSlug": "navajo-stirling"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "b50a426a33da0012",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "31",
+          "Height": "71.00",
+          "Leg reach": "40.00",
+          "Octagon Debut": "Jul. 18, 2017",
+          "Place of Birth": "Helena, United States",
+          "Reach": "72.00",
+          "Status": "Active",
+          "Trains at": "MMA LAB - Glendale, AZ",
+          "Weight": "135.50"
+        },
+        "careerRecord": "20-3-0",
+        "finishCounts": {
+          "First Round Finishes": "9",
+          "Wins by Knockout": "13"
+        },
+        "name": "Sean O'Malley"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/sean-omalley",
+      "ufcSlug": "sean-omalley"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "b6452706b373eea1",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": 37,
+          "Fighting style": "Jiu-Jitsu",
+          "Height": "71.00",
+          "Leg reach": "42.50",
+          "Octagon Debut": "Dec. 20, 2014",
+          "Place of Birth": "Brasilia, Brazil",
+          "Reach": "72.00",
+          "Status": "Active",
+          "Trains at": "American Top Team",
+          "Weight": "156.00"
+        },
+        "careerRecord": "21-7-1",
+        "finishCounts": {
+          "First Round Finishes": "4",
+          "Wins by Knockout": "2",
+          "Wins by Submission": "11"
+        },
+        "name": "Renato Moicano"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/renato-moicano",
+      "ufcSlug": "renato-moicano"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "b9437600497350f3",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "32",
+          "Fighting style": "Freestyle",
+          "Height": "70.00",
+          "Leg reach": "40.00",
+          "Octagon Debut": "Aug. 8, 2020",
+          "Place of Birth": "United States",
+          "Reach": "76.00",
+          "Status": "Active",
+          "Trains at": "STL Boxing",
+          "Weight": "171.00"
+        },
+        "careerRecord": "21-8-0",
+        "finishCounts": {
+          "First Round Finishes": "4",
+          "Wins by Knockout": "15"
+        },
+        "name": "Joaquin Buckley"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/joaquin-buckley",
+      "ufcSlug": "joaquin-buckley"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "b9f28e7045fdfce7",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "39",
+          "Fighting style": "Jiu-Jitsu",
+          "Height": "67.50",
+          "Leg reach": "39.00",
+          "Octagon Debut": "Jul. 14, 2018",
+          "Place of Birth": "State of Rio de Janeiro, Brazil",
+          "Reach": "67.00",
+          "Status": "Active",
+          "Trains at": "Top Brother",
+          "Weight": "136.00"
+        },
+        "careerRecord": "22-6-0",
+        "finishCounts": {
+          "First Round Finishes": "5",
+          "Wins by Knockout": "8",
+          "Wins by Submission": "3"
+        },
+        "name": "Raoni Barcelos"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/raoni-barcelos",
+      "ufcSlug": "raoni-barcelos"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "bb2c3c3a466224af",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "27",
+          "Fighting style": "Kickboxer",
+          "Height": "66.00",
+          "Leg reach": "36.50",
+          "Octagon Debut": "Nov. 23, 2024",
+          "Place of Birth": "London, England",
+          "Reach": "67.00",
+          "Status": "Active",
+          "Trains at": "GB Top Team",
+          "Weight": "126.00"
+        },
+        "careerRecord": "10-2-0",
+        "finishCounts": {
+          "First Round Finishes": "2",
+          "Wins by Knockout": "4",
+          "Wins by Submission": "1"
+        },
+        "name": "Lone’er Kavanagh"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/loneer-kavanagh",
+      "ufcSlug": "loneer-kavanagh"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "bc711b6dd95c1af6",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "33",
+          "Fighting style": "Freestyle",
+          "Height": "69.00",
+          "Leg reach": "39.00",
+          "Octagon Debut": "Jan. 19, 2019",
+          "Place of Birth": "Winnemucca, United States",
+          "Reach": "72.00",
+          "Status": "Active",
+          "Trains at": "The MMA Lab",
+          "Weight": "135.50"
+        },
+        "careerRecord": "18-3-0",
+        "finishCounts": {
+          "First Round Finishes": "5",
+          "Wins by Knockout": "3",
+          "Wins by Submission": "7"
+        },
+        "name": "Mario Bautista"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/mario-bautista",
+      "ufcSlug": "mario-bautista"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "bc7f4b2d4c2724a2",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "36",
+          "Height": "75.00",
+          "Octagon Debut": "Mar. 28, 2026",
+          "Place of Birth": "Portland, United States",
+          "Reach": "75.50",
+          "Status": "Active",
+          "Trains at": "Arizona Combat Sports",
+          "Weight": "250.00"
+        },
+        "careerRecord": "18-4-0",
+        "finishCounts": {
+          "First Round Finishes": "6",
+          "Wins by Knockout": "11",
+          "Wins by Submission": "1"
+        },
+        "name": "Tyrell Fortune"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/tyrell-fortune",
+      "ufcSlug": "tyrell-fortune"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "beecb672a279223e",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "33",
+          "Fighting style": "Judo",
+          "Height": "64.00",
+          "Leg reach": "37.00",
+          "Octagon Debut": "Jun. 29, 2019",
+          "Place of Birth": "Varginha, Brazil",
+          "Reach": "66.00",
+          "Status": "Active",
+          "Weight": "116.00"
+        },
+        "careerRecord": "13-7-0",
+        "finishCounts": {
+          "First Round Finishes": "5",
+          "Wins by Knockout": "4",
+          "Wins by Submission": "4"
+        },
+        "name": "Amanda Ribas"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/amanda-ribas",
+      "ufcSlug": "amanda-ribas"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "c03520b5c88ed6b4",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "35",
+          "Fighting style": "Freestyle",
+          "Height": "66.00",
+          "Leg reach": "38.00",
+          "Octagon Debut": "Dec. 9, 2017",
+          "Place of Birth": "Tbilisi, Georgia",
+          "Reach": "68.00",
+          "Status": "Active",
+          "Trains at": "Team Serra/Longo",
+          "Weight": "135.00"
+        },
+        "careerRecord": "21-5-0",
+        "finishCounts": { "Wins by Knockout": "3", "Wins by Submission": "2" },
+        "name": "Merab Dvalishvili"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/merab-dvalishvili",
+      "ufcSlug": "merab-dvalishvili"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "c0ac37a4a1133da9",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "36",
+          "Fighting style": "Brazilian Jiu-Jitsu",
+          "Height": "68.00",
+          "Leg reach": "38.00",
+          "Octagon Debut": "Apr. 29, 2023",
+          "Place of Birth": "Detroit, United States",
+          "Reach": "69.00",
+          "Status": "Active",
+          "Trains at": "The MMA Lab",
+          "Weight": "136.00"
+        },
+        "careerRecord": "12-2-0",
+        "finishCounts": { "Wins by Knockout": "9", "Wins by Submission": "1" },
+        "name": "Marcus McGhee"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/marcus-mcghee",
+      "ufcSlug": "marcus-mcghee"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "c1085e1701b13eca",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "30",
+          "Fighting style": "Boxing",
+          "Height": "74.00",
+          "Leg reach": "41.00",
+          "Octagon Debut": "Sep. 17, 2022",
+          "Place of Birth": "Vineland, United States",
+          "Reach": "75.00",
+          "Status": "Active",
+          "Trains at": "Team Marquez MMA",
+          "Weight": "186.00"
+        },
+        "careerRecord": "16-3-0",
+        "finishCounts": {
+          "First Round Finishes": "7",
+          "Wins by Knockout": "10",
+          "Wins by Submission": "4"
+        },
+        "name": "Joe Pyfer"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/joe-pyfer",
+      "ufcSlug": "joe-pyfer"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "c2299ec916bc7c56",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": 30,
+          "Fighting style": "MMA",
+          "Height": "71.00",
+          "Leg reach": "40.00",
+          "Octagon Debut": "Oct. 30, 2021",
+          "Place of Birth": "Nîmes, France",
+          "Reach": "73.00",
+          "Status": "Active",
+          "Trains at": "Venum Training Camp Paris",
+          "Weight": "170.90"
+        },
+        "careerRecord": "17-4-0",
+        "finishCounts": {
+          "First Round Finishes": "8",
+          "Wins by Knockout": "6",
+          "Wins by Submission": "11"
+        },
+        "name": "Benoît Saint Denis"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/benoit-saint-denis",
+      "ufcSlug": "benoit-saint-denis"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "c32aeb1a59e6272d",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "27",
+          "Fighting style": "Striker",
+          "Height": "72.00",
+          "Leg reach": "41.00",
+          "Octagon Debut": "Jan. 22, 2022",
+          "Place of Birth": "Pasaje, Ecuador",
+          "Reach": "79.00",
+          "Status": "Active",
+          "Weight": "170.60"
+        },
+        "careerRecord": "19-0-0",
+        "finishCounts": {
+          "Fight Win Streak": "19",
+          "First Round Finishes": "10",
+          "Wins by Knockout": "14"
+        },
+        "name": "Michael Morales"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/michael-morales",
+      "ufcSlug": "michael-morales"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "c41d426cc7326d1b",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "37",
+          "Fighting style": "Striker",
+          "Height": "65.00",
+          "Leg reach": "37.00",
+          "Octagon Debut": "Nov. 25, 2017",
+          "Place of Birth": "Liaoning, China",
+          "Reach": "63.00",
+          "Status": "Active",
+          "Trains at": "China Top Team Beijing",
+          "Weight": "116.00"
+        },
+        "careerRecord": "19-6-0",
+        "finishCounts": {
+          "First Round Finishes": "8",
+          "Wins by Knockout": "8",
+          "Wins by Submission": "1"
+        },
+        "name": "Yan Xiaonan"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/yan-xiaonan",
+      "ufcSlug": "yan-xiaonan"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "c814b4c899793af6",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": 33,
+          "Fighting style": "Muay Thai",
+          "Height": "68.00",
+          "Leg reach": "40.00",
+          "Octagon Debut": "Apr. 20, 2019",
+          "Place of Birth": "Kyrgyzstan",
+          "Reach": "71.50",
+          "Status": "Active",
+          "Trains at": "Tiger Muay Thai - Phuket, Thailand",
+          "Weight": "170.00"
+        },
+        "careerRecord": "14-5-0",
+        "finishCounts": {
+          "First Round Finishes": "6",
+          "Wins by Knockout": "9",
+          "Wins by Submission": "1"
+        },
+        "name": "Rafael Fiziev"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/rafael-fiziev",
+      "ufcSlug": "rafael-fiziev"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "c96d9178c9ed9e62",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "39",
+          "Fighting style": "Freestyle",
+          "Height": "67.00",
+          "Leg reach": "38.00",
+          "Octagon Debut": "May. 5, 2012",
+          "Place of Birth": "United States",
+          "Reach": "66.00",
+          "Status": "Active",
+          "Trains at": "Next Generation Gym",
+          "Weight": "126.00"
+        },
+        "careerRecord": "23-14-1",
+        "finishCounts": {
+          "First Round Finishes": "6",
+          "Wins by Knockout": "3",
+          "Wins by Submission": "8"
+        },
+        "name": "Tim Elliott"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/tim-elliott",
+      "ufcSlug": "tim-elliott"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "ca80d72da81d7224",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "32",
+          "Fighting style": "Wrestling",
+          "Height": "69.00",
+          "Leg reach": "40.50",
+          "Octagon Debut": "Sep. 27, 2025",
+          "Place of Birth": "Matamata, New Zealand",
+          "Reach": "68.50",
+          "Status": "Active",
+          "Trains at": "American Top Team",
+          "Weight": "134.50"
+        },
+        "careerRecord": "8-0-0",
+        "finishCounts": {
+          "Fight Win Streak": "8",
+          "First Round Finishes": "3",
+          "Wins by Submission": "6"
+        },
+        "name": "Michelle Montague"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/michelle-montague",
+      "ufcSlug": "michelle-montague"
+    },
+    {
+      "capturedAt": "2026-10-13",
+      "fighterId": "cb696ebfb6598724",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "37",
+          "Fighting style": "Kickboxer",
+          "Height": "67.00",
+          "Leg reach": "39.00",
+          "Octagon Debut": "Feb. 22, 2014",
+          "Place of Birth": "United States",
+          "Reach": "71.00",
+          "Status": "Active",
+          "Trains at": "Serra-Longo - Long Island, NY",
+          "Weight": "153.00"
+        },
+        "careerRecord": "26-5-0",
+        "finishCounts": {
+          "First Round Finishes": "4",
+          "Wins by Knockout": "3",
+          "Wins by Submission": "8"
+        },
+        "name": "Aljamain Sterling"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/aljamain-sterling",
+      "ufcSlug": "aljamain-sterling"
+    },
+    {
+      "capturedAt": "2026-10-13",
+      "fighterId": "cbf5e6f231b55443",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "34",
+          "Fighting style": "Freestyle",
+          "Height": "71.00",
+          "Leg reach": "41.50",
+          "Octagon Debut": "Nov. 15, 2014",
+          "Place of Birth": "Hidalgo Del Parral, Mexico",
+          "Reach": "71.00",
+          "Status": "Active",
+          "Trains at": "Izzystyle wrestling & VFS Chicago",
+          "Weight": "146.00"
+        },
+        "careerRecord": "21-5-0",
+        "finishCounts": {
+          "First Round Finishes": "6",
+          "Wins by Knockout": "8",
+          "Wins by Submission": "5"
+        },
+        "name": "Yair Rodriguez"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/yair-rodriguez",
+      "ufcSlug": "yair-rodriguez"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "cffb87059e645bd1",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "26",
+          "Fighting style": "MMA",
+          "Height": "62.00",
+          "Leg reach": "35.50",
+          "Octagon Debut": "Sep. 17, 2022",
+          "Place of Birth": "Santana do Livramento, Brazil",
+          "Reach": "63.00",
+          "Status": "Active",
+          "Weight": "115.00"
+        },
+        "careerRecord": "13-3-0",
+        "finishCounts": {
+          "First Round Finishes": "3",
+          "Wins by Knockout": "8"
+        },
+        "name": "Denise Gomes"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/denise-gomes",
+      "ufcSlug": "denise-gomes"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "d1c65d2cf2925ddd",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "34",
+          "Fighting style": "Grappler",
+          "Height": "75.00",
+          "Leg reach": "43.00",
+          "Octagon Debut": "Jun. 5, 2021",
+          "Place of Birth": "Brazil",
+          "Reach": "75.00",
+          "Status": "Active",
+          "Trains at": "Kill Cliff FC",
+          "Weight": "185.80"
+        },
+        "careerRecord": "20-6-0",
+        "finishCounts": {
+          "First Round Finishes": "9",
+          "Wins by Knockout": "12",
+          "Wins by Submission": "3"
+        },
+        "name": "Gregory Rodrigues"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/gregory-rodrigues",
+      "ufcSlug": "gregory-rodrigues"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "d25240135aee03e5",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "31",
+          "Fighting style": "Judo",
+          "Height": "61.00",
+          "Leg reach": "36.00",
+          "Octagon Debut": "Jun. 5, 2021",
+          "Place of Birth": "State of São Paulo, Brazil",
+          "Reach": "61.00",
+          "Status": "Active",
+          "Trains at": "Paragon BJJ / Knuckleheadz Boxing",
+          "Weight": "115.00"
+        },
+        "careerRecord": "12-5-0",
+        "finishCounts": {
+          "First Round Finishes": "2",
+          "Wins by Knockout": "2",
+          "Wins by Submission": "3"
+        },
+        "name": "Tabatha Ricci"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/tabatha-ricci",
+      "ufcSlug": "tabatha-ricci"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "d3df1add9d9a7efb",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "41",
+          "Fighting style": "Brawler",
+          "Height": "75.00",
+          "Leg reach": "43.50",
+          "Octagon Debut": "Apr. 19, 2014",
+          "Place of Birth": "New Orleans, United States",
+          "Reach": "79.00",
+          "Status": "Active",
+          "Trains at": "4oz Fight Club",
+          "Weight": "265.00"
+        },
+        "careerRecord": "29-14-0",
+        "finishCounts": {
+          "First Round Finishes": "10",
+          "Wins by Knockout": "24"
+        },
+        "name": "Derrick Lewis"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/derrick-lewis",
+      "ufcSlug": "derrick-lewis"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "d3f5d33d61cd00c9",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "36",
+          "Height": "67.00",
+          "Leg reach": "38.50",
+          "Octagon Debut": "Feb. 29, 2020",
+          "Place of Birth": "Belo Horizonte, Brazil",
+          "Reach": "67.00",
+          "Status": "Active",
+          "Weight": "136.00"
+        },
+        "careerRecord": "13-4-0",
+        "finishCounts": {
+          "First Round Finishes": "2",
+          "Wins by Submission": "2"
+        },
+        "name": "Norma Dumont"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/norma-dumont",
+      "ufcSlug": "norma-dumont"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "d549cefc7c54ab78",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "36",
+          "Fighting style": "Jiu-Jitsu",
+          "Height": "76.00",
+          "Leg reach": "41.00",
+          "Octagon Debut": "Nov. 9, 2024",
+          "Place of Birth": "Tilburg, Netherlands",
+          "Reach": "78.00",
+          "Status": "Active",
+          "Trains at": "Kill Cliff FC",
+          "Weight": "186.00"
+        },
+        "careerRecord": "22-4-0",
+        "finishCounts": {
+          "First Round Finishes": "12",
+          "Wins by Knockout": "6",
+          "Wins by Submission": "13"
+        },
+        "name": "Reinier de Ridder"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/reinier-de-ridder",
+      "ufcSlug": "reinier-de-ridder"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "d661ce4da776fc20",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "33",
+          "Fighting style": "Boxer",
+          "Height": "67.50",
+          "Leg reach": "38.00",
+          "Octagon Debut": "Jun. 23, 2018",
+          "Place of Birth": "Krasnoyarsk Krai, Russia",
+          "Reach": "67.00",
+          "Status": "Active",
+          "Weight": "135.00"
+        },
+        "careerRecord": "20-5-0",
+        "finishCounts": {
+          "First Round Finishes": "3",
+          "Wins by Knockout": "7",
+          "Wins by Submission": "1"
+        },
+        "name": "Petr Yan"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/petr-yan",
+      "ufcSlug": "petr-yan"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "d802174b0c0c1f4e",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "34",
+          "Fighting style": "MMA",
+          "Height": "75.00",
+          "Leg reach": "46.00",
+          "Octagon Debut": "Mar. 17, 2018",
+          "Place of Birth": "Russia",
+          "Reach": "75.00",
+          "Status": "Active",
+          "Weight": "204.50"
+        },
+        "careerRecord": "22-2-1",
+        "finishCounts": {
+          "First Round Finishes": "6",
+          "Wins by Knockout": "12"
+        },
+        "name": "Magomed Ankalaev"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/magomed-ankalaev",
+      "ufcSlug": "magomed-ankalaev"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "dd6103dd7127db1d",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "34",
+          "Fighting style": "MMA",
+          "Height": "73.00",
+          "Leg reach": "41.00",
+          "Octagon Debut": "Apr. 9, 2022",
+          "Place of Birth": "Cleveland, United States",
+          "Reach": "73.00",
+          "Status": "Active",
+          "Trains at": "Niagara Top Team",
+          "Weight": "171.00"
+        },
+        "careerRecord": "14-2-1",
+        "finishCounts": {
+          "First Round Finishes": "9",
+          "Wins by Knockout": "6",
+          "Wins by Submission": "6"
+        },
+        "name": "Mike Malott"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/mike-malott",
+      "ufcSlug": "mike-malott"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "de594b35c45c2e9a",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "32",
+          "Fighting style": "Jiu-Jitsu",
+          "Height": "66.00",
+          "Leg reach": "37.50",
+          "Octagon Debut": "Nov. 4, 2023",
+          "Place of Birth": "Riachuelo, Brazil",
+          "Reach": "67.00",
+          "Status": "Active",
+          "Trains at": "Fight House",
+          "Weight": "126.00"
+        },
+        "careerRecord": "12-3-0",
+        "finishCounts": {
+          "First Round Finishes": "7",
+          "Wins by Knockout": "4",
+          "Wins by Submission": "5"
+        },
+        "name": "Eduarda Moura"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/eduarda-moura",
+      "ufcSlug": "eduarda-moura"
+    },
+    {
+      "capturedAt": "2026-10-13",
+      "fighterId": "def8166ff24bd237",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "35",
+          "Fighting style": "Jiu-Jitsu",
+          "Height": "68.00",
+          "Leg reach": "39.00",
+          "Octagon Debut": "Jul. 26, 2014",
+          "Place of Birth": "Carson, United States",
+          "Reach": "69.00",
+          "Status": "Active",
+          "Trains at": "Team Ortega",
+          "Weight": "153.00"
+        },
+        "careerRecord": "16-5-0",
+        "finishCounts": {
+          "First Round Finishes": "4",
+          "Wins by Knockout": "3",
+          "Wins by Submission": "8"
+        },
+        "name": "Brian Ortega"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/brian-ortega",
+      "ufcSlug": "brian-ortega"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "e1147d3d2dabe1ce",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "35",
+          "Fighting style": "Brazilian Jiu-Jitsu",
+          "Height": "72.00",
+          "Leg reach": "43.00",
+          "Octagon Debut": "Dec. 16, 2012",
+          "Place of Birth": "Otahuhu, Australia",
+          "Reach": "73.50",
+          "Status": "Active",
+          "Trains at": "PMA, Padstow NSW, Australia",
+          "Weight": "185.50"
+        },
+        "careerRecord": "28-9-0",
+        "finishCounts": {
+          "First Round Finishes": "7",
+          "Wins by Knockout": "12",
+          "Wins by Submission": "5"
+        },
+        "name": "Robert Whittaker"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/robert-whittaker",
+      "ufcSlug": "robert-whittaker"
+    },
+    {
+      "capturedAt": "2026-10-13",
+      "fighterId": "e1248941344b3288",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "38",
+          "Height": "66.00",
+          "Leg reach": "36.00",
+          "Octagon Debut": "Oct. 15, 2016",
+          "Place of Birth": "Wollongong, Australia",
+          "Reach": "71.50",
+          "Status": "Active",
+          "Trains at": "Freestyle Fighting Gym",
+          "Weight": "158.30"
+        },
+        "careerRecord": "28-4-0",
+        "finishCounts": {
+          "First Round Finishes": "7",
+          "Wins by Knockout": "13",
+          "Wins by Submission": "3"
+        },
+        "name": "Alexander Volkanovski"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/alexander-volkanovski",
+      "ufcSlug": "alexander-volkanovski"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "e2f6b2769aaedd6c",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "31",
+          "Fighting style": "Sambo",
+          "Height": "75.00",
+          "Leg reach": "44.00",
+          "Octagon Debut": "May. 4, 2019",
+          "Place of Birth": "Moldova",
+          "Reach": "78.00",
+          "Status": "Active",
+          "Trains at": "Polar Bear Team",
+          "Weight": "251.00"
+        },
+        "careerRecord": "18-7-0",
+        "finishCounts": {
+          "First Round Finishes": "11",
+          "Wins by Knockout": "7",
+          "Wins by Submission": "8"
+        },
+        "name": "Serghei Spivac"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/serghei-spivac",
+      "ufcSlug": "serghei-spivac"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "e3964ece586e0635",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "29",
+          "Fighting style": "Striker",
+          "Height": "68.00",
+          "Leg reach": "41.00",
+          "Octagon Debut": "Sep. 2, 2023",
+          "Place of Birth": "Brazil",
+          "Reach": "70.00",
+          "Status": "Active",
+          "Trains at": "Syndicate MMA",
+          "Weight": "135.50"
+        },
+        "careerRecord": "10-2-0",
+        "finishCounts": {
+          "First Round Finishes": "2",
+          "Wins by Knockout": "3"
+        },
+        "name": "Jacqueline Cavalcanti"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/jacqueline-cavalcanti",
+      "ufcSlug": "jacqueline-cavalcanti"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "e5549c82bfb5582d",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "38",
+          "Fighting style": "Kickboxer",
+          "Height": "76.00",
+          "Leg reach": "44.00",
+          "Octagon Debut": "Nov. 6, 2021",
+          "Place of Birth": "São Bernardo do Campo, Brazil",
+          "Reach": "79.00",
+          "Status": "Active",
+          "Trains at": "Teixeira MMA & Fitness-Bethel, CT",
+          "Weight": "251.00"
+        },
+        "careerRecord": "13-4-0",
+        "finishCounts": {
+          "First Round Finishes": "5",
+          "Wins by Knockout": "11"
+        },
+        "name": "Alex Pereira"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/alex-pereira",
+      "ufcSlug": "alex-pereira"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "e8b731feff72294b",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "33",
+          "Fighting style": "MMA",
+          "Height": "65.00",
+          "Leg reach": "37.50",
+          "Octagon Debut": "Nov. 6, 2016",
+          "Place of Birth": "Guadalajara, Mexico",
+          "Reach": "66.00",
+          "Status": "Active",
+          "Trains at": "Lobo Gym MMA",
+          "Weight": "126.00"
+        },
+        "careerRecord": "18-5-1",
+        "finishCounts": {
+          "First Round Finishes": "6",
+          "Wins by Knockout": "5",
+          "Wins by Submission": "2"
+        },
+        "name": "Alexa Grasso"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/alexa-grasso",
+      "ufcSlug": "alexa-grasso"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "e90a2f22417af68e",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "37",
+          "Fighting style": "MMA",
+          "Height": "70.00",
+          "Leg reach": "41.00",
+          "Octagon Debut": "Nov. 20, 2021",
+          "Place of Birth": "Nalchik, Russia",
+          "Reach": "71.50",
+          "Status": "Active",
+          "Trains at": "K Dojo Warrior Tribe",
+          "Weight": "205.50"
+        },
+        "careerRecord": "16-1-0",
+        "finishCounts": {
+          "First Round Finishes": "10",
+          "Wins by Knockout": "12",
+          "Wins by Submission": "1"
+        },
+        "name": "Azamat Murzakanov"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/azamat-murzakanov",
+      "ufcSlug": "azamat-murzakanov"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "eae48ff31db420c2",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": 30,
+          "Fighting style": "Kickboxer",
+          "Height": "67.00",
+          "Leg reach": "39.50",
+          "Octagon Debut": "Apr. 20, 2019",
+          "Place of Birth": "Georgia",
+          "Reach": "72.50",
+          "Status": "Active",
+          "Trains at": "Syndicate MMA - Las Vegas, NV",
+          "Weight": "156.00"
+        },
+        "careerRecord": "24-3-0",
+        "finishCounts": {
+          "First Round Finishes": "9",
+          "Wins by Knockout": "10",
+          "Wins by Submission": "6"
+        },
+        "name": "Arman Tsarukyan"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/arman-tsarukyan",
+      "ufcSlug": "arman-tsarukyan"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "ef5dcb10d2bd4b0f",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "33",
+          "Fighting style": "MMA",
+          "Height": "75.00",
+          "Leg reach": "41.00",
+          "Octagon Debut": "Sep. 2, 2023",
+          "Place of Birth": "Dukent, Uzbekistan",
+          "Reach": "76.00",
+          "Status": "Active",
+          "Trains at": "Gor MMA",
+          "Weight": "205.00"
+        },
+        "careerRecord": "18-3-0",
+        "finishCounts": {
+          "First Round Finishes": "13",
+          "Wins by Knockout": "15",
+          "Wins by Submission": "3"
+        },
+        "name": "Bogdan Guskov"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/bogdan-guskov",
+      "ufcSlug": "bogdan-guskov"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "efb96bf3e9ada36f",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "28",
+          "Fighting style": "Boxer",
+          "Height": "68.00",
+          "Leg reach": "38.00",
+          "Octagon Debut": "Nov. 25, 2017",
+          "Place of Birth": "Heilongjiang, China",
+          "Reach": "67.00",
+          "Status": "Active",
+          "Trains at": "Team Alpha Male",
+          "Weight": "136.00"
+        },
+        "careerRecord": "24-9-1",
+        "finishCounts": {
+          "First Round Finishes": "7",
+          "Wins by Knockout": "10",
+          "Wins by Submission": "4"
+        },
+        "name": "Song Yadong"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/song-yadong",
+      "ufcSlug": "song-yadong"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "eff9074bc066f0f2",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "35",
+          "Fighting style": "Brazilian Jiu-Jitsu",
+          "Height": "66.00",
+          "Leg reach": "37.00",
+          "Octagon Debut": "Oct. 11, 2025",
+          "Place of Birth": "Brazil",
+          "Reach": "67.50",
+          "Status": "Active",
+          "Trains at": "American Top Team",
+          "Weight": "135.00"
+        },
+        "careerRecord": "8-0-0",
+        "finishCounts": {
+          "First Round Finishes": "3",
+          "Wins by Knockout": "1",
+          "Wins by Submission": "6"
+        },
+        "name": "Bia Mesquita"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/bia-mesquita",
+      "ufcSlug": "bia-mesquita"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "f00ac08ab056af5d",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "35",
+          "Fighting style": "Wrestling",
+          "Height": "67.00",
+          "Leg reach": "39.00",
+          "Octagon Debut": "Oct. 10, 2020",
+          "Place of Birth": "Dagestan, Russia",
+          "Reach": "70.00",
+          "Status": "Active",
+          "Trains at": "AKA / Eagles MMA",
+          "Weight": "125.50"
+        },
+        "careerRecord": "17-3-0",
+        "finishCounts": {
+          "First Round Finishes": "3",
+          "Wins by Knockout": "1",
+          "Wins by Submission": "7"
+        },
+        "name": "Tagir Ulanbekov"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/tagir-ulanbekov",
+      "ufcSlug": "tagir-ulanbekov"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "f0feeb2192937424",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "41",
+          "Fighting style": "Muay Thai",
+          "Height": "63.00",
+          "Leg reach": "38.50",
+          "Octagon Debut": "Dec. 12, 2014",
+          "Place of Birth": "Clinton, United States",
+          "Reach": "64.50",
+          "Status": "Active",
+          "Weight": "115.60"
+        },
+        "careerRecord": "19-16-0",
+        "finishCounts": {
+          "First Round Finishes": "1",
+          "Wins by Knockout": "5"
+        },
+        "name": "Angela Hill"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/angela-hill",
+      "ufcSlug": "angela-hill"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "f139d6836efd43dd",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "32",
+          "Height": "72.00",
+          "Leg reach": "44.50",
+          "Octagon Debut": "Dec. 13, 2025",
+          "Place of Birth": "Irpin, Ukraine",
+          "Reach": "75.00",
+          "Status": "Active",
+          "Trains at": "American Top Team",
+          "Weight": "170.00"
+        },
+        "careerRecord": "29-1-0",
+        "finishCounts": { "Wins by Knockout": "9", "Wins by Submission": "13" },
+        "name": "Yaroslav Amosov"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/yaroslav-amosov",
+      "ufcSlug": "yaroslav-amosov"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "f14cf73e51b29254",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "34",
+          "Fighting style": "MMA",
+          "Height": "75.00",
+          "Leg reach": "45.00",
+          "Octagon Debut": "Nov. 24, 2018",
+          "Place of Birth": "Russia",
+          "Reach": "84.00",
+          "Status": "Active",
+          "Weight": "255.50"
+        },
+        "careerRecord": "21-3-0",
+        "finishCounts": {
+          "First Round Finishes": "16",
+          "Wins by Knockout": "16"
+        },
+        "name": "Sergei Pavlovich"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/sergei-pavlovich",
+      "ufcSlug": "sergei-pavlovich"
+    },
+    {
+      "capturedAt": "2026-10-13",
+      "fighterId": "f166e93d04a8c274",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "31",
+          "Fighting style": "Jiu-Jitsu",
+          "Height": "71.00",
+          "Leg reach": "41.00",
+          "Octagon Debut": "May. 6, 2023",
+          "Place of Birth": "Manaus, Brazil",
+          "Reach": "72.50",
+          "Status": "Active",
+          "Trains at": "Brazilian Warriors / Lobo Gym",
+          "Weight": "160.80"
+        },
+        "careerRecord": "28-8-0",
+        "finishCounts": {
+          "First Round Finishes": "15",
+          "Wins by Knockout": "12",
+          "Wins by Submission": "12"
+        },
+        "name": "Diego Lopes"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/diego-lopes",
+      "ufcSlug": "diego-lopes"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "f1b2aa7853d1ed6e",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "39",
+          "Fighting style": "Freestyle",
+          "Height": "72.00",
+          "Leg reach": "41.00",
+          "Octagon Debut": "Jul. 12, 2015",
+          "Place of Birth": "Auchi, Nigeria",
+          "Reach": "76.00",
+          "Status": "Active",
+          "Trains at": "Blackzilians - Boca Raton, FL",
+          "Weight": "171.00"
+        },
+        "careerRecord": "21-5-0",
+        "finishCounts": {
+          "First Round Finishes": "3",
+          "Wins by Knockout": "9",
+          "Wins by Submission": "1"
+        },
+        "name": "Kamaru Usman"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/kamaru-usman",
+      "ufcSlug": "kamaru-usman"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "f1fac969a1d70b08",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "35",
+          "Fighting style": "MMA",
+          "Height": "72.00",
+          "Leg reach": "43.00",
+          "Octagon Debut": "Nov. 9, 2014",
+          "Place of Birth": "Kingston, Jamaica",
+          "Reach": "74.00",
+          "Status": "Active",
+          "Trains at": "UTC Ultimate Training Centre Birmingham",
+          "Weight": "170.00"
+        },
+        "careerRecord": "22-6-0",
+        "finishCounts": {
+          "First Round Finishes": "5",
+          "Wins by Knockout": "7",
+          "Wins by Submission": "3"
+        },
+        "name": "Leon Edwards"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/leon-edwards",
+      "ufcSlug": "leon-edwards"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "f29a6350c69f4a33",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "29",
+          "Fighting style": "Jiu-Jitsu",
+          "Height": "63.50",
+          "Leg reach": "38.00",
+          "Octagon Debut": "Jun. 27, 2020",
+          "Place of Birth": "Jefferson City, United States",
+          "Reach": "65.50",
+          "Status": "Active",
+          "Trains at": "Pound 4 Pound Muay Thai & Easton Training Center Denver",
+          "Weight": "126.00"
+        },
+        "careerRecord": "17-6-0",
+        "finishCounts": {
+          "First Round Finishes": "6",
+          "Wins by Knockout": "1",
+          "Wins by Submission": "8"
+        },
+        "name": "Miranda Maverick"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/miranda-maverick",
+      "ufcSlug": "miranda-maverick"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "f2b3f4ef3f780168",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "36",
+          "Fighting style": "Muay Thai",
+          "Height": "67.00",
+          "Leg reach": "38.00",
+          "Octagon Debut": "Sep. 2, 2023",
+          "Place of Birth": "Epinay sur Seine, France",
+          "Reach": "67.00",
+          "Status": "Active",
+          "Weight": "136.00"
+        },
+        "careerRecord": "10-4-0",
+        "finishCounts": {
+          "First Round Finishes": "4",
+          "Wins by Knockout": "6",
+          "Wins by Submission": "2"
+        },
+        "name": "Nora Cornolle"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/nora-cornolle",
+      "ufcSlug": "nora-cornolle"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "f5779a2303ed76ec",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "28",
+          "Fighting style": "MMA",
+          "Height": "78.00",
+          "Leg reach": "44.00",
+          "Octagon Debut": "Apr. 6, 2024",
+          "Place of Birth": "State of Rio de Janeiro, Brazil",
+          "Reach": "78.50",
+          "Status": "Active",
+          "Weight": "244.00"
+        },
+        "careerRecord": "16-1-0",
+        "finishCounts": {
+          "First Round Finishes": "9",
+          "Wins by Knockout": "6",
+          "Wins by Submission": "6"
+        },
+        "name": "Valter Walker"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/valter-walker",
+      "ufcSlug": "valter-walker"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "f9ab66e67240db7b",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "31",
+          "Fighting style": "Striker",
+          "Height": "68.00",
+          "Leg reach": "39.00",
+          "Octagon Debut": "Jan. 16, 2021",
+          "Place of Birth": "Panama",
+          "Reach": "70.00",
+          "Status": "Active",
+          "Trains at": "Xtreme Couture - Las Vegas, NV",
+          "Weight": "136.00"
+        },
+        "careerRecord": "18-6-0",
+        "finishCounts": {
+          "First Round Finishes": "2",
+          "Wins by Knockout": "7",
+          "Wins by Submission": "0"
+        },
+        "name": "Joselyne Edwards"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/joselyne-edwards",
+      "ufcSlug": "joselyne-edwards"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "fa6796c55d6c5440",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "35",
+          "Fighting style": "MMA",
+          "Height": "76.00",
+          "Leg reach": "46.00",
+          "Octagon Debut": "Apr. 10, 2016",
+          "Place of Birth": "Naperville, United States",
+          "Reach": "80.00",
+          "Status": "Active",
+          "Trains at": "Dutch Style MMA/ UFC Gym Lombard IL",
+          "Weight": "258.00"
+        },
+        "careerRecord": "20-6-0",
+        "finishCounts": {
+          "First Round Finishes": "3",
+          "Wins by Knockout": "13"
+        },
+        "name": "Curtis Blaydes"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/curtis-blaydes",
+      "ufcSlug": "curtis-blaydes"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "fc08099550072fe4",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "35",
+          "Fighting style": "Striker",
+          "Height": "76.00",
+          "Leg reach": "43.50",
+          "Octagon Debut": "Oct. 29, 2022",
+          "Place of Birth": "Fundacion, Barahona, Dominican Republic",
+          "Reach": "78.00",
+          "Status": "Active",
+          "Weight": "262.00"
+        },
+        "careerRecord": "17-4-0",
+        "finishCounts": {
+          "First Round Finishes": "5",
+          "Wins by Knockout": "9",
+          "Wins by Submission": "1"
+        },
+        "name": "Waldo Cortes Acosta"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/waldo-cortes-acosta",
+      "ufcSlug": "waldo-cortes-acosta"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "fc169c387b4b465d",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "38",
+          "Fighting style": "Freestyle",
+          "Height": "67.00",
+          "Leg reach": "37.00",
+          "Octagon Debut": "Dec. 1, 2013",
+          "Place of Birth": "Colorado Springs, United States",
+          "Reach": "67.50",
+          "Status": "Active",
+          "Trains at": "Colorado Springs BJJ",
+          "Weight": "135.00"
+        },
+        "careerRecord": "16-10-0",
+        "finishCounts": { "Wins by Knockout": "1", "Wins by Submission": "4" },
+        "name": "Raquel Pennington"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/raquel-pennington",
+      "ufcSlug": "raquel-pennington"
+    },
+    {
+      "capturedAt": "2026-10-14",
+      "fighterId": "fe2babf95de24fb1",
+      "matchEvidence": [
+        "Unique normalized database name and matching official profile heading.",
+        "height agrees within one inch",
+        "reach agrees within one inch",
+        "age agrees within one year",
+        "career record agrees"
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "21",
+          "Fighting style": "Freestyle",
+          "Height": "69.00",
+          "Leg reach": "40.00",
+          "Octagon Debut": "Dec. 10, 2022",
+          "Place of Birth": "Clovis, United States",
+          "Reach": "67.00",
+          "Status": "Active",
+          "Trains at": "Rosas Brothers MMA",
+          "Weight": "135.00"
+        },
+        "careerRecord": "13-1-0",
+        "finishCounts": {
+          "First Round Finishes": "6",
+          "Wins by Knockout": "3",
+          "Wins by Submission": "6"
+        },
+        "name": "Raul Rosas Jr."
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/raul-rosas-jr",
+      "ufcSlug": "raul-rosas-jr"
+    },
+    {
+      "capturedAt": "2026-10-13",
+      "fighterId": "ffe9703408fb5964",
+      "matchEvidence": [
+        "Verified initial prototype ID mapping. Display name and source profile reviewed."
+      ],
+      "matchState": "reviewed",
+      "observations": {
+        "bio": {
+          "Age": "32",
+          "Fighting style": "Striker",
+          "Height": "71.00",
+          "Leg reach": "40.00",
+          "Octagon Debut": "Oct. 23, 2021",
+          "Place of Birth": "Uganda",
+          "Reach": "74.00",
+          "Status": "Active",
+          "Trains at": "Factory X",
+          "Weight": "146.00"
+        },
+        "careerRecord": "14-3-0",
+        "finishCounts": {
+          "First Round Finishes": "6",
+          "Wins by Knockout": "7",
+          "Wins by Submission": "4"
+        },
+        "name": "David Onama"
+      },
+      "sourcePageUrl": "https://www.ufc.com/athlete/david-onama",
+      "ufcSlug": "david-onama"
+    }
+  ],
+  "schemaVersion": 1
+}

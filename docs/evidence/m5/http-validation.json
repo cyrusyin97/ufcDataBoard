@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "origin": "http://127.0.0.1:3000",
+  "runtime": "v24.22.0",
+  "datasetVersion": "2026-10-14-7c5ad4426abf6d1a",
+  "checks": [
+    {
+      "path": "/data/current.json",
+      "status": 200,
+      "cache": "no-store"
+    },
+    {
+      "path": "/data/v1/2026-10-14-7c5ad4426abf6d1a/divisions.json",
+      "status": 200,
+      "cache": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/data/v1/2026-10-14-7c5ad4426abf6d1a/media.json",
+      "status": 200,
+      "cache": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/data/v1/2026-10-14-7c5ad4426abf6d1a/index.json",
+      "status": 200,
+      "cache": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "cache": "private, no-cache, no-store, max-age=0, must-revalidate"
+    },
+    {
+      "path": "/rankings?division=featherweight&selected=e1248941344b3288",
+      "status": 200,
+      "cache": "private, no-cache, no-store, max-age=0, must-revalidate"
+    },
+    {
+      "path": "/rankings?division=featherweight&fighter=e1248941344b3288&view=history",
+      "status": 200,
+      "cache": "private, no-cache, no-store, max-age=0, must-revalidate"
+    },
+    {
+      "path": "/data/v1/2026-10-14-7c5ad4426abf6d1a/fighters/e1248941344b3288.json",
+      "status": 200,
+      "cache": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/rankings?division=featherweight&fighter=000774e57404d8c7&view=history",
+      "status": 200,
+      "cache": "private, no-cache, no-store, max-age=0, must-revalidate"
+    },
+    {
+      "path": "/data/v1/2026-10-14-7c5ad4426abf6d1a/fighters/000774e57404d8c7.json",
+      "status": 200,
+      "cache": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/data/v1/2026-10-14-7c5ad4426abf6d1a/media/0bfa1251cedf8ace763d51321bc4c7f7cbb939fc38de4d66002ba94ff82dd126.webp",
+      "status": 200,
+      "cache": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/rankings?division=lightweight&selected=9e8f6c728eb01124",
+      "status": 200,
+      "cache": "private, no-cache, no-store, max-age=0, must-revalidate"
+    },
+    {
+      "path": "/rankings?division=lightweight&fighter=9e8f6c728eb01124&view=history",
+      "status": 200,
+      "cache": "private, no-cache, no-store, max-age=0, must-revalidate"
+    },
+    {
+      "path": "/data/v1/2026-10-14-7c5ad4426abf6d1a/fighters/9e8f6c728eb01124.json",
+      "status": 200,
+      "cache": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/rankings?division=lightweight&fighter=000774e57404d8c7&view=history",
+      "status": 200,
+      "cache": "private, no-cache, no-store, max-age=0, must-revalidate"
+    },
+    {
+      "path": "/data/v1/2026-10-14-7c5ad4426abf6d1a/fighters/000774e57404d8c7.json",
+      "status": 200,
+      "cache": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/data/v1/2026-10-14-7c5ad4426abf6d1a/media/6fea5a2ba33950774acf75783adff5cc85c512d025b7d75cdfa5b40e925c9647.webp",
+      "status": 200,
+      "cache": "public, max-age=31536000, immutable"
+    }
+  ],
+  "scope": "HTTP responses, contracts, identity, redirects, and cache headers. Run the browser matrix separately for hydration and interactions."
+}

@@ -1,0 +1,44 @@
+{
+  "header": {
+    "x": 48,
+    "y": 0,
+    "width": 1222,
+    "height": 70
+  },
+  "[data-region=experience]": {
+    "x": 48,
+    "y": 203.21875,
+    "width": 1222,
+    "height": 553.3125
+  },
+  "[aria-label='Ranking selector']": {
+    "x": 48,
+    "y": 204.21875,
+    "width": 427.6875,
+    "height": 552.3125
+  },
+  "[role=listbox]": {
+    "x": 0,
+    "y": 287.21875,
+    "width": 465.6875,
+    "height": 376
+  },
+  "[aria-label='Selected fighter figure']": {
+    "x": 463.6875,
+    "y": 204.21875,
+    "width": 513.046875,
+    "height": 552.3125
+  },
+  "[aria-label='Fighter profile']": {
+    "x": 976.734375,
+    "y": 204.21875,
+    "width": 293.265625,
+    "height": 552.3125
+  },
+  "footer": {
+    "x": 48,
+    "y": 756.53125,
+    "width": 1222,
+    "height": 48
+  }
+}

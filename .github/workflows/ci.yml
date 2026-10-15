@@ -1,0 +1,47 @@
+name: Application checks
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m venv .venv
+      - run: .venv/bin/python -m pip install -r requirements-media.txt
+      - run: npm ci
+      - run: npm run test:pipeline
+      - run: python -m unittest discover -s scripts/research -p 'test_*.py'
+      - name: Restore pinned dataset
+        id: dataset
+        shell: bash
+        run: |
+          if [ -n "$UFC_DATASET_URL" ]; then
+            npm run data:restore
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "Build and browser checks skipped: configure the UFC_DATASET_URL secret. This run does not validate a release." >> "$GITHUB_STEP_SUMMARY"
+          fi
+        env:
+          UFC_DATASET_URL: ${{ secrets.UFC_DATASET_URL }}
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+        if: steps.dataset.outputs.ready == 'true'
+      - run: npm run format:check
+      - run: npx playwright install --with-deps chromium
+        if: steps.dataset.outputs.ready == 'true'
+      - run: npm run test:e2e
+        if: steps.dataset.outputs.ready == 'true'
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: browser-evidence
+          path: test-results/

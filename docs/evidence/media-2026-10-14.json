@@ -1,0 +1,834 @@
+{
+  "capturedAt": "2026-10-14",
+  "scope": "Four public athlete pages and bounded API/image probes. No full archive crawl.",
+  "decoder": {
+    "Pillow": "12.3.0",
+    "webp": true
+  },
+  "requests": [
+    {
+      "label": "robots",
+      "url": "https://www.ufc.com/robots.txt",
+      "accept": "*/*",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/robots.txt",
+      "mime": "text/plain",
+      "bytes": 2038,
+      "sha256": "8af7696c9552eba55de0f275f76757d4214a3352b4667abea7618e066151c51a",
+      "headers": {
+        "ETag": "W/\"1791422645\"",
+        "Last-Modified": "Thu, 08 Oct 2026 01:24:05 GMT",
+        "Content-Type": "text/plain; charset=UTF-8",
+        "Content-Length": "2038",
+        "Vary": "Accept-Encoding, x-zone-langcode, X-Consumer-ID",
+        "Cache-Control": "max-age=604800, public"
+      }
+    },
+    {
+      "label": "directory",
+      "url": "https://www.ufc.com/athletes/all",
+      "accept": "*/*",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/athletes/all",
+      "mime": "text/html",
+      "bytes": 105039,
+      "sha256": "fe1c52bf6dff94100b13a887d121efb4d7c788fa1cc49f0f07a7bdd5f685dcd8",
+      "headers": {
+        "ETag": "W/\"1791949506\"",
+        "Last-Modified": "Wed, 14 Oct 2026 03:45:06 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Content-Length": "105039",
+        "Vary": "Accept-Encoding, x-zone-langcode, X-Consumer-ID, Cookie, Cookie",
+        "Cache-Control": "max-age=604800, public"
+      },
+      "hero": [],
+      "ogImage": null,
+      "athleteLinks": [
+        "/athlete/akbar-abdullaev",
+        "/athlete/daichi-abe",
+        "/athlete/danny-abbadi",
+        "/athlete/hamdy-abdelwahab",
+        "/athlete/klidson-abreu",
+        "/athlete/mansur-abdul-malik",
+        "/athlete/nariman-abbassov",
+        "/athlete/papy-abedi",
+        "/athlete/shamil-abdurakhimov",
+        "/athlete/tahir-abdullayev",
+        "/athlete/tank-abbott"
+      ],
+      "pagination": ["?page=1"]
+    },
+    {
+      "label": "api-index",
+      "url": "https://www.ufc.com/jsonapi",
+      "accept": "*/*",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/jsonapi",
+      "mime": "application/vnd.api+json",
+      "bytes": 925,
+      "sha256": "76f3f565ee94d79fc58c3f72930bf18ac1e3f12d2ed79f01006666779d1b3292",
+      "headers": {
+        "ETag": "\"1791540980\"",
+        "Last-Modified": "Fri, 09 Oct 2026 10:16:20 GMT",
+        "Content-Type": "application/vnd.api+json",
+        "Content-Length": "925",
+        "Vary": "x-zone-langcode, X-Consumer-ID",
+        "Cache-Control": "max-age=604800, public"
+      },
+      "apiResources": [
+        "file--file",
+        "media--gallery",
+        "media--image",
+        "node--article",
+        "node--gallery",
+        "node--landing",
+        "node--video",
+        "paragraph--gallery_items",
+        "promo--hero",
+        "self",
+        "taxonomy_term--status"
+      ],
+      "apiCount": 0
+    },
+    {
+      "label": "api-file",
+      "url": "https://www.ufc.com/jsonapi/file/file?page%5Blimit%5D=1",
+      "accept": "*/*",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/jsonapi/file/file?page%5Blimit%5D=1",
+      "mime": "application/vnd.api+json",
+      "bytes": 4754,
+      "sha256": "7236aac9475cff4a6744713a661f7b12329dd4ce5c615f7721596dc7d3ed8bf9",
+      "headers": {
+        "Content-Type": "application/vnd.api+json",
+        "Content-Length": "4754",
+        "Vary": "X-Consumer-ID",
+        "Cache-Control": "must-revalidate, no-cache, private"
+      },
+      "apiResources": ["last", "next", "self"],
+      "apiCount": 1,
+      "apiFile": {
+        "id": "bbebb1b2-06b0-4132-8260-5a1d11b139d2",
+        "filename": "3172025-Michael-Chandler-GettyImages-1298055186.jpeg",
+        "uri": {
+          "value": "s3://2025-03/3172025-Michael-Chandler-GettyImages-1298055186.jpeg",
+          "url": "https://ufc.com/images/2025-03/3172025-Michael-Chandler-GettyImages-1298055186.jpeg"
+        },
+        "filemime": "image/jpeg"
+      }
+    },
+    {
+      "label": "movsar",
+      "url": "https://www.ufc.com/athlete/movsar-evloev",
+      "accept": "*/*",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/athlete/movsar-evloev",
+      "mime": "text/html",
+      "bytes": 138486,
+      "sha256": "212ae43360a7d7e21fc38153aa529d9cd40a449934ec2de9d102a98c31107520",
+      "headers": {
+        "ETag": "W/\"1791943100\"",
+        "Last-Modified": "Wed, 14 Oct 2026 01:58:20 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Content-Length": "138486",
+        "Vary": "Accept-Encoding, x-zone-langcode, X-Consumer-ID, Cookie, Cookie",
+        "Cache-Control": "max-age=604800, public"
+      },
+      "hero": [
+        {
+          "src": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/EVLOEV_MOVSAR_L_03-21.png?itok=X2qAuG7T",
+          "alt": "Movsar Evloev",
+          "class": "hero-profile__image"
+        }
+      ],
+      "ogImage": "https://ufc.com/images/2026-03/EVLOEV_MOVSAR_03-21.png",
+      "athleteLinks": [
+        "https://www.ufc.com/athlete/aljamain-sterling",
+        "https://www.ufc.com/athlete/arnold-allen",
+        "https://www.ufc.com/athlete/lerone-murphy",
+        "https://www.ufc.com/athlete/movsar-evloev"
+      ],
+      "pagination": ["?page=1"]
+    },
+    {
+      "label": "justin",
+      "url": "https://www.ufc.com/athlete/justin-gaethje",
+      "accept": "*/*",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/athlete/justin-gaethje",
+      "mime": "text/html",
+      "bytes": 140409,
+      "sha256": "97a02d6e9add91784c19b402649daf6e0b78dab73ebbdb244620db2e1d7fc742",
+      "headers": {
+        "ETag": "W/\"1791942909\"",
+        "Last-Modified": "Wed, 14 Oct 2026 01:55:09 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Content-Length": "140409",
+        "Vary": "Accept-Encoding, x-zone-langcode, X-Consumer-ID, Cookie, Cookie",
+        "Cache-Control": "max-age=604800, public"
+      },
+      "hero": [
+        {
+          "src": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/GAETHJE_JUSTIN_R_BELT_06-14.png?itok=cyzUtrXX",
+          "alt": "Justin Gaethje",
+          "class": "hero-profile__image"
+        }
+      ],
+      "ogImage": "https://ufc.com/images/2026-06/GAETHJE_JUSTIN_BELT_06-14.png",
+      "athleteLinks": [
+        "https://www.ufc.com/athlete/ilia-topuria",
+        "https://www.ufc.com/athlete/justin-gaethje",
+        "https://www.ufc.com/athlete/paddy-pimblett",
+        "https://www.ufc.com/athlete/rafael-fiziev"
+      ],
+      "pagination": ["?page=1"]
+    },
+    {
+      "label": "valentina",
+      "url": "https://www.ufc.com/athlete/valentina-shevchenko",
+      "accept": "*/*",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/athlete/valentina-shevchenko",
+      "mime": "text/html",
+      "bytes": 139597,
+      "sha256": "fafd06b6c2ad2ce428bccc8ed78ea2fe9b834eac394d24bdd5bf3dea47d5913b",
+      "headers": {
+        "ETag": "W/\"1791949507\"",
+        "Last-Modified": "Wed, 14 Oct 2026 03:45:07 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Content-Length": "139597",
+        "Vary": "Accept-Encoding, x-zone-langcode, X-Consumer-ID, Cookie, Cookie",
+        "Cache-Control": "max-age=604800, public"
+      },
+      "hero": [
+        {
+          "src": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-11/SHEVCHENKO_VALENTINA_L_BELT_11-15.png?itok=4KuKr99O",
+          "alt": "Valentina Shevchenko",
+          "class": "hero-profile__image"
+        }
+      ],
+      "ogImage": "https://ufc.com/images/2025-11/SHEVCHENKO_VALENTINA_BELT_11-15.png",
+      "athleteLinks": [
+        "https://www.ufc.com/athlete/alexa-grasso",
+        "https://www.ufc.com/athlete/manon-fiorot",
+        "https://www.ufc.com/athlete/valentina-shevchenko",
+        "https://www.ufc.com/athlete/zhang-weili"
+      ],
+      "pagination": ["?page=1"]
+    },
+    {
+      "label": "dustin",
+      "url": "https://www.ufc.com/athlete/dustin-poirier",
+      "accept": "*/*",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/athlete/dustin-poirier",
+      "mime": "text/html",
+      "bytes": 136501,
+      "sha256": "3591b847265d72344fac3d84920fe5544efee64e028bbe9c6ba66cfd21e58b2f",
+      "headers": {
+        "ETag": "W/\"1791949507\"",
+        "Last-Modified": "Wed, 14 Oct 2026 03:45:07 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Content-Length": "136501",
+        "Vary": "Accept-Encoding, x-zone-langcode, X-Consumer-ID, Cookie, Cookie",
+        "Cache-Control": "max-age=604800, public"
+      },
+      "hero": [
+        {
+          "src": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/5/POIRIER_DUSTIN_L_06-01.png?itok=VHXq-Y5g",
+          "alt": "Dustin Poirier",
+          "class": "hero-profile__image"
+        }
+      ],
+      "ogImage": "https://ufc.com/images/2025-07/POIRIER_DUSTIN_07-19.png",
+      "athleteLinks": [
+        "https://www.ufc.com/athlete/benoit-saint-denis",
+        "https://www.ufc.com/athlete/dustin-poirier",
+        "https://www.ufc.com/athlete/islam-makhachev",
+        "https://www.ufc.com/athlete/max-holloway"
+      ],
+      "pagination": ["?page=1"]
+    },
+    {
+      "label": "movsar-display",
+      "url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/EVLOEV_MOVSAR_L_03-21.png?itok=X2qAuG7T",
+      "accept": "image/png,image/webp;q=0.8",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/EVLOEV_MOVSAR_L_03-21.png?itok=X2qAuG7T",
+      "mime": "image/webp",
+      "bytes": 226864,
+      "sha256": "494d52fdd63fbfe9d85691b4c2d7003fb4328699a70caf84dd0e503cd2af5a78",
+      "headers": {
+        "ETag": "\"51urOBhFmVz6nDlR/6M2KSQ1i2c5Yl0gHlbUP7jgxJ4\"",
+        "Content-Type": "image/webp",
+        "Content-Length": "226864",
+        "Vary": "Accept",
+        "Cache-Control": "max-age=2592000, public"
+      },
+      "decodedFormat": "WEBP",
+      "width": 460,
+      "height": 700,
+      "mode": "RGBA",
+      "alphaRange": [0, 255],
+      "nonTransparentBounds": [0, 0, 422, 700]
+    },
+    {
+      "label": "movsar-og",
+      "url": "https://ufc.com/images/2026-03/EVLOEV_MOVSAR_03-21.png",
+      "accept": "image/png,image/webp;q=0.8",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/images/2026-03/EVLOEV_MOVSAR_03-21.png",
+      "mime": "image/webp",
+      "bytes": 73966,
+      "sha256": "fb369c42f99f32a9e264a20763a502f632c5d163013376d7e77a257a7274cc5d",
+      "headers": {
+        "ETag": "\"iXHHFDzCiQsgyu+5KcUk4bvn2jfJUUbfaKfaqIOfpoM\"",
+        "Content-Type": "image/webp",
+        "Content-Length": "73966",
+        "Vary": "Accept",
+        "Cache-Control": "max-age=2592000, public"
+      },
+      "decodedFormat": "WEBP",
+      "width": 520,
+      "height": 325,
+      "mode": "RGBA",
+      "alphaRange": [0, 255],
+      "nonTransparentBounds": [85, 22, 445, 325]
+    },
+    {
+      "label": "movsar-hero-original-candidate",
+      "url": "https://ufc.com/images/2026-03/EVLOEV_MOVSAR_L_03-21.png",
+      "accept": "image/png,image/webp;q=0.8",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/images/2026-03/EVLOEV_MOVSAR_L_03-21.png",
+      "mime": "image/webp",
+      "bytes": 2513182,
+      "sha256": "117ee6baaadc21d04f58620868a7a172767007b79da5014e5aaa00ba09e2c0d8",
+      "headers": {
+        "ETag": "\"iENq1aELZGLoVds/yEIMhZ5ij6vRdX95rPjFc3DK2p0\"",
+        "Content-Type": "image/webp",
+        "Content-Length": "2513182",
+        "Vary": "Accept",
+        "Cache-Control": "max-age=2592000, public"
+      },
+      "decodedFormat": "WEBP",
+      "width": 1004,
+      "height": 3324,
+      "mode": "RGBA",
+      "alphaRange": [0, 255],
+      "nonTransparentBounds": [0, 0, 1004, 3324],
+      "variant": {
+        "file": "movsar-hero-original-candidate-body.webp",
+        "width": 544,
+        "height": 1800,
+        "bytes": 146048,
+        "sha256": "a38965854fde5511f6029b17118ba00f3dbc9b88c861a7585764257cfea61611",
+        "role": "full_body_candidate",
+        "approval": "pending_visual_check"
+      }
+    },
+    {
+      "label": "justin-display",
+      "url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/GAETHJE_JUSTIN_R_BELT_06-14.png?itok=cyzUtrXX",
+      "accept": "image/png,image/webp;q=0.8",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/images/styles/athlete_bio_full_body/s3/2026-06/GAETHJE_JUSTIN_R_BELT_06-14.png?itok=cyzUtrXX",
+      "mime": "image/webp",
+      "bytes": 268252,
+      "sha256": "3bdae83c4e8df030b67621f3c2bf42e734b4ba937593f2a34b39e5e9684efb34",
+      "headers": {
+        "ETag": "\"mChqeMJdakvrLo7YghI7sNQi1tsLXueHe+mPnP2sbzw\"",
+        "Content-Type": "image/webp",
+        "Content-Length": "268252",
+        "Vary": "Accept",
+        "Cache-Control": "max-age=2592000, public"
+      },
+      "decodedFormat": "WEBP",
+      "width": 460,
+      "height": 700,
+      "mode": "RGBA",
+      "alphaRange": [0, 255],
+      "nonTransparentBounds": [0, 0, 460, 700]
+    },
+    {
+      "label": "justin-og",
+      "url": "https://ufc.com/images/2026-06/GAETHJE_JUSTIN_BELT_06-14.png",
+      "accept": "image/png,image/webp;q=0.8",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/images/2026-06/GAETHJE_JUSTIN_BELT_06-14.png",
+      "mime": "image/webp",
+      "bytes": 87374,
+      "sha256": "7f8738e189ad415beccc5dbe6106361f8c1b8c9e82e1890b7a96244d98903caf",
+      "headers": {
+        "ETag": "\"bpaXjJlM2Wo/uHRXElLMx2PczjxWjYrs2KcImUbvskk\"",
+        "Content-Type": "image/webp",
+        "Content-Length": "87374",
+        "Vary": "Accept",
+        "Cache-Control": "max-age=2592000, public"
+      },
+      "decodedFormat": "WEBP",
+      "width": 520,
+      "height": 325,
+      "mode": "RGBA",
+      "alphaRange": [0, 255],
+      "nonTransparentBounds": [37, 24, 466, 325]
+    },
+    {
+      "label": "justin-hero-original-candidate",
+      "url": "https://ufc.com/images/2026-06/GAETHJE_JUSTIN_R_BELT_06-14.png",
+      "accept": "image/png,image/webp;q=0.8",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/images/2026-06/GAETHJE_JUSTIN_R_BELT_06-14.png",
+      "mime": "image/webp",
+      "bytes": 2651250,
+      "sha256": "a1d18acec7af178f3d825b0ee8307ae9da266505d676bd0bdcb63cf90798c62d",
+      "headers": {
+        "ETag": "\"Yeuoh6Z7uHcG5WWcVEkWqHEXy8LtiOmLXYjBzIqKJfo\"",
+        "Content-Type": "image/webp",
+        "Content-Length": "2651250",
+        "Vary": "Accept",
+        "Cache-Control": "max-age=2592000, public"
+      },
+      "decodedFormat": "WEBP",
+      "width": 1143,
+      "height": 3324,
+      "mode": "RGBA",
+      "alphaRange": [0, 255],
+      "nonTransparentBounds": [0, 0, 1143, 3324],
+      "variant": {
+        "file": "justin-hero-original-candidate-body.webp",
+        "width": 619,
+        "height": 1800,
+        "bytes": 174850,
+        "sha256": "31790bfc5293bc82db2396dad24f03af4f7b26e7d5dd6b5c4d0c545a34557d4a",
+        "role": "full_body_candidate",
+        "approval": "pending_visual_check"
+      }
+    },
+    {
+      "label": "valentina-display",
+      "url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-11/SHEVCHENKO_VALENTINA_L_BELT_11-15.png?itok=4KuKr99O",
+      "accept": "image/png,image/webp;q=0.8",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/images/styles/athlete_bio_full_body/s3/2025-11/SHEVCHENKO_VALENTINA_L_BELT_11-15.png?itok=4KuKr99O",
+      "mime": "image/webp",
+      "bytes": 246272,
+      "sha256": "32d72a1d9e03895ce8fef740df4fdc58ffa6312e40577c7941beff353eb8ff50",
+      "headers": {
+        "ETag": "\"scZP+Yc/Z4c6c0d3bU3T5lUON/mg4BPsPSkrZNSZiBA\"",
+        "Content-Type": "image/webp",
+        "Content-Length": "246272",
+        "Vary": "Accept",
+        "Cache-Control": "max-age=2592000, public"
+      },
+      "decodedFormat": "WEBP",
+      "width": 460,
+      "height": 700,
+      "mode": "RGBA",
+      "alphaRange": [0, 255],
+      "nonTransparentBounds": [0, 0, 460, 700]
+    },
+    {
+      "label": "valentina-og",
+      "url": "https://ufc.com/images/2025-11/SHEVCHENKO_VALENTINA_BELT_11-15.png",
+      "accept": "image/png,image/webp;q=0.8",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/images/2025-11/SHEVCHENKO_VALENTINA_BELT_11-15.png",
+      "mime": "image/webp",
+      "bytes": 86336,
+      "sha256": "33cc0a07442a3851f736f3aedc56049b53f3204cedd856a033a02e11c6725694",
+      "headers": {
+        "ETag": "\"Q1IrWxeJdelg0Ddd2MIxCcXhJLS25FdgR0XCHfZ3t9U\"",
+        "Content-Type": "image/webp",
+        "Content-Length": "86336",
+        "Vary": "Accept",
+        "Cache-Control": "max-age=2592000, public"
+      },
+      "decodedFormat": "WEBP",
+      "width": 520,
+      "height": 325,
+      "mode": "RGBA",
+      "alphaRange": [0, 255],
+      "nonTransparentBounds": [47, 16, 444, 325]
+    },
+    {
+      "label": "valentina-hero-original-candidate",
+      "url": "https://ufc.com/images/2025-11/SHEVCHENKO_VALENTINA_L_BELT_11-15.png",
+      "accept": "image/png,image/webp;q=0.8",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/images/2025-11/SHEVCHENKO_VALENTINA_L_BELT_11-15.png",
+      "mime": "image/webp",
+      "bytes": 2429500,
+      "sha256": "a91234551f5effa2496e5e7052f0038660258200bc9fbc430c6ecfcd1d394bf7",
+      "headers": {
+        "ETag": "\"2KJjGloYoAKAjVzzbHwrW9L0jdhgIZk5DS52E4NlvGM\"",
+        "Content-Type": "image/webp",
+        "Content-Length": "2429500",
+        "Vary": "Accept",
+        "Cache-Control": "max-age=2592000, public"
+      },
+      "decodedFormat": "WEBP",
+      "width": 1132,
+      "height": 3324,
+      "mode": "RGBA",
+      "alphaRange": [0, 255],
+      "nonTransparentBounds": [0, 0, 1132, 3324],
+      "variant": {
+        "file": "valentina-hero-original-candidate-body.webp",
+        "width": 613,
+        "height": 1800,
+        "bytes": 163350,
+        "sha256": "f40ecdeef75f0104984c1fe92cdb591f33c8c60654ec4c5d0d0bb08c2e84d36c",
+        "role": "full_body_candidate",
+        "approval": "pending_visual_check"
+      }
+    },
+    {
+      "label": "dustin-display",
+      "url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/5/POIRIER_DUSTIN_L_06-01.png?itok=VHXq-Y5g",
+      "accept": "image/png,image/webp;q=0.8",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/images/styles/athlete_bio_full_body/s3/2025-01/5/POIRIER_DUSTIN_L_06-01.png?itok=VHXq-Y5g",
+      "mime": "image/webp",
+      "bytes": 283712,
+      "sha256": "f60d3f2c2f14197b3dd6d1554e4dfb2964fc4248bfea3a867613c03c403e8cea",
+      "headers": {
+        "ETag": "\"Qs/iucmTTZCvRiIL3AfWUNAlOOO7Dx0YWd6yYfIZkzA\"",
+        "Content-Type": "image/webp",
+        "Content-Length": "283712",
+        "Vary": "Accept",
+        "Cache-Control": "max-age=2592000, public"
+      },
+      "decodedFormat": "WEBP",
+      "width": 460,
+      "height": 700,
+      "mode": "RGBA",
+      "alphaRange": [0, 255],
+      "nonTransparentBounds": [0, 0, 432, 700]
+    },
+    {
+      "label": "dustin-og",
+      "url": "https://ufc.com/images/2025-07/POIRIER_DUSTIN_07-19.png",
+      "accept": "image/png,image/webp;q=0.8",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/images/2025-07/POIRIER_DUSTIN_07-19.png",
+      "mime": "image/webp",
+      "bytes": 83266,
+      "sha256": "eb1e7df06756ca04277fa562da3b2cf0b163bda3a6c44a497b38c914301876dd",
+      "headers": {
+        "ETag": "\"N0v/k2VuLhBpNUD0FAnGSdUtE/MZvTQ9O27foPOCTGs\"",
+        "Content-Type": "image/webp",
+        "Content-Length": "83266",
+        "Vary": "Accept",
+        "Cache-Control": "max-age=2592000, public"
+      },
+      "decodedFormat": "WEBP",
+      "width": 520,
+      "height": 325,
+      "mode": "RGBA",
+      "alphaRange": [0, 255],
+      "nonTransparentBounds": [44, 21, 473, 325]
+    },
+    {
+      "label": "dustin-hero-original-candidate",
+      "url": "https://ufc.com/images/2025-01/5/POIRIER_DUSTIN_L_06-01.png",
+      "accept": "image/png,image/webp;q=0.8",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/images/2025-01/5/POIRIER_DUSTIN_L_06-01.png",
+      "mime": "image/webp",
+      "bytes": 2858932,
+      "sha256": "d7faaf8ac63c62f372c268fd3d252f49a05abaf96239f8c03c1e91f674d107ff",
+      "headers": {
+        "ETag": "\"uHrMG8oqKAPa8dmRIgIwf6hLMneVCgN0Xgp4RDh5Ygs\"",
+        "Content-Type": "image/webp",
+        "Content-Length": "2858932",
+        "Vary": "Accept",
+        "Cache-Control": "max-age=2592000, public"
+      },
+      "decodedFormat": "WEBP",
+      "width": 1026,
+      "height": 3324,
+      "mode": "RGBA",
+      "alphaRange": [0, 255],
+      "nonTransparentBounds": [0, 0, 1026, 3324],
+      "variant": {
+        "file": "dustin-hero-original-candidate-body.webp",
+        "width": 556,
+        "height": 1800,
+        "bytes": 187642,
+        "sha256": "62559c8ee028cb85b534d8088c2376c67a27926050ed9edfb0c8e8614043dd26",
+        "role": "full_body_candidate",
+        "approval": "pending_visual_check"
+      }
+    },
+    {
+      "label": "movsar-negotiation",
+      "url": "https://ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/EVLOEV_MOVSAR_L_03-21.png?itok=X2qAuG7T",
+      "accept": "image/avif,image/webp,image/*;q=0.8",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/images/styles/athlete_bio_full_body/s3/2026-03/EVLOEV_MOVSAR_L_03-21.png?itok=X2qAuG7T",
+      "mime": "image/avif",
+      "bytes": 29678,
+      "sha256": "7b2d8ef7473cfa44aa71c2473eec4ec4d7559773eaea61a7cb0bad7e40e24d0e",
+      "headers": {
+        "ETag": "\"cuCf+12c7GaVTAoEMKtQ//v81UlDYm0vYEwx0J4uhzA\"",
+        "Content-Type": "image/avif",
+        "Content-Length": "29678",
+        "Vary": "Accept",
+        "Cache-Control": "max-age=2592000, public"
+      },
+      "decodedFormat": "AVIF",
+      "width": 460,
+      "height": 700,
+      "mode": "RGBA",
+      "alphaRange": [0, 255],
+      "nonTransparentBounds": [0, 0, 425, 700]
+    },
+    {
+      "label": "api-known-filter",
+      "url": "https://www.ufc.com/jsonapi/file/file?page%5Blimit%5D=1&filter%5Bfilename%5D=3172025-Michael-Chandler-GettyImages-1298055186.jpeg",
+      "accept": "*/*",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/jsonapi/file/file?page%5Blimit%5D=1&filter%5Bfilename%5D=3172025-Michael-Chandler-GettyImages-1298055186.jpeg",
+      "mime": "application/vnd.api+json",
+      "bytes": 299,
+      "sha256": "973ed668321b3bd1c1fe62b63e74cf30036a0d6dbcb7cf9ed28e38c0619b961a",
+      "headers": {
+        "Content-Type": "application/vnd.api+json",
+        "Content-Length": "299",
+        "Vary": "X-Consumer-ID",
+        "Cache-Control": "must-revalidate, no-cache, private"
+      },
+      "apiResources": ["self"],
+      "apiCount": 0
+    },
+    {
+      "label": "api-current-filter",
+      "url": "https://www.ufc.com/jsonapi/file/file?page%5Blimit%5D=1&filter%5Bfilename%5D=GAETHJE_JUSTIN_BELT_06-14.png",
+      "accept": "*/*",
+      "status": 200,
+      "finalUrl": "https://www.ufc.com/jsonapi/file/file?page%5Blimit%5D=1&filter%5Bfilename%5D=GAETHJE_JUSTIN_BELT_06-14.png",
+      "mime": "application/vnd.api+json",
+      "bytes": 276,
+      "sha256": "220d4bf02c5886afec56d3ad6db281585766f93cd12b13fdc58704402e01c0bb",
+      "headers": {
+        "Content-Type": "application/vnd.api+json",
+        "Content-Length": "276",
+        "Vary": "X-Consumer-ID",
+        "Cache-Control": "must-revalidate, no-cache, private"
+      },
+      "apiResources": ["self"],
+      "apiCount": 0
+    },
+    {
+      "label": "movsar-hero-original-candidate-conditional",
+      "url": "https://ufc.com/images/2026-03/EVLOEV_MOVSAR_L_03-21.png",
+      "accept": "image/png,image/webp;q=0.8",
+      "status": 304,
+      "headers": {
+        "Cache-Control": "max-age=2592000, public",
+        "ETag": "\"iENq1aELZGLoVds/yEIMhZ5ij6vRdX95rPjFc3DK2p0\"",
+        "Vary": "Accept"
+      }
+    },
+    {
+      "label": "justin-hero-original-candidate-conditional",
+      "url": "https://ufc.com/images/2026-06/GAETHJE_JUSTIN_R_BELT_06-14.png",
+      "accept": "image/png,image/webp;q=0.8",
+      "status": 304,
+      "headers": {
+        "Cache-Control": "max-age=2592000, public",
+        "ETag": "\"Yeuoh6Z7uHcG5WWcVEkWqHEXy8LtiOmLXYjBzIqKJfo\"",
+        "Vary": "Accept"
+      }
+    }
+  ],
+  "discovery": {
+    "sitemapSource": "https://www.ufc.com/sitemap.xml?page=1",
+    "status": 200,
+    "urlCount": 1000,
+    "athleteCount": 26,
+    "sampleAthletes": [
+      "https://www.ufc.com/athlete/shanna-young",
+      "https://www.ufc.com/athlete/spike-carlyle",
+      "https://www.ufc.com/athlete/joshua-culibao",
+      "https://www.ufc.com/athlete/david-dvorak"
+    ],
+    "scope": "One child sitemap only. Full archive coverage is not established."
+  },
+  "identity": {
+    "fighterCount": 4581,
+    "duplicateNormalizedNames": 9,
+    "examples": [
+      [
+        {
+          "id": "c8661e204c66f325",
+          "name": "Mike Davis"
+        },
+        {
+          "id": "fb3e61720be4690c",
+          "name": "Mike Davis"
+        }
+      ],
+      [
+        {
+          "id": "0778f94eb5d588a5",
+          "name": "Joey Gomez"
+        },
+        {
+          "id": "3a28e1e641366308",
+          "name": "Joey Gomez"
+        }
+      ],
+      [
+        {
+          "id": "3641a0d117e9bc6c",
+          "name": "Tony Johnson"
+        },
+        {
+          "id": "a45bab49951a45cd",
+          "name": "Tony Johnson"
+        }
+      ],
+      [
+        {
+          "id": "d52ef694108f8235",
+          "name": "Michael McDonald"
+        },
+        {
+          "id": "d0314416a7f26527",
+          "name": "Michael McDonald"
+        }
+      ],
+      [
+        {
+          "id": "4e30f2761b6bd3b5",
+          "name": "Jose Montanha"
+        },
+        {
+          "id": "1f8cd7634e8286ff",
+          "name": "Jose Montanha"
+        }
+      ]
+    ]
+  },
+  "prototypeAudit": [
+    {
+      "file": "arman-tsarukyan-full-v7.png",
+      "format": "PNG",
+      "width": 520,
+      "height": 325,
+      "mode": "RGBA"
+    },
+    {
+      "file": "beneil-dariush-full-v7.png",
+      "format": "PNG",
+      "width": 520,
+      "height": 325,
+      "mode": "RGBA"
+    },
+    {
+      "file": "benoit-saint-denis-full-v7.png",
+      "format": "PNG",
+      "width": 520,
+      "height": 325,
+      "mode": "RGBA"
+    },
+    {
+      "file": "charles-oliveira-full-v7.png",
+      "format": "PNG",
+      "width": 520,
+      "height": 325,
+      "mode": "RGBA"
+    },
+    {
+      "file": "dan-hooker-full-v7.png",
+      "format": "PNG",
+      "width": 520,
+      "height": 325,
+      "mode": "RGBA"
+    },
+    {
+      "file": "ilia-topuria-full-v7.png",
+      "format": "PNG",
+      "width": 520,
+      "height": 325,
+      "mode": "RGBA"
+    },
+    {
+      "file": "justin-gaethje-full-v7.png",
+      "format": "PNG",
+      "width": 520,
+      "height": 325,
+      "mode": "RGBA"
+    },
+    {
+      "file": "mateusz-gamrot-full-v7.png",
+      "format": "PNG",
+      "width": 520,
+      "height": 325,
+      "mode": "RGBA"
+    },
+    {
+      "file": "mauricio-ruffy-full-v7.png",
+      "format": "PNG",
+      "width": 520,
+      "height": 325,
+      "mode": "RGBA"
+    },
+    {
+      "file": "max-holloway-full-v7.png",
+      "format": "PNG",
+      "width": 520,
+      "height": 325,
+      "mode": "RGBA"
+    },
+    {
+      "file": "paddy-pimblett-full-v7.png",
+      "format": "PNG",
+      "width": 520,
+      "height": 325,
+      "mode": "RGBA"
+    },
+    {
+      "file": "quillan-salkilld-full-v7.png",
+      "format": "PNG",
+      "width": 520,
+      "height": 325,
+      "mode": "RGBA"
+    },
+    {
+      "file": "rafael-fiziev-full-v7.png",
+      "format": "PNG",
+      "width": 520,
+      "height": 325,
+      "mode": "RGBA"
+    },
+    {
+      "file": "renato-moicano-full-v7.png",
+      "format": "PNG",
+      "width": 520,
+      "height": 325,
+      "mode": "RGBA"
+    },
+    {
+      "file": "salahdine-parnasse-full-v7.png",
+      "format": "PNG",
+      "width": 520,
+      "height": 325,
+      "mode": "RGBA"
+    },
+    {
+      "file": "tom-nolan-full-v7.png",
+      "format": "PNG",
+      "width": 520,
+      "height": 325,
+      "mode": "RGBA"
+    }
+  ],
+  "limits": [
+    "Only Justin full-body candidate received a visual inspection.",
+    "The initial bounded probe preceded the robots policy review. Future jobs must honor its delay.",
+    "No full sitemap traversal or archive coverage measurement occurred."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "milestone": "M1",
+  "checkedAt": "2026-10-14",
+  "datasetVersion": "2026-10-14-555dda3397f54a57",
+  "counts": {
+    "bouts": 11559,
+    "divisions": 2,
+    "fieldConflicts": 13,
+    "fighters": 4581,
+    "mediaAssets": 80,
+    "records": 23118
+  },
+  "sourceCounts": {
+    "events": 1273,
+    "fight_details": 11559,
+    "fighters": 4581,
+    "fights": 23118
+  },
+  "sourceDatabaseSha256": "4516eec0f095e13c1a39ae5452850ce34326a8c702753831c978c84e4b66925f",
+  "sourceDatabaseUnchanged": true,
+  "media": {
+    "halfBody": 32,
+    "fullBody": 32,
+    "headshots": 16,
+    "variants": 160,
+    "fightersWithNullMedia": 4549
+  },
+  "zeroHistoryFighters": 430,
+  "checks": {
+    "pythonPipelineTests": 16,
+    "candidateTests": 6,
+    "vitestTests": 6,
+    "browserTests": 2,
+    "runtimeContracts": "passed",
+    "sourceReferences": "passed",
+    "immutableHeaders": "passed",
+    "publicPrivacy": "passed",
+    "atomicFailureAndRepeat": "passed"
+  },
+  "artifact": "outputs/datasets/ufc-data-2026-10-14-555dda3397f54a57.tar.gz",
+  "limits": [
+    "Only the first 32 fighters have reviewed image roles.",
+    "Media rights remain unknown until M5.",
+    "The Next.js foundation does not yet implement the V8 interaction.",
+    "Remote CI has not run."
+  ]
+}

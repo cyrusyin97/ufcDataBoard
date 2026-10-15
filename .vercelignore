@@ -1,0 +1,11 @@
+.git
+.github
+.next
+.venv
+node_modules
+outputs
+work
+docs
+tests
+public/data
+.env*

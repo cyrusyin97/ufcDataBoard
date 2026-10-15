@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-14",
+  "milestone": "M2",
+  "datasetVersion": "2026-10-14-7c5ad4426abf6d1a",
+  "checks": {
+    "lint": "pass",
+    "typecheck": "pass",
+    "unitTests": 14,
+    "browserTests": 7,
+    "productionBuild": "pass",
+    "documentFormat": "pass",
+    "localDocumentLinks": "pass"
+  },
+  "viewport": {
+    "width": 1318,
+    "height": 808
+  },
+  "maxDesktopRegionDifferenceCssPx": 1,
+  "serverTrace": {
+    "files": 158,
+    "fighterBundles": 32,
+    "publicMediaFiles": 0
+  },
+  "remainingMilestones": ["M3", "M4", "M5"]
+}

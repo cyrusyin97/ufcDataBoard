@@ -1,0 +1,410 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "datasetVersion": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}-[a-f0-9]{16}$"
+    },
+    "profile": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{16}$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ufcSlug": {
+          "type": ["string", "null"]
+        },
+        "nickname": {
+          "type": ["string", "null"]
+        },
+        "careerRecord": {
+          "type": "object",
+          "properties": {
+            "wins": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "losses": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "draws": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "noContests": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": ["wins", "losses", "draws", "noContests"],
+          "additionalProperties": false
+        },
+        "birthDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date",
+              "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "ageAtSnapshot": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "heightCm": {
+          "anyOf": [
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reachCm": {
+          "anyOf": [
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "stance": {
+          "type": ["string", "null"]
+        },
+        "placeOfBirth": {
+          "type": ["string", "null"]
+        },
+        "trainingGym": {
+          "type": ["string", "null"]
+        },
+        "fightingStyle": {
+          "type": ["string", "null"]
+        },
+        "status": {
+          "type": ["string", "null"]
+        },
+        "finishCounts": {
+          "type": "object",
+          "properties": {
+            "knockout": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "submission": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": ["knockout", "submission"],
+          "additionalProperties": false
+        },
+        "fieldSources": {
+          "type": "object",
+          "properties": {
+            "careerRecord": {
+              "type": "string",
+              "format": "uri"
+            },
+            "birthDate": {
+              "type": "string",
+              "format": "uri"
+            },
+            "heightCm": {
+              "type": "string",
+              "format": "uri"
+            },
+            "reachCm": {
+              "type": "string",
+              "format": "uri"
+            },
+            "finishCounts": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "uri"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "biography": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "uri"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "careerRecord",
+            "birthDate",
+            "heightCm",
+            "reachCm",
+            "finishCounts",
+            "biography"
+          ],
+          "additionalProperties": false
+        },
+        "sourceObservations": {
+          "type": "object",
+          "properties": {
+            "ufcCom": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "capturedAt": {
+                      "type": "string",
+                      "format": "date",
+                      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+                    },
+                    "sourceUrl": {
+                      "type": "string",
+                      "format": "uri"
+                    },
+                    "values": {
+                      "type": "object",
+                      "propertyNames": {
+                        "type": "string"
+                      },
+                      "additionalProperties": {}
+                    }
+                  },
+                  "required": ["capturedAt", "sourceUrl", "values"],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "ufcstats": {
+              "type": "object",
+              "properties": {
+                "sourceUrl": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "scrapedAt": {
+                  "type": ["string", "null"]
+                }
+              },
+              "required": ["sourceUrl", "scrapedAt"],
+              "additionalProperties": false
+            }
+          },
+          "required": ["ufcCom", "ufcstats"],
+          "additionalProperties": false
+        },
+        "sourceUrl": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "displayName",
+        "ufcSlug",
+        "nickname",
+        "careerRecord",
+        "birthDate",
+        "ageAtSnapshot",
+        "heightCm",
+        "reachCm",
+        "stance",
+        "placeOfBirth",
+        "trainingGym",
+        "fightingStyle",
+        "status",
+        "finishCounts",
+        "fieldSources",
+        "sourceObservations",
+        "sourceUrl"
+      ],
+      "additionalProperties": false
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{16}$"
+          },
+          "fighterId": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{16}$"
+          },
+          "opponentId": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{16}$"
+          },
+          "opponentName": {
+            "type": ["string", "null"]
+          },
+          "eventId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "eventName": {
+            "type": "string",
+            "minLength": 1
+          },
+          "date": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date",
+                "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "location": {
+            "type": ["string", "null"]
+          },
+          "result": {
+            "type": "string",
+            "enum": ["W", "L", "D", "NC"]
+          },
+          "method": {
+            "type": ["string", "null"]
+          },
+          "round": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "time": {
+            "type": ["string", "null"]
+          },
+          "sourceUrl": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "fighterId",
+          "opponentId",
+          "opponentName",
+          "eventId",
+          "eventName",
+          "date",
+          "location",
+          "result",
+          "method",
+          "round",
+          "time",
+          "sourceUrl"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["schemaVersion", "datasetVersion", "profile", "records"],
+  "additionalProperties": false
+}

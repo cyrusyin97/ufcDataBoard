@@ -1,0 +1,22 @@
+export const en = {
+  title: "UFC Rankings",
+  category: "Weight division",
+  champion: "Champion",
+  snapshot: "Ranking snapshot",
+  profile: "FIGHTER PROFILE",
+  careerRecord: "PROFESSIONAL RECORD",
+  recent: "RECENT FORM",
+  noResults: "No recorded results.",
+  officialProfile: "OFFICIAL FIGHTER PROFILE",
+  statsProfile: "UFCSTATS FIGHTER PROFILE",
+  loading: "Loading fighter…",
+  loadError: "The fighter could not be loaded. Try again.",
+  retry: "Retry",
+  history: "Fight history",
+  emptyHistory: "No recorded bouts in this dataset.",
+  coverage: "LOCAL UFCSTATS DATASET · RECORDED BOUTS, NOT CAREER TOTALS",
+  returnRankings: "Return to rankings",
+  unknownFighter:
+    "This fighter is not in the dataset. Return to rankings to continue.",
+  previewError: "The opponent profile could not be loaded.",
+} as const;
