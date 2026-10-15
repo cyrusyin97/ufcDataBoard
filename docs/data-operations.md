@@ -65,7 +65,10 @@ Do not approve a role merely because its dimensions look plausible.
 A collection failure keeps previous cached assets.
 A new unreviewed candidate does not replace an older hash-approved role in the export.
 Missing or unresolved roles remain null.
-The initial dataset includes 32 half-body images, 32 full-body cutouts, and 16 headshots.
+The first M1 dataset included 32 half-body images, 32 full-body cutouts, and 16 headshots.
+The current dataset has 176 reviewed images for each of the three roles.
+Both published rankings have headshots for all 32 fighters.
+Read [the selector correction report](selector-correction.md) for the latest headshot checks.
 The other fighters retain null roles until their sources receive review.
 
 ## Additional ranked fighters
@@ -151,7 +154,6 @@ Production release checks must run against a real artifact.
 
 ## Remaining release work
 
-M2 will connect the interactive interface to these contracts.
-M3 and M4 will implement navigation and motion.
+M2 through M4 implement the interface, navigation, and motion.
 M5 must check media rights, hosting delivery, and the update schedule.
 M1 does not guarantee official images for every archive fighter.

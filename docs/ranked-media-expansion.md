@@ -116,3 +116,9 @@ The initial browser attempt could not bind a sandbox port.
 The approved local server rerun passed.
 No remote CI run occurred.
 M2 through M5 remain planned.
+
+## Later headshot correction
+
+The counts above describe the original expansion snapshot.
+The [selector correction](selector-correction.md) adds the 16 missing Featherweight headshots.
+The current release contains 176 reviewed assets for each media role.

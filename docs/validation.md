@@ -194,3 +194,16 @@ GitHub source CI passes after removing local interpreter and dataset dependencie
 Remote build and browser checks remain skipped until the artifact URL is configured.
 M5 remains in progress. No hosting release occurred.
 Read [the M5 report](m5-report.md) for remaining inputs and limits.
+
+## Division menu and ranking headshot correction
+
+Date: 2026-10-15.
+The division menu matches the V8 custom menu.
+Both published rankings use reviewed 520 by 325 headshots with centered framing.
+All 32 headshots pass source and variant checks.
+The source database, all fighter facts, and all body image hashes remain unchanged.
+The Node.js 24 production build, ESLint, TypeScript, 29 unit tests, and 25 pipeline tests pass.
+All 23 Chromium checks pass, including two corrected checks on a focused rerun.
+Four focused Firefox and WebKit checks pass.
+The pinned archive restores successfully into an isolated root.
+Read [the correction report](selector-correction.md) for test adaptations and evidence.

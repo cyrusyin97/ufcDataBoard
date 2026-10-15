@@ -552,3 +552,19 @@ CI reports an explicit release-validation omission when that URL is absent.
 The HTTP checker validates a supplied origin and its pinned data, response hashes, redirects, and cache headers.
 It does not replace browser interaction checks.
 The browser runner accepts `PLAYWRIGHT_BASE_URL` for a deployed preview.
+
+## 20. Ranking selector media and menu correction
+
+The category control follows the V8 custom menu.
+A button opens menu items with radio selection semantics.
+Keyboard movement changes focus. Activation changes the division.
+Escape restores trigger focus. Tab and outside-pointer input close the menu.
+The existing experience controller retains category locking and champion selection.
+
+Ranking thumbnails use reviewed headshots only.
+The summary selects the largest published headshot variant.
+The image fills its own container with a centered cover crop.
+The pipeline also retains a 520 × 325 headshot bound without enlarging smaller sources.
+The transform version changes when the variant specification changes.
+A missing headshot uses initials rather than a body image.
+This thumbnail rule does not change the main figure fallback order.

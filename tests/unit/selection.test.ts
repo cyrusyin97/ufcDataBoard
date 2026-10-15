@@ -108,7 +108,8 @@ it("renders the same category and dial components for an additional five-entry d
       onChange: () => {},
     }),
   );
-  expect(dropdown).toContain('value="welterweight"');
+  expect(dropdown).toContain('aria-haspopup="menu"');
+  expect(dropdown).toContain(division.label);
   const dial = renderToStaticMarkup(
     createElement(RankingDial, {
       division,

@@ -1,0 +1,322 @@
+{
+  "checkedAt": "2026-10-15",
+  "datasetVersion": "2026-10-14-a8f817e5c4158abe",
+  "previousDatasetVersion": "2026-10-14-7c5ad4426abf6d1a",
+  "sourceDatabaseSha256": "4516eec0f095e13c1a39ae5452850ce34326a8c702753831c978c84e4b66925f",
+  "sourceDatabaseUnchanged": true,
+  "unchangedFighterBundles": 4581,
+  "unchangedBodyRoles": 352,
+  "counts": {
+    "bouts": 11559,
+    "divisions": 2,
+    "fieldConflicts": 54,
+    "fighters": 4581,
+    "mediaAssets": 528,
+    "records": 23118
+  },
+  "publishedHeadshotCoverage": [
+    {
+      "division": "featherweight",
+      "fighterId": "e1248941344b3288",
+      "sourceSha256": "b4b9fd053b4e54446c9727e1780600ddb0245f417e40a80194ab4bd5a2c7ca2d",
+      "variantSha256": "5512e990a62287a9f1c6b5265ff86366d2f210d08df99af1580dad892907a07f",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "featherweight",
+      "fighterId": "76e2870ffafbe38f",
+      "sourceSha256": "fb369c42f99f32a9e264a20763a502f632c5d163013376d7e77a257a7274cc5d",
+      "variantSha256": "1272ede346aff2aeeb78d84fd681115328675b78090dd629f19b936be48499f5",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "featherweight",
+      "fighterId": "f166e93d04a8c274",
+      "sourceSha256": "c834ba511816a45af377dfa50aefb0d69382934a9f54c0edc9574e65b75f5ef5",
+      "variantSha256": "be1f97e1deb9632ed3ac8ebeba195f1f78a905004b47187dad99373660e41bbf",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "featherweight",
+      "fighterId": "396fe87b84ac2e1c",
+      "sourceSha256": "af99cdd4a26473deea577e4a3893327b1a2db7b90e5823ee0c64a9f8ed737859",
+      "variantSha256": "de4c235a5ca722de8e56973414b8cd2bd16701ed48804e13b973f58a99213301",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "featherweight",
+      "fighterId": "cb696ebfb6598724",
+      "sourceSha256": "f9c8733bb969216bb04ce46e372d5216b1e891c4d9ea68d114e6a0a02bfc8734",
+      "variantSha256": "5abc883d66674f79513b36c277b650e8c92c62cb30a1c3ebad810cdfe91c771e",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "featherweight",
+      "fighterId": "52ef95b5860fb28c",
+      "sourceSha256": "a36c37505edcbbdeb3573eb988534ee83a54d7c29f8f0f6bca0c2de4ebaf3b78",
+      "variantSha256": "599dea5b209c5204521e51115cbc30e22006324908664363874e13bacba65148",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "featherweight",
+      "fighterId": "cbf5e6f231b55443",
+      "sourceSha256": "e216259817ea25dda5e229d0b21b56ee001eb23890db2ec0167bf96cf72db623",
+      "variantSha256": "f401683482803686fe018b7f1331325be5b1423d641c53f31353d1dc82f40392",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "featherweight",
+      "fighterId": "040a74bb0a465c54",
+      "sourceSha256": "9f3fc57c0277f84b3c0f62bbb946ea3569ab5d597b0888c0db2bd25cdfb766d6",
+      "variantSha256": "bc7a410ab712e8375eaebecbedd4a65b189f566318160251042de6b0b7759e05",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "featherweight",
+      "fighterId": "52c2ae6d2f2d2613",
+      "sourceSha256": "7c36fddef66090f434c5104f4aaba1bca80f40692309d203f321484178bbbcca",
+      "variantSha256": "f17cb6b7988c93d06481e1488d206d25b1dea6d9c153560d56072724c66fab9d",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "featherweight",
+      "fighterId": "239d8e5359022f3b",
+      "sourceSha256": "60b4e5c507f876b75cf7fa363d136f79c34c8bffe50a590f4b83472c3a07af59",
+      "variantSha256": "4063700d94fa1ab4087127a5b73f79993c0d352edfadc1f361042a9cf98d1853",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "featherweight",
+      "fighterId": "97cf1a2c7c5e7889",
+      "sourceSha256": "8423afffac292d836f76ef2a7f6a9428174245ea321799e4244d0ea33353e902",
+      "variantSha256": "0959d46139460c2e7391f2db47a4322530f4e7d5ed520d8f48c541d333386af4",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "featherweight",
+      "fighterId": "5537efc6e496dd84",
+      "sourceSha256": "26877429bfc11b4298adfff4d150d0c972446088bea9736bc9045cec0bde7ba7",
+      "variantSha256": "d26969bd05f37eeb951eb1ef2fd5888746f184eb46854445031b0a6cc760ee71",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "featherweight",
+      "fighterId": "20bccc9bb4ceb23e",
+      "sourceSha256": "9c93da88459057fed985ff7aa5c541b3e16f5888b7c4d5f24f65c4d630e6320b",
+      "variantSha256": "33fb30931333e96b5cebc2e64c39bfc93cfc98ef051fee228aa01148c13be924",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "featherweight",
+      "fighterId": "def8166ff24bd237",
+      "sourceSha256": "883f3bdf0f43e2d0f1e6941a8d4eeb2778f3c1185dc7e22e5e57cd563f57e1b8",
+      "variantSha256": "bb1056c3122ea79d5bd6ba42df62fc2fb3b8336ec28c9c369a0831f171b1eedd",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "featherweight",
+      "fighterId": "98a58c26c5b1ed17",
+      "sourceSha256": "ea76ccd40cc9bfd7181bd0c48110b05a1029be937ddee4d5a2ffd556b8296e39",
+      "variantSha256": "f5cb87641526bffa1d88709fd20384e2571ebb9be36268f29272af2aa7805258",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "featherweight",
+      "fighterId": "ffe9703408fb5964",
+      "sourceSha256": "edef9ac22ad9fe7391b417c7c920b73ad224b5c9ea802c0640db87ca8f3b722c",
+      "variantSha256": "1e50a33d968dc7e9d6b707c5aa281824f0357bad96a7951e35d41e22ab47bfdd",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "lightweight",
+      "fighterId": "9e8f6c728eb01124",
+      "sourceSha256": "fc19ab2411df1147dc35d093a5230abc21b28c50471cbdf8048ba5f7efc087c1",
+      "variantSha256": "b46db5de724221b595594717858ed150bd3458ec9ae41951e34a4dfb8ce0ac37",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "lightweight",
+      "fighterId": "54f64b5e283b0ce7",
+      "sourceSha256": "bda164dbc67f6b66dd006f37f257f1eda0f2ee1cd40a33ce49bbc2c70ec8a20f",
+      "variantSha256": "5ab59ad3ba0cf3730cabc4aad657587225695d1e6cf35ed30b42e7901d86b047",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "lightweight",
+      "fighterId": "eae48ff31db420c2",
+      "sourceSha256": "304f9df439df3a8f3906581fe17a676126a88439805dabe9744bcab46ffe0e92",
+      "variantSha256": "3e79d53d967ba224f0dd536bc07811ad15ff2412e6df8521532e3d73cdc039bc",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "lightweight",
+      "fighterId": "07225ba28ae309b6",
+      "sourceSha256": "3d05ab92d84a39c536a75782282b92f04ca791c7d25be343be9f4eb1ca87a2f4",
+      "variantSha256": "ff886d5c9232f556fea1e55be33f0a1137e9c31ce116282b303792b00461a590",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "lightweight",
+      "fighterId": "150ff4cc642270b9",
+      "sourceSha256": "126896ce0871a0d9c4a904c0a09ef91a1fcbe824bd555ea59814d8ae326b4377",
+      "variantSha256": "6d47b2eb70b3ef782cd56061941ba6339903f830cd630958b7759ca5e5ef5177",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "lightweight",
+      "fighterId": "7826923b47f8d72a",
+      "sourceSha256": "f5b3454108c048c40dd441eb09da8706e795ff40c55481ae067a685a5faf138b",
+      "variantSha256": "548093246d34e4c3bbd7344465a281341d618ce1ada3354ca52ebe642246074e",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "lightweight",
+      "fighterId": "c2299ec916bc7c56",
+      "sourceSha256": "9840d53f6d5ece0d45dc9f269fac941f4be674bf53e2ab4e862655649e7e9906",
+      "variantSha256": "36f728cb2d8c66540997ecd1c4a4425e23ec0bb5544ac968e80ffdec51634acc",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "lightweight",
+      "fighterId": "17734443a833cdf7",
+      "sourceSha256": "882357b5b2b19b9bd1209a7fb9b449d7dad3df7544b81c89cc58b7198f56418f",
+      "variantSha256": "726ece1597d6f26715854432755d21576dcb986472c3e922c6ce16b87da73ff9",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "lightweight",
+      "fighterId": "9c393e836a852f30",
+      "sourceSha256": "843ad40b21cdc66537471db190423b4ef9e12d0530d9b6c80eba874131b32350",
+      "variantSha256": "af8dc61e50894f2a02df5e0c15847869ed9d348e384d108e94426d5b0a9c9ddb",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "lightweight",
+      "fighterId": "b3cb9dfccff3be76",
+      "sourceSha256": "368a0366abc261f0e6d653f68ee90e77dabb4794760088a21ef34eb3dff2612d",
+      "variantSha256": "eacf62172a122475b2ab424f49dc8cbadd8553e564f5472222f8059c217f76c2",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "lightweight",
+      "fighterId": "72db2a14ffa73ece",
+      "sourceSha256": "2cf524c1bc87520995342c9851f9aed9c2fed26626f75178c9a7d9090a2a1938",
+      "variantSha256": "182e7efb413372b2c6bbb0e43637683bec43e5e96098b0323aa8b438878cc2f8",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "lightweight",
+      "fighterId": "c814b4c899793af6",
+      "sourceSha256": "de010aa3c2da5046e40f67a6b205489ae56f2dc287477c96df4c886c503dbf19",
+      "variantSha256": "271bea59e0faf00c36c7cc9d9b8d9e94184424f270a5136df44ed5a302b9117c",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "lightweight",
+      "fighterId": "b6452706b373eea1",
+      "sourceSha256": "19d3b6e71f8ef1ec00ba3fe4009d35a675197be049e5383f10aad2f7f6ae4e68",
+      "variantSha256": "a3be22916fd49034e636bf75ebc171ae50899c86489c63adf1192260483431a4",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "lightweight",
+      "fighterId": "193b9d1858bc4df3",
+      "sourceSha256": "08181ffa5cb12bce2d82c6becf03404c8aa17bafc2a8180ad95c15bb318a2781",
+      "variantSha256": "b46147b63824f0b8497086ffe288309a6d9d869998ce488186ed3814dd8e0d5e",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "lightweight",
+      "fighterId": "6c3b2525436cf5d4",
+      "sourceSha256": "d6d01234f786839217fe7f1e94084756b3a7a60bdbcfe12a04397e5a5b4c42d8",
+      "variantSha256": "dba2069293655686516811e7461f62375a925c2b204751c7b0121e54978706ef",
+      "width": 520,
+      "height": 325
+    },
+    {
+      "division": "lightweight",
+      "fighterId": "08af939f41b5a57b",
+      "sourceSha256": "41e25126e7e3fa29cc3dbdee0317cc1186ba641a05844aaa7385f3f6aa432991",
+      "variantSha256": "40297908b5ba053203750202b37086770bb8507b01206cc4f1e96af6cb35ed67",
+      "width": 520,
+      "height": 325
+    }
+  ],
+  "publicationRights": "Unknown. No hosting release occurred.",
+  "artifact": {
+    "datasetVersion": "2026-10-14-a8f817e5c4158abe",
+    "sha256": "acd08467fbd720d4df519d43089ac5ba5cdf1fa542c9cc34a9a21a2b3b26d972",
+    "bytes": 57389802
+  },
+  "checks": {
+    "node": "24.22.0",
+    "productionBuild": "passed",
+    "lint": "passed",
+    "typecheck": "passed",
+    "unitTests": 29,
+    "pipelineTests": 25,
+    "chromium": {
+      "distinctChecksPassed": 23,
+      "initialRun": {
+        "passed": 21,
+        "failed": 2
+      },
+      "correctedRerun": {
+        "passed": 2,
+        "failed": 0
+      },
+      "testAdaptations": [
+        "Start the category loop with a different division. Re-selecting the current division preserves its URL.",
+        "Decode the visible selected row. Do not wait for lazy offscreen images."
+      ]
+    },
+    "firefox": {
+      "focusedChecksPassed": 2
+    },
+    "webkit": {
+      "focusedChecksPassed": 2
+    },
+    "isolatedPinnedRestore": "passed",
+    "visualReview": "Both divisions and the dark menu pass review at device scale factor two.",
+    "viewport": {
+      "width": 1318,
+      "height": 808,
+      "deviceScaleFactor": 2
+    },
+    "browsers": {
+      "chromium": "156.0.8078.4",
+      "firefox": "157.0",
+      "webkit": "27.2"
+    }
+  }
+}

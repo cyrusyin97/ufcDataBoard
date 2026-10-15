@@ -206,11 +206,11 @@ Use `unknown` while a source needs review.
 A full-body approval needs a visual check for head, legs, and feet.
 Alpha and aspect ratio can reject unsuitable candidates but cannot approve anatomy.
 
-| Role      | Initial variants                 | Transform                              |
-| --------- | -------------------------------- | -------------------------------------- |
-| Headshot  | 160 × 100 and 320 × 200 bounds   | Preserve the source composition.       |
-| Half-body | 320 and 460 pixel width bounds   | Use the reviewed hero source.          |
-| Full-body | 900 and 1800 pixel height bounds | Preserve the complete reviewed cutout. |
+| Role      | Initial variants                           | Transform                              |
+| --------- | ------------------------------------------ | -------------------------------------- |
+| Headshot  | 160 × 100, 320 × 200, and 520 × 325 bounds | Preserve the source composition.       |
+| Half-body | 320 and 460 pixel width bounds             | Use the reviewed hero source.          |
+| Full-body | 900 and 1800 pixel height bounds           | Preserve the complete reviewed cutout. |
 
 Keep aspect ratio.
 Do not enlarge a small source.

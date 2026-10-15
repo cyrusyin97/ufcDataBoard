@@ -100,6 +100,9 @@ Use browser performance traces for frame timing.
 ## Category drawers
 
 The dropdown sits above the circular selector.
+Use the V8 dark custom menu, its right-aligned weights, and its active checkmark.
+Do not open an operating-system select popup.
+Support arrow keys, Enter, Escape, Tab, and outside-pointer dismissal.
 It offers Featherweight at 145 LB and Lightweight at 155 LB.
 Keep category controls available in the rankings state.
 The selected category and the main heading identify the same division.
@@ -139,3 +142,13 @@ Reduced motion commits the same final state without spatial movement.
 
 Use V8 for current comparisons.
 Keep V6 and V7 as historical references.
+
+## Ranking headshots
+
+Use a reviewed headshot for every ranking-list thumbnail in both initial divisions.
+Select the largest available headshot variant.
+Keep the complete vertical headshot composition inside the image box.
+Use a centered cover crop for horizontal framing.
+Do not stretch the image beyond the thumbnail container or offset it upwards.
+Use initials when a reviewed headshot is absent.
+Keep half-body and full-body roles for the main figure and history composition.

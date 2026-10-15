@@ -20,7 +20,7 @@ HOSTS = {'ufc.com', 'www.ufc.com'}
 MAX_BYTES = 25 * 1024 * 1024
 Image.MAX_IMAGE_PIXELS = 50_000_000
 EXTENSIONS = {'PNG': 'png', 'JPEG': 'jpg', 'WEBP': 'webp', 'AVIF': 'avif'}
-TRANSFORM_VERSION = 'webp-q85-lanczos-v1'
+TRANSFORM_VERSION = 'webp-q85-lanczos-v2-headshot520'
 
 
 def timestamp():
@@ -272,7 +272,7 @@ def collect(config_path, cache_root, refresh=False):
 
 def variants(data, role, output):
     outputs = []
-    bounds = {'headshot': [(160, 100), (320, 200)], 'half_body': [(320, 10000), (460, 10000)], 'full_body': [(10000, 900), (10000, 1800)]}[role]
+    bounds = {'headshot': [(160, 100), (320, 200), (520, 325)], 'half_body': [(320, 10000), (460, 10000)], 'full_body': [(10000, 900), (10000, 1800)]}[role]
     with Image.open(io.BytesIO(data)) as source:
         source.load()
         image = ImageOps.exif_transpose(source)
@@ -303,7 +303,8 @@ def variants(data, role, output):
 
 def cached_variants(data, role, cache_root, output):
     import shutil
-    cache = Path(cache_root) / 'variants' / (digest(data) + '-' + role + '-' + TRANSFORM_VERSION)
+    cache_version = TRANSFORM_VERSION if role == 'headshot' else 'webp-q85-lanczos-v1'
+    cache = Path(cache_root) / 'variants' / (digest(data) + '-' + role + '-' + cache_version)
     receipt = cache / 'variants.json'
     cached = read_json(receipt) if receipt.exists() else []
     if not cached or any(not (cache / item['file']).exists() or file_digest(cache / item['file']) != item['sha256'] for item in cached):

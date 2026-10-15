@@ -10,7 +10,7 @@ export function fighterSummary(
     id: bundle.profile.id,
     name: bundle.profile.displayName,
     record: bundle.profile.careerRecord,
-    thumbnail: (roles?.headshot ?? roles?.half_body)?.variants[0] ?? null,
+    thumbnail: roles?.headshot?.variants.at(-1) ?? null,
     figure:
       (roles?.half_body ?? roles?.full_body ?? roles?.headshot)?.variants.at(
         -1,

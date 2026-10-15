@@ -1,3 +1,4 @@
+import { chooseDivision } from "./helpers/division";
 import { readFileSync, writeFileSync } from "node:fs";
 import { test, expect } from "@playwright/test";
 const { datasetVersion } = JSON.parse(
@@ -30,8 +31,8 @@ test("fresh visit, category defaults, invalid selection, and explicit URL refres
     divisions[0].defaultFighterId,
   );
   await expect(page.locator("[data-fighter-id]")).toHaveCount(16);
-  for (const division of [...divisions, ...divisions]) {
-    await page.getByLabel("Weight division").selectOption(division.id);
+  for (const division of [...divisions, ...divisions].reverse()) {
+    await chooseDivision(page, division.id);
     await expect(selectedFigure(page)).toHaveAttribute(
       "data-selected-fighter",
       division.defaultFighterId,
@@ -266,7 +267,7 @@ test("desktop captures, missing image fallback, and narrow screen access", async
     path: "test-results/m2-featherweight.png",
     fullPage: true,
   });
-  await page.getByLabel("Weight division").selectOption("lightweight");
+  await chooseDivision(page, "lightweight");
   await expect(selectedFigure(page)).toHaveAttribute(
     "data-selected-fighter",
     divisions[1].defaultFighterId,

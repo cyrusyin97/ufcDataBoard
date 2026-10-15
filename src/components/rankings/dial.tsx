@@ -214,7 +214,7 @@ export function RankingDial({
                       key={fighter.id}
                       image={fighter.thumbnail}
                       name={fighter.name}
-                      className={`-ml-[6px] h-[90px] w-[60px] max-w-none object-cover object-top ${isSelected ? "" : "grayscale"}`}
+                      className={`h-full w-full object-cover object-center ${isSelected ? "" : "grayscale"}`}
                     />
                   )}
                 </div>

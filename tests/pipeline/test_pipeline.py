@@ -114,6 +114,13 @@ class MediaContract(unittest.TestCase):
         with self.assertRaises(Exception): inspect(payload[:40])
         with self.assertRaises(Exception): inspect(b'<html>Forbidden</html>')
 
+    def test_headshot_variants_retain_native_resolution(self):
+        image = Image.new('RGB', (520, 325), 'gray')
+        data = io.BytesIO();image.save(data, 'PNG')
+        with tempfile.TemporaryDirectory() as folder:
+            outputs = variants(data.getvalue(), 'headshot', folder)
+            self.assertEqual([(item['width'], item['height']) for item in outputs], [(160, 100), (320, 200), (520, 325)])
+
     def test_variant_preserves_alpha_aspect_and_does_not_enlarge(self):
         with tempfile.TemporaryDirectory() as folder:
             outputs = variants(image_bytes(), 'full_body', folder)

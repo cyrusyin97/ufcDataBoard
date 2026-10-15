@@ -69,7 +69,7 @@ The production-only audit has no findings.
 
 ## Data and hosting footprint
 
-Current dataset: `2026-10-14-7c5ad4426abf6d1a`.
+Dataset at the initial M5 preparation check: `2026-10-14-7c5ad4426abf6d1a`.
 Compressed archive: 53,892,686 bytes.
 Archive checksum: `ef6a938e570ddd4caec539c139e74283fac9d461a2f2972a468a4220af95eea4`.
 The release contains 4581 fighters, 23118 fighter-perspective rows, and 512 media roles.
@@ -85,7 +85,7 @@ The build uses the [supported Node.js 24 runtime](https://vercel.com/docs/functi
 
 1. Create or select the user's Vercel account and project.
 2. Approve the public name, domain, and update frequency.
-3. Obtain publication rights evidence for all 512 shipped media roles. Each currently has `rightsStatus: unknown`.
+3. Obtain publication rights evidence for all shipped media roles. Each currently has `rightsStatus: unknown`.
 4. Produce a checked dataset that records the approved rights. Do not edit an immutable release in place.
 5. Store the pinned archive at an approved HTTPS artifact host. Configure `UFC_DATASET_URL` in CI and Vercel.
 6. Deploy a preview and run the complete acceptance matrix against its URL.
@@ -96,3 +96,9 @@ The build uses the [supported Node.js 24 runtime](https://vercel.com/docs/functi
 No Vercel preview or production URL exists.
 No domain or hosting plan was purchased.
 Read [the operator guide](deployment.md) for the commands and release sequence.
+
+## Later interface correction
+
+The user requested a V8 division menu and consistent ranking headshots.
+Read [the selector correction report](selector-correction.md) for the replacement dataset and checks.
+The initial M5 measurements above retain their original dataset context.

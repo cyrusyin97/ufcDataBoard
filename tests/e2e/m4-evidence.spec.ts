@@ -1,3 +1,4 @@
+import { chooseDivision } from "./helpers/division";
 import { test, expect } from "@playwright/test";
 import { writeFileSync } from "node:fs";
 import { gzipSync } from "node:zlib";
@@ -81,9 +82,9 @@ test("capture loading metrics, a browser trace, and responsive review screens", 
     (sum, value) => sum + gzipSync(value).length,
     0,
   );
-  await page.getByLabel("Weight division").selectOption("lightweight");
+  await chooseDivision(page, "lightweight");
   await idle();
-  await page.getByLabel("Weight division").selectOption("featherweight");
+  await chooseDivision(page, "featherweight");
   await idle();
   await page
     .getByRole("link", {

@@ -1,3 +1,4 @@
+import { chooseDivision } from "./helpers/division";
 import { test, expect, type Page } from "@playwright/test";
 import { writeFileSync, mkdirSync } from "node:fs";
 const champion = "e1248941344b3288",
@@ -72,7 +73,7 @@ test("category drawers cross both viewport edges and settle without residual sty
       };
       requestAnimationFrame(sample);
     });
-    await page.getByLabel("Weight division").selectOption(division);
+    await chooseDivision(page, division);
     await expect(page.getByLabel("Weight division")).toBeDisabled();
     if (!samples.length)
       await page.screenshot({
@@ -231,7 +232,7 @@ test("resize, return, newer navigation, and reduced motion settle safely", async
   test.setTimeout(60000);
   await page.goto(home);
   await idle(page);
-  await page.getByLabel("Weight division").selectOption("lightweight");
+  await chooseDivision(page, "lightweight");
   await expect(root(page)).toHaveAttribute("data-motion-stage", "departing");
   await page.setViewportSize({ width: 1084, height: 854 });
   await expect(page.locator("#division-heading")).toContainText("Lightweight");
@@ -266,7 +267,7 @@ test("resize, return, newer navigation, and reduced motion settle safely", async
   await expect(page.getByRole("listbox")).toBeVisible();
   await clean(page);
   await page.emulateMedia({ reducedMotion: "reduce" });
-  await page.getByLabel("Weight division").selectOption("lightweight");
+  await chooseDivision(page, "lightweight");
   await clean(page);
   await expect(page.locator("#division-heading")).toContainText("Lightweight");
   await page.goto(detail);

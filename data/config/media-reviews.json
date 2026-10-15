@@ -56,6 +56,13 @@
       "sha256": "e61f31a445a13e92c7bf1cce61a29e559db848288e2fca28cbb2c6d0916ab52f",
       "state": "approved"
     },
+    "040a74bb0a465c54:headshot": {
+      "notes": "Headshot identity compared with the previously reviewed half-body portrait and athlete-page mapping. Hair, head, chin, and shoulders inspected in the labeled 2026-10-15 contact sheet.",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "Codex visual review",
+      "sha256": "9f3fc57c0277f84b3c0f62bbb946ea3569ab5d597b0888c0db2bd25cdfb766d6",
+      "state": "approved"
+    },
     "04835018f90b118c:full_body": {
       "notes": "Identity checked against the reviewed official page mapping. Three roles compared in labeled batch 16. Full-body sources include head, legs, and feet.",
       "reviewedAt": "2026-10-14",
@@ -469,6 +476,13 @@
       "sha256": "e39c77ab27b9b94aac67067024c56d1eb5749bcd92ae9d6689ac4ad1adb59f76",
       "state": "approved"
     },
+    "20bccc9bb4ceb23e:headshot": {
+      "notes": "Headshot identity compared with the previously reviewed half-body portrait and athlete-page mapping. Hair, head, chin, and shoulders inspected in the labeled 2026-10-15 contact sheet.",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "Codex visual review",
+      "sha256": "9c93da88459057fed985ff7aa5c541b3e16f5888b7c4d5f24f65c4d630e6320b",
+      "state": "approved"
+    },
     "239d8e5359022f3b:full_body": {
       "notes": "Source identity agrees with the reviewed initial mapping. Anatomical role checked in labeled review sheet.",
       "reviewedAt": "2026-10-14",
@@ -481,6 +495,13 @@
       "reviewedAt": "2026-10-14",
       "reviewer": "Codex visual review",
       "sha256": "b0579f75ae74914f9d51ef2bc321468fcf700660ba3fcefe762adb6c2c4f2dd9",
+      "state": "approved"
+    },
+    "239d8e5359022f3b:headshot": {
+      "notes": "Headshot identity compared with the previously reviewed half-body portrait and athlete-page mapping. Hair, head, chin, and shoulders inspected in the labeled 2026-10-15 contact sheet.",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "Codex visual review",
+      "sha256": "60b4e5c507f876b75cf7fa363d136f79c34c8bffe50a590f4b83472c3a07af59",
       "state": "approved"
     },
     "24656ef4d605c96f:full_body": {
@@ -875,6 +896,13 @@
       "sha256": "86dfb942a0532611e17dada8e86aa1cdd167cf86fa0b2c7ca7860676f6515670",
       "state": "approved"
     },
+    "396fe87b84ac2e1c:headshot": {
+      "notes": "Headshot identity compared with the previously reviewed half-body portrait and athlete-page mapping. Hair, head, chin, and shoulders inspected in the labeled 2026-10-15 contact sheet.",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "Codex visual review",
+      "sha256": "af99cdd4a26473deea577e4a3893327b1a2db7b90e5823ee0c64a9f8ed737859",
+      "state": "approved"
+    },
     "399afbabc02376b5:full_body": {
       "notes": "Identity checked against the reviewed official page mapping. Three roles compared in labeled batch 11. Full-body sources include head, legs, and feet.",
       "reviewedAt": "2026-10-14",
@@ -1141,6 +1169,13 @@
       "sha256": "556967711a9e930934859ca4c5e15af23cf21e4c09f1d0c163186e600f694b3c",
       "state": "approved"
     },
+    "52c2ae6d2f2d2613:headshot": {
+      "notes": "Headshot identity compared with the previously reviewed half-body portrait and athlete-page mapping. Hair, head, chin, and shoulders inspected in the labeled 2026-10-15 contact sheet.",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "Codex visual review",
+      "sha256": "7c36fddef66090f434c5104f4aaba1bca80f40692309d203f321484178bbbcca",
+      "state": "approved"
+    },
     "52ef95b5860fb28c:full_body": {
       "notes": "Source identity agrees with the reviewed initial mapping. Anatomical role checked in labeled review sheet.",
       "reviewedAt": "2026-10-14",
@@ -1153,6 +1188,13 @@
       "reviewedAt": "2026-10-14",
       "reviewer": "Codex visual review",
       "sha256": "ea714c350596602a8bee621b448c2e6377ae9829b8f013b8ad1f81abfaafc611",
+      "state": "approved"
+    },
+    "52ef95b5860fb28c:headshot": {
+      "notes": "Headshot identity compared with the previously reviewed half-body portrait and athlete-page mapping. Hair, head, chin, and shoulders inspected in the labeled 2026-10-15 contact sheet.",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "Codex visual review",
+      "sha256": "a36c37505edcbbdeb3573eb988534ee83a54d7c29f8f0f6bca0c2de4ebaf3b78",
       "state": "approved"
     },
     "545092d13c67aa49:full_body": {
@@ -1209,6 +1251,13 @@
       "reviewedAt": "2026-10-14",
       "reviewer": "Codex visual review",
       "sha256": "193fe262e99326b054bacd284574bfac48a6dab42147897bd2461d6b5dad1ee3",
+      "state": "approved"
+    },
+    "5537efc6e496dd84:headshot": {
+      "notes": "Headshot identity compared with the previously reviewed half-body portrait and athlete-page mapping. Hair, head, chin, and shoulders inspected in the labeled 2026-10-15 contact sheet.",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "Codex visual review",
+      "sha256": "26877429bfc11b4298adfff4d150d0c972446088bea9736bc9045cec0bde7ba7",
       "state": "approved"
     },
     "5d1b7e3dd9e11074:full_body": {
@@ -1624,6 +1673,13 @@
       "sha256": "45f0d41afcf9ab5c211fda4fe462166b014ded428bb5a208907b755c6ee5ef39",
       "state": "approved"
     },
+    "76e2870ffafbe38f:headshot": {
+      "notes": "Headshot identity compared with the previously reviewed half-body portrait and athlete-page mapping. Hair, head, chin, and shoulders inspected in the labeled 2026-10-15 contact sheet.",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "Codex visual review",
+      "sha256": "fb369c42f99f32a9e264a20763a502f632c5d163013376d7e77a257a7274cc5d",
+      "state": "approved"
+    },
     "7826923b47f8d72a:full_body": {
       "notes": "Source identity agrees with the reviewed initial mapping. Anatomical role checked in labeled review sheet.",
       "reviewedAt": "2026-10-14",
@@ -1953,6 +2009,13 @@
       "sha256": "e0f42d2c1d9b61c7a6f92d5de9e894d87d4e4483a3114a96539b5fbff08211d8",
       "state": "approved"
     },
+    "97cf1a2c7c5e7889:headshot": {
+      "notes": "Headshot identity compared with the previously reviewed half-body portrait and athlete-page mapping. Hair, head, chin, and shoulders inspected in the labeled 2026-10-15 contact sheet.",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "Codex visual review",
+      "sha256": "8423afffac292d836f76ef2a7f6a9428174245ea321799e4244d0ea33353e902",
+      "state": "approved"
+    },
     "98a58c26c5b1ed17:full_body": {
       "notes": "Source identity agrees with the reviewed initial mapping. Anatomical role checked in labeled review sheet.",
       "reviewedAt": "2026-10-14",
@@ -1965,6 +2028,13 @@
       "reviewedAt": "2026-10-14",
       "reviewer": "Codex visual review",
       "sha256": "5897ccb0282ef3f922e1d8e4e44ba02a7195355b0e78ac36a046a1af86169151",
+      "state": "approved"
+    },
+    "98a58c26c5b1ed17:headshot": {
+      "notes": "Headshot identity compared with the previously reviewed half-body portrait and athlete-page mapping. Hair, head, chin, and shoulders inspected in the labeled 2026-10-15 contact sheet.",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "Codex visual review",
+      "sha256": "ea76ccd40cc9bfd7181bd0c48110b05a1029be937ddee4d5a2ffd556b8296e39",
       "state": "approved"
     },
     "98aa60cf58071fd6:full_body": {
@@ -2800,6 +2870,13 @@
       "sha256": "4e85b53859016d9a0739aa28b982d2dda4dd4bf02ba7d8f7b1b3d9091887d742",
       "state": "approved"
     },
+    "cb696ebfb6598724:headshot": {
+      "notes": "Headshot identity compared with the previously reviewed half-body portrait and athlete-page mapping. Hair, head, chin, and shoulders inspected in the labeled 2026-10-15 contact sheet.",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "Codex visual review",
+      "sha256": "f9c8733bb969216bb04ce46e372d5216b1e891c4d9ea68d114e6a0a02bfc8734",
+      "state": "approved"
+    },
     "cbf5e6f231b55443:full_body": {
       "notes": "Source identity agrees with the reviewed initial mapping. Anatomical role checked in labeled review sheet.",
       "reviewedAt": "2026-10-14",
@@ -2812,6 +2889,13 @@
       "reviewedAt": "2026-10-14",
       "reviewer": "Codex visual review",
       "sha256": "0ad95a74f3652625f8cc5ea10e035fdda343eeb4df34560e4cbefc100374ab58",
+      "state": "approved"
+    },
+    "cbf5e6f231b55443:headshot": {
+      "notes": "Headshot identity compared with the previously reviewed half-body portrait and athlete-page mapping. Hair, head, chin, and shoulders inspected in the labeled 2026-10-15 contact sheet.",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "Codex visual review",
+      "sha256": "e216259817ea25dda5e229d0b21b56ee001eb23890db2ec0167bf96cf72db623",
       "state": "approved"
     },
     "cffb87059e645bd1:full_body": {
@@ -3038,6 +3122,13 @@
       "sha256": "7bf6239b308a7a277101132146ead5e169e76fe673621075e9a4e103fc06d06b",
       "state": "approved"
     },
+    "def8166ff24bd237:headshot": {
+      "notes": "Headshot identity compared with the previously reviewed half-body portrait and athlete-page mapping. Hair, head, chin, and shoulders inspected in the labeled 2026-10-15 contact sheet.",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "Codex visual review",
+      "sha256": "883f3bdf0f43e2d0f1e6941a8d4eeb2778f3c1185dc7e22e5e57cd563f57e1b8",
+      "state": "approved"
+    },
     "e1147d3d2dabe1ce:full_body": {
       "notes": "Identity checked against the reviewed official page mapping. Three roles compared in labeled batch 10. Full-body sources include head, legs, and feet.",
       "reviewedAt": "2026-10-14",
@@ -3071,6 +3162,13 @@
       "reviewedAt": "2026-10-14",
       "reviewer": "Codex visual review",
       "sha256": "815065dcc55a2c3a5b40b167e230f428c8296ad6f95b43f104cd98b17ab92b2c",
+      "state": "approved"
+    },
+    "e1248941344b3288:headshot": {
+      "notes": "Headshot identity compared with the previously reviewed half-body portrait and athlete-page mapping. Hair, head, chin, and shoulders inspected in the labeled 2026-10-15 contact sheet.",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "Codex visual review",
+      "sha256": "b4b9fd053b4e54446c9727e1780600ddb0245f417e40a80194ab4bd5a2c7ca2d",
       "state": "approved"
     },
     "e2f6b2769aaedd6c:full_body": {
@@ -3360,6 +3458,13 @@
       "sha256": "966a00fc3c0b2c322b3211c296bd84ec4f79d1e4ee35489a1613a140db6d8cc9",
       "state": "approved"
     },
+    "f166e93d04a8c274:headshot": {
+      "notes": "Headshot identity compared with the previously reviewed half-body portrait and athlete-page mapping. Hair, head, chin, and shoulders inspected in the labeled 2026-10-15 contact sheet.",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "Codex visual review",
+      "sha256": "c834ba511816a45af377dfa50aefb0d69382934a9f54c0edc9574e65b75f5ef5",
+      "state": "approved"
+    },
     "f1b2aa7853d1ed6e:full_body": {
       "notes": "Identity checked against the reviewed official page mapping. Three roles compared in labeled batch 06. Full-body sources include head, legs, and feet.",
       "reviewedAt": "2026-10-14",
@@ -3582,6 +3687,13 @@
       "reviewedAt": "2026-10-14",
       "reviewer": "Codex visual review",
       "sha256": "47cac3fd51918cd72cdc270fd1cc9abff7fc7119ac6e58defe49a8dd9abc1f82",
+      "state": "approved"
+    },
+    "ffe9703408fb5964:headshot": {
+      "notes": "Headshot identity compared with the previously reviewed half-body portrait and athlete-page mapping. Hair, head, chin, and shoulders inspected in the labeled 2026-10-15 contact sheet.",
+      "reviewedAt": "2026-10-15",
+      "reviewer": "Codex visual review",
+      "sha256": "edef9ac22ad9fe7391b417c7c920b73ad224b5c9ea802c0640db87ca8f3b722c",
       "state": "approved"
     }
   },

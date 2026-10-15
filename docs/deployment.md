@@ -46,9 +46,9 @@ Local source uploads omit datasets, captures, credentials, and private work dire
 The artifact includes data and reviewed media together.
 Keep originals outside the hosting source.
 See [Vercel limits](https://vercel.com/docs/limits) before choosing a plan.
-The current artifact is 53,892,686 bytes.
+Read the pinned descriptor and latest [selector correction report](selector-correction.md) for the current artifact.
 A successful role review does not supply publication rights.
-The current release has 512 media roles with unknown publication rights.
+The current release has 528 media roles with unknown publication rights.
 `release:check` blocks the hosting build for those roles.
 
 ## Local release commands

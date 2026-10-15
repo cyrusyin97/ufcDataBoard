@@ -146,3 +146,14 @@ Do not depend on an operator's ignored public directory.
 Keep publication readiness separate from data integrity.
 Block the Vercel release build while media publication rights remain unknown.
 Keep the runtime dataset and source database unchanged during release preparation.
+
+## D17: Use reviewed headshots for ranking rows
+
+Date: 2026-10-15.
+The user requested consistent headshots in both published ranking lists.
+Select the largest reviewed headshot variant for each row.
+Keep the source composition and use centered cover framing inside the row image box.
+Use initials when that role is absent.
+Keep hero image roles independent from row thumbnails.
+Add a native 520 by 325 headshot bound without changing body image recipes.
+Keep the accepted V8 custom division menu in the application.
