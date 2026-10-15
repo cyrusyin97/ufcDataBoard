@@ -1,21 +1,12 @@
-import { readFileSync } from "node:fs";
 import { describe, expect, it, vi } from "vitest";
 import {
   FighterStore,
   UnknownFighterError,
 } from "../../src/lib/data/fighter-store";
 import { fighterSummary } from "../../src/lib/data/summary";
-import type { FighterBundle } from "../../src/lib/domain/contracts";
+import { profileBundle } from "../fixtures/fighter";
 import type { RankingsData } from "../../src/components/rankings/types";
-const { datasetVersion } = JSON.parse(
-  readFileSync("public/data/current.json", "utf8"),
-);
-const profileBundle: FighterBundle = JSON.parse(
-  readFileSync(
-    `public/data/v1/${datasetVersion}/fighters/e1248941344b3288.json`,
-    "utf8",
-  ),
-);
+const datasetVersion = profileBundle.datasetVersion;
 const id = profileBundle.profile.id;
 const data: RankingsData = {
   datasetVersion,
@@ -53,8 +44,8 @@ describe("lazy fighter store", () => {
       fighters: [
         {
           id,
-          name: "Alexander Volkanovski",
-          displayName: "Alexander Volkanovski",
+          name: profileBundle.profile.name,
+          displayName: profileBundle.profile.displayName,
           ufcSlug: null,
         },
       ],
