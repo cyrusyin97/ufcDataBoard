@@ -3,6 +3,8 @@
 Date: 2026-10-15.
 Status: In progress. Local preparation is complete. Hosting release is not complete.
 The user approved [the GitHub repository](https://github.com/cyrusyin97/ufcDataBoard).
+The verified application and release preparation are pushed to its `main` branch.
+The initial source commit is `59d4cd426805ea5fc037e4bd60eac14e71266bce`.
 The user has no Vercel project, public domain, or media rights evidence to supply yet.
 The internal name remains UFC Rankings. Data updates remain manual.
 
@@ -17,6 +19,9 @@ The internal name remains UFC Rankings. Data updates remain manual.
 - Add an HTTP checker for the preview origin, data contracts, image hashes, redirects, and cache headers.
 - Let the existing browser matrix target an external preview through `PLAYWRIGHT_BASE_URL`.
 - Make source-only CI checks available before an artifact host exists. Report skipped deployment validation explicitly.
+
+The publication preflight exits nonzero with one expected blocker: 512 media roles lack approved publication rights.
+This is a blocked release check, not a passing publication approval.
 
 The source database, current dataset, and V6, V7, and V8 prototypes remain unchanged.
 The public source repository excludes datasets, captured media, browser trace archives, and local design outputs.

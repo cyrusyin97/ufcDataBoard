@@ -3,7 +3,7 @@
   "milestone": "M5",
   "status": "in-progress-release-not-deployed",
   "repository": "https://github.com/cyrusyin97/ufcDataBoard",
-  "repositoryDelivery": "prepared",
+  "repositoryDelivery": "pushed to main",
   "runtime": "v24.22.0",
   "dataset": {
     "datasetVersion": "2026-10-14-7c5ad4426abf6d1a",
@@ -44,7 +44,16 @@
       "status": "unresolved"
     },
     "documentFormat": "pass",
-    "localDocumentLinks": "pass"
+    "localDocumentLinks": "pass",
+    "publicationPreflight": {
+      "status": "expected block",
+      "blockers": ["512 media roles lack approved publication rights."]
+    },
+    "remoteCi": {
+      "status": "in progress",
+      "url": "https://github.com/cyrusyin97/ufcDataBoard/actions/runs/38704565414",
+      "scope": "Source checks only until the artifact URL is configured"
+    }
   },
   "publicationRights": {
     "totalMediaRoles": 512,
@@ -67,5 +76,6 @@
     "Preview acceptance matrix",
     "Firefox compatibility and release-device performance",
     "DNS, HTTPS, deployment rollback, and release approval"
-  ]
+  ],
+  "sourceRevision": "59d4cd426805ea5fc037e4bd60eac14e71266bce"
 }

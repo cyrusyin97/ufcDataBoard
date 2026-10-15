@@ -82,7 +82,7 @@ class ExportContract(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder);db, config = fixture(root)
             command = [os.environ.get('UFC_NODE', 'node'), 'scripts/run-data.ts', 'export', '--db', str(db), '--config', str(config), '--reviews', str(root / 'absent.json'), '--cache', str(root / 'cache'), '--output', str(root / 'stages'), '--as-of', '2026-10-14', '--publish-root', str(root / 'public')]
-            env = dict(os.environ, UFC_PYTHON=str(Path('.venv/bin/python').resolve()))
+            env = dict(os.environ, UFC_PYTHON=sys.executable)
             first = subprocess.run(command, capture_output=True, text=True, env=env)
             self.assertEqual(first.returncode, 0, first.stderr)
             pointer = (root / 'public' / 'current.json').read_bytes()
