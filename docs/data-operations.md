@@ -31,10 +31,10 @@ Source downloads need WebP and AVIF decoder support.
 
 Division keys and ranking lengths remain configurable.
 Fighter identity uses the full source archive.
-The first configuration publishes two rankings with 16 entries each.
+The current configuration publishes 11 rankings with 16 entries each.
 Do not use names as unique fighter keys.
 `data/config/ranked-media-snapshot.json` stores the additional captured membership lists.
-It does not publish those divisions in the interface.
+The UI expansion checks explicit ranks and champions in the saved source HTML before publishing those divisions.
 
 ## Discover and prepare media
 
@@ -67,7 +67,7 @@ A new unreviewed candidate does not replace an older hash-approved role in the e
 Missing or unresolved roles remain null.
 The first M1 dataset included 32 half-body images, 32 full-body cutouts, and 16 headshots.
 The current dataset has 176 reviewed images for each of the three roles.
-Both published rankings have headshots for all 32 fighters.
+All 11 published rankings have reviewed headshots for all 176 fighters.
 Read [the selector correction report](selector-correction.md) for the latest headshot checks.
 The other fighters retain null roles until their sources receive review.
 

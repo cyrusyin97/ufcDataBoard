@@ -12,7 +12,7 @@ Later milestones implement coordinated motion and hosting.
 
 Preserve the approved ranking, history, preview, and transition behavior.
 Support all weight divisions through one configurable registry.
-Expose two divisions in the first release.
+Expose all 11 captured weight divisions in the current interface.
 Separate data preparation from browser rendering.
 Keep navigation correct during refresh, cancellation, and repeated opponent changes.
 Make every shown fact traceable to its source.
@@ -160,7 +160,7 @@ It replaces the prototype's hash format.
 A redirect sends `/` to `/rankings`.
 Check IDs against the dataset before loading a bundle.
 Check division keys against the published division registry.
-The first release publishes Featherweight and Lightweight.
+The current registry publishes all 11 captured weight divisions.
 A missing or invalid division uses Featherweight.
 Check home selection against the active ranking.
 Keep division context when an opponent does not belong to that ranking.
@@ -568,3 +568,18 @@ The pipeline also retains a 520 × 325 headshot bound without enlarging smaller 
 The transform version changes when the variant specification changes.
 A missing headshot uses initials rather than a body image.
 This thumbnail rule does not change the main figure fallback order.
+
+## 21. All-division UI coverage
+
+The user authorized all 11 captured weight divisions on 2026-10-16.
+The registry orders the eight men's divisions by weight, then the three women's divisions.
+Featherweight remains the default.
+`data/config/division-metadata.json` defines stable keys, labels, and upper weight limits.
+The offline UI expansion checks the saved HTML hash against the reviewed media snapshot.
+It reads champion headings and explicit rank cells from the visible ranking block.
+It preserves tied ranks and source order.
+A list position is not a rank.
+The existing data checker permits nondecreasing ranks and unique fighter IDs.
+The same components and motion controller serve all divisions.
+The menu scrolls within a bounded height.
+Profile facts and history remain in the independent fighter bundles.

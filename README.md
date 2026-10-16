@@ -24,7 +24,8 @@ The V8 prototype includes two divisions with 16 fighters each.
 The M1 pipeline includes both initial rankings and all source fighters.
 The production design supports all divisions and the complete source fighter archive.
 M1 provides configurable production contracts.
-The current page uses the M1 release.
+The current interface includes all 11 captured weight divisions and 176 ranked fighters.
+Read [the all-division report](docs/all-divisions-report.md) for source dates and checks.
 The build pins one dataset version.
 Read [the M2 report](docs/m2-report.md) and [the M3 report](docs/m3-report.md) for completed checks.
 

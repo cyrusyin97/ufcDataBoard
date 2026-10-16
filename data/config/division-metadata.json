@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "divisions": [
+    {
+      "id": "flyweight",
+      "label": "Flyweight",
+      "weightLb": 125
+    },
+    {
+      "id": "bantamweight",
+      "label": "Bantamweight",
+      "weightLb": 135
+    },
+    {
+      "id": "featherweight",
+      "label": "Featherweight",
+      "weightLb": 145
+    },
+    {
+      "id": "lightweight",
+      "label": "Lightweight",
+      "weightLb": 155
+    },
+    {
+      "id": "welterweight",
+      "label": "Welterweight",
+      "weightLb": 170
+    },
+    {
+      "id": "middleweight",
+      "label": "Middleweight",
+      "weightLb": 185
+    },
+    {
+      "id": "light-heavyweight",
+      "label": "Light Heavyweight",
+      "weightLb": 205
+    },
+    {
+      "id": "heavyweight",
+      "label": "Heavyweight",
+      "weightLb": 265
+    },
+    {
+      "id": "womens-strawweight",
+      "label": "Women's Strawweight",
+      "weightLb": 115
+    },
+    {
+      "id": "womens-flyweight",
+      "label": "Women's Flyweight",
+      "weightLb": 125
+    },
+    {
+      "id": "womens-bantamweight",
+      "label": "Women's Bantamweight",
+      "weightLb": 135
+    }
+  ]
+}

@@ -5,29 +5,31 @@ Status: Accepted behavior from V8. Engineering targets remain subject to measure
 ## Scope
 
 The website helps users explore UFC fighters and their recorded fights.
-The initial release must support Featherweight and Lightweight.
-Each initial division contains 16 fighters.
+The current interface must support all 11 captured weight divisions.
+Each current division contains a champion and 15 challengers.
+Keep source ties and source list order.
+Do not infer a rank from list position.
 The data architecture must support all UFC weight divisions.
 The fighter archive must include every fighter in the source dataset.
 Ranking membership must not limit archive access.
 Rank zero represents the champion.
 The initial interface uses English.
-A later release can add languages and more divisions.
+A later release can add languages and new ranking snapshots.
 
-| ID  | Requirement                                                | Acceptance                                                              |
-| --- | ---------------------------------------------------------- | ----------------------------------------------------------------------- |
-| B01 | Show the champion and 15 ranked fighters.                  | Each initial division contains 16 unique IDs and ranks zero through 15. |
-| B02 | Select the active division champion on a fresh home visit. | A URL without a selection shows the champion.                           |
-| B03 | Support wheel, drag, and click selection.                  | Each input selects the central row and its matching profile.            |
-| B04 | Loop between the first and last rows.                      | Movement across either boundary keeps the sequence continuous.          |
-| B05 | Show career record and profile facts.                      | Each shown fact has a defined source.                                   |
-| B06 | Show up to three verified recent results.                  | Missing results do not create artificial rows.                          |
-| B07 | Show all recorded fights for the selected fighter.         | The history count equals the exported row count.                        |
-| B08 | Show an opponent preview.                                  | Hover or keyboard focus exposes the brief profile.                      |
-| B09 | Open any recorded opponent's history.                      | Opponents outside the ranking also resolve by ID.                       |
-| B10 | Preserve selection when returning home.                    | Return uses ranking membership in the active division.                  |
-| B11 | Support direct links and refresh.                          | A history URL restores that fighter without prior navigation.           |
-| B12 | Avoid an opponent navigation chain.                        | Opponent changes replace the current detail entry.                      |
+| ID  | Requirement                                                | Acceptance                                                         |
+| --- | ---------------------------------------------------------- | ------------------------------------------------------------------ |
+| B01 | Show the champion and 15 ranked fighters.                  | Each current division contains 16 unique IDs and its source ranks. |
+| B02 | Select the active division champion on a fresh home visit. | A URL without a selection shows the champion.                      |
+| B03 | Support wheel, drag, and click selection.                  | Each input selects the central row and its matching profile.       |
+| B04 | Loop between the first and last rows.                      | Movement across either boundary keeps the sequence continuous.     |
+| B05 | Show career record and profile facts.                      | Each shown fact has a defined source.                              |
+| B06 | Show up to three verified recent results.                  | Missing results do not create artificial rows.                     |
+| B07 | Show all recorded fights for the selected fighter.         | The history count equals the exported row count.                   |
+| B08 | Show an opponent preview.                                  | Hover or keyboard focus exposes the brief profile.                 |
+| B09 | Open any recorded opponent's history.                      | Opponents outside the ranking also resolve by ID.                  |
+| B10 | Preserve selection when returning home.                    | Return uses ranking membership in the active division.             |
+| B11 | Support direct links and refresh.                          | A history URL restores that fighter without prior navigation.      |
+| B12 | Avoid an opponent navigation chain.                        | Opponent changes replace the current detail entry.                 |
 
 ## Category and selection rules
 
@@ -41,7 +43,7 @@ Keep the active division during opponent navigation.
 
 | ID  | Requirement                                         | Acceptance                                                              |
 | --- | --------------------------------------------------- | ----------------------------------------------------------------------- |
-| B13 | Select a division through the dropdown.             | Featherweight and Lightweight remain available.                         |
+| B13 | Select a division through the dropdown.             | All published registry divisions remain available.                      |
 | B14 | Synchronize the selected division and fighter.      | Category changes show the target champion in rows, figure, and profile. |
 | B15 | Preserve division through direct links and refresh. | The URL restores the active division and selected or detail fighter.    |
 
@@ -54,7 +56,9 @@ Keep the active division during opponent navigation.
 | B18 | Support ranking lists of different lengths.         | Domain contracts do not require exactly 16 entries.              |
 | B19 | Support fighters without recorded bouts or images.  | Detail shows an empty history and the existing image fallback.   |
 
-The first release exposes two divisions in the dropdown.
+The current interface exposes eight men's divisions and three women's divisions.
+The user authorized this scope expansion on 2026-10-16.
+Use the captured ranking dates. This task does not refresh official rankings.
 This interface scope does not limit the production data model.
 Adding another division must not require a new animation implementation.
 A fighter can appear in more than one ranking snapshot.

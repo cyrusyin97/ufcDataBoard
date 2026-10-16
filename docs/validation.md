@@ -207,3 +207,19 @@ All 23 Chromium checks pass, including two corrected checks on a focused rerun.
 Four focused Firefox and WebKit checks pass.
 The pinned archive restores successfully into an isolated root.
 Read [the correction report](selector-correction.md) for test adaptations and evidence.
+
+## All-division UI expansion
+
+Date: 2026-10-16.
+All 11 captured weight divisions are available in the UI.
+All 176 fighters pass individual selection, record, profile, and recent-result checks.
+Each division passes menu selection, champion default, direct history, reload, and return checks.
+The source ranks retain the Women's Flyweight tie at rank six.
+The desktop pages and narrow menu pass visual review.
+The production build, ESLint, TypeScript, 29 unit tests, and 28 pipeline tests pass.
+All 46 Chromium checks pass, including one corrected fixture on a focused rerun.
+All 30 focused Firefox and WebKit checks pass.
+The pinned archive restores into an isolated root.
+The source database, 4581 fighter bundles, and 528 media source and variant hashes remain unchanged.
+Read [the expansion report](all-divisions-report.md) for source dates, test adaptations, and evidence.
+M5 remains in progress. No hosting release occurred.

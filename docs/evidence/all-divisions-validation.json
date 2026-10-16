@@ -1,0 +1,143 @@
+{
+  "checkedAt": "2026-10-16",
+  "datasetVersion": "2026-10-14-17c85108758d31ec",
+  "sourceDatabaseSha256": "4516eec0f095e13c1a39ae5452850ce34326a8c702753831c978c84e4b66925f",
+  "unchangedFighterBundles": 4581,
+  "unchangedMediaRoles": 528,
+  "counts": {
+    "bouts": 11559,
+    "divisions": 11,
+    "fieldConflicts": 54,
+    "fighters": 4581,
+    "mediaAssets": 528,
+    "records": 23118
+  },
+  "artifact": {
+    "datasetVersion": "2026-10-14-17c85108758d31ec",
+    "sha256": "2c45d3cfac1200cafa4b56fd1c51abfbc2489cec53476c2d03de249b5affa184",
+    "bytes": 57387518
+  },
+  "divisions": [
+    {
+      "id": "flyweight",
+      "label": "Flyweight",
+      "snapshotAt": "2026-10-14",
+      "fighters": 16,
+      "champion": "17e97649403ba428",
+      "ranks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    },
+    {
+      "id": "bantamweight",
+      "label": "Bantamweight",
+      "snapshotAt": "2026-10-14",
+      "fighters": 16,
+      "champion": "d661ce4da776fc20",
+      "ranks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    },
+    {
+      "id": "featherweight",
+      "label": "Featherweight",
+      "snapshotAt": "2026-10-13",
+      "fighters": 16,
+      "champion": "e1248941344b3288",
+      "ranks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    },
+    {
+      "id": "lightweight",
+      "label": "Lightweight",
+      "snapshotAt": "2026-10-14",
+      "fighters": 16,
+      "champion": "9e8f6c728eb01124",
+      "ranks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    },
+    {
+      "id": "welterweight",
+      "label": "Welterweight",
+      "snapshotAt": "2026-10-14",
+      "fighters": 16,
+      "champion": "275aca31f61ba28c",
+      "ranks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    },
+    {
+      "id": "middleweight",
+      "label": "Middleweight",
+      "snapshotAt": "2026-10-14",
+      "fighters": 16,
+      "champion": "0d8011111be000b2",
+      "ranks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    },
+    {
+      "id": "light-heavyweight",
+      "label": "Light Heavyweight",
+      "snapshotAt": "2026-10-14",
+      "fighters": 16,
+      "champion": "9014c02eff8b3d62",
+      "ranks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    },
+    {
+      "id": "heavyweight",
+      "label": "Heavyweight",
+      "snapshotAt": "2026-10-14",
+      "fighters": 16,
+      "champion": "787bb1f087ccff8a",
+      "ranks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    },
+    {
+      "id": "womens-strawweight",
+      "label": "Women's Strawweight",
+      "snapshotAt": "2026-10-14",
+      "fighters": 16,
+      "champion": "7447e9f28508106a",
+      "ranks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    },
+    {
+      "id": "womens-flyweight",
+      "label": "Women's Flyweight",
+      "snapshotAt": "2026-10-14",
+      "fighters": 16,
+      "champion": "262d32ebda89efc4",
+      "ranks": [0, 1, 2, 3, 4, 5, 6, 6, 8, 9, 10, 11, 12, 13, 14, 15]
+    },
+    {
+      "id": "womens-bantamweight",
+      "label": "Women's Bantamweight",
+      "snapshotAt": "2026-10-14",
+      "fighters": 16,
+      "champion": "1af1170ed937cba7",
+      "ranks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    }
+  ],
+  "sourceRankingCapture": {
+    "sourceUrl": "https://www.ufc.com/rankings",
+    "capturedAt": "2026-10-14T05:20:24.883712+00:00",
+    "sourceHtmlSha256": "133d81b68477f87d40a418308f96966eb0f8b32d274b3e4acc57141c7683fd81",
+    "displayId": "block_1"
+  },
+  "checks": {
+    "node": "24.22.0",
+    "productionBuild": "passed",
+    "lint": "passed",
+    "typecheck": "passed",
+    "unitTestsPassed": 29,
+    "pipelineTestsPassed": 28,
+    "chromium": {
+      "distinctChecksPassed": 46,
+      "fullRun": {
+        "passed": 45,
+        "failed": 1
+      },
+      "focusedRerun": {
+        "passed": 1,
+        "failed": 0
+      },
+      "fixtureCorrection": "Use a known media-bearing fighter outside the active division for image fallback. All reviewed media fighters now belong to published rankings."
+    },
+    "firefoxFocusedChecksPassed": 15,
+    "webkitFocusedChecksPassed": 15,
+    "nativeHeadshots520x325": 176,
+    "individualFighterSelectionChecks": 176,
+    "isolatedPinnedRestore": "passed",
+    "visualReview": "All 11 desktop champion pages and narrow menu pass. No horizontal overflow.",
+    "testLoaderCorrection": "Parse the JSON metadata file explicitly under Node.js 24."
+  }
+}

@@ -81,7 +81,7 @@ export function CategoryDropdown({
           id={menuId}
           role="menu"
           aria-label={en.category}
-          className="absolute inset-x-0 top-[53px] z-[60] border border-[#5a5550] bg-[#202021] p-[6px] shadow-[0_18px_45px_#0009]"
+          className="absolute inset-x-0 top-[53px] z-[60] border border-[#5a5550] max-h-[min(420px,45dvh)] overflow-y-auto overscroll-contain bg-[#202021] p-[6px] shadow-[0_18px_45px_#0009]"
           onKeyDown={(event) => {
             const index = items.current.indexOf(
               document.activeElement as HTMLButtonElement,

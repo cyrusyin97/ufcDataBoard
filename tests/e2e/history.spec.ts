@@ -10,8 +10,8 @@ const divisions = registry.divisions as {
   defaultFighterId: string;
   entries: { fighterId: string }[];
 }[];
-const feather = divisions[0],
-  light = divisions[1];
+const feather = divisions.find((d) => d.id === "featherweight")!,
+  light = divisions.find((d) => d.id === "lightweight")!;
 const bundle = (id: string) =>
   JSON.parse(readFileSync(`${base}/fighters/${id}.json`, "utf8"));
 const champion = bundle(feather.defaultFighterId);
@@ -162,6 +162,7 @@ test("ranked and unranked opponent navigation replaces detail and preserves retu
 test("direct archive URLs, reload, owned home entry, and external Back", async ({
   page,
 }) => {
+  test.setTimeout(120000);
   for (const division of divisions) {
     await page.goto(detail(division.id, unranked));
     await settle(page, unranked);
@@ -376,14 +377,15 @@ test("failed full-body portrait falls back to a reviewed headshot", async ({
   page,
 }) => {
   const media = JSON.parse(readFileSync(`${base}/media.json`, "utf8"));
-  const roles = media.fighters[unranked];
+  const mediaFighter = light.defaultFighterId;
+  const roles = media.fighters[mediaFighter];
   expect(roles.full_body).not.toBeNull();
   expect(roles.headshot).not.toBeNull();
   await page.route(`**${roles.full_body.variants.at(-1).url}`, (route) =>
     route.abort(),
   );
-  await page.goto(detail("featherweight", unranked));
-  await settle(page, unranked);
+  await page.goto(detail("featherweight", mediaFighter));
+  await settle(page, mediaFighter);
   await expect(page.locator("[data-media-role]")).toHaveAttribute(
     "data-media-role",
     "headshot",

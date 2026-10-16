@@ -3,7 +3,8 @@
 ## Purpose
 
 Build a UFC rankings website from the approved V8 prototype.
-Show Featherweight and Lightweight with 16 fighters each in the first release.
+Show all 11 captured weight divisions with 16 fighters each in the current interface.
+Keep Featherweight as the default division.
 Design data contracts and components for all UFC weight divisions.
 Keep fighter identity and history independent from ranking membership.
 Retain all fighters in the source dataset, including unranked fighters.

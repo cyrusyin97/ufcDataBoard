@@ -201,3 +201,12 @@ Update requirements before changing accepted behavior.
 Record architecture changes in the decision log.
 Update affected checks when a requirement changes.
 Keep milestone status separate from planned work.
+
+## All-division UI expansion
+
+Date: 2026-10-16.
+Status: Implemented. Checks appear in the expansion report.
+The user authorized all 11 captured weight divisions after the selector correction.
+Read [the expansion report](all-divisions-report.md).
+Check explicit source ranks, champion defaults, all 176 selections, detail routes, and narrow menus.
+Keep the M5 hosting gate separate.

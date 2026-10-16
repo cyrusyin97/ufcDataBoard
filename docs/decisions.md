@@ -157,3 +157,14 @@ Use initials when that role is absent.
 Keep hero image roles independent from row thumbnails.
 Add a native 520 by 325 headshot bound without changing body image recipes.
 Keep the accepted V8 custom division menu in the application.
+
+## D18: Promote reviewed weight classes to the UI registry
+
+Date: 2026-10-16.
+Use the existing reviewed 176-fighter collection for all 11 captured weight classes.
+Read explicit champion and challenger ranks from the hash-checked saved ranking HTML.
+Preserve the two original snapshots and their dates.
+Preserve ties in Women's Flyweight instead of replacing them with position numbers.
+Keep Featherweight as the default, independent from menu order.
+Use one scrolling division menu and the existing shared components.
+This scope change does not refresh source sites or change the database.

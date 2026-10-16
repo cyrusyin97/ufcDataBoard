@@ -122,3 +122,9 @@ M2 through M5 remain planned.
 The counts above describe the original expansion snapshot.
 The [selector correction](selector-correction.md) adds the 16 missing Featherweight headshots.
 The current release contains 176 reviewed assets for each media role.
+
+## Later UI expansion
+
+The user authorized all 11 captured weight divisions on 2026-10-16.
+The original collection above remains historical.
+Read [the UI expansion report](all-divisions-report.md) for the current registry and explicit source ranks.

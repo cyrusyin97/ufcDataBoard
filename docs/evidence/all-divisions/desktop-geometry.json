@@ -1,0 +1,285 @@
+{
+  "browser": "156.0.8078.4",
+  "viewport": {
+    "width": 1318,
+    "height": 808,
+    "deviceScaleFactor": 2
+  },
+  "samples": [
+    {
+      "division": "flyweight",
+      "viewport": 1318,
+      "page": 1318,
+      "heading": {
+        "x": 48,
+        "y": 113,
+        "width": 339.21875,
+        "height": 67.21875,
+        "top": 113,
+        "right": 387.21875,
+        "bottom": 180.21875,
+        "left": 48
+      },
+      "body": {
+        "x": 48,
+        "y": 203.21875,
+        "width": 1222,
+        "height": 553.3125,
+        "top": 203.21875,
+        "right": 1270,
+        "bottom": 756.53125,
+        "left": 48
+      }
+    },
+    {
+      "division": "bantamweight",
+      "viewport": 1318,
+      "page": 1318,
+      "heading": {
+        "x": 48,
+        "y": 113,
+        "width": 443.84375,
+        "height": 67.21875,
+        "top": 113,
+        "right": 491.84375,
+        "bottom": 180.21875,
+        "left": 48
+      },
+      "body": {
+        "x": 48,
+        "y": 203.21875,
+        "width": 1222,
+        "height": 553.3125,
+        "top": 203.21875,
+        "right": 1270,
+        "bottom": 756.53125,
+        "left": 48
+      }
+    },
+    {
+      "division": "featherweight",
+      "viewport": 1318,
+      "page": 1318,
+      "heading": {
+        "x": 48,
+        "y": 113,
+        "width": 461.171875,
+        "height": 67.21875,
+        "top": 113,
+        "right": 509.171875,
+        "bottom": 180.21875,
+        "left": 48
+      },
+      "body": {
+        "x": 48,
+        "y": 203.21875,
+        "width": 1222,
+        "height": 553.3125,
+        "top": 203.21875,
+        "right": 1270,
+        "bottom": 756.53125,
+        "left": 48
+      }
+    },
+    {
+      "division": "lightweight",
+      "viewport": 1318,
+      "page": 1318,
+      "heading": {
+        "x": 48,
+        "y": 113,
+        "width": 389.90625,
+        "height": 67.21875,
+        "top": 113,
+        "right": 437.90625,
+        "bottom": 180.21875,
+        "left": 48
+      },
+      "body": {
+        "x": 48,
+        "y": 203.21875,
+        "width": 1222,
+        "height": 553.3125,
+        "top": 203.21875,
+        "right": 1270,
+        "bottom": 756.53125,
+        "left": 48
+      }
+    },
+    {
+      "division": "welterweight",
+      "viewport": 1318,
+      "page": 1318,
+      "heading": {
+        "x": 48,
+        "y": 113,
+        "width": 440.46875,
+        "height": 67.21875,
+        "top": 113,
+        "right": 488.46875,
+        "bottom": 180.21875,
+        "left": 48
+      },
+      "body": {
+        "x": 48,
+        "y": 203.21875,
+        "width": 1222,
+        "height": 553.3125,
+        "top": 203.21875,
+        "right": 1270,
+        "bottom": 756.53125,
+        "left": 48
+      }
+    },
+    {
+      "division": "middleweight",
+      "viewport": 1318,
+      "page": 1318,
+      "heading": {
+        "x": 48,
+        "y": 113,
+        "width": 424.03125,
+        "height": 67.21875,
+        "top": 113,
+        "right": 472.03125,
+        "bottom": 180.21875,
+        "left": 48
+      },
+      "body": {
+        "x": 48,
+        "y": 203.21875,
+        "width": 1222,
+        "height": 553.3125,
+        "top": 203.21875,
+        "right": 1270,
+        "bottom": 756.53125,
+        "left": 48
+      }
+    },
+    {
+      "division": "light-heavyweight",
+      "viewport": 1318,
+      "page": 1318,
+      "heading": {
+        "x": 48,
+        "y": 113,
+        "width": 556.71875,
+        "height": 67.21875,
+        "top": 113,
+        "right": 604.71875,
+        "bottom": 180.21875,
+        "left": 48
+      },
+      "body": {
+        "x": 48,
+        "y": 203.21875,
+        "width": 1222,
+        "height": 553.3125,
+        "top": 203.21875,
+        "right": 1270,
+        "bottom": 756.53125,
+        "left": 48
+      }
+    },
+    {
+      "division": "heavyweight",
+      "viewport": 1318,
+      "page": 1318,
+      "heading": {
+        "x": 48,
+        "y": 113,
+        "width": 409.5,
+        "height": 67.21875,
+        "top": 113,
+        "right": 457.5,
+        "bottom": 180.21875,
+        "left": 48
+      },
+      "body": {
+        "x": 48,
+        "y": 203.21875,
+        "width": 1222,
+        "height": 573.3125,
+        "top": 203.21875,
+        "right": 1270,
+        "bottom": 776.53125,
+        "left": 48
+      }
+    },
+    {
+      "division": "womens-strawweight",
+      "viewport": 1318,
+      "page": 1318,
+      "heading": {
+        "x": 48,
+        "y": 113,
+        "width": 637,
+        "height": 67.21875,
+        "top": 113,
+        "right": 685,
+        "bottom": 180.21875,
+        "left": 48
+      },
+      "body": {
+        "x": 48,
+        "y": 203.21875,
+        "width": 1222,
+        "height": 553.3125,
+        "top": 203.21875,
+        "right": 1270,
+        "bottom": 756.53125,
+        "left": 48
+      }
+    },
+    {
+      "division": "womens-flyweight",
+      "viewport": 1318,
+      "page": 1318,
+      "heading": {
+        "x": 48,
+        "y": 113,
+        "width": 563.703125,
+        "height": 67.21875,
+        "top": 113,
+        "right": 611.703125,
+        "bottom": 180.21875,
+        "left": 48
+      },
+      "body": {
+        "x": 48,
+        "y": 203.21875,
+        "width": 1222,
+        "height": 553.3125,
+        "top": 203.21875,
+        "right": 1270,
+        "bottom": 756.53125,
+        "left": 48
+      }
+    },
+    {
+      "division": "womens-bantamweight",
+      "viewport": 1318,
+      "page": 1318,
+      "heading": {
+        "x": 48,
+        "y": 113,
+        "width": 668.328125,
+        "height": 67.21875,
+        "top": 113,
+        "right": 716.328125,
+        "bottom": 180.21875,
+        "left": 48
+      },
+      "body": {
+        "x": 48,
+        "y": 203.21875,
+        "width": 1222,
+        "height": 553.3125,
+        "top": 203.21875,
+        "right": 1270,
+        "bottom": 756.53125,
+        "left": 48
+      }
+    }
+  ]
+}

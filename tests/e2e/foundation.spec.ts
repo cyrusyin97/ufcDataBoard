@@ -13,15 +13,22 @@ type Division = {
   defaultFighterId: string;
   entries: { fighterId: string; rank: number }[];
 };
-const divisions: Division[] = registry.divisions.filter(
-  (d: { publicationState: string }) => d.publicationState === "published",
-);
+const divisions: Division[] = registry.divisions
+  .filter(
+    (d: { publicationState: string }) => d.publicationState === "published",
+  )
+  .sort((a: Division, b: Division) => {
+    const order = (id: string) =>
+      id === registry.defaultDivisionId ? 0 : id === "lightweight" ? 1 : 2;
+    return order(a.id) - order(b.id);
+  });
 const selectedFigure = (page: import("@playwright/test").Page) =>
   page.locator("[data-selected-fighter]");
 
 test("fresh visit, category defaults, invalid selection, and explicit URL refresh", async ({
   page,
 }) => {
+  test.setTimeout(120000);
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
   await page.goto("/");
@@ -64,11 +71,11 @@ test("fresh visit, category defaults, invalid selection, and explicit URL refres
   expect(errors).toEqual([]);
 });
 
-test("click every fighter and check profile, career record, and recent results", async ({
-  page,
-}) => {
-  test.setTimeout(60000);
-  for (const division of divisions) {
+for (const division of divisions) {
+  test(`click every fighter in ${division.label} and check profile, career record, and recent results`, async ({
+    page,
+  }) => {
+    test.setTimeout(60000);
     await page.goto(`/rankings?division=${division.id}`);
     for (let i = 0; i < division.entries.length; i++) {
       const entry = division.entries[i];
@@ -106,8 +113,8 @@ test("click every fighter and check profile, career record, and recent results",
         bundle.records.slice(0, 3).map((r: { result: string }) => r.result),
       );
     }
-  }
-});
+  });
+}
 
 test("wheel, drag, and keyboard loop across both boundaries", async ({
   page,

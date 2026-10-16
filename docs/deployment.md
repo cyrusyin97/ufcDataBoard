@@ -37,7 +37,7 @@ A preview deployment gives reviewers a URL before production release.
    The build restores and checks this artifact. It then checks media publication rights.
 9. Deploy a preview.
 10. Run the M5 checks against its URL.
-    Check both division URLs and their detail links.
+    Check all published division URLs and their detail links.
 
 The committed `vercel.json` selects the Next.js preset and release build command.
 The package engine selects Node.js 24.x.
@@ -46,7 +46,7 @@ Local source uploads omit datasets, captures, credentials, and private work dire
 The artifact includes data and reviewed media together.
 Keep originals outside the hosting source.
 See [Vercel limits](https://vercel.com/docs/limits) before choosing a plan.
-Read the pinned descriptor and latest [selector correction report](selector-correction.md) for the current artifact.
+Read the pinned descriptor and latest [all-division report](all-divisions-report.md) for the current artifact.
 A successful role review does not supply publication rights.
 The current release has 528 media roles with unknown publication rights.
 `release:check` blocks the hosting build for those roles.
@@ -103,7 +103,7 @@ A new dataset version must not reuse old immutable paths.
 2. Export a new dataset version.
 3. Run data and application checks.
 4. Deploy a preview with that version.
-5. Check the changed fighters and records in both divisions.
+5. Check the changed fighters and records in all published divisions.
 6. Promote the accepted preview to production.
 
 If the release fails, restore the previous Vercel deployment.

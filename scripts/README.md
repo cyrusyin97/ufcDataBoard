@@ -28,3 +28,11 @@ The job does not approve anatomical roles or publish a release.
 `release:check` checks Node.js, source revision, data integrity, and media publication rights.
 `release:http` checks a local server or an HTTPS preview.
 Read [the deployment guide](../docs/deployment.md) for inputs and reports.
+
+## All-division UI registry
+
+Run `.venv/bin/python scripts/pipeline/expand_ui_divisions.py` from the project root.
+The command checks the saved ranking HTML against the reviewed membership snapshot.
+It promotes explicit ranks and champion headings through configurable division metadata.
+It performs no network requests or database writes.
+Read [the UI expansion report](../docs/all-divisions-report.md).

@@ -1,4 +1,8 @@
 import { test, expect } from "@playwright/test";
+import { readFileSync } from "node:fs";
+const metadata = JSON.parse(
+  readFileSync("data/config/division-metadata.json", "utf8"),
+) as { divisions: { label: string }[] };
 import { chooseDivision } from "./helpers/division";
 test.use({ deviceScaleFactor: 2 });
 test("division menu matches V8 and supports keyboard, Escape, and outside dismissal", async ({
@@ -13,7 +17,9 @@ test("division menu matches V8 and supports keyboard, Escape, and outside dismis
   await page.keyboard.press("Enter");
   const menu = page.getByRole("menu", { name: "Weight division" });
   await expect(menu).toHaveCSS("background-color", "rgb(32, 32, 33)");
-  await expect(menu.getByRole("menuitemradio")).toHaveCount(2);
+  await expect(menu.getByRole("menuitemradio")).toHaveCount(
+    metadata.divisions.length,
+  );
   await expect(
     page.locator('[data-division-option="featherweight"]'),
   ).toBeFocused();
@@ -31,7 +37,9 @@ test("division menu matches V8 and supports keyboard, Escape, and outside dismis
   await page.keyboard.press("End");
   await page.keyboard.press("Enter");
   await expect(menu).toHaveCount(0);
-  await expect(page.locator("#division-heading")).toContainText("Lightweight");
+  await expect(page.locator("#division-heading")).toContainText(
+    metadata.divisions.at(-1)!.label,
+  );
   await expect(trigger).toBeEnabled();
   await trigger.click();
   await page.screenshot({

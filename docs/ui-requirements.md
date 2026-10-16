@@ -103,7 +103,8 @@ The dropdown sits above the circular selector.
 Use the V8 dark custom menu, its right-aligned weights, and its active checkmark.
 Do not open an operating-system select popup.
 Support arrow keys, Enter, Escape, Tab, and outside-pointer dismissal.
-It offers Featherweight at 145 LB and Lightweight at 155 LB.
+It offers all published divisions in registry order with their configured weights.
+Use a bounded scrolling menu so all options remain reachable on small screens.
 Keep category controls available in the rankings state.
 The selected category and the main heading identify the same division.
 
@@ -145,7 +146,7 @@ Keep V6 and V7 as historical references.
 
 ## Ranking headshots
 
-Use a reviewed headshot for every ranking-list thumbnail in both initial divisions.
+Use a reviewed headshot for every ranking-list thumbnail in each published division.
 Select the largest available headshot variant.
 Keep the complete vertical headshot composition inside the image box.
 Use a centered cover crop for horizontal framing.
