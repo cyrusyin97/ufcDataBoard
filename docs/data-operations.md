@@ -157,3 +157,34 @@ Production release checks must run against a real artifact.
 M2 through M4 implement the interface, navigation, and motion.
 M5 must check media rights, hosting delivery, and the update schedule.
 M1 does not guarantee official images for every archive fighter.
+
+## Optional bout analysis export
+
+M6.2 implements the V9 data extension. M6.3 integrates it into the application.
+The integrated preview uses explicit version/build overrides until user acceptance.
+The approved policy is in `data/config/bout-policy.json`.
+It uses a five-year historical window, at least 50 complete same-division bouts, and a 60-second short-period threshold.
+Read [the data report](m6-data-report.md) for coverage and limitations.
+
+Add `--bout-policy data/config/bout-policy.json` to the existing `data:export` command.
+To validate without changing the website, also pass `--publish-root work/m6-public` and a separate staging `--output`.
+Use the intended dataset snapshot date for `--as-of`; exporting does not refresh rankings or scrape facts.
+The optional manifest `boutAnalysis` descriptor identifies this capability.
+The release also contains `bout-policy.json`, `bouts/<bout-id>.json`, and `bout-references/<reference-id>.json`.
+Every history bout has an artifact, including an explicit unavailable state when statistics are absent.
+Old releases without the descriptor continue to pass validation.
+
+Run `data:check` on the isolated version directory before packaging.
+Pass `--root work/m6-public` to `data:pack` for the isolated root.
+Use an isolated descriptor and `--root` with `data:restore` when testing the artifact.
+Do not update `data/release.json` or the live pointer until integration acceptance passes.
+The checker validates participant identities, round consistency, source/version references, policy weights, and public paths.
+
+For an isolated application preview, install the checked immutable version alongside the active version.
+Set `UFC_PREVIEW_DATASET_VERSION` to that installed version when building.
+Set `UFC_PREVIEW_BUILD_DIR` to an ignored work subdirectory to avoid replacing another local build.
+Use the same values when starting that preview server.
+The default build still reads `public/data/current.json`.
+Restore generated local Next.js type paths to their default locations after an isolated build.
+Pass the same preview version to browser tests and use `PLAYWRIGHT_BASE_URL` for the preview origin.
+Use separate Playwright output roots when running independent test commands.

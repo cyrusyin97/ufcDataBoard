@@ -1,6 +1,12 @@
-# Product requirements
+# Product requirements — superseded reference
 
-Status: Accepted behavior from V8. Engineering targets remain subject to measurement.
+> Superseded on 2026-10-24 by [Product Spec](../product-spec.md), the sole current product logic standard.
+> The body below is retained as historical context for existing report links. Its status statements and instructions are not current requirements. Do not add new product rules here.
+
+Status: V8 is the accepted existing interface. V9 bout analysis is implemented for integrated review.
+Engineering targets remain subject to measurement.
+Updated: 2026-10-24.
+Read [user journeys](../spec/user-journeys.md) for the current end-to-end interaction catalog.
 
 ## Scope
 
@@ -85,17 +91,51 @@ The website must not silently combine incompatible totals.
 The first release has no login, payments, predictions, or user edits.
 The first release does not need an online database.
 The current task does not publish a website or register a domain.
-Mobile composition needs user review before M4 acceptance.
+The user approved the existing mobile composition on 2026-10-15.
+V9 mobile behavior has a separate M6 acceptance gate.
 Basic narrow-screen access remains a release requirement.
 
 ## Open product decisions
 
-| Decision                        | Needed before | Interim rule                                 |
-| ------------------------------- | ------------- | -------------------------------------------- |
-| Mobile layout and touch preview | M4            | Preserve readable content and working links. |
-| Public name and domain          | M5            | Use the internal name UFC Rankings.          |
-| Update frequency                | M5            | Run exports manually.                        |
-| Media publication rights        | M5            | Preserve sources and mark rights as unknown. |
+| Decision                 | Needed before | Interim rule                                 |
+| ------------------------ | ------------- | -------------------------------------------- |
+| Public name and domain   | M5            | Use the internal name UFC Rankings.          |
+| Update frequency         | M5            | Run exports manually.                        |
+| Media publication rights | M5            | Preserve sources and mark rights as unknown. |
 
-Ask the user when these decisions become necessary.
+The cohort policy was confirmed on 2026-10-23: preceding five years, same division, at least 50 complete bouts, and a short-sample notice below 60 seconds.
+Read [bout analysis](bout-analysis.md) for the complete rules.
+
+Ask the user when the remaining decisions become necessary.
 Do not block independent foundation work.
+
+## V9 bout analysis extension
+
+Status: M6.1–M6.3 implemented and checked. Integrated user acceptance remains pending.
+Read [the bout analysis specification](bout-analysis.md) for formulas, data meaning, and acceptance checks.
+
+| ID  | Requirement                                                | Acceptance                                                                                      |
+| --- | ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| B20 | Open available bout analysis from fighter history.         | Both fighters and all available periods resolve by stable IDs; missing statistics are explicit. |
+| B21 | Compare weighted five-axis scores.                         | Formula v1.1, reference provenance, and raw contributions are inspectable.                      |
+| B22 | Return from bout detail to the selected fighter's history. | Profile entry, direct links, reload, and browser navigation preserve context.                   |
+| B23 | Preserve the existing cards.                               | V8 history and profile UI remain in use with the new navigation.                                |
+| B24 | Expose analysis without requiring radar activation.        | Radar geometry is hover-only; disclosure and text provide keyboard and touch access.            |
+
+The prototype's single bout and two fighters are sample coverage only.
+Do not present V9 as a shipped production feature or as a replacement ranking design.
+
+## Integrated review revisions
+
+The current M6 candidate includes the following requested behaviors.
+Use [J08 through J13](../spec/user-journeys.md#j08--open-bout-analysis-from-history) for their entry and return paths.
+
+| ID  | Requirement                                              | Acceptance                                                                                               |
+| --- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| B25 | Open bout analysis from result badges and recent form.   | Each entry opens the matching bout; an entry from rankings has a fighter-history parent.                 |
+| B26 | Use symmetric history and bout transitions.              | The same-font event title and live portrait move in both directions without a cleanup jump.              |
+| B27 | Keep the bout return control reachable during scrolling. | The return bar is independent from the content scroll region.                                            |
+| B28 | Keep the current viewport on bout return.                | The page position stays stable through commit and cleanup; history-list position restores independently. |
+| B29 | Make hover values readable.                              | The fighter and score precede separate component rows; complete values remain in the disclosure.         |
+
+These revisions have recorded local checks. They do not close M6 user acceptance or M5 release gates.

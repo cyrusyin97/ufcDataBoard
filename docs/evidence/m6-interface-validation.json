@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-23",
+  "stage": "M6.3",
+  "status": "implemented; integrated user review pending",
+  "datasetVersion": "2026-10-14-5949094d82ded09a",
+  "activePointerVersion": "2026-10-14-17c85108758d31ec",
+  "runtime": "Node.js 24.22.0",
+  "unitTests": 51,
+  "existingChromiumChecks": 46,
+  "finalBoutBrowserStats": {
+    "startTime": "2026-10-23T07:15:35.880Z",
+    "duration": 16161.279,
+    "expected": 30,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "projects": ["chromium", "firefox", "webkit"],
+  "functionTrace": {
+    "files": 303,
+    "boutOrReferenceFiles": 0,
+    "manifestIncluded": true
+  },
+  "previewOrigin": "http://127.0.0.1:3003",
+  "notes": [
+    "Existing Chromium checks include focused reruns after fixture version/base URL corrections and isolated trace output.",
+    "M6.4 user acceptance and M5 hosting gates remain pending."
+  ]
+}

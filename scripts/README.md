@@ -1,9 +1,8 @@
 # Data scripts
 
-M1 implements the Python exporter and data checks in `pipeline/`.
-Read the export contract in [the technical design](../docs/technical-design.md).
-The M0 application uses a small ranking fixture.
-Do not imply that the fixture refreshes from SQLite automatically.
+The Python exporter and data checks are in `pipeline/`.
+Read [data contracts and scoring](../docs/spec/data-and-scoring.md) for current artifact meaning.
+The application reads a checked immutable dataset. Test fixtures do not refresh from SQLite automatically.
 
 ## Media research
 

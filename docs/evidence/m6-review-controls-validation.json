@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-23",
+  "revision": "second integrated UI review",
+  "datasetVersion": "2026-10-14-5949094d82ded09a",
+  "buildDirectory": "work/next-m6-review2",
+  "preview": "http://127.0.0.1:3003",
+  "checks": {
+    "boutAndMotion": {
+      "startTime": "2026-10-23T14:01:23.034Z",
+      "duration": 54260.971000000005,
+      "expected": 45,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "existingMotion": {
+      "startTime": "2026-10-23T14:01:49.647Z",
+      "duration": 20139.186999999998,
+      "expected": 3,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "unitTests": 52,
+    "productionBuild": "passed",
+    "typescript": "passed",
+    "eslint": "passed",
+    "format": "passed"
+  },
+  "coverage": [
+    "matching event title font family",
+    "history result badge entry",
+    "recent-form entry from bout and rankings",
+    "owned history return parent",
+    "return bar independent from content scrolling and visible during page scrolling",
+    "radar inspection values on separate rows",
+    "existing reversible motion and bout checks"
+  ],
+  "acceptance": "M6 user acceptance pending"
+}

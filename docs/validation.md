@@ -1,4 +1,9 @@
-# M0 validation
+# Validation log
+
+This file is a chronological evidence log. Each entry retains its original scope and date.
+Use [development plan](development-plan.md) for current gates and [Product Spec](product-spec.md) for current behavior.
+
+## M0 foundation validation
 
 Date: 2026-10-13.
 Scope: The application foundation and project documents.
@@ -223,3 +228,143 @@ The pinned archive restores into an isolated root.
 The source database, 4581 fighter bundles, and 528 media source and variant hashes remain unchanged.
 Read [the expansion report](all-divisions-report.md) for source dates, test adaptations, and evidence.
 M5 remains in progress. No hosting release occurred.
+
+## V9 prototype and documentation boundary
+
+Date: 2026-10-23.
+The local V9 prototype contains one bout, two fighter histories, formula v1.1, and historical reference bounds.
+Its report records Chromium navigation, round updates, scoring fixture checks, and desktop/mobile captures.
+Latest revisions restore V8 history and profile cards and remove radar click activation.
+These are prototype checks, not production acceptance.
+No production bout export, scoring contract, or integrated route is certified by this record.
+M6 remains planned. M5 release status is unchanged.
+Read [the specification and acceptance matrix](archive/bout-analysis.md) before implementation.
+
+Documentation checks for this update:
+
+- `npm run format:check` passes.
+- Relative file links in all eight changed or added documents resolve locally.
+- Application, pipeline, and browser suites were not rerun. This update changes documentation only.
+
+## M6.1 audit and contract foundation
+
+Date: 2026-10-23.
+The read-only source audit covers 11,559 bouts and verifies an unchanged source checksum.
+It records missing statistics, null control time, unsupported duration, event aliases, and historical division coverage.
+Read [the contract design](m6-contract-design.md) and [audit receipt](evidence/m6-bout-audit.json).
+
+Implemented initial bout/reference Zod schemas and a policy-independent formula v1.1 scoring function.
+All 39 unit tests pass, including ten new contract and scoring checks.
+Five Python duration, division, and date audit-rule tests pass.
+TypeScript, ESLint, and the repository format check pass.
+The current production routes, exported release, and source database remain unchanged.
+The application build and browser suites were not run for these disconnected domain modules.
+The complete export/media pipeline suite was not rerun; the existing pipeline is unchanged.
+M6.1 remains in progress pending the cohort policy answer and artifact integration decisions.
+
+## M6.2 export and reference generation
+
+Date: 2026-10-23.
+The user confirmed the five-year, 50-bout reference policy and 60-second short-period threshold.
+M6.1 is complete. M6.2 exports all 11,559 bouts and 6,189 historical reference artifacts.
+The complete extension passes runtime contracts and dataset checks.
+Repeated exports produce the same version.
+Isolated packaging and restoration pass after increasing the bounded archive entry limit to 40,000.
+The initial 20,000-entry restore rejection and its correction are recorded in [the M6 data report](m6-data-report.md).
+The active website dataset and production descriptor remain unchanged.
+
+Node.js 24.22.0 passes the production build and type checks.
+The complete pipeline suite passes 38 tests.
+The unit suite includes 42 tests after the archive-bound regression was added.
+Read [the structured data receipt](evidence/m6-data-validation.json) for coverage and artifact hashes.
+Browser checks were not run for this stage. M6.3 and M6.4 remain pending.
+
+## M6.3 interface and navigation
+
+Date: 2026-10-23.
+The production application integrates the V9 bout panel with the existing history and profile cards.
+Node.js 24.22.0 passes the production build, TypeScript, ESLint, and 51 unit tests.
+All 46 existing Chromium checks pass, including focused fixture and output-directory reruns.
+The final bout suite passes ten tests per browser in Chromium, Firefox, and WebKit: 30 checks.
+Desktop/mobile captures, missing-data behavior, short-sample labels, and keyboard disclosure access pass.
+Read [the interface report](m6-interface-report.md) for test corrections and performance limits.
+Read [the structured receipt](evidence/m6-interface-validation.json) for final counts.
+M6.3 is implemented. M6.4 awaits user acceptance of the integrated preview.
+The active data pointer and production release descriptor remain unchanged. M5 hosting remains pending.
+
+## M6 transition revision
+
+Date: 2026-10-23.
+The user requested symmetric portrait and event-title motion between history and bout detail.
+The final candidate passes 39 bout and motion checks across Chromium, Firefox, and WebKit.
+Three existing Chromium motion checks also pass. The unit suite passes 51 tests.
+The production build, TypeScript, ESLint, format check, and whitespace check pass.
+The checks cover final live glyph identity, changing intermediate geometry, reverse direction, history scroll restoration, resize, and reduced motion.
+An initial frame-count threshold was replaced with distinct geometry assertions. This does not certify native frame rate.
+Regression checks exposed native Forward loss during server prop replay. Pinning the mounted dataset corrected that race.
+The final 39-check run has no failures.
+Read [the motion receipt](evidence/m6-bout-motion-validation.json).
+The updated local preview uses port 3003 and `work/next-m6-motion-final`.
+M6 user acceptance remains pending. The active data pointer and release descriptor are unchanged.
+
+## M6 second UI review
+
+Date: 2026-10-23.
+The five requested revisions are implemented in `work/next-m6-review2`.
+The candidate passes 45 bout and motion checks across Chromium, Firefox, and WebKit.
+Three existing Chromium motion checks and 52 unit tests pass.
+The production build, TypeScript, ESLint, format check, and whitespace check pass.
+Checks cover matching title fonts, both badge entries, return history ownership, sticky return visibility, and separate inspection rows.
+Read [the review receipt](evidence/m6-review-controls-validation.json).
+The updated preview remains on port 3003. M6 user acceptance remains pending.
+
+## M6 viewport return correction
+
+Date: 2026-10-23.
+The old preview reset document scrollY from 240 to 0 on bout return at 1169 by 670.
+The fixed build retains 240 throughout sampled animation frames and after cleanup.
+A subsequent native Back retains 320. Both normal and reduced-motion modes pass.
+The final run passes 48 bout and motion checks across Chromium, Firefox, and WebKit.
+Three existing Chromium motion checks also pass.
+The production build, TypeScript, ESLint, formatting, and whitespace checks pass.
+Read [the scroll receipt](evidence/m6-scroll-validation.json).
+The preview remains on port 3003 and uses `work/next-m6-scroll`.
+M6 acceptance remains pending. The active data pointer and release descriptor are unchanged.
+
+## Documentation and journey audit
+
+Date: 2026-10-24.
+The documentation now includes [user journeys J01–J17](spec/user-journeys.md).
+The catalog covers rankings, history, opponent previews, bout entry, participant and period changes, score inspection, return paths, direct URLs, input methods, and recovery states.
+The audit compared those flows with the current components, route controller, and test descriptions.
+README and AGENTS link the catalog. Requirements B25–B29 and the development plan include the recent review revisions.
+Resolved cohort rules no longer appear as open product decisions.
+Technical design and bout specifications distinguish implemented behavior from pending acceptance and deployment.
+Documentation formatting, local links, heading anchors, and whitespace are checked for this update.
+Application tests were not rerun for this documentation-only change. The prior receipts retain their original dates and scope.
+M6 user acceptance and M5 release remain pending.
+
+## Product Spec consolidation
+
+Date: 2026-10-24.
+[Product Spec](product-spec.md) is now the sole normative product logic standard.
+It consolidates current behavior, 17 journeys (J01–J17), 20 critical cases (C01–C20), design, motion, scoring, module ownership, and maintenance rules.
+The audit compared the spec with the current implementation and existing check receipts.
+The five earlier product documents remain as superseded historical references. README, AGENTS, the documentation map, and the development plan point to the new standard.
+Local-link validation passes for 226 links in 26 Markdown files, including heading anchors. Journey and critical-case identifiers are complete and unique.
+Formatting and whitespace checks pass for this documentation-only update.
+No application code changed in this consolidation. Application tests were not rerun; prior evidence retains its original scope and date.
+M6 user acceptance and M5 release remain pending. Performance budgets are targets, not newly measured results.
+
+## Documentation topic split and cleanup
+
+Date: 2026-10-24.
+[Product Spec](product-spec.md) is now a 44-line index for 14 owning topic documents.
+J01–J17 and C01–C20 remain complete and unique.
+Four superseded standards moved to `archive/`; the old duplicate journey file was removed after link migration.
+The development plan decreased from 301 to 142 lines by replacing completed checklists with status and references.
+The [documentation audit](documentation-audit.md) records each maintained file's disposition and separately inventories local research/prototype documents.
+Historical reports now identify their dated scope. The validation heading and obsolete contributor/script entry points are corrected.
+Local Markdown paths and heading anchors, formatting, and whitespace checks pass.
+Application tests were not rerun for this documentation-only change. Runtime behavior, source data, preserved prototypes, and release state are unchanged.
+M6 user acceptance and M5 release remain pending.

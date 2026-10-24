@@ -1,12 +1,12 @@
-# Technical design
+# Technical design — superseded reference
 
-Status: Proposed implementation based on the accepted V8 behavior.
-Date: 2026-10-13.
-M0 implements the foundation.
-M1 implements the data and media pipeline.
-M2 implements the rankings home interface.
-M3 implements history and persistent navigation.
-Later milestones implement coordinated motion and hosting.
+> Superseded on 2026-10-24 by [Product Spec](../product-spec.md), the sole current product logic standard.
+> The body below is retained as historical context for existing report links. Its status statements and instructions are not current requirements. Do not add new product rules here.
+
+Status: Implemented M0–M4 foundation and checked M6 candidate. M5 release and M6 user acceptance remain pending.
+Updated: 2026-10-24.
+Read [user journeys](../spec/user-journeys.md) for the current user-facing flow catalog.
+Earlier milestone sections retain their implementation context. Sections 22–26 describe the bout extension and review revisions.
 
 ## 1. Goals
 
@@ -18,7 +18,7 @@ Keep navigation correct during refresh, cancellation, and repeated opponent chan
 Make every shown fact traceable to its source.
 
 Read [product requirements](product-requirements.md) and [UI requirements](ui-requirements.md) first.
-Read [the development plan](development-plan.md) for delivery gates.
+Read [the development plan](../development-plan.md) for delivery gates.
 
 ## 2. Architecture
 
@@ -44,19 +44,19 @@ CDN means a content delivery network that caches files near users.
 
 ## 3. Stack and boundaries
 
-| Layer             | Choice                                 | Reason                                                    |
-| ----------------- | -------------------------------------- | --------------------------------------------------------- |
-| Web framework     | Next.js App Router                     | Routes, metadata, server rendering, and Vercel deployment |
-| UI                | React with TypeScript                  | Component boundaries and typed domain values              |
-| Styles            | Tailwind CSS 4                         | Shared tokens and explicit component states               |
-| Motion            | GSAP with `@gsap/react`                | Timelines, scoped targets, and cleanup                    |
-| Media processing  | Pillow 12.3.0 in the planned media job | Decode, inspect, and generate reviewed image variants.    |
-| Runtime contracts | Zod                                    | Reject invalid imported data                              |
-| Export            | Python standard library and SQLite     | Reuse the local data source                               |
-| State             | React reducer and refs                 | Keep state ownership explicit                             |
-| Unit tests        | Vitest                                 | Check navigation and data rules                           |
-| Browser tests     | Playwright                             | Check routes, input, failure paths, and visual behavior   |
-| Hosting           | Vercel                                 | Managed Next.js deployment and asset delivery             |
+| Layer             | Choice                             | Reason                                                    |
+| ----------------- | ---------------------------------- | --------------------------------------------------------- |
+| Web framework     | Next.js App Router                 | Routes, metadata, server rendering, and Vercel deployment |
+| UI                | React with TypeScript              | Component boundaries and typed domain values              |
+| Styles            | Tailwind CSS 4                     | Shared tokens and explicit component states               |
+| Motion            | GSAP with `@gsap/react`            | Timelines, scoped targets, and cleanup                    |
+| Media processing  | Pillow in the offline media job    | Decode, inspect, and generate reviewed image variants.    |
+| Runtime contracts | Zod                                | Reject invalid imported data                              |
+| Export            | Python standard library and SQLite | Reuse the local data source                               |
+| State             | React reducer and refs             | Keep state ownership explicit                             |
+| Unit tests        | Vitest                             | Check navigation and data rules                           |
+| Browser tests     | Playwright                         | Check routes, input, failure paths, and visual behavior   |
+| Hosting           | Vercel                             | Managed Next.js deployment and asset delivery             |
 
 Use Node.js 24 in CI and hosting.
 The local machine currently provides Node.js 25.6.1.
@@ -139,7 +139,7 @@ The build embeds one dataset version.
 This prevents a page from mixing old ranking data with new histories.
 A failed export must leave the previous version intact.
 M1 provides `npm run data:export` and `npm run data:check`.
-Read [data operations](data-operations.md) for setup and commands.
+Read [data operations](../data-operations.md) for setup and commands.
 
 The source scraper remains a separate operational task.
 Run it manually until the user approves the update policy.
@@ -147,7 +147,7 @@ Keep the source database outside Git and the deployment artifact.
 
 ## 7. Routing and browser history
 
-The production route plan uses query parameters.
+The production routes use query parameters.
 It replaces the prototype's hash format.
 
 | URL                                                       | Meaning                                             |
@@ -156,6 +156,9 @@ It replaces the prototype's hash format.
 | `/rankings?division=lightweight`                          | Lightweight home with its champion selected         |
 | `/rankings?division=<division>&selected=<id>`             | Home with an explicit division and selected fighter |
 | `/rankings?division=<division>&fighter=<id>&view=history` | Detail with its active division context             |
+
+Bout URLs use `/rankings?division=<division>&fighter=<participant>&view=bout&bout=<id>&round=all|<round>`.
+The following original detail-entry rules describe History. Bout adds a parent History entry as specified in sections 23 and 25.
 
 A redirect sends `/` to `/rankings`.
 Check IDs against the dataset before loading a bundle.
@@ -198,13 +201,14 @@ M3 must test Back, Forward, direct entry, reload, and repeated navigation.
 
 The reducer uses these phases:
 
-| Phase           | Allowed work                                                       |
-| --------------- | ------------------------------------------------------------------ |
-| `rankings`      | Select a ranked fighter or request history.                        |
-| `history`       | Scroll, preview an opponent, or request navigation.                |
-| `preparing`     | Fetch target data and prepare media. Keep current content visible. |
-| `transitioning` | Animate the committed target elements.                             |
-| `error`         | Keep existing content and expose retry or return.                  |
+| Phase           | Allowed work                                                           |
+| --------------- | ---------------------------------------------------------------------- |
+| `rankings`      | Select a ranked fighter or request history.                            |
+| `history`       | Scroll, preview an opponent, or request navigation.                    |
+| `bout`          | Select a participant or period, inspect scores, or request navigation. |
+| `preparing`     | Fetch target data and prepare media. Keep current content visible.     |
+| `transitioning` | Animate the committed target elements.                                 |
+| `error`         | Keep existing content and expose retry or return.                      |
 
 Store active division, selected ID, detail ID, preview ID, phase, and request generation.
 Keep DOM references and GSAP timelines outside serializable state.
@@ -266,7 +270,7 @@ A resize during motion cancels the transform and shows the final layout.
 
 ## 10. Media and performance
 
-Follow [the media acquisition design](media-acquisition.md) for collection and processing.
+Follow [the media acquisition design](../media-acquisition.md) for collection and processing.
 The investigation found incorrect Lightweight full-body labels in the V7 source collector.
 M1 supplies reviewed full-body bindings for the initial 32 fighters.
 The preserved prototype keeps its historical media files.
@@ -334,7 +338,7 @@ Check these sources again before a major version change.
 ## 13. Category drawers
 
 V8 defines the current category behavior.
-The application migration remains planned.
+The application implements these drawers through the M4 motion boundary.
 Store active division independently from fighter identity.
 Keep one ranking snapshot per division and capture date.
 Share fighter bundles by stable ID across divisions.
@@ -438,7 +442,7 @@ The version includes normalized content, source configuration, media metadata, a
 A staging directory remains private until runtime checks pass.
 The publication runner renames the checked directory before replacing the current pointer.
 A publication lock prevents concurrent pointer writes.
-Read [data operations](data-operations.md) for artifact delivery and rollback preparation.
+Read [data operations](../data-operations.md) for artifact delivery and rollback preparation.
 
 ## 16. Implemented M2 page boundary
 
@@ -452,7 +456,7 @@ The initial profile contains up to three recent recorded results.
 The browser requests another versioned bundle after a selection action.
 It keeps a bounded profile cache and cancels obsolete requests.
 A generation check rejects stale responses.
-Read [the M2 report](m2-report.md) for the completed interface checks.
+Read [the M2 report](../m2-report.md) for the completed interface checks.
 M3 now implements the route controller.
 The M4 controller now coordinates the committed route and its visual transition.
 
@@ -475,7 +479,7 @@ Published ranking membership supplies known IDs for ranked fighters.
 Other IDs require the complete versioned archive index.
 The initial home payload does not contain that index or unranked bundles.
 Archive media loads on demand from the same immutable version.
-This follows [decision D14](decisions.md#d14-keep-direct-archive-loading-in-the-browser).
+This follows [decision D14](../decisions.md#d14-keep-direct-archive-loading-in-the-browser).
 
 The experience reducer owns committed route, bundle, phase, error, and request generation.
 A generation number rejects obsolete navigation results.
@@ -492,7 +496,7 @@ Preview state contains identity and access intent only.
 Closing the preview cancels its request and close timer.
 A navigation suppresses automatic hover reopening until the pointer moves.
 Keyboard focus and the explicit Preview button remain available.
-Read [the M3 report](m3-report.md) for the completed checks.
+Read [the M3 report](../m3-report.md) for the completed checks.
 
 ## 18. Implemented M4 motion boundary
 
@@ -526,7 +530,7 @@ The portrait container stays visible.
 Completion, cancellation, resize, and unmount remove overlays and temporary properties.
 The dial receives the same settlement event and stops its own tweens.
 Narrow layouts and reduced-motion mode commit without spatial motion.
-Read [the M4 report](m4-report.md) for measurements and acceptance limits.
+Read [the M4 report](../m4-report.md) for measurements and acceptance limits.
 
 ## 19. M5 release preparation
 
@@ -583,3 +587,88 @@ The existing data checker permits nondecreasing ranks and unique fighter IDs.
 The same components and motion controller serve all divisions.
 The menu scrolls within a bounded height.
 Profile facts and history remain in the independent fighter bundles.
+
+## 22. V9 bout analysis boundary
+
+Status: M6.1–M6.3 data and UI integration are implemented. Integrated user acceptance is pending.
+Existing fighter contracts remain unchanged. The manifest has an optional bout-analysis descriptor.
+Read [the M6 contract design](../m6-contract-design.md) for executable schemas, source coverage, and the route extension.
+Read [the bout analysis specification](bout-analysis.md) for defined terms, formula v1.1, and source fields.
+
+Extend offline export with independently identified bout statistics and versioned scoring references.
+A bout bundle must include both fighter perspectives and available round rows.
+Keep fighter career facts separate from bout statistics and scoring references.
+Validate dataset, bout, participant, period, and formula identities before rendering.
+Cache and cancel bout requests through the existing request-generation boundary.
+Keep large statistics and reference populations outside the initial page payload.
+Publish derived reference bounds and provenance, not the source database.
+
+BoutAnalysis contains the participant, round, radar, and score-breakdown UI.
+Reuse FightHistory, FighterProfile, and FighterFigure.
+Use a pure scoring function with shared fixtures for export and browser parity.
+Do not copy the prototype's standalone scripts, global state, hash router, or chart CDN into production.
+The current application stack and single-owner motion rules still apply.
+
+M6.1 defined the bout URL, period persistence, owned browser-entry behavior, and data schema versions.
+Extend the current history controller instead of adding a second independent router.
+Keep direct entry, Back, Forward, cancellation, and the existing opponent replacement rules consistent.
+M6.1 resolved cohort coverage and duration policies.
+Record final architecture choices in the decision log.
+
+## 23. Implemented M6.3 bout boundary
+
+Read [the interface report](../m6-interface-report.md) for route, data, and browser evidence.
+The existing experience owns the bout view and its committed fighter/period state.
+BoutStore owns a bounded cache of validated bundles and references under one pinned dataset.
+The request generation and abort signal also cover participant profiles and image preparation.
+The route controller adds a version-two bout entry while retaining version-one parent entries.
+The parent key supports native history return and updates the returned fighter context.
+Direct entry seeds the parent context once. Participant and round changes replace the bout entry.
+The shared scoring function renders through local SVG. The complete text disclosure remains independent of hover.
+The server payload includes the analysis capability and source hash. It excludes bulk bout data.
+Explicit preview environment overrides permit validation without moving the active dataset pointer.
+
+## 24. History and bout motion revision
+
+The motion controller adds `bout-open` and `bout-return` transactions for the same fighter.
+It measures the outgoing portrait and event glyphs after preparation.
+After the route commit, it measures the final live elements and applies inverse transforms.
+The portrait uses uniform scale with translation. Its container never owns opacity.
+Both directions use a one-second power3.inOut flight.
+Other content departs in 180 ms and fades in over 420 ms after a 120 ms arrival delay.
+Reduced motion and narrow layouts retain the existing immediate-commit behavior.
+
+BoutTitleText preserves word boundaries and stable character keys across the row and heading.
+The event heading uses the actual source event name.
+No text overlay or portrait clone is created for these same-image transitions.
+The controller retains up to 32 history scroll positions keyed by fighter ID and bout ID.
+FightHistory restores the matching row in a layout effect before the controller measures the return target.
+Existing cleanup owns cancellation, resize, and removal of temporary transforms.
+Round changes still use the immediate path and do not repeat this flight.
+
+Moving live glyphs keep measured layout slots. The live portrait and glyphs use temporary fixed positions to cross scroll clipping boundaries.
+Cleanup removes those positions and restores normal layout. No duplicate image or text is shown.
+The mounted experience pins its dataset object. A dataset-version key remounts it only when the dataset changes.
+Native browser traversal can replay server props without reinitializing the route owner or removing the Forward entry.
+
+## 25. Bout review controls
+
+Result badges and recent-form links share the existing bout route and request lifecycle.
+The capability flag keeps legacy datasets on their existing source-link path.
+Opening recent form from rankings first creates the owned fighter-history parent entry.
+This keeps Fight History, native Back, Forward, and the rankings return consistent.
+The bout card separates its sticky return bar from its scrollable content.
+The main shell uses horizontal clipping without creating a vertical scroll container.
+Radar inspection uses a definition list with one metric per row.
+
+## 26. Viewport ownership on bout return
+
+The mounted motion boundary sets browser scroll restoration to manual.
+It restores the previous browser setting when the boundary unmounts.
+The shell disables scroll anchoring. This prevents changing portrait and card geometry from moving the viewport.
+Before a bout-return commit, the controller records the current viewport and sets a minimum shell height sufficient to retain that position.
+The shorter history card keeps its normal height. Extra document space prevents browser scroll clamping.
+Keep that minimum after arrival. Removing it at cleanup would recreate the jump.
+A later bout return recomputes the minimum from the current position.
+After the commit, restore the captured position before measuring the target motion geometry.
+History-list restoration remains separate and uses the existing fighter/bout key.

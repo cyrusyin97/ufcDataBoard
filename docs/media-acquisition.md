@@ -1,11 +1,13 @@
 # Fighter media acquisition
 
-Status: Implemented M1 pipeline with the initial reviewed dataset.
+Role: Media collection and review procedure, with dated investigation findings.
+Current UI behavior belongs to [Product Spec](spec/design-protocol.md).
+Current coverage is recorded in [the all-division report](all-divisions-report.md).
 Date: 2026-10-14.
 The collector, candidate job, variant cache, and publication runner exist.
 Read [data operations](data-operations.md) for commands.
 
-Read [the technical design](technical-design.md) for application boundaries.
+Read [Product Spec](spec/components.md#8-components-and-module-ownership) for current application boundaries.
 Read [the evidence receipt](evidence/media-2026-10-14.json) for measured results.
 
 ## Terms
@@ -22,6 +24,8 @@ Read [the evidence receipt](evidence/media-2026-10-14.json) for measured results
 - Quarantine means retaining a failed candidate outside published assets.
 
 ## 1. Findings
+
+The following observations describe the initial 2026-10-14 investigation, not current review coverage.
 
 The investigation checked Movsar Evloev, Justin Gaethje, Valentina Shevchenko, and Dustin Poirier.
 These samples cover both initial divisions, another division, and a fighter outside the initial rankings.
@@ -341,4 +345,4 @@ Read [ranked media expansion](ranked-media-expansion.md) for the current collect
 The official page contains both visible rankings and hidden metadata rankings.
 Use `view-display-id-block_1` for the visible list.
 Do not overwrite it with `view-display-id-meta_rankings`.
-The collection does not change the accepted interface scope.
+Collection alone does not publish a division. The later UI expansion exposes all 11 captured divisions; see [the expansion report](all-divisions-report.md).

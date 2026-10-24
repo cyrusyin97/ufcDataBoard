@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-23",
+  "datasetVersion": "2026-10-14-5949094d82ded09a",
+  "preview": "http://127.0.0.1:3003",
+  "buildDirectory": "work/next-m6-motion-final",
+  "checks": {
+    "boutAndMotion": {
+      "startTime": "2026-10-23T10:35:36.945Z",
+      "duration": 39296.539,
+      "expected": 39,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "existingMotion": {
+      "startTime": "2026-10-23T10:35:49.893Z",
+      "duration": 20079.518,
+      "expected": 3,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "unitTests": 51,
+    "productionBuild": "passed",
+    "typescript": "passed",
+    "eslint": "passed",
+    "format": "passed"
+  },
+  "browsers": ["chromium", "firefox", "webkit"],
+  "coverage": [
+    "live portrait scale in both directions",
+    "same final event glyph nodes throughout motion",
+    "history scroll restoration",
+    "resize cancellation",
+    "reduced motion",
+    "native Back and Forward during arrival",
+    "existing bout navigation and scoring disclosure"
+  ],
+  "corrections": [
+    "Replaced frame-count threshold with distinct geometry checks; no native frame-rate claim.",
+    "Pinned the mounted dataset to prevent server prop replay from reseeding native history during the new asynchronous departure."
+  ],
+  "acceptance": "User review pending. M6 remains open.",
+  "unchanged": [
+    "active dataset pointer",
+    "production release descriptor",
+    "source database",
+    "preserved prototypes"
+  ]
+}

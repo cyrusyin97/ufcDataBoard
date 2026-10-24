@@ -1,9 +1,15 @@
-# UI requirements
+# UI requirements — superseded reference
+
+> Superseded on 2026-10-24 by [Product Spec](../product-spec.md), the sole current product logic standard.
+> The body below is retained as historical context for existing report links. Its status statements and instructions are not current requirements. Do not add new product rules here.
+
+Updated: 2026-10-24.
+Read [user journeys](../spec/user-journeys.md) for complete entry, navigation, recovery, and input flows.
 
 ## Reference
 
-Use [V8](../outputs/designs/ufc-rankings/index-v8.html) as the current desktop reference.
-Use the V6 [repair report](../outputs/designs/ufc-rankings/README-v6.md) for motion history.
+Use [V8](../../outputs/designs/ufc-rankings/index-v8.html) as the current desktop reference.
+Use the V6 [repair report](../../outputs/designs/ufc-rankings/README-v6.md) for motion history.
 The reference uses local Barlow and Barlow Condensed fonts.
 Its palette uses charcoal, cream, muted gray, and red.
 
@@ -132,7 +138,7 @@ Reduced motion commits the same final state without spatial movement.
 
 | ID  | Check                                          | Expected result                                                   |
 | --- | ---------------------------------------------- | ----------------------------------------------------------------- |
-| U11 | Switch both categories.                        | Each target division selects its champion.                        |
+| U11 | Switch published categories.                   | Each target division selects its champion.                        |
 | U12 | Inspect old heading and rows.                  | They move fully beyond the left edge before replacement.          |
 | U13 | Inspect the profile.                           | Departure and arrival use the right edge.                         |
 | U14 | Compare different heading widths.              | Name and weight move together without clipping or a final jump.   |
@@ -153,3 +159,63 @@ Use a centered cover crop for horizontal framing.
 Do not stretch the image beyond the thumbnail container or offset it upwards.
 Use initials when a reviewed headshot is absent.
 Keep half-body and full-body roles for the main figure and history composition.
+
+## V9 bout analysis
+
+Use [V9](../../outputs/designs/ufc-rankings/index-v9.html) for the new middle bout panel only.
+Keep V8 as the existing rankings, history, and profile reference.
+Follow [the bout analysis specification](bout-analysis.md) and BA04 through BA10.
+
+Show the selected portrait, bout analysis, and existing profile from left to right.
+Support both fighter headshots, All, and each available round.
+Use thin solid red and blue radar lines with subtle points.
+Radar geometry responds to hover only. It must not select or pin values on click or tap.
+Keep formulas and score contributions inside the default-closed How to read this chart disclosure.
+Provide textual access for both fighters without depending on hover.
+The keyboard and touch exception concerns radar geometry only, not other controls.
+
+Add Fight History to the bout panel and retain the complete Professional Record entry on the profile.
+Use opponent names for fighter-history navigation and event links for bout navigation.
+Restore the selected fighter's history on return.
+Keep V8 history rows, count, headings, location, and scroll footer.
+Do not retain the superseded V9 history tabs or instructional banner.
+Keep V8 profile digits, finish bars, imperial measurements, recent-form dates, and source link.
+The V9 prototype remains subject to production visual and navigation checks.
+
+### History and bout transition
+
+User revision: 2026-10-23.
+Opening a history event uses the existing coordinated motion system.
+The portrait grows smoothly into the bout composition.
+The selected event title moves upward from its row into the large bout heading.
+Use the actual event name as that heading, not the generic Bout Study label.
+Returning to history reverses the portrait scale and title movement.
+Fade the remaining card content, figure labels, and profile during the swap.
+Keep the portrait container visible throughout both directions.
+
+Use the final live title glyphs throughout each flight.
+Do not clone or replace title text at completion.
+Keep event words intact when the title wraps.
+Restore the originating history scroll position before measuring the return title.
+A direct bout visit without a saved history position must still reveal the matching row on return.
+Native Back and Forward use the same motion path as the controls.
+Resize, interruption, reduced motion, and narrow layouts must settle without stale transforms.
+
+### Bout review controls and text
+
+User revision: 2026-10-23.
+Use the same display typeface and uppercase treatment for history event names and bout headings.
+Keep the history event text small enough for its row.
+The history result badge and each recent-form entry open the matching internal bout when analysis is available.
+Keep modified clicks and link URLs usable.
+The Fight History control stays at the top while the detail content scrolls.
+Keep it visible when the page scrolls through the bout card.
+Show radar inspection values on separate rows. Show the fighter, axis, and total before component rows.
+
+### Preserve viewport on bout return
+
+Keep the current document scroll position when returning from bout detail to fight history.
+Do not restore the browser entry's older page position during that transition.
+Keep the position stable during departure, commit, arrival, and cleanup.
+Keep history-list scroll restoration independent from document scrolling.
+Apply the same rule to native traversal and reduced-motion mode.

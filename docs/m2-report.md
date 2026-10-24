@@ -1,5 +1,7 @@
 # M2 rankings interface
 
+> Historical evidence. Status, counts, and remaining work below apply to the recorded stage. Use [Product Spec](product-spec.md) for current behavior and [development plan](development-plan.md) for current gates.
+
 Date: 2026-10-14.
 Status: Implemented. The M2 acceptance checks pass.
 Scope: Rankings home. History and coordinated motion remain planned.

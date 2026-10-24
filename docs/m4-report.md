@@ -1,5 +1,7 @@
 # M4 engineering report
 
+> Historical evidence. Status, counts, and remaining work below apply to the recorded stage. Use [Product Spec](product-spec.md) for current behavior and [development plan](development-plan.md) for current gates.
+
 Date: 2026-10-15.
 Status: Accepted for the agreed desktop baseline and mobile composition.
 The user approved the current mobile layout on 2026-10-15.

@@ -1,0 +1,27 @@
+{
+  "datasetVersion": "2026-10-14-5949094d82ded09a",
+  "sourceDatabaseSha256": "4516eec0f095e13c1a39ae5452850ce34326a8c702753831c978c84e4b66925f",
+  "counts": {
+    "bouts": 11559,
+    "reference_available": 9529,
+    "allAxesAvailableForBothBoutTotals": 8654,
+    "reference_insufficient-cohort": 1387,
+    "reference_unavailable": 643
+  },
+  "issues": {
+    "incomplete-stats": 1585,
+    "missing-period": 331,
+    "missing-stats": 330,
+    "unmapped-division": 629,
+    "unknown-duration": 45,
+    "event-conflict": 14
+  },
+  "references": 6189,
+  "currentWebsiteVersion": "2026-10-14-17c85108758d31ec",
+  "archive": {
+    "datasetVersion": "2026-10-14-5949094d82ded09a",
+    "sha256": "e5372188dfa6dff76358dec2754f597a87438bbf16bed64309e1bfa841184951"
+  },
+  "archiveBytes": 63433729,
+  "repeatExportSameVersion": true
+}

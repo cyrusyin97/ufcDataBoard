@@ -1,5 +1,7 @@
 # All-division UI expansion
 
+> Historical evidence. Status, counts, and remaining work below apply to the recorded stage. Use [Product Spec](product-spec.md) for current behavior and [development plan](development-plan.md) for current gates.
+
 Date: 2026-10-16.
 Status: Implemented and checked.
 

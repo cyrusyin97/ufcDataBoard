@@ -1,5 +1,7 @@
 # M1 delivery report
 
+> Historical evidence. Status, counts, and remaining work below apply to the recorded stage. Use [Product Spec](product-spec.md) for current behavior and [development plan](development-plan.md) for current gates.
+
 Status: Implemented. Acceptance checks passed.
 Date: 2026-10-14.
 Dataset version: `2026-10-14-555dda3397f54a57`.

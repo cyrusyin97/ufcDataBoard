@@ -1,5 +1,7 @@
 # Ranked fighter media expansion
 
+> Historical evidence. Status, counts, and remaining work below apply to the recorded stage. Use [Product Spec](product-spec.md) for current behavior and [development plan](development-plan.md) for current gates.
+
 Status: Complete. Collection, review, export, and delivery checks passed.
 Date: 2026-10-14.
 

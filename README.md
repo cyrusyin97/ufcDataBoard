@@ -9,6 +9,8 @@ M4 acceptance is complete for the agreed desktop baseline and mobile composition
 The report retains the open release checks.
 Read [the M4 report](docs/m4-report.md) for evidence and limits.
 M5 release preparation is in progress. Read [the M5 report](docs/m5-report.md).
+M6 bout analysis is implemented in the checked local candidate. User acceptance remains pending.
+Read [the M6 interface report](docs/m6-interface-report.md) for current review changes.
 
 ## Start
 
@@ -42,15 +44,17 @@ Run the production build before the browser test.
 
 ## Documents
 
-Start with [AGENTS.md](AGENTS.md).
-Read the [technical design](docs/technical-design.md) for system boundaries.
-Read the [media acquisition design](docs/media-acquisition.md) for image sources and collection rules.
-Read the [development plan](docs/development-plan.md) for acceptance checks.
-Read the [deployment guide](docs/deployment.md) for domain and hosting steps.
+Read [Product Spec](docs/product-spec.md) first. It is the sole current product logic standard.
+Its topic documents define journeys, functions, design, motion, components, file ownership, critical tests, and extension rules.
+Use [the document map](docs/README.md) to find supporting procedures and evidence.
+[AGENTS.md](AGENTS.md) defines the project workflow. [Development plan](docs/development-plan.md) tracks work and acceptance gates.
+Read [validation](docs/validation.md) for recorded checks and [deployment](docs/deployment.md) for release procedures.
+Earlier specifications are in `docs/archive/`. Do not maintain new behavior there.
 
 ## Reference
 
-The current reference is [V8](outputs/designs/ufc-rankings/index-v8.html).
+The existing-card reference is [V8](outputs/designs/ufc-rankings/index-v8.html).
+Use [V9](outputs/designs/ufc-rankings/index-v9.html) and the recorded UI revisions for bout analysis.
 Its base references are [V6](outputs/designs/ufc-rankings/index-v6.html) and [V7](outputs/designs/ufc-rankings/index-v7.html).
 The prototype server uses port 4311.
 The application uses port 3000.
@@ -59,22 +63,22 @@ Archive the approved reference before another developer needs it.
 
 ## Layout
 
-| Path              | Responsibility                            |
-| ----------------- | ----------------------------------------- |
-| `src/app/`        | Routes, metadata, and shared layout       |
-| `src/components/` | Reusable interface components             |
-| `src/lib/domain/` | Data contracts and selection rules        |
-| `src/lib/motion/` | Motion preparation, controllers, and text |
-| `src/data/`       | Small checked reference fixtures          |
-| `src/messages/`   | English interface text                    |
-| `scripts/`        | Future export and validation commands     |
-| `tests/`          | Domain and browser checks                 |
-| `docs/`           | Requirements, design, plan, and decisions |
+| Path              | Responsibility                                    |
+| ----------------- | ------------------------------------------------- |
+| `src/app/`        | Routes, metadata, and shared layout               |
+| `src/components/` | Reusable interface components                     |
+| `src/lib/domain/` | Data contracts and selection rules                |
+| `src/lib/motion/` | Motion preparation, controllers, and text         |
+| `src/data/`       | Small checked reference fixtures                  |
+| `src/messages/`   | English interface text                            |
+| `scripts/`        | Offline export and validation commands            |
+| `tests/`          | Domain and browser checks                         |
+| `docs/`           | Spec index, topic rules, procedures, and evidence |
 
 ## Data boundaries
 
 The source database remains outside this project.
-The website will use checked JSON exports.
+The website uses checked JSON exports.
 Read [data operations](docs/data-operations.md) to export and check a dataset.
 Do not copy private source files into the public directory.
 

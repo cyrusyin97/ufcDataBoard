@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-23",
+  "revision": "preserve viewport on bout return",
+  "datasetVersion": "2026-10-14-5949094d82ded09a",
+  "buildDirectory": "work/next-m6-scroll",
+  "before": {
+    "viewport": [1169, 670],
+    "scrollYBefore": 240,
+    "scrollYAfter": 0
+  },
+  "checks": {
+    "boutAndMotion": {
+      "startTime": "2026-10-23T14:08:15.463Z",
+      "duration": 63473.756,
+      "expected": 48,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "existingMotion": {
+      "startTime": "2026-10-23T14:08:37.518Z",
+      "duration": 20816.302,
+      "expected": 3,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "productionBuild": "passed",
+    "typescript": "passed",
+    "eslint": "passed",
+    "format": "passed"
+  },
+  "coverage": [
+    "240px retained throughout sampled return frames within 1px",
+    "320px retained on subsequent native Back",
+    "normal and reduced motion",
+    "history list restoration remains independent",
+    "existing bout interaction and motion regression"
+  ],
+  "acceptance": "M6 user acceptance pending"
+}

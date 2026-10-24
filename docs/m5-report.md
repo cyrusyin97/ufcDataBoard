@@ -1,5 +1,7 @@
 # M5 release preparation report
 
+> Historical evidence. Status, counts, and remaining work below apply to the recorded stage. Use [Product Spec](product-spec.md) for current behavior and [development plan](development-plan.md) for current gates.
+
 Date: 2026-10-15.
 Status: In progress. Local preparation is complete. Hosting release is not complete.
 The user approved [the GitHub repository](https://github.com/cyrusyin97/ufcDataBoard).

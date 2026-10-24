@@ -1,0 +1,169 @@
+{
+  "aggregateVsRoundMismatchCounts": {},
+  "auditVersion": 1,
+  "controlAboveDurationRows": 0,
+  "coverage": {
+    "eventMismatch": 14,
+    "incompleteRoundSet": 1,
+    "missingStats": 330,
+    "shortPeriodRows": 2832,
+    "unknownDurationBouts": 43,
+    "unknownDurationRows": 196,
+    "withStats": 11229
+  },
+  "divisions": {
+    "bantamweight": {
+      "bouts": 995,
+      "completeUfcCandidates": 777,
+      "withStats": 988
+    },
+    "featherweight": {
+      "bouts": 1143,
+      "completeUfcCandidates": 853,
+      "withStats": 1124
+    },
+    "flyweight": {
+      "bouts": 509,
+      "completeUfcCandidates": 415,
+      "withStats": 505
+    },
+    "heavyweight": {
+      "bouts": 1125,
+      "completeUfcCandidates": 728,
+      "withStats": 1106
+    },
+    "light-heavyweight": {
+      "bouts": 967,
+      "completeUfcCandidates": 745,
+      "withStats": 946
+    },
+    "lightweight": {
+      "bouts": 1886,
+      "completeUfcCandidates": 1393,
+      "withStats": 1823
+    },
+    "middleweight": {
+      "bouts": 1575,
+      "completeUfcCandidates": 1096,
+      "withStats": 1524
+    },
+    "unmapped": {
+      "bouts": 629,
+      "withStats": 546
+    },
+    "welterweight": {
+      "bouts": 1733,
+      "completeUfcCandidates": 1362,
+      "withStats": 1674
+    },
+    "womens-bantamweight": {
+      "bouts": 280,
+      "completeUfcCandidates": 247,
+      "withStats": 276
+    },
+    "womens-flyweight": {
+      "bouts": 299,
+      "completeUfcCandidates": 269,
+      "withStats": 299
+    },
+    "womens-strawweight": {
+      "bouts": 418,
+      "completeUfcCandidates": 365,
+      "withStats": 418
+    }
+  },
+  "invalidMetrics": {},
+  "issueExamples": {
+    "eventMismatch": [
+      "07a378b257aad5a9",
+      "114d2f6fcd3f6f00",
+      "3dd2fde7bff79c51",
+      "5d3e046b6bcd49f5",
+      "7a0813ec0fadc84e",
+      "7cbfeba85f86d1bf",
+      "944b929130b23c2a",
+      "9474f64347aade7a",
+      "a1e193425e716b42",
+      "b395c89e19a3fec4"
+    ],
+    "incompleteRoundSet": ["0167a9d6e4b599eb"],
+    "missingStats": [
+      "010b638fd558699a",
+      "0168a8cd8315e59e",
+      "01d1432bdc132de1",
+      "024817f9b28943ab",
+      "0313e2800683dd9d",
+      "0349606b5b992dec",
+      "042ea219e5e46f84",
+      "04ab1542925032ea",
+      "04eb7c9749f08f5b",
+      "05dab1fe544f0030"
+    ],
+    "unknownDurationBouts": [
+      "00835554f95fa911",
+      "00b0796724ec1c09",
+      "040ecf01338dff9e",
+      "0b71ada6c9209fc9",
+      "17ee4caf06981b81",
+      "2d2bbc86e941e05c",
+      "31a648a4e311a248",
+      "323f543eb8abdb36",
+      "3b020d4914b44fc8",
+      "46acd54cc0c905fb"
+    ]
+  },
+  "notes": [
+    "Candidates are not per-event reference cohorts. Eligibility still requires the chosen historical window and minimum sample.",
+    "Stored round-zero totals are audited, not reconstructed from round sums.",
+    "No source or active release files are modified."
+  ],
+  "nullMetrics": {
+    "ctrl_seconds": 8486
+  },
+  "orphanStatsBouts": [],
+  "sourceCounts": {
+    "bouts": 11559,
+    "detailBouts": 11559,
+    "statsBouts": 11229,
+    "statsRows": 73234
+  },
+  "sourceDatabaseSha256": "4516eec0f095e13c1a39ae5452850ce34326a8c702753831c978c84e4b66925f",
+  "timeFormats": {
+    "1 Rnd (10)": 8,
+    "1 Rnd (12)": 6,
+    "1 Rnd (15)": 23,
+    "1 Rnd (18)": 2,
+    "1 Rnd (20)": 27,
+    "1 Rnd (30)": 2,
+    "1 Rnd + 2OT (15-3-3)": 20,
+    "1 Rnd + 2OT (24-3-3)": 1,
+    "1 Rnd + OT (12-3)": 88,
+    "1 Rnd + OT (15-10)": 2,
+    "1 Rnd + OT (15-3)": 2,
+    "1 Rnd + OT (27-3)": 1,
+    "1 Rnd + OT (30-3)": 1,
+    "1 Rnd + OT (30-5)": 3,
+    "1 Rnd + OT (31-5)": 1,
+    "2 Rnd (10-10)": 64,
+    "2 Rnd (10-5)": 311,
+    "2 Rnd (3-3)": 3,
+    "2 Rnd (5-5)": 40,
+    "3 Rnd (10-10-10)": 22,
+    "3 Rnd (10-10-5)": 5,
+    "3 Rnd (10-5-5)": 294,
+    "3 Rnd (2-2-2)": 1,
+    "3 Rnd (3-3-3)": 58,
+    "3 Rnd (4-4-4)": 9,
+    "3 Rnd (5-5-5)": 9441,
+    "3 Rnd (8-8-8)": 1,
+    "3 Rnd + OT (5-5-5-5)": 161,
+    "4 Rnd (10-10-10-10)": 1,
+    "5 Rnd (3-3-3-3-3)": 2,
+    "5 Rnd (4-4-4-4-4)": 1,
+    "5 Rnd (5-5-5-5-5)": 913,
+    "No Time Limit": 41,
+    "Unlimited Rnd  (15)": 2,
+    "Unlimited Rnd (10)": 1,
+    "Unlimited Rnd (20)": 1
+  }
+}
