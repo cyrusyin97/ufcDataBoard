@@ -380,3 +380,16 @@ This fresh check uses local Node.js 25.6.1 and the unchanged active dataset. Nod
 The browser matrix was not rerun for submission. The latest viewport receipt retains its 48 three-browser bout/motion checks and three existing Chromium motion checks.
 Formatting, local document links, and whitespace checks pass.
 No source database, public dataset pointer, release descriptor, or preserved prototype changed. No deployment occurred.
+
+## Accepted dataset promotion
+
+Date: 2026-10-24.
+The user requested the latest accepted dataset as the formal build version.
+The existing M6 archive SHA-256 matches its recorded descriptor. Its unchanged bytes were copied into `outputs/datasets/` with a checksum sidecar and version-specific descriptor.
+Node.js 24.22.0 restoration passes archive safety, complete dataset validation, and immutable installed-version comparison before switching the local pointer.
+`data/release.json` now pins `2026-10-14-5949094d82ded09a` and SHA-256 `e5372188dfa6dff76358dec2754f597a87438bbf16bed64309e1bfa841184951`.
+The prior archive and descriptor remain available for rollback.
+The default production build passes on Node.js 24.22.0 with the promoted dataset and no preview override.
+Formatting, local links, and whitespace checks pass. Browser suites were not rerun because the data bytes and runtime implementation match the accepted M6 candidate.
+The snapshot date remains 2026-10-14. The source database was not changed or refreshed.
+All 528 media roles still lack approved publication rights. No artifact upload, hosted deployment, or rights approval occurred.

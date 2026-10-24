@@ -88,7 +88,7 @@ Keep the M5 hosting gate separate.
 ## M6: Bout analysis from V9
 
 Status: Accepted for submission on 2026-10-24. M6.1 through M6.4 have local checks and user acceptance.
-Deployment validation and dataset promotion remain part of M5.
+Deployment validation remains part of M5. The accepted M6 dataset is now the default build dataset.
 Read [the M6 data report](m6-data-report.md).
 Scope recorded: 2026-10-23.
 Depends on the implemented M1 data pipeline and M3/M4 navigation and UI.
@@ -113,7 +113,7 @@ Current requirements are [J08–J13](spec/user-journeys.md#j08--open-bout-analys
 
 ### M6.4: Verification and release integration
 
-Status: Local automated checks and integrated user acceptance are complete. Release promotion remains in M5.
+Status: Local automated checks and integrated user acceptance are complete. Hosted release promotion remains in M5.
 
 - Compare desktop cards against V8 and the bout panel against the latest V9.
 - Check mobile layouts, reduced motion, keyboard controls, and touch access.
@@ -137,7 +137,7 @@ Remaining work:
 
 - User acceptance was received on 2026-10-24; submit the checked implementation.
 - Carry the accepted candidate into M5 deployment and rollback checks when release inputs are ready.
-- Promote the candidate only through the documented release process.
+- The accepted M6 data version is promoted locally; publish the hosted release only through the documented process.
 
 Product Spec is the sole current standard and includes J01–J17 and C01–C20. This does not replace recorded evidence or the user acceptance gate.
 
@@ -146,3 +146,11 @@ Product Spec is the sole current standard and includes J01–J17 and C01–C20. 
 The user confirmed that M6 can be submitted. The accepted scope includes the latest review corrections and recorded local checks.
 The source and tests can be committed and pushed. M5 owns hosting, media rights, deployed verification, rollback, and production dataset promotion.
 The active dataset pointer and release descriptor remain unchanged.
+
+### Default dataset promotion — 2026-10-24
+
+The user requested the latest accepted data version as the formal build version.
+`data/release.json` and the local public pointer now select `2026-10-14-5949094d82ded09a`.
+The exact checked archive is retained in `outputs/datasets/` with its checksum and descriptor. The prior archive and descriptor remain available for rollback.
+Artifact upload, `UFC_DATASET_URL` configuration, publication rights, and hosted checks remain M5 work.
+This changes the default dataset, not the source snapshot date or source database.

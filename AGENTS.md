@@ -4,7 +4,7 @@
 
 Build and maintain the UFC rankings website defined by [Product Spec](docs/product-spec.md).
 The Product Spec index and its topic documents form the sole product logic standard. It covers current journeys, design, motion, data meaning, architecture, and critical tests.
-The user accepted M6 for submission on 2026-10-24. M5 release and dataset promotion remain pending.
+The user accepted M6 for submission on 2026-10-24. M5 hosting release remains pending. The default dataset now includes accepted M6 analysis.
 
 ## Read order
 

@@ -46,7 +46,8 @@ Local source uploads omit datasets, captures, credentials, and private work dire
 The artifact includes data and reviewed media together.
 Keep originals outside the hosting source.
 See [Vercel limits](https://vercel.com/docs/limits) before choosing a plan.
-Read the pinned descriptor and latest [all-division report](all-divisions-report.md) for the current artifact.
+Read the pinned descriptor and [current artifact record](data-operations.md#current-pinned-artifact) for the current artifact.
+Follow [artifact publication](data-operations.md#publish-a-build-artifact) to configure its HTTPS download URL.
 A successful role review does not supply publication rights.
 The current release has 528 media roles with unknown publication rights.
 `release:check` blocks the hosting build for those roles.

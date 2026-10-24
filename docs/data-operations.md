@@ -161,7 +161,7 @@ M1 does not guarantee official images for every archive fighter.
 ## Optional bout analysis export
 
 M6.2 implements the V9 data extension. M6.3 integrates it into the application.
-The integrated preview uses explicit version/build overrides until user acceptance.
+The accepted M6 version is now the default build dataset. Version/build overrides remain available for isolated future previews.
 The approved policy is in `data/config/bout-policy.json`.
 It uses a five-year historical window, at least 50 complete same-division bouts, and a 60-second short-period threshold.
 Read [the data report](m6-data-report.md) for coverage and limitations.
@@ -188,3 +188,35 @@ The default build still reads `public/data/current.json`.
 Restore generated local Next.js type paths to their default locations after an isolated build.
 Pass the same preview version to browser tests and use `PLAYWRIGHT_BASE_URL` for the preview origin.
 Use separate Playwright output roots when running independent test commands.
+
+## Publish a build artifact
+
+The build downloads one versioned `.tar.gz` archive. It restores the complete public dataset and media locally before Next.js builds.
+The browser requests individual JSON and image files from the deployed website, not from the archive URL.
+Do not upload SQLite, private captures, or raw media caches. Do not commit generated archives to Git.
+
+1. Validate the accepted dataset and package it once. Keep the exact checked archive bytes; recompressing can change its SHA-256.
+2. Keep the archive, a matching `.sha256` sidecar, and a version-specific release descriptor in `outputs/datasets/`.
+3. Upload the archive to the approved artifact host under its full versioned filename. Do not overwrite an older version.
+4. Obtain a direct HTTPS download URL. The current downloader supports an ordinary accessible URL or a signed URL; it does not add authorization headers or perform interactive login. A signed URL must remain valid for builds and rollback, or be renewed before use.
+5. Verify a download through `npm run data:restore -- --root work/hosted-restore-check`. Supply `UFC_DATASET_URL` through the environment and use the matching `data/release.json`.
+6. Set `UFC_DATASET_URL` in the hosting Preview and Production environments and as the GitHub Actions secret. Keep signed URLs out of source, reports, and logs.
+7. Use `npm run release:build` on the host. It restores data, checks publication readiness, then builds the site.
+8. Verify the deployed preview and retain the prior code revision, descriptor, and archive for rollback.
+
+The artifact host and website host can differ. Cloudflare R2 can store the archive while Vercel hosts the application.
+Public bucket access exposes the archive and its included media. Keep it private until publication requirements are met.
+Cloudflare identifies `r2.dev` as a development endpoint; use an appropriate production access configuration for automated release builds.
+See [R2 access options](https://developers.cloudflare.com/r2/buckets/public-buckets/) and [Vercel environment scopes](https://vercel.com/docs/environment-variables).
+
+No upload destination or credentials are configured by this procedure. Artifact hosting remains a separate operator action.
+Media role review does not approve publication rights. `release:check` must pass before public deployment.
+
+## Current pinned artifact
+
+Promoted locally on 2026-10-24 after M6 acceptance.
+Version: `2026-10-14-5949094d82ded09a`. Snapshot date: 2026-10-14.
+Archive: `outputs/datasets/ufc-data-2026-10-14-5949094d82ded09a.tar.gz`.
+Size: 63,433,729 bytes. SHA-256: `e5372188dfa6dff76358dec2754f597a87438bbf16bed64309e1bfa841184951`.
+The matching sidecar and version-specific descriptor are in the same directory. `data/release.json` pins this archive.
+No remote artifact URL has been configured by this promotion. The package still contains media with unknown publication rights.

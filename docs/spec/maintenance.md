@@ -1,6 +1,6 @@
 # 12. Maintenance and expandability
 
-[Product Spec index](../product-spec.md) · Version 1.2 · Updated 2026-10-24.
+[Product Spec index](../product-spec.md) · Version 1.3 · Updated 2026-10-24.
 
 ### 12.1 Required change workflow
 

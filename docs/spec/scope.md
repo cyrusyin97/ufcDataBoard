@@ -1,6 +1,6 @@
 # 2. Product scope and invariants
 
-[Product Spec index](../product-spec.md) · Version 1.2 · Updated 2026-10-24.
+[Product Spec index](../product-spec.md) · Version 1.3 · Updated 2026-10-24.
 
 The product lets users browse UFC rankings, inspect fighter records, follow opponents, and compare statistics from one bout.
 The initial interface is English. It has no login, payments, predictions, user editing, global fighter search, or browser-triggered data collection.

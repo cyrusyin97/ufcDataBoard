@@ -9,7 +9,7 @@ M4 acceptance is complete for the agreed desktop baseline and mobile composition
 The report retains the open release checks.
 Read [the M4 report](docs/m4-report.md) for evidence and limits.
 M5 release preparation is in progress. Read [the M5 report](docs/m5-report.md).
-M6 bout analysis was accepted for submission on 2026-10-24. Deployment and dataset promotion remain pending under M5.
+M6 bout analysis was accepted for submission on 2026-10-24. The default dataset includes M6 analysis. Hosting release remains pending under M5.
 Read [the M6 interface report](docs/m6-interface-report.md) for current review changes.
 
 ## Start

@@ -1,6 +1,6 @@
 # 3. User journeys
 
-[Product Spec index](../product-spec.md) · Version 1.2 · Updated 2026-10-24.
+[Product Spec index](../product-spec.md) · Version 1.3 · Updated 2026-10-24.
 
 These journeys cover the current interface, including normal paths and recovery branches.
 They do not imply that every input, device, and data combination has a separate automated test.
