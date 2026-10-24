@@ -8,22 +8,28 @@ import {
 import type { Division } from "@/lib/domain/selection";
 const ownershipKey = "ufcRankingsV1";
 type OwnedEntry = {
-  version: 1;
-  kind: "rankings" | "history";
+  version: 1 | 2;
+  kind: "rankings" | "history" | "bout";
+  parentKey?: string;
   key: string;
   homeKey: string | null;
   homeSelection: string;
   divisionId: string;
 };
 type BrowserPort = {
-  history: Pick<History, "state" | "replaceState" | "pushState" | "back">;
+  history: Pick<History, "state" | "replaceState" | "pushState" | "back"> &
+    Partial<Pick<History, "go">>;
   location: Pick<Location, "pathname" | "search">;
 };
 function owner(state: unknown): OwnedEntry | null {
   const value = (state as Record<string, unknown> | null)?.[ownershipKey] as
     OwnedEntry | undefined;
-  return value?.version === 1 &&
-    (value.kind === "rankings" || value.kind === "history") &&
+  return (value?.version === 1 || value?.version === 2) &&
+    (value.kind === "rankings" ||
+      value.kind === "history" ||
+      (value.version === 2 &&
+        value.kind === "bout" &&
+        typeof value.parentKey === "string")) &&
     typeof value.key === "string" &&
     typeof value.divisionId === "string" &&
     typeof value.homeSelection === "string" &&
@@ -87,16 +93,77 @@ export class RouteController {
         key: crypto.randomUUID(),
         homeKey: homeEntry.key,
       };
+      const historyRoute: ExperienceRoute = {
+        view: "history",
+        divisionId: this.current.divisionId,
+        fighterId: this.current.fighterId,
+      };
       this.browser.history.pushState(
         this.state(this.entry),
         "",
-        routeUrl(this.current),
+        routeUrl(historyRoute),
       );
+      if (this.current.view === "bout") {
+        this.entry = {
+          ...this.entry,
+          version: 2,
+          kind: "bout",
+          key: crypto.randomUUID(),
+          parentKey: this.entry.key,
+        };
+        this.browser.history.pushState(
+          this.state(this.entry),
+          "",
+          routeUrl(this.current),
+        );
+      }
     }
     return this.current;
   }
   commit(route: ExperienceRoute) {
     const home = returnRoute(route, this.divisions, this.defaultId);
+    if (route.view === "bout") {
+      if (this.current.view === "rankings") {
+        this.commit({
+          view: "history",
+          divisionId: route.divisionId,
+          fighterId: route.fighterId,
+        });
+      }
+      const previous =
+        this.entry ?? owner(this.browser.history.state) ?? this.homeEntry(home);
+      if (this.current.view !== "bout") {
+        this.entry = {
+          ...previous,
+          version: 2,
+          kind: "bout",
+          key: crypto.randomUUID(),
+          parentKey: previous.key,
+          divisionId: route.divisionId,
+          homeSelection: home.fighterId,
+        };
+        this.browser.history.pushState(
+          this.state(this.entry),
+          "",
+          routeUrl(route),
+        );
+      } else {
+        this.entry = {
+          ...previous,
+          version: 2,
+          kind: "bout",
+          divisionId: route.divisionId,
+          homeSelection: home.fighterId,
+        };
+        this.browser.history.replaceState(
+          this.state(this.entry),
+          "",
+          routeUrl(route),
+        );
+      }
+      this.current = route;
+      return;
+    }
     if (route.view === "history" && this.current.view === "rankings") {
       const homeEntry =
         owner(this.browser.history.state) ?? this.homeEntry(this.current);
@@ -144,7 +211,23 @@ export class RouteController {
     let route = this.read();
     this.entry = owner(this.browser.history.state);
     if (
-      previous.view === "history" &&
+      previous.view === "bout" &&
+      this.entry?.kind === "history" &&
+      this.entry.key === previousEntry?.parentKey
+    ) {
+      route = {
+        view: "history",
+        divisionId: previous.divisionId,
+        fighterId: previous.fighterId,
+      };
+      this.browser.history.replaceState(
+        this.state(this.entry),
+        "",
+        routeUrl(route),
+      );
+    }
+    if (
+      previous.view !== "rankings" &&
       this.entry?.kind === "rankings" &&
       this.entry.key === previousEntry?.homeKey
     ) {
@@ -163,9 +246,30 @@ export class RouteController {
     this.current = route;
     return sameRoute(previous, route) ? null : route;
   }
+  returnHistory(): ExperienceRoute | null {
+    const history: ExperienceRoute = {
+      view: "history",
+      divisionId: this.current.divisionId,
+      fighterId: this.current.fighterId,
+    };
+    if (this.current.view === "bout" && this.entry?.parentKey) {
+      this.browser.history.back();
+      return null;
+    }
+    this.commit(history);
+    return history;
+  }
   returnHome(): ExperienceRoute | null {
     const home = returnRoute(this.current, this.divisions, this.defaultId);
     const existing = owner(this.browser.history.state);
+    if (
+      this.current.view === "bout" &&
+      existing?.homeKey &&
+      this.browser.history.go
+    ) {
+      this.browser.history.go(-2);
+      return null;
+    }
     if (
       this.current.view === "history" &&
       existing?.kind === "history" &&

@@ -11,7 +11,10 @@ import path from "node:path";
 import { tmpdir } from "node:os";
 import { createHash } from "node:crypto";
 import * as tar from "tar";
-import { restoreDataset } from "../../scripts/restore-data";
+import {
+  restoreDataset,
+  assertArchiveExpansion,
+} from "../../scripts/restore-data";
 const version = "2026-10-14-0123456789abcdef";
 const directories: string[] = [];
 afterEach(() => {
@@ -90,5 +93,20 @@ describe("release archive restoration", () => {
         url: "http://example.test/data.tar.gz",
       }),
     ).rejects.toThrow("HTTPS");
+  });
+});
+
+describe("analysis archive expansion bounds", () => {
+  it("accepts the measured archive and retains finite entry and byte limits", () => {
+    expect(() => assertArchiveExpansion(1024, 107915925, 23580)).not.toThrow();
+    expect(() => assertArchiveExpansion(1024, 107915925, 40001)).toThrow(
+      "expansion limit",
+    );
+    expect(() =>
+      assertArchiveExpansion(20 * 1024 * 1024 + 1, 107915925, 1),
+    ).toThrow("expansion limit");
+    expect(() =>
+      assertArchiveExpansion(1024, 512 * 1024 * 1024 + 1, 1),
+    ).toThrow("expansion limit");
   });
 });

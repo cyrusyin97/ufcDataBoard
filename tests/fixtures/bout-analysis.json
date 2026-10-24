@@ -1,0 +1,365 @@
+{
+  "bout": {
+    "boutType": "UFC Featherweight Title Bout",
+    "capturedAt": "2026-07-06T03:49:34+00:00",
+    "datasetVersion": "2026-10-14-5949094d82ded09a",
+    "divisionId": "featherweight",
+    "endRound": 5,
+    "endTime": "5:00",
+    "eventDate": "2021-09-25",
+    "eventName": "UFC 266: Volkanovski vs. Ortega",
+    "fighterIds": ["def8166ff24bd237", "e1248941344b3288"],
+    "id": "18f1b88d8977c216",
+    "issues": [],
+    "method": "Decision - Unanimous",
+    "outcomes": ["L", "W"],
+    "periods": [
+      {
+        "elapsedSeconds": 1500,
+        "participants": [
+          {
+            "fighterId": "def8166ff24bd237",
+            "stats": {
+              "clinch_attempted": 9,
+              "clinch_landed": 6,
+              "ctrl_seconds": 54,
+              "distance_attempted": 225,
+              "distance_landed": 82,
+              "ground_landed": 0,
+              "kd": 0,
+              "sig_landed": 88,
+              "sub_att": 3,
+              "td_attempted": 5,
+              "td_landed": 2
+            }
+          },
+          {
+            "fighterId": "e1248941344b3288",
+            "stats": {
+              "clinch_attempted": 6,
+              "clinch_landed": 3,
+              "ctrl_seconds": 231,
+              "distance_attempted": 254,
+              "distance_landed": 158,
+              "ground_landed": 53,
+              "kd": 0,
+              "sig_landed": 214,
+              "sub_att": 0,
+              "td_attempted": 0,
+              "td_landed": 0
+            }
+          }
+        ],
+        "round": 0
+      },
+      {
+        "elapsedSeconds": 300,
+        "participants": [
+          {
+            "fighterId": "def8166ff24bd237",
+            "stats": {
+              "clinch_attempted": 2,
+              "clinch_landed": 1,
+              "ctrl_seconds": 0,
+              "distance_attempted": 49,
+              "distance_landed": 15,
+              "ground_landed": 0,
+              "kd": 0,
+              "sig_landed": 16,
+              "sub_att": 0,
+              "td_attempted": 0,
+              "td_landed": 0
+            }
+          },
+          {
+            "fighterId": "e1248941344b3288",
+            "stats": {
+              "clinch_attempted": 2,
+              "clinch_landed": 0,
+              "ctrl_seconds": 0,
+              "distance_attempted": 50,
+              "distance_landed": 30,
+              "ground_landed": 0,
+              "kd": 0,
+              "sig_landed": 30,
+              "sub_att": 0,
+              "td_attempted": 0,
+              "td_landed": 0
+            }
+          }
+        ],
+        "round": 1
+      },
+      {
+        "elapsedSeconds": 300,
+        "participants": [
+          {
+            "fighterId": "def8166ff24bd237",
+            "stats": {
+              "clinch_attempted": 1,
+              "clinch_landed": 1,
+              "ctrl_seconds": 0,
+              "distance_attempted": 57,
+              "distance_landed": 22,
+              "ground_landed": 0,
+              "kd": 0,
+              "sig_landed": 23,
+              "sub_att": 0,
+              "td_attempted": 0,
+              "td_landed": 0
+            }
+          },
+          {
+            "fighterId": "e1248941344b3288",
+            "stats": {
+              "clinch_attempted": 0,
+              "clinch_landed": 0,
+              "ctrl_seconds": 3,
+              "distance_attempted": 61,
+              "distance_landed": 38,
+              "ground_landed": 0,
+              "kd": 0,
+              "sig_landed": 38,
+              "sub_att": 0,
+              "td_attempted": 0,
+              "td_landed": 0
+            }
+          }
+        ],
+        "round": 2
+      },
+      {
+        "elapsedSeconds": 300,
+        "participants": [
+          {
+            "fighterId": "def8166ff24bd237",
+            "stats": {
+              "clinch_attempted": 2,
+              "clinch_landed": 2,
+              "ctrl_seconds": 41,
+              "distance_attempted": 38,
+              "distance_landed": 15,
+              "ground_landed": 0,
+              "kd": 0,
+              "sig_landed": 17,
+              "sub_att": 2,
+              "td_attempted": 1,
+              "td_landed": 1
+            }
+          },
+          {
+            "fighterId": "e1248941344b3288",
+            "stats": {
+              "clinch_attempted": 0,
+              "clinch_landed": 0,
+              "ctrl_seconds": 73,
+              "distance_attempted": 42,
+              "distance_landed": 30,
+              "ground_landed": 31,
+              "kd": 0,
+              "sig_landed": 61,
+              "sub_att": 0,
+              "td_attempted": 0,
+              "td_landed": 0
+            }
+          }
+        ],
+        "round": 3
+      },
+      {
+        "elapsedSeconds": 300,
+        "participants": [
+          {
+            "fighterId": "def8166ff24bd237",
+            "stats": {
+              "clinch_attempted": 0,
+              "clinch_landed": 0,
+              "ctrl_seconds": 13,
+              "distance_attempted": 15,
+              "distance_landed": 6,
+              "ground_landed": 0,
+              "kd": 0,
+              "sig_landed": 6,
+              "sub_att": 1,
+              "td_attempted": 2,
+              "td_landed": 1
+            }
+          },
+          {
+            "fighterId": "e1248941344b3288",
+            "stats": {
+              "clinch_attempted": 0,
+              "clinch_landed": 0,
+              "ctrl_seconds": 153,
+              "distance_attempted": 22,
+              "distance_landed": 13,
+              "ground_landed": 22,
+              "kd": 0,
+              "sig_landed": 35,
+              "sub_att": 0,
+              "td_attempted": 0,
+              "td_landed": 0
+            }
+          }
+        ],
+        "round": 4
+      },
+      {
+        "elapsedSeconds": 300,
+        "participants": [
+          {
+            "fighterId": "def8166ff24bd237",
+            "stats": {
+              "clinch_attempted": 4,
+              "clinch_landed": 2,
+              "ctrl_seconds": 0,
+              "distance_attempted": 66,
+              "distance_landed": 24,
+              "ground_landed": 0,
+              "kd": 0,
+              "sig_landed": 26,
+              "sub_att": 0,
+              "td_attempted": 2,
+              "td_landed": 0
+            }
+          },
+          {
+            "fighterId": "e1248941344b3288",
+            "stats": {
+              "clinch_attempted": 4,
+              "clinch_landed": 3,
+              "ctrl_seconds": 2,
+              "distance_attempted": 79,
+              "distance_landed": 47,
+              "ground_landed": 0,
+              "kd": 0,
+              "sig_landed": 50,
+              "sub_att": 0,
+              "td_attempted": 0,
+              "td_landed": 0
+            }
+          }
+        ],
+        "round": 5
+      }
+    ],
+    "referenceId": "e4fbe5a71c3afb8764571a552be85dcf61b4425d229d7093bb55cd81692225a8",
+    "schemaVersion": 1,
+    "sourceUrl": "http://ufcstats.com/fight-details/18f1b88d8977c216",
+    "timeFormat": "5 Rnd (5-5-5-5-5)"
+  },
+  "reference": {
+    "cutoffExclusive": "2021-09-25",
+    "datasetVersion": "2026-10-14-5949094d82ded09a",
+    "distinctBoutCount": 271,
+    "divisionId": "featherweight",
+    "formulaVersion": "1.1",
+    "id": "e4fbe5a71c3afb8764571a552be85dcf61b4425d229d7093bb55cd81692225a8",
+    "minimumBoutCount": 50,
+    "periods": {
+      "bout": {
+        "bounds": {
+          "clinch_attempted": {
+            "method": "P95",
+            "upper": 9.333333333333334
+          },
+          "clinch_landed": {
+            "method": "P95",
+            "upper": 7.333333333333333
+          },
+          "ctrl_seconds": {
+            "method": "P95",
+            "upper": 0.6466556903523973
+          },
+          "distance_attempted": {
+            "method": "P95",
+            "upper": 81.54999999999997
+          },
+          "distance_landed": {
+            "method": "P95",
+            "upper": 35.46428219421112
+          },
+          "ground_landed": {
+            "method": "P95",
+            "upper": 13.880478010640688
+          },
+          "kd": {
+            "method": "P95",
+            "upper": 1.1762408088235292
+          },
+          "sig_landed": {
+            "method": "P95",
+            "upper": 44.57000716946158
+          },
+          "sub_att": {
+            "method": "P95",
+            "upper": 1.385204568086954
+          },
+          "td_attempted": {
+            "method": "P95",
+            "upper": 4.666666666666667
+          },
+          "td_landed": {
+            "method": "P95",
+            "upper": 2.0
+          }
+        },
+        "observationCount": 542
+      },
+      "round": {
+        "bounds": {
+          "clinch_attempted": {
+            "method": "P95",
+            "upper": 10.929518072289149
+          },
+          "clinch_landed": {
+            "method": "P95",
+            "upper": 8.0
+          },
+          "ctrl_seconds": {
+            "method": "P95",
+            "upper": 0.72
+          },
+          "distance_attempted": {
+            "method": "P95",
+            "upper": 88.0
+          },
+          "distance_landed": {
+            "method": "P95",
+            "upper": 39.0
+          },
+          "ground_landed": {
+            "method": "P95",
+            "upper": 13.0
+          },
+          "kd": {
+            "method": "P95",
+            "upper": 1.0
+          },
+          "sig_landed": {
+            "method": "P95",
+            "upper": 47.33081180811805
+          },
+          "sub_att": {
+            "method": "P95",
+            "upper": 1.2997087487397754
+          },
+          "td_attempted": {
+            "method": "P95",
+            "upper": 5.0
+          },
+          "td_landed": {
+            "method": "P95",
+            "upper": 2.056298381421533
+          }
+        },
+        "observationCount": 1390
+      }
+    },
+    "policyVersion": "1",
+    "schemaVersion": 1,
+    "sourceDatabaseSha256": "4516eec0f095e13c1a39ae5452850ce34326a8c702753831c978c84e4b66925f",
+    "status": "available",
+    "windowStart": "2016-09-25"
+  }
+}

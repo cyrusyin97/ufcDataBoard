@@ -1,6 +1,6 @@
 # 5. Design protocol
 
-[Product Spec index](../product-spec.md) · Version 1.1 · Updated 2026-10-24.
+[Product Spec index](../product-spec.md) · Version 1.2 · Updated 2026-10-24.
 
 ### 5.1 Visual language
 

@@ -87,8 +87,8 @@ Keep the M5 hosting gate separate.
 
 ## M6: Bout analysis from V9
 
-Status: In progress. M6.1 through M6.3 are implemented with checks recorded.
-M6.4 automated integration checks pass. User preview acceptance remains pending.
+Status: Accepted for submission on 2026-10-24. M6.1 through M6.4 have local checks and user acceptance.
+Deployment validation and dataset promotion remain part of M5.
 Read [the M6 data report](m6-data-report.md).
 Scope recorded: 2026-10-23.
 Depends on the implemented M1 data pipeline and M3/M4 navigation and UI.
@@ -113,7 +113,7 @@ Current requirements are [J08–J13](spec/user-journeys.md#j08--open-bout-analys
 
 ### M6.4: Verification and release integration
 
-Status: Automated checks pass locally. Integrated user acceptance and release promotion remain pending.
+Status: Local automated checks and integrated user acceptance are complete. Release promotion remains in M5.
 
 - Compare desktop cards against V8 and the bout panel against the latest V9.
 - Check mobile layouts, reduced motion, keyboard controls, and touch access.
@@ -135,8 +135,14 @@ The active data pointer and production release descriptor still use the previous
 
 Remaining work:
 
-- Obtain user acceptance of the revised integrated preview, including narrow-screen behavior.
+- User acceptance was received on 2026-10-24; submit the checked implementation.
 - Carry the accepted candidate into M5 deployment and rollback checks when release inputs are ready.
 - Promote the candidate only through the documented release process.
 
 Product Spec is the sole current standard and includes J01–J17 and C01–C20. This does not replace recorded evidence or the user acceptance gate.
+
+### M6 submission acceptance — 2026-10-24
+
+The user confirmed that M6 can be submitted. The accepted scope includes the latest review corrections and recorded local checks.
+The source and tests can be committed and pushed. M5 owns hosting, media rights, deployed verification, rollback, and production dataset promotion.
+The active dataset pointer and release descriptor remain unchanged.

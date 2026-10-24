@@ -1,6 +1,6 @@
 # 6. Animation and scroll specification
 
-[Product Spec index](../product-spec.md) · Version 1.1 · Updated 2026-10-24.
+[Product Spec index](../product-spec.md) · Version 1.2 · Updated 2026-10-24.
 
 ### 6.1 Ownership and transaction
 

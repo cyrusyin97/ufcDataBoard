@@ -1,6 +1,6 @@
 # 10. Data operations, security, and delivery
 
-[Product Spec index](../product-spec.md) · Version 1.1 · Updated 2026-10-24.
+[Product Spec index](../product-spec.md) · Version 1.2 · Updated 2026-10-24.
 
 The build pins a single dataset version. Runtime pointer changes must not mix releases in an open experience.
 Use versioned artifact URLs with immutable one-year caching. `data/current.json` uses `no-store`.

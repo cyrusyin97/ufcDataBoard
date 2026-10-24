@@ -3,6 +3,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { cache } from "react";
 import {
+  manifestSchema,
   bundleSchema,
   mediaSchema,
   registrySchema,
@@ -43,8 +44,11 @@ export const readRankings = cache((): RankingsData => {
       fighters[entry.fighterId] = fighterSummary(bundle, roles);
     }
   }
+  const manifest = manifestSchema.parse(read("manifest.json"));
   return {
     datasetVersion: version,
+    boutAnalysis: !!manifest.boutAnalysis,
+    boutSourceHash: manifest.sourceDatabaseSha256,
     defaultDivisionId: registry.defaultDivisionId,
     divisions,
     fighters,

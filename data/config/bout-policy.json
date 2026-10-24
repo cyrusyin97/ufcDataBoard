@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "1",
+  "formulaVersion": "1.1",
+  "historyYears": 5,
+  "minimumBoutCount": 50,
+  "shortPeriodSeconds": 60,
+  "referenceTimeFormats": ["3 Rnd (5-5-5)", "5 Rnd (5-5-5-5-5)"],
+  "weights": {
+    "striking": { "distance_landed": 0.7, "distance_attempted": 0.3 },
+    "clinching": { "clinch_landed": 0.7, "clinch_attempted": 0.3 },
+    "grappling": {
+      "td_landed": 0.3,
+      "td_attempted": 0.1,
+      "sub_att": 0.2,
+      "ctrl_seconds": 0.25,
+      "ground_landed": 0.15
+    },
+    "damage": { "sig_landed": 0.75, "kd": 0.25 },
+    "tank": { "sig_landed": 0.75, "kd": 0.25 }
+  }
+}

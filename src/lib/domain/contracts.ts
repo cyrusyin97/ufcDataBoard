@@ -183,6 +183,16 @@ export const manifestSchema = z
     datasetVersion: versionSchema,
     asOf: z.iso.date(),
     sourceDatabaseSha256: hashSchema,
+    boutAnalysis: z
+      .object({
+        schemaVersion: z.literal(1),
+        formulaVersion: z.literal("1.1"),
+        policyVersion: z.string().min(1),
+        boutCount: z.number().int().nonnegative(),
+        referenceCount: z.number().int().nonnegative(),
+      })
+      .strict()
+      .optional(),
     sourceCounts: z
       .object({
         fighters: z.number().int(),

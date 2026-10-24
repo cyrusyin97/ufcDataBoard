@@ -18,6 +18,7 @@ export default async function RankingsPage({
   const route = parseRoute(params, data.divisions, data.defaultDivisionId);
   return (
     <FighterExperience
+      key={data.datasetVersion}
       data={data}
       initialRoute={route}
       initialBundle={

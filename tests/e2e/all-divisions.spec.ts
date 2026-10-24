@@ -2,9 +2,9 @@ import { readFileSync } from "node:fs";
 import { test, expect } from "@playwright/test";
 import { chooseDivision } from "./helpers/division";
 import type { DivisionRegistry } from "../../src/lib/domain/contracts";
-const { datasetVersion } = JSON.parse(
-  readFileSync("public/data/current.json", "utf8"),
-);
+const datasetVersion =
+  process.env.UFC_PREVIEW_DATASET_VERSION ??
+  JSON.parse(readFileSync("public/data/current.json", "utf8")).datasetVersion;
 const registry: DivisionRegistry = JSON.parse(
   readFileSync(`public/data/v1/${datasetVersion}/divisions.json`, "utf8"),
 );

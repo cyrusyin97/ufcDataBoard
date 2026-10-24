@@ -25,6 +25,20 @@ const digest = (bytes: Buffer) =>
   createHash("sha256").update(bytes).digest("hex");
 const maxCompressed = 256 * 1024 * 1024;
 
+// The analysis archive contains one artifact per bout and historical cohort.
+export function assertArchiveExpansion(
+  entryBytes: number,
+  totalBytes: number,
+  entryCount: number,
+) {
+  if (
+    entryBytes > 20 * 1024 * 1024 ||
+    totalBytes > 512 * 1024 * 1024 ||
+    entryCount > 40000
+  )
+    throw new Error("Dataset expansion limit exceeded.");
+}
+
 async function download(url: string) {
   if (new URL(url).protocol !== "https:")
     throw new Error("Dataset URL must use HTTPS.");
@@ -103,12 +117,7 @@ export async function restoreDataset(options: {
           throw new Error("Unsafe or duplicate dataset archive entry.");
         seen.add(name);
         expanded += entry.size;
-        if (
-          entry.size > 20 * 1024 * 1024 ||
-          expanded > 512 * 1024 * 1024 ||
-          seen.size > 20000
-        )
-          throw new Error("Dataset expansion limit exceeded.");
+        assertArchiveExpansion(entry.size, expanded, seen.size);
       },
     });
     await tar.x({

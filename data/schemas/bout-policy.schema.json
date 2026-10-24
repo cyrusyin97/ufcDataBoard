@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "policyVersion": {
+      "type": "string",
+      "const": "1"
+    },
+    "formulaVersion": {
+      "type": "string",
+      "const": "1.1"
+    },
+    "historyYears": {
+      "type": "number",
+      "const": 5
+    },
+    "minimumBoutCount": {
+      "type": "number",
+      "const": 50
+    },
+    "shortPeriodSeconds": {
+      "type": "number",
+      "const": 60
+    },
+    "referenceTimeFormats": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "string",
+          "const": "3 Rnd (5-5-5)"
+        },
+        {
+          "type": "string",
+          "const": "5 Rnd (5-5-5-5-5)"
+        }
+      ],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "weights": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "enum": ["striking", "clinching", "grappling", "damage", "tank"]
+      },
+      "additionalProperties": {
+        "type": "object",
+        "propertyNames": {
+          "type": "string"
+        },
+        "additionalProperties": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "required": ["striking", "clinching", "grappling", "damage", "tank"]
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "policyVersion",
+    "formulaVersion",
+    "historyYears",
+    "minimumBoutCount",
+    "shortPeriodSeconds",
+    "referenceTimeFormats",
+    "weights"
+  ],
+  "additionalProperties": false
+}

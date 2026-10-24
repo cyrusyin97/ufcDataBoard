@@ -1,6 +1,6 @@
 # 9. Code and file structure
 
-[Product Spec index](../product-spec.md) · Version 1.1 · Updated 2026-10-24.
+[Product Spec index](../product-spec.md) · Version 1.2 · Updated 2026-10-24.
 
 ```text
 src/

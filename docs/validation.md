@@ -368,3 +368,15 @@ Historical reports now identify their dated scope. The validation heading and ob
 Local Markdown paths and heading anchors, formatting, and whitespace checks pass.
 Application tests were not rerun for this documentation-only change. Runtime behavior, source data, preserved prototypes, and release state are unchanged.
 M6 user acceptance and M5 release remain pending.
+
+## M6 acceptance and source submission
+
+Date: 2026-10-24.
+The user accepted M6 for submission after the integrated review corrections.
+Product Spec 1.2 and the development plan record that acceptance. M5 owns deployment and dataset promotion.
+The submission check passes ESLint, TypeScript, 52 unit tests, and the production build through `npm run check`.
+The 38-test Python pipeline suite also passes. Expected simulated collection failures are test fixtures, not failed tests.
+This fresh check uses local Node.js 25.6.1 and the unchanged active dataset. Node.js 24 remains the deployment target; earlier M6 receipts record its candidate build checks.
+The browser matrix was not rerun for submission. The latest viewport receipt retains its 48 three-browser bout/motion checks and three existing Chromium motion checks.
+Formatting, local document links, and whitespace checks pass.
+No source database, public dataset pointer, release descriptor, or preserved prototype changed. No deployment occurred.

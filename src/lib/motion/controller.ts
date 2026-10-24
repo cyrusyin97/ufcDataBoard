@@ -10,7 +10,14 @@ type Rect = {
   color: string;
 };
 type Kind =
-  "category" | "opponent" | "open" | "return" | "selection" | "initial";
+  | "category"
+  | "opponent"
+  | "open"
+  | "return"
+  | "selection"
+  | "initial"
+  | "bout-open"
+  | "bout-return";
 function measure(element: Element): Rect {
   const r = element.getBoundingClientRect(),
     s = getComputedStyle(element);
@@ -22,6 +29,29 @@ function measure(element: Element): Rect {
     fontSize: parseFloat(s.fontSize),
     color: s.color,
   };
+}
+function visiblePortrait(element: HTMLElement): Rect {
+  const rect = measure(element);
+  if (
+    element instanceof HTMLImageElement &&
+    element.naturalWidth &&
+    getComputedStyle(element).objectFit === "contain"
+  ) {
+    const scale = Math.min(
+      rect.width / element.naturalWidth,
+      rect.height / element.naturalHeight,
+    );
+    const width = element.naturalWidth * scale,
+      height = element.naturalHeight * scale;
+    return {
+      ...rect,
+      x: rect.x + (rect.width - width) / 2,
+      y: rect.y + rect.height - height,
+      width,
+      height,
+    };
+  }
+  return rect;
 }
 function leftAway(element: HTMLElement) {
   const rect = measure(element);
@@ -40,17 +70,41 @@ export class MotionController {
   private timeline: gsap.core.Timeline | null = null;
   private touched = new Set<HTMLElement>();
   private overlays: HTMLElement[] = [];
+  private floating = new Set<HTMLElement>();
+  private slots = new Set<HTMLElement>();
+  private viewport: { x: number; y: number } | null = null;
   private resolveDeparture: ((complete: boolean) => void) | null = null;
   private source = new Map<string, Rect>();
   private previewId: string | null = null;
   private figure: Rect | null = null;
   private kind: Kind = "initial";
+  private portrait: Rect | null = null;
+  private activeBout: string | null = null;
+  private returningFighter: string | null = null;
+  private historyPositions = new Map<string, number>();
+  get historyRestore() {
+    if (this.kind !== "bout-return" || !this.activeBout) return null;
+    return {
+      id: this.activeBout,
+      scrollTop:
+        this.historyPositions.get(
+          `${this.returningFighter}:${this.activeBout}`,
+        ) ?? null,
+    };
+  }
+  private boutFades() {
+    return this.nodes(
+      "[data-bout-fade], [data-profile-fighter], [data-figure-heading], [data-figure-caption]",
+    ).filter((el) => el.dataset.boutTitle !== this.activeBout);
+  }
   private skipNext = false;
   private dispose: (() => void) | null = null;
   private abortCleanup: (() => void) | null = null;
   private onDone: (() => void) | null = null;
   attach(root: HTMLElement) {
     this.root = root;
+    const restoration = history.scrollRestoration;
+    history.scrollRestoration = "manual";
     root.dataset.motionStage = "idle";
     const resize = () => {
       this.skipNext = true;
@@ -63,6 +117,8 @@ export class MotionController {
       window.removeEventListener("resize", resize);
       media.removeEventListener("change", resize);
       this.settle(false);
+      history.scrollRestoration = restoration;
+      root.style.removeProperty("min-height");
       this.root = null;
     };
     return () => this.dispose?.();
@@ -89,9 +145,19 @@ export class MotionController {
     return Array.from(this.root?.querySelectorAll<HTMLElement>(selector) ?? []);
   }
   private clear() {
+    this.floating.forEach((el) =>
+      gsap.set(el, {
+        clearProps: "position,left,top,width,height,maxWidth,maxHeight,zIndex",
+      }),
+    );
+    this.floating.clear();
+    this.slots.forEach((el) => gsap.set(el, { clearProps: "width,height" }));
+    this.slots.clear();
     this.touched.forEach((el) => {
       gsap.killTweensOf(el);
-      gsap.set(el, { clearProps: "transform,opacity,color,visibility" });
+      gsap.set(el, {
+        clearProps: "transform,opacity,color,visibility",
+      });
     });
     this.touched.clear();
     this.overlays.forEach((el) => el.remove());
@@ -122,28 +188,77 @@ export class MotionController {
     signal: AbortSignal,
   ) {
     const preview =
-      to.view === "history" && this.previewId === to.fighterId
+      to.view !== "rankings" && this.previewId === to.fighterId
         ? this.source
         : new Map<string, Rect>();
     this.settle(false);
-    this.kind =
-      from.divisionId !== to.divisionId
-        ? "category"
-        : from.view !== to.view
-          ? to.view === "history"
-            ? "open"
-            : "return"
-          : to.view === "history"
-            ? "opponent"
-            : "selection";
+    const boutOpen =
+      from.view === "history" &&
+      to.view === "bout" &&
+      from.fighterId === to.fighterId;
+    const boutReturn =
+      from.view === "bout" &&
+      to.view === "history" &&
+      from.fighterId === to.fighterId;
+    this.kind = boutOpen
+      ? "bout-open"
+      : boutReturn
+        ? "bout-return"
+        : from.view !== "rankings" &&
+            to.view !== "rankings" &&
+            from.fighterId === to.fighterId
+          ? "initial"
+          : from.divisionId !== to.divisionId
+            ? "category"
+            : (from.view === "rankings") !== (to.view === "rankings")
+              ? to.view !== "rankings"
+                ? "open"
+                : "return"
+              : to.view !== "rankings"
+                ? "opponent"
+                : "selection";
     this.source = preview;
+    this.activeBout =
+      to.view === "bout"
+        ? to.boutId
+        : from.view === "bout"
+          ? from.boutId
+          : null;
+    this.returningFighter = to.fighterId;
+    if (boutOpen || boutReturn) {
+      const title = this.root?.querySelector(
+        `[data-bout-title="${this.activeBout}"]`,
+      );
+      this.source = title ? glyphs(title) : new Map();
+      const portrait = this.root?.querySelector<HTMLElement>(
+        "[data-media-role] > img, [data-media-role] > span",
+      );
+      this.portrait = portrait ? visiblePortrait(portrait) : null;
+      if (boutOpen) {
+        const scroll = this.root?.querySelector<HTMLElement>(
+          "[data-history-scroll]",
+        );
+        if (scroll && this.activeBout) {
+          this.historyPositions.set(
+            `${from.fighterId}:${this.activeBout}`,
+            scroll.scrollTop,
+          );
+          if (this.historyPositions.size > 32)
+            this.historyPositions.delete(
+              this.historyPositions.keys().next().value!,
+            );
+        }
+      }
+    }
     this.previewId = null;
     this.figure = this.root?.querySelector("[data-selected-fighter]")
       ? measure(this.root.querySelector("[data-selected-fighter]")!)
       : null;
     if (!this.figure) this.kind = "initial";
     if (
-      !["category", "open", "return"].includes(this.kind) ||
+      !["category", "open", "return", "bout-open", "bout-return"].includes(
+        this.kind,
+      ) ||
       this.reduced() ||
       this.skipNext
     )
@@ -161,7 +276,11 @@ export class MotionController {
     this.root!.dataset.motionKind = this.kind;
     const tl = gsap.timeline({ defaults: { ease: "power2.in" } });
     this.timeline = tl;
-    if (this.kind === "category") {
+    if (this.kind === "bout-open" || this.kind === "bout-return") {
+      const fading = this.track(this.boutFades());
+      if (fading.length) tl.to(fading, { opacity: 0, duration: 0.18 }, 0);
+      else tl.to({}, { duration: 0.01 });
+    } else if (this.kind === "category") {
       [...heading, ...rows].forEach((el) =>
         tl.to(el, { x: leftAway(el), duration: 0.34 }, 0),
       );
@@ -208,8 +327,22 @@ export class MotionController {
     });
   }
   beforeCommit() {
+    this.viewport =
+      this.kind === "bout-return" ? { x: scrollX, y: scrollY } : null;
+    if (this.viewport && this.root) {
+      // The shorter history layout must still support the current viewport.
+      // Keep this floor after arrival; removing it would clamp scrollY again.
+      const documentTop = this.root.getBoundingClientRect().top + scrollY;
+      this.root.style.minHeight = `${Math.ceil(scrollY + innerHeight - documentTop)}px`;
+    }
     // Only image pixels are copied. Final live text supplies every moving glyph.
-    if (!this.reduced() && !this.skipNext && this.kind !== "category") {
+    if (
+      !this.reduced() &&
+      !this.skipNext &&
+      this.kind !== "category" &&
+      this.kind !== "bout-open" &&
+      this.kind !== "bout-return"
+    ) {
       const old = this.root?.querySelector<HTMLImageElement>(
         "[data-media-role] > img",
       );
@@ -240,7 +373,9 @@ export class MotionController {
     }
     // Remove outgoing drawer offsets before measuring the committed layout.
     this.touched.forEach((el) =>
-      gsap.set(el, { clearProps: "transform,opacity,color,visibility" }),
+      gsap.set(el, {
+        clearProps: "transform,opacity,color,visibility",
+      }),
     );
     this.touched.clear();
   }
@@ -249,6 +384,14 @@ export class MotionController {
     if (!root) {
       done();
       return;
+    }
+    if (this.viewport) {
+      window.scrollTo({
+        left: this.viewport.x,
+        top: this.viewport.y,
+        behavior: "instant",
+      });
+      this.viewport = null;
     }
     root.dataset.motionKind = this.kind;
     if (this.reduced() || this.skipNext || this.kind === "initial") {
@@ -264,6 +407,94 @@ export class MotionController {
       onComplete: () => this.settle(true),
     });
     this.timeline = tl;
+    if (this.kind === "bout-open" || this.kind === "bout-return") {
+      // Animate the final live pixels and glyphs from their previous geometry.
+      // The portrait container never owns opacity or an entrance animation.
+      const portraits = this.track(
+        this.nodes("[data-media-role] > img, [data-media-role] > span"),
+      );
+      portraits.forEach((el) => {
+        const target = visiblePortrait(el),
+          source = this.portrait;
+        if (!source || !target.height) return;
+        this.floating.add(el);
+        gsap.set(el, {
+          position: "fixed",
+          left: target.x,
+          top: target.y,
+          width: target.width,
+          height: target.height,
+          maxWidth: "none",
+          maxHeight: "none",
+          zIndex: 80,
+        });
+        tl.fromTo(
+          el,
+          {
+            x: source.x - target.x,
+            y: source.y - target.y,
+            scale: source.height / target.height,
+          },
+          { x: 0, y: 0, scale: 1, duration: 1, ease: "power3.inOut" },
+          0,
+        );
+      });
+      const title = root.querySelector(
+        `[data-bout-title="${this.activeBout}"]`,
+      );
+      const moving = title
+        ? Array.from(title.querySelectorAll<HTMLElement>("[data-motion-glyph]"))
+        : [];
+      const flights = moving.map((el) => ({
+        el,
+        source: this.source.get(el.dataset.motionGlyph!),
+        target: measure(el),
+      }));
+      flights.forEach(({ el, source, target }) => {
+        if (!source || !target.width || !target.height) return;
+        this.track([el]);
+        const slot = el.parentElement;
+        if (slot?.dataset.motionSlot) {
+          this.slots.add(slot);
+          gsap.set(slot, { width: target.width, height: target.height });
+        }
+        this.floating.add(el);
+        gsap.set(el, {
+          position: "fixed",
+          left: target.x,
+          top: target.y,
+          width: target.width,
+          height: target.height,
+          zIndex: 80,
+        });
+        tl.fromTo(
+          el,
+          {
+            x: source.x - target.x,
+            y: source.y - target.y,
+            scale: source.fontSize / target.fontSize,
+            color: source.color,
+          },
+          {
+            x: 0,
+            y: 0,
+            scale: 1,
+            color: target.color,
+            duration: 1,
+            ease: "power3.inOut",
+          },
+          0,
+        );
+      });
+      const fading = this.track(this.boutFades());
+      if (fading.length)
+        tl.fromTo(fading, { opacity: 0 }, { opacity: 1, duration: 0.42 }, 0.12);
+      // Maintain a bounded transaction even when source media or title is absent.
+      tl.to({}, { duration: 1 }, 0);
+      root.dataset.motionStage = "arriving";
+      root.dataset.motionStart = String(performance.now());
+      return;
+    }
     const images = this.track(
       this.nodes("[data-media-role] > img, [data-media-role] > span"),
     );

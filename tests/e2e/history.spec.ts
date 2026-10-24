@@ -1,8 +1,8 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { test, expect, type Page } from "@playwright/test";
-const { datasetVersion } = JSON.parse(
-  readFileSync("public/data/current.json", "utf8"),
-);
+const datasetVersion =
+  process.env.UFC_PREVIEW_DATASET_VERSION ??
+  JSON.parse(readFileSync("public/data/current.json", "utf8")).datasetVersion;
 const base = `public/data/v1/${datasetVersion}`;
 const registry = JSON.parse(readFileSync(`${base}/divisions.json`, "utf8"));
 const divisions = registry.divisions as {
@@ -457,7 +457,7 @@ test("touch preview and navigation remain accessible on a narrow screen", async 
   });
   const page = await context.newPage();
   await page.goto(
-    `http://127.0.0.1:3000${detail("featherweight", feather.defaultFighterId)}`,
+    `${process.env.PLAYWRIGHT_BASE_URL ?? "http://127.0.0.1:3000"}${detail("featherweight", feather.defaultFighterId)}`,
   );
   await settle(page, feather.defaultFighterId);
   await page

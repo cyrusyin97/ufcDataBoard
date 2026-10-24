@@ -1,6 +1,6 @@
 # 1. Authority and change rules
 
-[Product Spec index](../product-spec.md) · Version 1.1 · Updated 2026-10-24.
+[Product Spec index](../product-spec.md) · Version 1.2 · Updated 2026-10-24.
 
 The Product Spec index and its listed topic documents form the sole normative product specification in this repository.
 It defines product behavior, interaction, design, motion, module boundaries, and acceptance rules.

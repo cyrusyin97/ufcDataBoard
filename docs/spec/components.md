@@ -1,6 +1,6 @@
 # 8. Components and module ownership
 
-[Product Spec index](../product-spec.md) · Version 1.1 · Updated 2026-10-24.
+[Product Spec index](../product-spec.md) · Version 1.2 · Updated 2026-10-24.
 
 The stack is Next.js App Router, React, TypeScript, Tailwind, GSAP, offline Python/SQLite export, and Vercel hosting.
 Use Node.js 24 for CI and hosting. Exact package versions come from the lockfile.

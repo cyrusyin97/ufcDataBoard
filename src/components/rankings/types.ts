@@ -14,6 +14,8 @@ export type FighterSummary = {
 };
 export type RankingsData = {
   datasetVersion: string;
+  boutAnalysis?: boolean;
+  boutSourceHash?: string;
   defaultDivisionId: string;
   divisions: Division[];
   fighters: Record<string, FighterSummary>;

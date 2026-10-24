@@ -19,6 +19,41 @@
       "type": "string",
       "pattern": "^[a-f0-9]{64}$"
     },
+    "boutAnalysis": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "type": "number",
+          "const": 1
+        },
+        "formulaVersion": {
+          "type": "string",
+          "const": "1.1"
+        },
+        "policyVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "boutCount": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "referenceCount": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "formulaVersion",
+        "policyVersion",
+        "boutCount",
+        "referenceCount"
+      ],
+      "additionalProperties": false
+    },
     "sourceCounts": {
       "type": "object",
       "properties": {

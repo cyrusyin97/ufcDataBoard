@@ -1,9 +1,9 @@
 import { chooseDivision } from "./helpers/division";
 import { readFileSync, writeFileSync } from "node:fs";
 import { test, expect } from "@playwright/test";
-const { datasetVersion } = JSON.parse(
-  readFileSync("public/data/current.json", "utf8"),
-);
+const datasetVersion =
+  process.env.UFC_PREVIEW_DATASET_VERSION ??
+  JSON.parse(readFileSync("public/data/current.json", "utf8")).datasetVersion;
 const registry = JSON.parse(
   readFileSync(`public/data/v1/${datasetVersion}/divisions.json`, "utf8"),
 );

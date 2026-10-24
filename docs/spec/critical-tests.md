@@ -1,6 +1,6 @@
 # 11. Critical test cases
 
-[Product Spec index](../product-spec.md) · Version 1.1 · Updated 2026-10-24.
+[Product Spec index](../product-spec.md) · Version 1.2 · Updated 2026-10-24.
 
 Use these cases as minimum impact-based regression coverage. They are not a claim that all combinations are automated.
 Retain existing B/U/BA identifiers in historical reports; use this spec and C01–C20 for new acceptance references.

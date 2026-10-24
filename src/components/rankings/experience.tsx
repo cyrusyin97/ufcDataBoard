@@ -18,6 +18,7 @@ import { historyFigure } from "@/lib/data/summary";
 import { CategoryDropdown, CategoryHeading } from "./category";
 import { RankingDial } from "./dial";
 import { FighterFigure } from "./media";
+import { BoutAnalysis } from "./bout";
 import { FighterProfile } from "./profile";
 import { FightHistory, type PreviewAnchor } from "./history";
 import { OpponentPreview } from "./preview";
@@ -25,7 +26,7 @@ import { useExperience } from "./use-experience";
 import type { RankingsData } from "./types";
 import { en } from "@/messages/en";
 export function FighterExperience({
-  data,
+  data: initialData,
   initialRoute,
   initialBundle,
 }: {
@@ -33,11 +34,22 @@ export function FighterExperience({
   initialRoute: ExperienceRoute;
   initialBundle: FighterBundle | null;
 }) {
-  const { state, navigate, returnHome, retry, store, motion, finish } =
-    useExperience(data, initialRoute, initialBundle);
+  // Native traversal can replay server props. Keep one dataset and route owner
+  // for this mounted experience instead of seeding browser history again.
+  const [data] = useState(initialData);
+  const {
+    state,
+    navigate,
+    returnHome,
+    returnHistory,
+    retry,
+    store,
+    motion,
+    finish,
+  } = useExperience(data, initialRoute, initialBundle);
   const { route, bundle, fighter } = state;
   const pending = state.phase === "preparing";
-  const detail = route.view === "history";
+  const detail = route.view !== "rankings";
   const division = data.divisions.find((d) => d.id === route.divisionId)!;
   const entry = division.entries.find((e) => e.fighterId === route.fighterId);
   const root = useRef<HTMLElement>(null);
@@ -111,12 +123,21 @@ export function FighterExperience({
         closePreview();
       } else if (detail || pending) {
         event.preventDefault();
-        goHome();
+        if (route.view === "bout") returnHistory();
+        else goHome();
       }
     };
     document.addEventListener("keydown", key);
     return () => document.removeEventListener("keydown", key);
-  }, [preview, detail, pending, closePreview, goHome]);
+  }, [
+    preview,
+    detail,
+    pending,
+    closePreview,
+    goHome,
+    route.view,
+    returnHistory,
+  ]);
   useEffect(() => {
     const resume = (event: PointerEvent) => {
       if (event.movementX || event.movementY) hoverBlocked.current = false;
@@ -134,6 +155,10 @@ export function FighterExperience({
     };
   }, []);
   useEffect(() => {
+    if (state.focus === "bout")
+      root.current
+        ?.querySelector<HTMLElement>("#bout-heading")
+        ?.focus({ preventScroll: true });
     if (state.focus === "history")
       root.current
         ?.querySelector<HTMLElement>("#history-heading")
@@ -147,7 +172,7 @@ export function FighterExperience({
     <main
       ref={root}
       data-phase={state.phase}
-      className="group/experience mx-auto max-w-[1800px] overflow-hidden px-12 max-[1100px]:px-7 max-[900px]:px-[22px] max-[600px]:px-4"
+      className="group/experience mx-auto max-w-[1800px] overflow-x-clip px-12 [overflow-anchor:none] max-[1100px]:px-7 max-[900px]:px-[22px] max-[600px]:px-4"
     >
       <header className="flex h-[70px] items-center justify-between border-b border-line">
         <div className="flex items-center gap-[26px]">
@@ -187,7 +212,7 @@ export function FighterExperience({
       </section>
       <div
         data-region="experience"
-        className={`relative grid border-t border-line max-[900px]:grid-cols-2 max-[600px]:flex max-[600px]:flex-col ${detail ? "h-[586px] grid-rows-[minmax(0,1fr)] max-[900px]:grid-rows-none grid-cols-[minmax(220px,26%)_minmax(0,1fr)_minmax(210px,24%)] [@media(min-width:1000px)_and_(max-height:850px)]:h-[554px] max-[1100px]:grid-cols-[minmax(220px,26%)_minmax(0,1fr)_minmax(210px,25%)] max-[900px]:h-auto" : "min-h-[520px] grid-cols-[minmax(325px,35%)_minmax(320px,1fr)_minmax(240px,24%)] max-[1100px]:grid-cols-[minmax(295px,34%)_minmax(265px,1fr)_minmax(210px,25%)]"}`}
+        className={`relative grid border-t border-line max-[900px]:grid-cols-2 max-[600px]:flex max-[600px]:flex-col ${detail ? `${route.view === "bout" ? "h-[840px]" : "h-[586px] [@media(min-width:1000px)_and_(max-height:850px)]:h-[554px]"} grid-rows-[minmax(0,1fr)] max-[900px]:grid-rows-none grid-cols-[minmax(220px,26%)_minmax(0,1fr)_minmax(210px,24%)] max-[1100px]:grid-cols-[minmax(220px,26%)_minmax(0,1fr)_minmax(210px,25%)] max-[900px]:h-auto` : "min-h-[520px] grid-cols-[minmax(325px,35%)_minmax(320px,1fr)_minmax(240px,24%)] max-[1100px]:grid-cols-[minmax(295px,34%)_minmax(265px,1fr)_minmax(210px,25%)]"}`}
         aria-busy={pending || state.phase === "transitioning"}
       >
         {!detail && (
@@ -239,33 +264,80 @@ export function FighterExperience({
               detail={detail}
               onReturn={goHome}
             />
-            {detail && (
+            {route.view === "bout" && state.boutData && (
+              <BoutAnalysis
+                data={state.boutData}
+                route={route}
+                onNavigate={(target) => {
+                  closePreview();
+                  void navigate(target);
+                }}
+                onReturn={returnHistory}
+              />
+            )}
+            {route.view === "history" && (
               <FightHistory
                 bundle={bundle}
                 divisionId={division.id}
                 onNavigate={openOpponent}
+                restoreBout={motion.historyRestore}
                 onPreview={showPreview}
                 onLeave={leavePreview}
+                onBout={
+                  data.boutAnalysis
+                    ? (id) => {
+                        closePreview();
+                        void navigate({
+                          view: "bout",
+                          divisionId: division.id,
+                          fighterId: bundle.profile.id,
+                          boutId: id,
+                          round: "all",
+                        });
+                      }
+                    : undefined
+                }
               />
             )}
             <FighterProfile
+              divisionId={division.id}
+              onBout={
+                data.boutAnalysis
+                  ? (id) => {
+                      closePreview();
+                      void navigate({
+                        view: "bout",
+                        divisionId: division.id,
+                        fighterId: bundle.profile.id,
+                        boutId: id,
+                        round: "all",
+                      });
+                    }
+                  : undefined
+              }
               bundle={bundle}
               rank={entry?.rank ?? null}
               asOf={division.snapshotAt}
               historyHref={
-                detail
-                  ? routeUrl(
-                      returnRoute(
-                        route,
-                        data.divisions,
-                        data.defaultDivisionId,
-                      ),
-                    )
-                  : detailUrl(division.id, bundle.profile.id)
+                route.view === "bout"
+                  ? detailUrl(division.id, bundle.profile.id)
+                  : detail
+                    ? routeUrl(
+                        returnRoute(
+                          route,
+                          data.divisions,
+                          data.defaultDivisionId,
+                        ),
+                      )
+                    : detailUrl(division.id, bundle.profile.id)
               }
-              historyOpen={detail}
+              historyOpen={route.view === "history"}
               onHistory={
-                detail ? goHome : () => openOpponent(bundle.profile.id)
+                route.view === "bout"
+                  ? returnHistory
+                  : detail
+                    ? goHome
+                    : () => openOpponent(bundle.profile.id)
               }
             />
           </>
@@ -283,7 +355,10 @@ export function FighterExperience({
           </section>
         )}
       </div>
-      <footer className="flex min-h-12 items-center justify-between gap-3 border-t border-line text-[10px] tracking-[1.1px] text-[#aaa69f]">
+      <footer
+        data-bout-fade="true"
+        className="flex min-h-12 items-center justify-between gap-3 border-t border-line text-[10px] tracking-[1.1px] text-[#aaa69f]"
+      >
         <span>
           {en.snapshot} · {division.snapshotAt}
         </span>
@@ -312,8 +387,20 @@ export function FighterExperience({
           className="mb-4 flex flex-wrap items-center gap-4 border border-accent p-4 text-sm"
         >
           <span>
-            {state.error === "unknown" ? en.unknownFighter : en.loadError}
+            {state.error === "bout"
+              ? "Bout unavailable. Check the bout, participant, and round, or retry."
+              : state.error === "unknown"
+                ? en.unknownFighter
+                : en.loadError}
           </span>
+          {state.target?.route.view === "bout" && (
+            <button
+              className="cursor-pointer underline"
+              onClick={returnHistory}
+            >
+              Fight history
+            </button>
+          )}
           {state.error !== "unknown" && (
             <button className="cursor-pointer underline" onClick={retry}>
               {en.retry}
@@ -324,7 +411,7 @@ export function FighterExperience({
           </button>
         </div>
       )}
-      {preview && detail && (
+      {preview && route.view === "history" && (
         <OpponentPreview
           key={preview.id}
           anchor={preview}

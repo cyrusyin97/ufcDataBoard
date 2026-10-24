@@ -1,6 +1,6 @@
 # 7. Data semantics and scoring
 
-[Product Spec index](../product-spec.md) · Version 1.1 · Updated 2026-10-24.
+[Product Spec index](../product-spec.md) · Version 1.2 · Updated 2026-10-24.
 
 ### 7.1 Identity and artifacts
 

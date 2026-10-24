@@ -13,18 +13,28 @@ import { prepareFighter } from "@/lib/motion/prepare";
 import type { FighterBundle } from "@/lib/domain/contracts";
 import { sameRoute, type ExperienceRoute } from "@/lib/domain/routes";
 import { FighterStore, UnknownFighterError } from "@/lib/data/fighter-store";
+import {
+  BoutStore,
+  BoutRequestError,
+  type BoutData,
+} from "@/lib/data/bout-store";
 import { RouteController } from "@/lib/navigation/controller";
 import type { FighterSummary, RankingsData } from "./types";
+export type BoutViewData = BoutData & {
+  participants: { bundle: FighterBundle; summary: FighterSummary }[];
+};
 type Target = { route: ExperienceRoute; write: boolean };
 type State = {
   route: ExperienceRoute;
   bundle: FighterBundle | null;
+  boutData: BoutViewData | null;
   fighter: FighterSummary | null;
-  phase: "rankings" | "history" | "preparing" | "transitioning" | "error";
-  error: "unknown" | "request" | null;
+  phase:
+    "rankings" | "history" | "bout" | "preparing" | "transitioning" | "error";
+  error: "unknown" | "request" | "bout" | null;
   target: Target | null;
   generation: number;
-  focus: "history" | "dial" | null;
+  focus: "history" | "bout" | "dial" | null;
 };
 type Action =
   | { type: "prepare"; generation: number; target: Target }
@@ -33,6 +43,7 @@ type Action =
       generation: number;
       route: ExperienceRoute;
       bundle: FighterBundle;
+      boutData: BoutViewData | null;
       fighter: FighterSummary;
       focus: State["focus"];
     }
@@ -66,6 +77,7 @@ function reducer(state: State, action: Action): State {
     ...state,
     route: action.route,
     bundle: action.bundle,
+    boutData: action.boutData,
     fighter: action.fighter,
     phase: "transitioning",
     error: null,
@@ -78,11 +90,21 @@ export function useExperience(
   initialRoute: ExperienceRoute,
   initialBundle: FighterBundle | null,
 ) {
+  const [boutStore] = useState(
+    () =>
+      new BoutStore(
+        data.datasetVersion,
+        !!data.boutAnalysis,
+        undefined,
+        data.boutSourceHash,
+      ),
+  );
   const [motion] = useState(() => new MotionController());
   const [store] = useState(() => new FighterStore(data, initialBundle));
   const [state, dispatch] = useReducer(reducer, {
     route: initialRoute,
     bundle: initialBundle,
+    boutData: null,
     fighter: initialBundle ? data.fighters[initialBundle.profile.id] : null,
     phase: initialBundle ? "rankings" : "preparing",
     error: null,
@@ -135,15 +157,41 @@ export function useExperience(
       r.pending = target;
       dispatch({ type: "prepare", generation, target });
       try {
+        const boutData =
+          route.view === "bout"
+            ? await boutStore.load(
+                route.boutId,
+                route.fighterId,
+                route.round,
+                controller.signal,
+              )
+            : null;
         const bundle = await store.load(
           route.fighterId,
           controller.signal,
-          route.view === "history",
+          route.view !== "rankings",
         );
         const summary = await store.summary(bundle, controller.signal);
+        const participants = boutData
+          ? await Promise.all(
+              boutData.bout.fighterIds.map(async (id) => {
+                const participant =
+                  id === bundle.profile.id
+                    ? bundle
+                    : await store.load(id, controller.signal);
+                return {
+                  bundle: participant,
+                  summary:
+                    id === bundle.profile.id
+                      ? summary
+                      : await store.summary(participant, controller.signal),
+                };
+              }),
+            )
+          : [];
         const fighter = await prepareFighter(
           summary,
-          route.view === "history",
+          route.view !== "rankings",
           controller.signal,
         );
         if (generation !== r.generation || controller.signal.aborted) return;
@@ -154,11 +202,13 @@ export function useExperience(
         if (generation !== r.generation || controller.signal.aborted) return;
         if (write) routeController.current?.commit(route);
         const focus =
-          route.view === "history"
-            ? "history"
-            : live.current.route.view === "history"
-              ? "dial"
-              : null;
+          route.view === "bout"
+            ? "bout"
+            : route.view !== "rankings"
+              ? "history"
+              : live.current.route.view !== "rankings"
+                ? "dial"
+                : null;
         motion.beforeCommit();
         flushSync(() =>
           dispatch({
@@ -166,6 +216,7 @@ export function useExperience(
             generation,
             route,
             bundle,
+            boutData: boutData ? { ...boutData, participants } : null,
             fighter,
             focus,
           }),
@@ -175,13 +226,18 @@ export function useExperience(
           dispatch({
             type: "error",
             generation,
-            error: error instanceof UnknownFighterError ? "unknown" : "request",
+            error:
+              error instanceof BoutRequestError
+                ? "bout"
+                : error instanceof UnknownFighterError
+                  ? "unknown"
+                  : "request",
           });
       } finally {
         if (generation === r.generation) r.pending = null;
       }
     },
-    [store, motion],
+    [store, boutStore, motion],
   );
   const cancel = useCallback(() => {
     const r = lifecycle.current;
@@ -195,6 +251,11 @@ export function useExperience(
     const route = routeController.current?.returnHome();
     if (route) void navigate(route, false);
   }, [cancel, navigate]);
+  const returnHistory = useCallback(() => {
+    cancel();
+    const route = routeController.current?.returnHistory();
+    if (route) void navigate(route, false);
+  }, [cancel, navigate]);
   useEffect(() => {
     const requests = lifecycle.current;
     const controller = new RouteController(
@@ -204,7 +265,7 @@ export function useExperience(
     );
     routeController.current = controller;
     const route = controller.initialize();
-    if (route.view === "history") void navigate(route, false);
+    if (route.view !== "rankings") void navigate(route, false);
     const pop = () => {
       const route = controller.traverse();
       if (route) {
@@ -230,5 +291,14 @@ export function useExperience(
     (generation: number) => dispatch({ type: "finish", generation }),
     [],
   );
-  return { state, navigate, returnHome, retry, store, motion, finish };
+  return {
+    state,
+    navigate,
+    returnHome,
+    returnHistory,
+    retry,
+    store,
+    motion,
+    finish,
+  };
 }

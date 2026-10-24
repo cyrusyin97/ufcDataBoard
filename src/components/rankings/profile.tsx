@@ -1,3 +1,4 @@
+import { boutUrl } from "@/lib/domain/routes";
 import { MotionText } from "@/lib/motion/text";
 import type { FighterBundle } from "@/lib/domain/contracts";
 import { en } from "@/messages/en";
@@ -15,6 +16,8 @@ export function FighterProfile({
   historyHref,
   onHistory,
   historyOpen = false,
+  divisionId,
+  onBout,
 }: {
   bundle: FighterBundle;
   rank: number | null;
@@ -22,6 +25,8 @@ export function FighterProfile({
   historyHref?: string;
   onHistory?: () => void;
   historyOpen?: boolean;
+  divisionId?: string;
+  onBout?: (id: string) => void;
 }) {
   const p = bundle.profile,
     record = p.careerRecord;
@@ -167,11 +172,22 @@ export function FighterProfile({
           {bundle.records.slice(0, 3).map((r) => (
             <a
               key={r.id}
-              href={r.sourceUrl ?? p.sourceUrl}
-              target="_blank"
+              href={
+                onBout && divisionId
+                  ? boutUrl(divisionId, p.id, r.id)
+                  : (r.sourceUrl ?? p.sourceUrl)
+              }
+              aria-label={`Open recent bout: ${r.eventName}`}
+              onClick={(e) => {
+                if (onBout && normalClick(e)) {
+                  e.preventDefault();
+                  onBout(r.id);
+                }
+              }}
+              target={onBout ? undefined : "_blank"}
               rel="noreferrer"
               title={`${r.opponentName ?? "—"} · ${r.method ?? "—"}`}
-              className="flex flex-col items-start gap-[7px]"
+              className="flex flex-col items-start gap-[7px] hover:text-accent focus-visible:outline-accent"
               data-recent-result={r.result}
             >
               <span

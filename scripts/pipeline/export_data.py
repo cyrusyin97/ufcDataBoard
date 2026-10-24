@@ -11,6 +11,7 @@ from pathlib import Path
 
 from common import atomic_json, canonical, digest, file_digest, read_json
 from media import TRANSFORM_VERSION, cached_variants
+from bout_analysis import prepare_bouts
 
 PLACEHOLDERS = {'', '--', '—', '-', 'n/a', 'N/A'}
 
@@ -79,7 +80,7 @@ def validate_config(config, ids):
             raise ValueError('Invalid published champion')
 
 
-def prepare(db_path, config_path, cache_root, reviews_path, output_root, as_of):
+def prepare(db_path, config_path, cache_root, reviews_path, output_root, as_of, bout_policy_path=None):
     db_path = Path(db_path)
     before = file_digest(db_path)
     config = read_json(config_path)
@@ -122,6 +123,7 @@ def prepare(db_path, config_path, cache_root, reviews_path, output_root, as_of):
             'eventName': event['name'], 'date': date_value(event['date']), 'location': nullable(event['location']),
             'result': outcomes[row['result']], 'method': nullable(row['method']),
             'round': number(row['round']), 'time': nullable(row['time']), 'sourceUrl': nullable(row['fight_url'])})
+    analysis = prepare_bouts(connection, config['divisions'], before, read_json(bout_policy_path)) if bout_policy_path else None
     connection.rollback()
     connection.close()
     if before != file_digest(db_path): raise ValueError('The source database changed during export')
@@ -189,6 +191,8 @@ def prepare(db_path, config_path, cache_root, reviews_path, output_root, as_of):
     source = {'databaseSha256': before, 'sourceCounts': source_counts, 'asOf': as_of, 'config': config,
               'media': public_media, 'transformVersion': TRANSFORM_VERSION, 'schemaVersion': 1,
               'contentSha256': digest(canonical({'profiles': profiles, 'histories': dict(histories)}))}
+    if analysis is not None:
+        source['boutAnalysisSha256'] = digest(canonical(analysis))
     version = as_of + '-' + digest(canonical(source))[:16]
     bundles = []
     for profile in profiles:
@@ -205,12 +209,20 @@ def prepare(db_path, config_path, cache_root, reviews_path, output_root, as_of):
                 for variant in asset['variants']: variant['url'] = '/data/v1/' + version + '/' + variant.pop('path')
     atomic_json(stage / 'media.json', {'schemaVersion': 1, 'datasetVersion': version, 'fighters': public_media})
     atomic_json(stage / 'conflicts.json', {'schemaVersion': 1, 'datasetVersion': version, 'observations': conflicts})
+    if analysis is not None:
+        atomic_json(stage / 'bout-policy.json', analysis['policy'])
+        for bout in analysis['bouts']:
+            atomic_json(stage / 'bouts' / (bout['id'] + '.json'), {**bout, 'datasetVersion': version})
+        for reference in analysis['references'].values():
+            atomic_json(stage / 'bout-references' / (reference['id'] + '.json'), {**reference, 'datasetVersion': version})
     files = {str(p.relative_to(stage)): {'sha256': file_digest(p), 'bytes': p.stat().st_size}
              for p in sorted(stage.rglob('*')) if p.is_file()}
     manifest = {'schemaVersion': 1, 'datasetVersion': version, 'asOf': as_of,
         'sourceDatabaseSha256': before, 'sourceCounts': source_counts,
         'counts': {'fighters': len(profiles), 'records': len(fights), 'bouts': len(paired), 'divisions': len(config['divisions']),
                    'mediaAssets': len(source_media), 'fieldConflicts': len(conflicts)}, 'files': files}
+    if analysis is not None:
+        manifest['boutAnalysis'] = {'schemaVersion': 1, 'formulaVersion': analysis['policy']['formulaVersion'], 'policyVersion': analysis['policy']['policyVersion'], 'boutCount': len(analysis['bouts']), 'referenceCount': len(analysis['references'])}
     atomic_json(stage / 'manifest.json', manifest)
     atomic_json(output_root / 'latest-stage.json', {'stage': str(stage), 'version': version})
     return {'stage': str(stage), 'version': version, 'counts': manifest['counts']}
@@ -224,10 +236,11 @@ def main():
     parser.add_argument('--reviews', default='data/config/media-reviews.json')
     parser.add_argument('--output', default='work/exports')
     parser.add_argument('--as-of', required=True)
+    parser.add_argument('--bout-policy', help='Enable bout analysis with a versioned policy JSON')
     args = parser.parse_args()
     if not args.db: parser.error('Set UFC_DB_PATH or provide --db')
     dt.date.fromisoformat(args.as_of)
-    print(json.dumps(prepare(args.db, args.config, args.cache, args.reviews, args.output, args.as_of)))
+    print(json.dumps(prepare(args.db, args.config, args.cache, args.reviews, args.output, args.as_of, args.bout_policy)))
 
 
 if __name__ == '__main__': main()

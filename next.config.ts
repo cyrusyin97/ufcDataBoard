@@ -1,8 +1,8 @@
 import type { NextConfig } from "next";
 import { readFileSync } from "node:fs";
-const { datasetVersion } = JSON.parse(
-  readFileSync("public/data/current.json", "utf8"),
-);
+const datasetVersion =
+  process.env.UFC_PREVIEW_DATASET_VERSION ??
+  JSON.parse(readFileSync("public/data/current.json", "utf8")).datasetVersion;
 if (!/^\d{4}-\d{2}-\d{2}-[a-f0-9]{16}$/.test(datasetVersion))
   throw new Error("Invalid dataset pointer.");
 const base = `./public/data/v1/${datasetVersion}`;
@@ -18,16 +18,21 @@ const rankedIds = new Set<string>(
 );
 const config: NextConfig = {
   reactStrictMode: true,
+  distDir: process.env.UFC_PREVIEW_BUILD_DIR ?? ".next",
+  agentRules: false,
   env: { UFC_DATASET_VERSION: datasetVersion },
   outputFileTracingExcludes: {
     "/rankings": [
       `./public/data/v1/!(${datasetVersion})/**`,
       `${base}/media/**`,
+      `${base}/bouts/**`,
+      `${base}/bout-references/**`,
       `${base}/fighters/!(${Array.from(rankedIds).join("|")}).json`,
     ],
   },
   outputFileTracingIncludes: {
     "/rankings": [
+      `${base}/manifest.json`,
       `${base}/divisions.json`,
       `${base}/media.json`,
       ...Array.from(rankedIds, (id) => `${base}/fighters/${id}.json`),

@@ -42,7 +42,7 @@ export function FighterImage({
   ) : (
     <span
       aria-label={`${name} image unavailable`}
-      className="grid h-full w-full place-items-center font-display text-5xl text-muted"
+      className="grid h-full w-full origin-top-left place-items-center font-display text-5xl text-muted"
     >
       {name
         .split(" ")
@@ -186,7 +186,7 @@ function FigurePortrait({
               : 2,
           )
         }
-        className={`h-full w-auto max-w-[116%] object-contain object-bottom [filter:saturate(.78)_contrast(1.04)] ${role === "headshot" ? "!h-auto !max-w-[85%] self-center" : ""}`}
+        className={`h-full w-auto origin-top-left max-w-[116%] object-contain object-bottom [filter:saturate(.78)_contrast(1.04)] ${role === "headshot" ? "!h-auto !max-w-[85%] self-center" : ""}`}
       />
     </div>
   );

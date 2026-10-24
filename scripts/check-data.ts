@@ -18,6 +18,12 @@ import {
   conflictsSchema,
 } from "../src/lib/domain/contracts.ts";
 
+import { checkBouts, boutPolicySchema } from "./check-bouts.ts";
+import {
+  boutBundleSchema,
+  scoringReferenceSchema,
+} from "../src/lib/domain/bout-contracts.ts";
+
 const read = (file: string) => JSON.parse(readFileSync(file, "utf8"));
 function assert(condition: unknown, message: string): asserts condition {
   if (!condition) throw new Error(message);
@@ -168,6 +174,24 @@ export function checkDataset(directory: string) {
       [...bouts.values()].every((ids) => ids.size === 2),
     "Bout pairing differs",
   );
+  if (manifest.boutAnalysis)
+    checkBouts(
+      directory,
+      version,
+      manifest.sourceDatabaseSha256,
+      bouts,
+      manifest.boutAnalysis,
+    );
+  else
+    assert(
+      !Object.keys(manifest.files).some(
+        (name) =>
+          name.startsWith("bouts/") ||
+          name.startsWith("bout-references/") ||
+          name === "bout-policy.json",
+      ),
+      "Undeclared bout extension",
+    );
   let assets = 0;
   for (const [id, roles] of Object.entries(media.fighters)) {
     assert(ids.has(id), "Unknown media fighter");
@@ -231,6 +255,9 @@ export function checkDataset(directory: string) {
 if (process.argv.includes("--schemas")) {
   mkdirSync("data/schemas", { recursive: true });
   for (const [name, schema] of Object.entries({
+    "bout-policy": boutPolicySchema,
+    bout: boutBundleSchema,
+    "scoring-reference": scoringReferenceSchema,
     fighter: bundleSchema,
     index: indexSchema,
     divisions: registrySchema,
