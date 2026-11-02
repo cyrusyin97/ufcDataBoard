@@ -442,3 +442,15 @@ The production check passes with 71 unit tests; nine motion regressions and the 
 Date: 2026-11-02.
 The user requested only the live section, smaller text, a translucent background, and free movement. The panel now retains live status, frame/long-task metrics, trend, and interpretation. Lower breakdown, environment, and action sections were removed. Console controls remain available. Close and reopen restarts a paused display.
 The title bar uses pointer capture and direct coordinate writes. It reads dimensions at drag start and clamps to the viewport. Arrow keys move the focused title bar. The first production check passes 71 unit tests and retains the existing lint warning only. Final production build passes. All three panel browser checks pass, including pointer/keyboard movement, resizing a moved panel into a narrow viewport, native-menu exclusions, and close/reload cleanup. The compact desktop screenshot was reviewed. Formatting and whitespace checks pass. Earlier overhead receipts describe the expanded panel; this change does not claim a new overhead bound.
+
+## Collector migration
+
+Date: 2026-11-02.
+Migrated the collector and upstream tests from pinned ufcdb revision `bcdea5e6ec4471be11c8e97055e76c27b2613068`. Eleven offline collector/snapshot checks and all 38 existing pipeline checks pass. Both collector CLI help commands exit successfully without collection. TypeScript and 71 application unit tests pass. Lint has only the existing release-check unused-variable warning after renaming a reserved runner variable. Document/YAML formatting and whitespace checks pass.
+Normal CI now includes the offline collector suite. The manual workflow has not run on GitHub and no schedule is enabled. No user database, website pointer, deployed version, or upstream workflow changed. There was no live source collection, commit, push, or release publication. Read [migration and cutover](collector-migration.md) for remaining operational gates.
+
+## First isolated collector update
+
+Date: 2026-11-02.
+The source baseline SHA-256 matches the production manifest. Three UFC events were collected on a copy. The first export rejected three single-sided DWCS histories; bounded source-ID-based opponent closure and an independent pairing gate were added. Fourteen collector/snapshot tests and 38 pipeline tests pass.
+The corrected candidate passes integrity and identity retention checks, full website export checks, packaging, and isolated restoration. The original source hash and active website version remain unchanged. Read [collector candidate validation](collector-validation.md) and its receipt for counts, checksums, and limits. Rankings and media discovery were not refreshed; no remote workflow, snapshot publication, website deployment, or new application browser matrix ran.

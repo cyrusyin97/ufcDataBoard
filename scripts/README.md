@@ -42,3 +42,7 @@ After the opt-in browser overhead check, run `node scripts/summarize-performance
 The [measurement runbook](../docs/performance-measurement-runbook.md) defines the probe, comparison method, and acceptance limits. A summary is partial evidence, not full PM09 acceptance.
 
 `python3 scripts/compare-interaction-performance.py` summarizes the local `work/m8/{before,after}-{warm,feedback,first-bout}.json` receipts. It writes `docs/evidence/m8-comparison.json` with nearest-rank distributions and raw receipt hashes. Run the explicit production fixtures with `PERF_OPT=before` before a change and `PERF_OPT=after` after a change: `npm run test:e2e -- tests/e2e/optimization-benchmark.spec.ts tests/e2e/optimization-feedback.spec.ts --workers=1`. Keep the same dataset, viewport, browser, and closed live panel. Do not overwrite the before receipts after editing runtime code.
+
+## Source collector
+
+`collector/` contains the migrated ufcdb parsers and database tools. `data:collect` runs incremental updates; `data:bootstrap-db` runs the full builder. Both write only when explicitly invoked and default to an ignored work path. Run `test:collector` after installing `requirements-collector-test.txt`. Read [migration and cutover](../docs/collector-migration.md) before live collection.

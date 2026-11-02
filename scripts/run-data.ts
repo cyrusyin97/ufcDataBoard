@@ -19,6 +19,15 @@ const rootArgument = args.indexOf("--publish-root");
 const publishRoot =
   rootArgument >= 0 ? args.splice(rootArgument, 2)[1] : "public/data";
 let ownsLock = false;
+if (mode === "collect" || mode === "bootstrap-db") {
+  const collectorModule = mode === "collect" ? "update_db" : "build_db";
+  const job = spawnSync(
+    python,
+    ["-m", `scripts.collector.${collectorModule}`, ...args],
+    { stdio: "inherit" },
+  );
+  process.exit(job.status ?? 1);
+}
 if (mode === "pack") {
   const rootFlag = args.indexOf("--root");
   const packRoot = rootFlag >= 0 ? args[rootFlag + 1] : "public/data";

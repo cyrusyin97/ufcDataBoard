@@ -58,3 +58,5 @@ The schema directory is `data/schemas/`; configuration is `data/config/`; the pr
 New user-facing strings should use clear English and be prepared for future localization; current Bout labels also exist in `bout.tsx`.
 
 `src/components/performance/launcher.tsx` owns menu eligibility and lazy panel loading. `panel.tsx` owns the local diagnostics display. `src/lib/performance/live.ts` owns bounded live counters. These files do not own navigation or animation. Panel behavior tests are in `tests/e2e/performance-panel.spec.ts`; its opt-in three-mode comparison is in `performance-panel-benchmark.spec.ts`.
+
+`scripts/collector/` contains the migrated source parsers, full builder, incremental updater, snapshot validation, and provenance. `tests/collector/` contains offline pytest coverage. `collect-db.yml` is manual-only during cutover; `ci.yml` runs offline tests. No runtime module imports this collector.

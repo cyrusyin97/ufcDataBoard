@@ -224,3 +224,10 @@ Exit: Record before/after feedback, prepare, settle, and frame-interval distribu
 ### M8 forward entry timing revision
 
 The user approved approximately one-second entry to fighter history and bout detail on 2026-11-02. Shorten these two forward schedules to 0.94 seconds plus the existing frame hold/commit. Preserve return and opponent-replacement timing. Validate live shared elements, scroll, interruption, and reduced motion. Record warm M7 settle measurements separately from the earlier throughput comparison.
+
+## M9: Collector consolidation and automated data updates
+
+The user approved collector migration on 2026-11-02. First step implemented and checked: collectors, CLI paths, offline tests, CI coverage, and a manual isolated candidate workflow. See [migration report](collector-migration.md).
+Remaining gates: authoritative baseline reconciliation, manual candidate run, durable snapshot selection, single-owner schedule activation, reviewed media seed recovery, ranking refresh, validated dataset publication, descriptor update, and preview/production verification. No collection or website promotion is authorized by normal CI. Do not mark full automation complete from code migration.
+
+M9 checkpoint, 2026-11-02: The production-matching baseline and first local candidate update are validated through export, packaging, and restoration. Historical pairing closure was added after the real export caught a defect. See [candidate validation](collector-validation.md). Remote first run, durable snapshot publication, ranking refresh, clean-runner media recovery, and website promotion remain pending.

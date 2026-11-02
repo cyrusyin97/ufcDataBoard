@@ -296,3 +296,9 @@ A Worker cannot update the DOM. The bounded aggregation is small, so defer worke
 Date: 2026-11-02. The user requested performance fixes using M7 measurements.
 Preserve the unoptimized source and production receipts even though the broad M7 baseline gate remains unresolved. Use identical console capture in both candidates and keep the panel closed. Separate controlled response-delay experiments from actual local warm timings. Do not call either GPU FPS or deployed INP evidence.
 Transient dial position can follow accepted intent independently of committed identity. This removes network preparation from the first row-motion dependency. Keep atomic identity commit, slot-based drag, and current animation schedules. Parallelize only independent data/media branches. Reuse a bounded set of successful images; do not retain failed readiness or cancel another generation's requests.
+
+## D31: Consolidate source collection with website data tooling
+
+Date: 2026-11-02. The user approved the first migration step.
+Move collector code, updater tests, and workflow ownership from ufcdb into this repository. Keep a dedicated Python package and lightweight dependencies. Collection remains an explicit offline-operations command, separate from the web runtime and read-only exporter.
+Preserve source provenance and use isolated, checksum-verified candidates. Start with manual invocation and optional immutable source snapshot publication. Do not activate a second schedule or promote stale upstream data. Baseline reconciliation, media seed recovery, ranking updates, and automatic website publication remain separate delivery gates.

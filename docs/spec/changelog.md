@@ -21,3 +21,7 @@ Use reports for test results and the development plan for progress. Keep this fi
 Revision 1.7, 2026-11-02: User approved approximately one-second forward entries. Rankings-to-detail and History-to-Bout use 0.94-second configured schedules plus the existing frame hold and commit. Return and opponent-replacement schedules remain unchanged.
 
 Revision 1.8, 2026-11-02: User requested a compact translucent Stats for nerds panel. Retain only live metrics, trend, and interpretation; remove lower sections and actions. Add bounded title-bar dragging and smaller type.
+
+Revision 1.9, 2026-11-02: Consolidate explicit source collection into scripts/collector with offline CI tests and isolated manual candidates. Keep scheduling, database freshness reconciliation, and website data promotion as separate gates.
+
+Revision 1.10, 2026-11-02: First live candidate validation exposed single-sided historical fights introduced by debut profiles. Require bounded source-based opponent closure and independent candidate pairing validation before export or publication.

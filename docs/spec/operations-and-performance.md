@@ -44,3 +44,9 @@ Use field measurements when traffic is available. Local browser checks do not es
 ### 10.2 Planned journey diagnostics
 
 [Journey performance measurement](performance-measurement.md) owns the local capture and live-panel contract, metric definitions, overhead gates, and export rules. It does not replace Web Vitals or claim achieved performance. Record an accepted baseline before optimizing the audited interactions.
+
+### Source collector ownership
+
+Approved 2026-11-02. `scripts/collector/` owns explicit source database collection and migration. It does not run in browser components, Next.js builds, or routine CI. The exporter remains read-only. The manual candidate workflow requires a selected baseline and SHA-256, checks an isolated copy, and can publish an immutable source snapshot only when requested. It does not update the active website dataset. Schedule activation and dataset promotion require the operational cutover gates in [collector migration](../collector-migration.md).
+
+Collector validation update, 2026-11-02: A candidate must retain both real fighter perspectives for each source fight. Newly introduced historical opponents are fetched using source IDs within a bounded request budget. Failed closure blocks candidate publication and website export. Never infer a missing opponent record from the first fighter.

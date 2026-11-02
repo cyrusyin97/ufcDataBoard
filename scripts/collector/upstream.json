@@ -1,0 +1,18 @@
+{
+  "repository": "https://github.com/cyrusyin97/ufcdb",
+  "commit": "bcdea5e6ec4471be11c8e97055e76c27b2613068",
+  "originalSha256": {
+    "scripts/build_db.py": "3383c4d5cf78f4e1fb33b67fb26e8c8aeb9a2e84be3a63cbd52fa360d9ae2d76",
+    "scripts/scrape_ufcstats.py": "d31efe862bbc10f7e2749e08ae8f277525d67bbf91add0dd8b5fda59289b53b6",
+    "scripts/update_db.py": "09edfd28abf7c10a5fe8dc5ca6c1a583166132981bf44cc7869b6457915dde74",
+    "tests/test_update_db.py": "b59a255bf1b694db99600a3c04bf4b3d1c460e3d9099a8268f61d84ab53b4ea9"
+  },
+  "changes": [
+    "Package-relative imports",
+    "Default writable database moved to work/collector/ufc.db",
+    "CLI documentation updated",
+    "Bounded source-ID-based closure of unpaired historical fights",
+    "Candidate validation rejects unpaired fighter perspectives"
+  ],
+  "networkCollectionExecuted": false
+}

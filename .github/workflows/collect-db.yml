@@ -1,0 +1,87 @@
+name: Collector candidate snapshot
+
+# Migration checkpoint: no schedule until the authoritative baseline and cutover pass.
+# Former upstream cadence: Monday 14:00 UTC (22:00 Asia/Singapore).
+on:
+  workflow_dispatch:
+    inputs:
+      source_repo:
+        description: Repository with the approved baseline database
+        type: choice
+        options: [cyrusyin97/ufcdb, cyrusyin97/ufcDataBoard]
+        required: true
+      source_tag:
+        description: Baseline release tag containing ufc.db
+        required: true
+        default: db
+      baseline_sha256:
+        description: Independently verified SHA-256 of the approved baseline
+        required: true
+      publish_snapshot:
+        description: Publish the validated candidate as an immutable database release
+        type: boolean
+        default: false
+
+defaults:
+  run:
+    shell: bash
+permissions:
+  contents: read
+concurrency:
+  group: collector-database
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements-collector.txt
+      - name: Download approved baseline
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_REPO: ${{ inputs.source_repo }}
+          SOURCE_TAG: ${{ inputs.source_tag }}
+          BASELINE_SHA256: ${{ inputs.baseline_sha256 }}
+        run: |
+          [[ "$SOURCE_TAG" =~ ^[A-Za-z0-9][A-Za-z0-9._/-]*$ ]] || exit 1
+          mkdir -p work/collector/baseline work/collector/candidate
+          gh release download "$SOURCE_TAG" --repo "$SOURCE_REPO" --pattern ufc.db --dir work/collector/baseline
+          python -m scripts.collector.snapshot prepare --baseline work/collector/baseline/ufc.db --candidate work/collector/candidate/ufc.db --sha256 "$BASELINE_SHA256" --receipt work/collector/candidate/baseline.json
+      - name: Incremental collection into isolated candidate
+        run: python -m scripts.collector.update_db --db work/collector/candidate/ufc.db | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Check candidate and write checksum
+        run: |
+          python -m scripts.collector.snapshot validate --baseline work/collector/baseline/ufc.db --candidate work/collector/candidate/ufc.db --receipt work/collector/candidate/snapshot.json
+          cd work/collector/candidate
+          sha256sum ufc.db > ufc.db.sha256
+      - uses: actions/upload-artifact@v4
+        with:
+          name: collector-candidate-${{ github.run_id }}-${{ github.run_attempt }}
+          path: work/collector/candidate/
+          retention-days: 14
+          if-no-files-found: error
+  publish:
+    needs: collect
+    if: inputs.publish_snapshot
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: collector-candidate-${{ github.run_id }}-${{ github.run_attempt }}
+          path: candidate
+      - name: Publish immutable candidate database snapshot
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          SNAPSHOT_TAG: db-snapshot-${{ github.run_id }}-${{ github.run_attempt }}
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          cd candidate
+          sha256sum -c ufc.db.sha256
+          gh release create "$SNAPSHOT_TAG" ufc.db ufc.db.sha256 baseline.json snapshot.json --target "$SOURCE_SHA" --title "Database candidate $SNAPSHOT_TAG" --notes "Validated collector candidate. Website data is not promoted by this release." --latest=false

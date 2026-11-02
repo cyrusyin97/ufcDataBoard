@@ -38,3 +38,7 @@ Update one owning spec topic, select its journey and critical-case coverage, the
 Do not copy the specification into the plan or report. Do not delete evidence just because a later check has a larger pass count.
 
 [M8 interaction performance report](m8-report.md) records the 2026-11-02 before/after comparison. It is evidence, not a competing product standard or deployed acceptance.
+
+[Collector migration](collector-migration.md) records source provenance, local commands, the manual Actions workflow, and cutover gates.
+
+[Collector candidate validation](collector-validation.md) records the first isolated live update, pairing correction, package/restore checks, and remaining release gates.

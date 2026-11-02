@@ -1,0 +1,109 @@
+{
+  "baseline": {
+    "sha256": "4516eec0f095e13c1a39ae5452850ce34326a8c702753831c978c84e4b66925f",
+    "counts": {
+      "fighters": 4581,
+      "events": 1273,
+      "fights": 23118,
+      "fight_details": 11559,
+      "fight_round_stats": 73234
+    }
+  },
+  "candidate": {
+    "sha256": "4bc14c866869fed7bacb1cdb617ff330f7b8a3b744f5ba57fc8512b3b77436ed",
+    "counts": {
+      "fighters": 4586,
+      "events": 1278,
+      "fights": 23202,
+      "fight_details": 11601,
+      "fight_round_stats": 73506
+    }
+  },
+  "status": "candidate-only",
+  "scope": "Integrity and append-only checks; not website promotion or freshness approval",
+  "date": "2026-11-02",
+  "hostedBaseline": {
+    "datasetVersion": "2026-10-14-5949094d82ded09a",
+    "asOf": "2026-10-14",
+    "sourceDatabaseSha256": "4516eec0f095e13c1a39ae5452850ce34326a8c702753831c978c84e4b66925f",
+    "sourceCounts": {
+      "events": 1273,
+      "fight_details": 11559,
+      "fighters": 4581,
+      "fights": 23118
+    }
+  },
+  "upstreamComparison": {
+    "upstream": {
+      "sha256": "842114bf49952fc7186c84744aae81f421b14f1838495ad859a58396f9b7dc58",
+      "counts": {
+        "fighters": 4574,
+        "events": 1269,
+        "fights": 23038,
+        "fight_details": 11518,
+        "fight_round_stats": 72990
+      }
+    },
+    "accepted": {
+      "sha256": "4516eec0f095e13c1a39ae5452850ce34326a8c702753831c978c84e4b66925f",
+      "counts": {
+        "fighters": 4581,
+        "events": 1273,
+        "fights": 23118,
+        "fight_details": 11559,
+        "fight_round_stats": 73234
+      }
+    },
+    "upstreamMissingAcceptedIdentities": {
+      "fighters": 7,
+      "events": 15,
+      "fights": 80,
+      "fight_details": 41,
+      "fight_round_stats": 244
+    }
+  },
+  "originalSourceUnchanged": true,
+  "candidateDataset": {
+    "version": "2026-11-02-b4cb0219bc328bcb",
+    "asOf": "2026-11-02",
+    "counts": {
+      "bouts": 11601,
+      "divisions": 11,
+      "fieldConflicts": 76,
+      "fighters": 4586,
+      "mediaAssets": 528,
+      "records": 23202
+    },
+    "sourceDatabaseSha256": "4bc14c866869fed7bacb1cdb617ff330f7b8a3b744f5ba57fc8512b3b77436ed",
+    "archive": {
+      "datasetVersion": "2026-11-02-b4cb0219bc328bcb",
+      "sha256": "08ff26ce317d517dbef2572f099992096890a6cc0daef8e1e4bf235aee05b5b4"
+    },
+    "bytes": 63465794,
+    "restorationValidated": true
+  },
+  "activeDatasetUnchanged": true,
+  "collection": {
+    "listedEvents": 24,
+    "alreadyCurrent": 21,
+    "ingestedEvents": 3,
+    "eventFighterProfileFetches": 78,
+    "eventDetailsFetches": 39,
+    "historyRepairFights": 3,
+    "historyRepairProfileFetches": 3,
+    "historyRepairRequests": 6,
+    "requestDelaySeconds": 1,
+    "robotsStatus": 404
+  },
+  "receipts": {
+    "work/collector-migration/run-1/collection.log": "c898cf350b3ac0abe7a4b1908f0542d1c7024e27c3b53ec84bbf4060dafc27a5",
+    "work/collector-migration/run-1/final-collection.log": "da8ded87f469535869acde44350fe5daf54a72f53ac81ca01d4e9a4f76b1640b",
+    "work/collector-migration/run-1/snapshot.json": "778a1b1a4c6abc0bb3b1aa46268fe41704d5dbadc161fc7b3adca1034f0c9598"
+  },
+  "limits": [
+    "No ranking refresh; snapshot remains 2026-10-14",
+    "No media discovery; existing reviewed cache reused",
+    "No website promotion, source snapshot upload, or GitHub Actions run",
+    "No new Next.js build or browser matrix against the candidate dataset"
+  ]
+}

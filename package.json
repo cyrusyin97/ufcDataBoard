@@ -29,7 +29,10 @@
     "data:restore": "node scripts/restore-data.ts",
     "release:check": "node scripts/release-check.ts",
     "release:build": "npm run data:restore && npm run release:check && npm run build",
-    "release:http": "node scripts/check-deployment.ts"
+    "release:http": "node scripts/check-deployment.ts",
+    "data:collect": "node scripts/run-data.ts collect",
+    "data:bootstrap-db": "node scripts/run-data.ts bootstrap-db",
+    "test:collector": "node scripts/run-collector-tests.ts"
   },
   "dependencies": {
     "@gsap/react": "2.1.2",

@@ -91,7 +91,7 @@ New source hashes need role review.
 Use the intended snapshot date for `--as-of`.
 This date controls age calculation and release identity.
 It does not update the source database or ranking snapshots.
-The scraper remains a separate task.
+The scraper now lives in `scripts/collector/` and remains a separate explicit command. Read [collector migration](collector-migration.md) before updating a database.
 
 The exporter opens a read-only transaction.
 It checks SQLite integrity, required columns, references, and bout pairing.
@@ -220,3 +220,9 @@ Archive: `outputs/datasets/ufc-data-2026-10-14-5949094d82ded09a.tar.gz`.
 Size: 63,433,729 bytes. SHA-256: `e5372188dfa6dff76358dec2754f597a87438bbf16bed64309e1bfa841184951`.
 The matching sidecar and version-specific descriptor are in the same directory. `data/release.json` pins this archive.
 No remote artifact URL has been configured by this promotion. The package still contains media with unknown publication rights.
+
+## Collector ownership
+
+The collector code and manual candidate workflow moved into this repository on 2026-11-02. See [migration and cutover](collector-migration.md). The schedule is not enabled. CI runs offline fixtures; it does not crawl sources. Source snapshots and public website packages remain separate artifacts.
+
+The [isolated collector validation](collector-validation.md) records the production-matching baseline and first live candidate. Historical opponent pairing is a required candidate check before export or snapshot publication.
