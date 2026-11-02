@@ -154,3 +154,73 @@ The user requested the latest accepted data version as the formal build version.
 The exact checked archive is retained in `outputs/datasets/` with its checksum and descriptor. The prior archive and descriptor remain available for rollback.
 Artifact upload, `UFC_DATASET_URL` configuration, publication rights, and hosted checks remain M5 work.
 This changes the default dataset, not the source snapshot date or source database.
+
+## M7: Journey performance measurement
+
+Status: Implementation candidate started on 2026-10-30. M7.1–M7.3 code and tests are present. M7.4–M7.5 remain in validation; no complete performance acceptance is claimed.
+The user requested measurement before optimization. This milestone does not include interaction fixes, vendor activation, telemetry upload, or deployment.
+Evidence: [M7 implementation report](m7-report.md).
+Authority: [measurement specification](spec/performance-measurement.md). Context: [deployed audit](performance-audit-2026-10-26.md).
+
+### M7.1: Recorder and contracts
+
+Status: Implemented candidate.
+
+Implement bounded records, injectable clock, outcome handling, schema versions, and pure export summaries. Add the disabled lazy entry point and console adapter.
+Exit: PM01, PM02, PM07 and relevant bound/error unit checks pass. No runtime dependency is added without a measured need.
+
+### M7.2: Journey hooks
+
+Status: Implemented candidate.
+
+Instrument the existing input, navigation, store, media preparation, preview, and motion owners. Carry transaction context across asynchronous work. Preserve current sequencing and durations so this remains a pre-optimization baseline.
+Exit: PM03, PM04 and selected PM08 behavior checks pass. Records distinguish requests, cache paths, interruption, commit, and timeline completion.
+
+### M7.3: Frame sampling and lifecycle
+
+Status: Implemented candidate.
+
+Add the bounded shared frame sampler, feature-detected long-frame summaries, visibility handling, capture limits, and failure isolation.
+Exit: PM05, PM06, PM07 pass. Unsupported engines export null capabilities rather than false zero measurements.
+
+### M7.4: Production-build overhead validation
+
+Status: In progress. [Runbook](performance-measurement-runbook.md) defines the available harness and missing acceptance evidence.
+
+Create repeatable scene fixtures and an operator runbook. Execute the specification's off/on comparison with an independent browser measurement source. Record bootstrap size and retention behavior.
+Exit: PM09 passes with dated receipts. If independent tracing is unavailable or noise prevents comparison, report that blocker and keep the gate open. Functional browser tests do not substitute for this gate.
+
+### M7.5: Freeze baseline and report
+
+Status: Pending the complete overhead gate.
+
+Capture repeated dial and navigation sequences on the unoptimized implementation. Save versioned summaries, environment metadata, counts, limits, and outcomes. Include desktop and mobile/reduced-motion functional checks; document the actual devices used for performance measurement.
+Run `npm run check` with the required local dataset and Node.js 24, targeted browser checks, and changed-document formatting checks.
+Exit: PM01–PM09 have recorded evidence, the measurement runbook is reproducible, and the baseline report clearly separates loading, animation duration, and frame cadence.
+
+Only after this gate should a separate optimization work item change dial behavior, request scheduling, rendering, or animation timing. Compare each such change against the frozen baseline. M5 still owns hosted release acceptance.
+
+### M7.6: Local Stats for nerds panel
+
+Approved on 2026-11-01. Implemented with PM10–PM12 scoped evidence in the [M7 report](m7-report.md#stats-for-nerds-extension--2026-11-01). The warm dial comparison passes numeric limits; full M7 baseline acceptance remains open.
+Add the blank-area context-menu entry and an opt-in live panel. Use bounded counters, the shared sampler, and 2Hz isolated UI updates. Preserve native context menus on content and controls. No Worker or server upload is added.
+Exit: PM10–PM12 have dated evidence. Retain M7.4–M7.5 limits; panel testing does not close the full journey baseline gate.
+
+## M8: Interaction performance fixes
+
+Started 2026-11-02 at the user's explicit request. First pass implemented and locally validated; see the [M8 report](m8-report.md). M7 full baseline acceptance remains open. This request authorizes scoped before/after fixes using the existing recorder; it does not retroactively close M7 gates.
+
+Preserve a source snapshot and unchanged-build measurements before editing runtime behavior. Compare the same production scenes with console capture on and the live panel closed. Use separate controlled-delay experiments to test feedback and request dependencies. Keep actual animation schedules unchanged.
+
+First implementation scope:
+
+- Move the dial toward accepted pending intent before data preparation completes. Retain committed selection, profile, portrait, and URL until atomic commit. Recover its position on failure.
+- Retarget same-division selection from current interpolation. Keep hard settling for route changes, layout reset, reduced motion, and disposal.
+- Start selected-fighter/media preparation concurrently with bout/reference work. Join validated branches before commit and abort remaining work on failure.
+- Reuse four successful immutable image URLs. Do not cache failed or aborted readiness.
+
+Exit: Record before/after feedback, prepare, settle, and frame-interval distributions with their limits. Pass latest-intent, failure recovery, identity, portrait continuity, title, scroll, and reduced-motion checks. Lower-confidence glyph/layout/paint candidates require profiling before a separate change. Deployed acceptance remains M5 work.
+
+### M8 forward entry timing revision
+
+The user approved approximately one-second entry to fighter history and bout detail on 2026-11-02. Shorten these two forward schedules to 0.94 seconds plus the existing frame hold/commit. Preserve return and opponent-replacement timing. Validate live shared elements, scroll, interruption, and reduced motion. Record warm M7 settle measurements separately from the earlier throughput comparison.

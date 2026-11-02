@@ -7,6 +7,8 @@ import {
   useRef,
   useState,
 } from "react";
+import { beginMeasurement, installPerformance } from "@/lib/performance/client";
+import type { Context } from "@/lib/performance/contracts";
 import { flushSync } from "react-dom";
 import { MotionController } from "@/lib/motion/controller";
 import { prepareFighter } from "@/lib/motion/prepare";
@@ -112,6 +114,17 @@ export function useExperience(
     generation: 0,
     focus: null,
   });
+  const measurement = useRef<{
+    generation: number;
+    context: Context;
+    commitDone?: boolean;
+    finished?: boolean;
+    arrival?: (outcome?: "completed") => void;
+  } | null>(null);
+  useEffect(
+    () => installPerformance(data.datasetVersion),
+    [data.datasetVersion],
+  );
   const live = useRef(state);
   const lifecycle = useRef<{
     generation: number;
@@ -125,19 +138,24 @@ export function useExperience(
   const navigate = useCallback(
     async (route: ExperienceRoute, write = true) => {
       const r = lifecycle.current;
+      const trace = beginMeasurement(live.current.route, route, false, !write);
       if (
         write &&
         (motion.categoryBusy ||
           (r.pending &&
             r.pending.route.divisionId !== live.current.route.divisionId))
-      )
+      ) {
+        trace?.end("ignored", "busy");
         return;
+      }
       if (
         r.pending &&
         sameRoute(r.pending.route, route) &&
         r.pending.write === write
-      )
+      ) {
+        trace?.end("ignored", "duplicate");
         return;
+      }
       if (
         !r.pending &&
         live.current.bundle &&
@@ -146,60 +164,93 @@ export function useExperience(
       ) {
         if (write && route.view === "rankings")
           routeController.current?.commit(route);
+        trace?.end("ignored", "duplicate");
         return;
       }
+      measurement.current?.context.end("cancelled", "superseded");
       r.controller?.abort();
-      motion.cancel();
+      motion.cancel(
+        live.current.route.view === "rankings" &&
+          route.view === "rankings" &&
+          live.current.route.divisionId === route.divisionId,
+      );
       const generation = ++r.generation;
+      trace?.generation(generation);
+      measurement.current = trace ? { generation, context: trace } : null;
+      const preparation = trace?.span("prepare");
       const controller = new AbortController();
       r.controller = controller;
       const target = { route, write };
       r.pending = target;
       dispatch({ type: "prepare", generation, target });
       try {
-        const boutData =
+        // Data and image readiness for the selected fighter do not depend on
+        // the bout/reference response. Start them together and join before commit.
+        const selectedReady = (async () => {
+          const bundle = await store.load(
+            route.fighterId,
+            controller.signal,
+            route.view !== "rankings",
+            trace,
+          );
+          const summary = await store.summary(bundle, controller.signal, trace);
+          const fighter = await prepareFighter(
+            summary,
+            route.view !== "rankings",
+            controller.signal,
+            trace,
+          );
+          return { bundle, summary, fighter };
+        })();
+        const boutReady =
           route.view === "bout"
-            ? await boutStore.load(
-                route.boutId,
-                route.fighterId,
-                route.round,
-                controller.signal,
-              )
-            : null;
-        const bundle = await store.load(
-          route.fighterId,
-          controller.signal,
-          route.view !== "rankings",
-        );
-        const summary = await store.summary(bundle, controller.signal);
-        const participants = boutData
-          ? await Promise.all(
-              boutData.bout.fighterIds.map(async (id) => {
-                const participant =
-                  id === bundle.profile.id
-                    ? bundle
-                    : await store.load(id, controller.signal);
-                return {
-                  bundle: participant,
-                  summary:
-                    id === bundle.profile.id
-                      ? summary
-                      : await store.summary(participant, controller.signal),
-                };
-              }),
-            )
-          : [];
-        const fighter = await prepareFighter(
-          summary,
-          route.view !== "rankings",
-          controller.signal,
-        );
+            ? boutStore
+                .load(
+                  route.boutId,
+                  route.fighterId,
+                  route.round,
+                  controller.signal,
+                  trace,
+                )
+                .then(async (data) => {
+                  const participants = await Promise.all(
+                    data.bout.fighterIds.map(async (id) => {
+                      if (id === route.fighterId) {
+                        const { bundle, summary } = await selectedReady;
+                        return { bundle, summary };
+                      }
+                      const bundle = await store.load(
+                        id,
+                        controller.signal,
+                        true,
+                        trace,
+                      );
+                      return {
+                        bundle,
+                        summary: await store.summary(
+                          bundle,
+                          controller.signal,
+                          trace,
+                        ),
+                      };
+                    }),
+                  );
+                  return { ...data, participants };
+                })
+            : Promise.resolve(null);
+        const [boutData, { bundle, fighter }] = await Promise.all([
+          boutReady,
+          selectedReady,
+        ]);
+        preparation?.();
+        const departure = trace?.span("departure");
         if (generation !== r.generation || controller.signal.aborted) return;
         if (
           !(await motion.depart(live.current.route, route, controller.signal))
         )
           return;
         if (generation !== r.generation || controller.signal.aborted) return;
+        departure?.();
         if (write) routeController.current?.commit(route);
         const focus =
           route.view === "bout"
@@ -210,18 +261,31 @@ export function useExperience(
                 ? "dial"
                 : null;
         motion.beforeCommit();
+        const commit = trace?.span("commit");
         flushSync(() =>
           dispatch({
             type: "commit",
             generation,
             route,
             bundle,
-            boutData: boutData ? { ...boutData, participants } : null,
+            boutData,
             fighter,
             focus,
           }),
         );
+        commit?.();
+        trace?.mark("committed");
+        trace?.mark("target");
+        const measured = measurement.current;
+        if (measured?.generation === generation) {
+          measured.commitDone = true;
+          if (measured.finished) trace?.end("completed");
+        }
       } catch (error) {
+        trace?.end(
+          controller.signal.aborted ? "cancelled" : "error",
+          controller.signal.aborted ? "superseded" : "request",
+        );
         if (generation === r.generation && !controller.signal.aborted)
           dispatch({
             type: "error",
@@ -233,6 +297,8 @@ export function useExperience(
                   ? "unknown"
                   : "request",
           });
+        // A failed branch must also cancel independent preparation still running.
+        controller.abort();
       } finally {
         if (generation === r.generation) r.pending = null;
       }
@@ -241,6 +307,7 @@ export function useExperience(
   );
   const cancel = useCallback(() => {
     const r = lifecycle.current;
+    measurement.current?.context.end("cancelled", "return");
     r.controller?.abort();
     motion.cancel();
     r.pending = null;
@@ -276,6 +343,7 @@ export function useExperience(
     window.addEventListener("popstate", pop);
     return () => {
       window.removeEventListener("popstate", pop);
+      measurement.current?.context.end("cancelled", "unmount");
       requests.controller?.abort();
       motion.cancel();
       requests.pending = null;
@@ -287,11 +355,25 @@ export function useExperience(
     const target = state.target;
     if (target) void navigate(target.route, target.write);
   };
-  const finish = useCallback(
-    (generation: number) => dispatch({ type: "finish", generation }),
-    [],
-  );
+  const finish = useCallback((generation: number) => {
+    const m = measurement.current;
+    if (m?.generation === generation) {
+      m.arrival?.();
+      m.finished = true;
+      if (m.commitDone) m.context.end("completed");
+    }
+    dispatch({ type: "finish", generation });
+  }, []);
+  const beginArrival = useCallback((generation: number) => {
+    const m = measurement.current;
+    if (m?.generation === generation) m.arrival = m.context.span("arrival");
+  }, []);
+  useLayoutEffect(() => {
+    if (state.phase === "preparing")
+      measurement.current?.context.mark("pending");
+  }, [state.phase, state.generation]);
   return {
+    beginArrival,
     state,
     navigate,
     returnHome,

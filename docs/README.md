@@ -23,12 +23,18 @@ Start with [Product Spec](product-spec.md). The index and its topic documents fo
 
 - [M1 data](m1-report.md), [M2 rankings](m2-report.md), [M3 history](m3-report.md), [M4 motion](m4-report.md), [M5 release preparation](m5-report.md).
 - [Media expansion](ranked-media-expansion.md), [selector correction](selector-correction.md), [all-division expansion](all-divisions-report.md).
+- [M7 measurement implementation](m7-report.md): implementation evidence and remaining overhead gates.
+- [Deployed interaction audit, 2026-10-26](performance-audit-2026-10-26.md): pending-state observations, code causes, optimization priorities, and measurement limits.
 - [M6 source/contract audit](m6-contract-design.md), [M6 data](m6-data-report.md), [M6 interface and review revisions](m6-interface-report.md).
 
 These reports retain old counts and stages intentionally. Their dated statements are not today's backlog.
 Preserved V6–V9 prototype documents and local research reports stay with their artifacts in `outputs/`; they are not runtime specifications.
 
+The [local measurement runbook](performance-measurement-runbook.md) explains M7 capture, export, and controlled overhead checks.
+
 ## Change workflow
 
 Update one owning spec topic, select its journey and critical-case coverage, then update delivery status and append actual validation evidence.
 Do not copy the specification into the plan or report. Do not delete evidence just because a later check has a larger pass count.
+
+[M8 interaction performance report](m8-report.md) records the 2026-11-02 before/after comparison. It is evidence, not a competing product standard or deployed acceptance.

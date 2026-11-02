@@ -35,3 +35,10 @@ The command checks the saved ranking HTML against the reviewed membership snapsh
 It promotes explicit ranks and champion headings through configurable division metadata.
 It performs no network requests or database writes.
 Read [the UI expansion report](../docs/all-divisions-report.md).
+
+## Journey measurement summary
+
+After the opt-in browser overhead check, run `node scripts/summarize-performance.ts work/m7/overhead.json` with Node.js 24. It writes `docs/evidence/m7-overhead-summary.json`.
+The [measurement runbook](../docs/performance-measurement-runbook.md) defines the probe, comparison method, and acceptance limits. A summary is partial evidence, not full PM09 acceptance.
+
+`python3 scripts/compare-interaction-performance.py` summarizes the local `work/m8/{before,after}-{warm,feedback,first-bout}.json` receipts. It writes `docs/evidence/m8-comparison.json` with nearest-rank distributions and raw receipt hashes. Run the explicit production fixtures with `PERF_OPT=before` before a change and `PERF_OPT=after` after a change: `npm run test:e2e -- tests/e2e/optimization-benchmark.spec.ts tests/e2e/optimization-feedback.spec.ts --workers=1`. Keep the same dataset, viewport, browser, and closed live panel. Do not overwrite the before receipts after editing runtime code.

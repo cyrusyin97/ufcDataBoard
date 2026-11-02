@@ -275,3 +275,24 @@ The user requested smaller topic documents and a documentation cleanup.
 The old journey file was removed after preserving J01–J17 and migrating links. Four superseded standards moved to `archive/` to retain historical B/U/BA references.
 Completed plan checklists now link to current rules and dated reports. Reports retain their original results with explicit historical scope.
 This replaces D26's single-file organization, without changing runtime behavior or closing acceptance gates.
+
+## D28: Plan local journey measurement before optimization
+
+Date: 2026-10-27. Status: Planned; implementation pending.
+The user requested a measurement specification and implementation plan before fixes.
+Use a vendor-independent, bounded TypeScript recorder with a default-off lazy adapter. Keep capture outside React state. Export locally before adding any external destination.
+This isolates the measurement overhead and permits an off/on control in the same build. Automatic Web Vitals collection alone cannot explain the full custom navigation pipeline or continuous dial cadence.
+A Worker is deferred until aggregation cost is measured. Monitoring failures must not control product behavior.
+[Measurement specification](spec/performance-measurement.md) owns the contract; M7 owns implementation and baseline evidence.
+
+## D29: Share the sampler and isolate live display updates
+
+Date: 2026-11-01. User approved.
+The live panel uses the existing observer's frame loop and a bounded numeric ring. It polls snapshots twice per second in its own React component. It does not publish live values through product state. Main-thread callbacks still share execution time with product work; component isolation is not thread isolation.
+A Worker cannot update the DOM. The bounded aggregation is small, so defer worker transfer until measured cost warrants it. Compare the panel separately from console-only capture. The approved blank-area menu preserves native menus on links, images, selected text, and controls.
+
+## D30: Scoped optimization with explicit before/after controls
+
+Date: 2026-11-02. The user requested performance fixes using M7 measurements.
+Preserve the unoptimized source and production receipts even though the broad M7 baseline gate remains unresolved. Use identical console capture in both candidates and keep the panel closed. Separate controlled response-delay experiments from actual local warm timings. Do not call either GPU FPS or deployed INP evidence.
+Transient dial position can follow accepted intent independently of committed identity. This removes network preparation from the first row-motion dependency. Keep atomic identity commit, slot-based drag, and current animation schedules. Parallelize only independent data/media branches. Reuse a bounded set of successful images; do not retain failed readiness or cancel another generation's requests.

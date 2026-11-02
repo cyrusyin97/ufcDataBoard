@@ -24,6 +24,7 @@ import { FightHistory, type PreviewAnchor } from "./history";
 import { OpponentPreview } from "./preview";
 import { useExperience } from "./use-experience";
 import type { RankingsData } from "./types";
+import { PerformanceLauncher } from "../performance/launcher";
 import { en } from "@/messages/en";
 export function FighterExperience({
   data: initialData,
@@ -46,6 +47,7 @@ export function FighterExperience({
     store,
     motion,
     finish,
+    beginArrival,
   } = useExperience(data, initialRoute, initialBundle);
   const { route, bundle, fighter } = state;
   const pending = state.phase === "preparing";
@@ -58,9 +60,11 @@ export function FighterExperience({
     [motion],
   );
   useLayoutEffect(() => {
-    if (state.phase === "transitioning")
+    if (state.phase === "transitioning") {
+      beginArrival(state.generation);
       motion.arrive(() => finish(state.generation));
-  }, [state.generation, state.phase, motion, finish]);
+    }
+  }, [state.generation, state.phase, motion, finish, beginArrival]);
   const [preview, setPreview] = useState<Omit<PreviewAnchor, "element"> | null>(
     null,
   );
@@ -243,6 +247,13 @@ export function FighterExperience({
               division={division}
               fighters={data.fighters}
               selected={route.fighterId}
+              pendingSelection={
+                pending &&
+                state.target?.route.view === "rankings" &&
+                state.target.route.divisionId === division.id
+                  ? state.target.route.fighterId
+                  : null
+              }
               onSelect={(id) => {
                 void navigate({
                   view: "rankings",
@@ -425,6 +436,7 @@ export function FighterExperience({
           onLeave={leavePreview}
         />
       )}
+      <PerformanceLauncher />
     </main>
   );
 }

@@ -77,15 +77,17 @@ Do not describe a planned feature as complete.
 
 ## Roadmap
 
-| Milestone | Scope                             | Status                          |
-| --------- | --------------------------------- | ------------------------------- |
-| M0        | Documents and runnable foundation | Implemented, checks recorded    |
-| M1        | Data export and media manifest    | Implemented, checks recorded    |
-| M2        | Rankings interface                | Implemented, checks recorded    |
-| M3        | History and navigation            | Implemented, checks recorded    |
-| M4        | Motion and visual parity          | Implemented, checks recorded    |
-| M5        | Release and hosting               | In progress; release pending    |
-| M6        | Bout analysis and weighted radar  | Accepted; release handled in M5 |
+| Milestone | Scope                             | Status                                   |
+| --------- | --------------------------------- | ---------------------------------------- |
+| M0        | Documents and runnable foundation | Implemented, checks recorded             |
+| M1        | Data export and media manifest    | Implemented, checks recorded             |
+| M2        | Rankings interface                | Implemented, checks recorded             |
+| M3        | History and navigation            | Implemented, checks recorded             |
+| M4        | Motion and visual parity          | Implemented, checks recorded             |
+| M5        | Release and hosting               | In progress; release pending             |
+| M6        | Bout analysis and weighted radar  | Accepted; release handled in M5          |
+| M7        | Journey performance measurement   | In progress; measurement validation      |
+| M8        | Interaction performance fixes     | First pass implemented; local validation |
 
 Update this index when document paths change.
 Update milestone status when its acceptance checks pass.

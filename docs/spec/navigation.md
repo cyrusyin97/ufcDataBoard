@@ -1,6 +1,6 @@
 # 4. Routes, state, and recovery
 
-[Product Spec index](../product-spec.md) · Version 1.3 · Updated 2026-10-24.
+[Product Spec index](../product-spec.md) · Version 1.6 · Updated 2026-11-02.
 
 ### 4.1 URL contract
 
@@ -71,3 +71,5 @@ Failed or aborted requests must not publish partial cache results.
 | Insufficient reference or unavailable axis        | Explain scoring limitation; retain raw values; do not show a misleading complete radar. |
 | Missing image                                     | Reviewed headshot fallback, then initials; no broken-image state.                       |
 | Interrupted motion, resize, reduced-motion change | Settle final elements and remove obsolete styles, overlays, and requests.               |
+
+Preparation update, 2026-11-02: Selected-fighter and portrait readiness can run concurrently with bout/reference work. Commit still joins all validated results. A failure aborts the remaining branch. During same-division ranking preparation only the dial's transient position can follow the pending target; committed identity, profile, portrait, and URL remain unchanged.

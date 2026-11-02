@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-01",
+  "method": "Unique ranking client-reference chunks plus rootMainFiles, gzip",
+  "baselineBytes": 216268,
+  "consoleCandidateBytes": 217871,
+  "panelCandidateBytes": 218805,
+  "deltaFromBaseline": 2537,
+  "deltaFromConsoleCandidate": 934,
+  "buildId": "K6Wd7p6p_kTUYvSNMDxJj",
+  "files": [
+    "static/chunks/webpack-f5fd58533df7501d.js",
+    "static/chunks/4bd1b696-c7408084347438ae.js",
+    "static/chunks/794-0ac5e2f0e81d2e0d.js",
+    "static/chunks/main-app-4a5d8f3ef84bf983.js",
+    "static/chunks/app/not-found-13064754e28ac492.js",
+    "static/chunks/app/layout-31c28b42a8752ce9.js",
+    "static/chunks/c15bf2b0-182b384b62e205ff.js",
+    "static/chunks/556-a048b23cb3f32428.js",
+    "static/chunks/app/rankings/page-a6ea37ca90c51530.js"
+  ]
+}

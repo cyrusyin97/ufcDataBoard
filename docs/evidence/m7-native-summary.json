@@ -1,0 +1,80 @@
+{
+  "browserVersion": "156.0.8078.4",
+  "scope": "Three repetitions per mode; fresh application stores; existing browser HTTP cache; native next, drag reversal, history/bout return",
+  "limitations": [
+    "Function-call attribution covers lazy monitor chunks, not the small initial bootstrap",
+    "A long task containing a monitor callback does not establish causation",
+    "No controlled cold HTTP-cache timing"
+  ],
+  "results": [
+    {
+      "iteration": 0,
+      "enabled": false,
+      "monitorScriptPaths": [],
+      "monitorCalls": 0,
+      "maxMonitorCallMs": null,
+      "monitorCallsAbove50": 0,
+      "longTasks": 0,
+      "longTasksWithMonitorCall": 0
+    },
+    {
+      "iteration": 0,
+      "enabled": true,
+      "monitorScriptPaths": [
+        "/_next/static/chunks/921.822fac3fc56989cf.js",
+        "/_next/static/chunks/226.772a2138043e78da.js"
+      ],
+      "monitorCalls": 425,
+      "maxMonitorCallMs": 0.147,
+      "monitorCallsAbove50": 0,
+      "longTasks": 0,
+      "longTasksWithMonitorCall": 0
+    },
+    {
+      "iteration": 1,
+      "enabled": false,
+      "monitorScriptPaths": [],
+      "monitorCalls": 0,
+      "maxMonitorCallMs": null,
+      "monitorCallsAbove50": 0,
+      "longTasks": 0,
+      "longTasksWithMonitorCall": 0
+    },
+    {
+      "iteration": 1,
+      "enabled": true,
+      "monitorScriptPaths": [
+        "/_next/static/chunks/921.822fac3fc56989cf.js",
+        "/_next/static/chunks/226.772a2138043e78da.js"
+      ],
+      "monitorCalls": 425,
+      "maxMonitorCallMs": 0.061,
+      "monitorCallsAbove50": 0,
+      "longTasks": 0,
+      "longTasksWithMonitorCall": 0
+    },
+    {
+      "iteration": 2,
+      "enabled": false,
+      "monitorScriptPaths": [],
+      "monitorCalls": 0,
+      "maxMonitorCallMs": null,
+      "monitorCallsAbove50": 0,
+      "longTasks": 0,
+      "longTasksWithMonitorCall": 0
+    },
+    {
+      "iteration": 2,
+      "enabled": true,
+      "monitorScriptPaths": [
+        "/_next/static/chunks/921.822fac3fc56989cf.js",
+        "/_next/static/chunks/226.772a2138043e78da.js"
+      ],
+      "monitorCalls": 425,
+      "maxMonitorCallMs": 0.052,
+      "monitorCallsAbove50": 0,
+      "longTasks": 0,
+      "longTasksWithMonitorCall": 0
+    }
+  ]
+}

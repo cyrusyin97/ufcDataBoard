@@ -1,6 +1,6 @@
 # Product Spec — UFC Rankings
 
-Version: 1.3. Updated: 2026-10-24.
+Version: 1.8. Updated: 2026-11-02.
 
 This index and the topic documents below form the sole current product logic standard.
 Each topic has one owning document. Update that document instead of copying its rules into plans, reports, or runbooks.
@@ -24,6 +24,7 @@ The split changes document organization only. It does not change product behavio
 | 12      | [Maintenance and expandability](spec/maintenance.md)                          |
 | 13      | [Acceptance, evidence, and current limits](spec/acceptance.md)                |
 | 14      | [Spec revision record](spec/changelog.md)                                     |
+| 15      | [Journey performance measurement](spec/performance-measurement.md)            |
 
 ## How to use this specification
 
@@ -32,7 +33,7 @@ The split changes document organization only. It does not change product behavio
 3. Use C01–C20 to select regression checks. Follow the maintenance procedure for a change.
 4. Update the affected topic and the shared changelog. Keep current delivery status in the development plan and check results in validation.
 
-J01–J17 and C01–C20 remain unchanged. Topic section numbers remain stable after the split.
+J01–J17 and C01–C20 remain unchanged. PM01–PM12 define measurement and live-panel checks. Topic section numbers remain stable after the split.
 M6 was accepted for submission on 2026-10-24. M5 hosting release remains pending. The default dataset now includes accepted M6 analysis.
 
 ## Supporting documents

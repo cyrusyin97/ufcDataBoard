@@ -40,3 +40,7 @@ Reserve image space with known dimensions. Keep original source images outside t
 Do not eagerly decode all full-body images. Prepare the selected portrait and likely targets after user intent.
 Measure startup, interaction, and payload cost when adding dependencies or data. Report exceptions with their cause and effect.
 Use field measurements when traffic is available. Local browser checks do not establish field performance.
+
+### 10.2 Planned journey diagnostics
+
+[Journey performance measurement](performance-measurement.md) owns the local capture and live-panel contract, metric definitions, overhead gates, and export rules. It does not replace Web Vitals or claim achieved performance. Record an accepted baseline before optimizing the audited interactions.

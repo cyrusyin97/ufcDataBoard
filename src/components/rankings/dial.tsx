@@ -10,15 +10,21 @@ export function RankingDial({
   division,
   fighters,
   selected,
+  pendingSelection = null,
   onSelect,
 }: {
   division: Division;
   fighters: Record<string, FighterSummary>;
   selected: string;
+  pendingSelection?: string | null;
   onSelect: (id: string) => void;
 }) {
   const root = useRef<HTMLDivElement>(null);
-  const active = division.entries.findIndex((e) => e.fighterId === selected);
+  // Position follows accepted intent immediately. Identity/highlight remain
+  // committed until profile, portrait, and URL can change atomically.
+  const active = division.entries.findIndex(
+    (e) => e.fighterId === (pendingSelection ?? selected),
+  );
   const intent = useRef(active);
   const drag = useRef<{ y: number; index: number; moved: boolean } | null>(
     null,
@@ -107,6 +113,7 @@ export function RankingDial({
         role="listbox"
         tabIndex={0}
         aria-label="Fighter rankings. Drag, scroll or use arrow keys."
+        aria-busy={!!pendingSelection}
         aria-activedescendant={`fighter-${selected}`}
         className="relative -mr-[18px] -ml-12 mt-[2px] h-[376px] touch-none cursor-grab overflow-hidden select-none [mask-image:linear-gradient(to_bottom,transparent,#000_10%,#000_90%,transparent)] max-[900px]:-ml-[22px] max-[600px]:h-[294px] [@media(min-width:1000px)_and_(min-height:851px)]:h-[440px]"
         onKeyDown={(e) => {

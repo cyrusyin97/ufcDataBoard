@@ -1,6 +1,6 @@
 # 3. User journeys
 
-[Product Spec index](../product-spec.md) · Version 1.3 · Updated 2026-10-24.
+[Product Spec index](../product-spec.md) · Version 1.6 · Updated 2026-11-02.
 
 These journeys cover the current interface, including normal paths and recovery branches.
 They do not imply that every input, device, and data combination has a separate automated test.
@@ -260,3 +260,5 @@ Recent Form uses its source link when analysis is unavailable.
 Source visits do not update the local data snapshot.
 Implementation references: `profile.tsx`, `history.tsx`, and `bout.tsx`.
 A source-link inventory is not a test of external website availability.
+
+J03 update, 2026-11-02: During accepted same-division pending selection, the dial moves toward the requested slot before profile/media readiness completes. The selected identity and URL remain committed until readiness succeeds. Failure returns the dial to that committed slot; a later intent replaces the pending target. See [animation ownership](animation.md#66-pending-dial-feedback-and-preparation-reuse).

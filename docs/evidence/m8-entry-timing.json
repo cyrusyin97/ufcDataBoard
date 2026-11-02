@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-02",
+  "browser": "156.0.8078.4",
+  "buildId": "SwcGvZZTBff-ZY_8uZ2Tr",
+  "viewport": {
+    "width": 1318,
+    "height": 808
+  },
+  "warmups": 1,
+  "summary": {
+    "history-open": {
+      "n": 10,
+      "medianMs": 980.5,
+      "p95Ms": 982
+    },
+    "bout-open": {
+      "n": 10,
+      "medianMs": 981.8999999910593,
+      "p95Ms": 998.5
+    }
+  },
+  "percentileMethod": "nearest-rank",
+  "condition": "Warm application cache; console capture enabled, panel closed; total includes prepare/commit/animation",
+  "raw": {
+    "path": "work/m8/entry-timing.json",
+    "sha256": "a3935539261d7dad1c5f0ed595ef062da816aeb6b2f5fbaea4da178376895a06"
+  }
+}

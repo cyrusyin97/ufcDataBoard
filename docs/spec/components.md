@@ -38,3 +38,7 @@ flowchart TD
 | Pure domain scoring                | Formula, normalization, null semantics, weighted contributions                                  | No fetches, browser state, or presentation ownership.                                               |
 | MotionController / text helpers    | Measured live-node transitions, interruption cleanup, viewport stability                        | Keep one property owner and stable final glyph identity.                                            |
 | Offline exporter / validators      | Read-only source extraction, reference generation, artifact integrity                           | No source database writes during web work.                                                          |
+
+The M7 candidate adds a default-off local measurement adapter. It observes the existing owners without controlling their actions. [Journey measurement](performance-measurement.md) owns its lifecycle and export contract.
+
+The diagnostics launcher owns the empty-area context menu. Its lazy panel owns local controls and a 500ms display timer. The observer owns the only frame sampler and the optional long-task observer. Live values do not enter rankings state. Render or lazy-load failure is contained by a panel error boundary. See [measurement](performance-measurement.md#1511-stats-for-nerds).

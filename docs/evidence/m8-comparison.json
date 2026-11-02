@@ -1,0 +1,448 @@
+{
+  "date": "2026-11-02",
+  "percentileMethod": "nearest-rank",
+  "candidates": {
+    "before": {
+      "buildId": "K6Wd7p6p_kTUYvSNMDxJj",
+      "datasetVersion": "2026-10-14-5949094d82ded09a",
+      "viewport": {
+        "width": 1318,
+        "height": 808
+      },
+      "warm": [
+        {
+          "scene": "dial-next",
+          "externalSettleMs": {
+            "n": 20,
+            "median": 830.2999999970198,
+            "p95": 846.9999999970169
+          },
+          "frameIntervalMs": {
+            "n": 985,
+            "median": 16.69999999999709,
+            "p95": 16.70000000001164
+          },
+          "prepareMs": {
+            "n": 20,
+            "median": 18.200000002980232,
+            "p95": 18.5
+          },
+          "commitMs": {
+            "n": 20,
+            "median": 2.0,
+            "p95": 2.2000000029802322
+          },
+          "measuredSettleMs": {
+            "n": 20,
+            "median": 815.2000000029802,
+            "p95": 831.9000000059605
+          },
+          "decodeHits": 0
+        },
+        {
+          "scene": "dial-previous",
+          "externalSettleMs": {
+            "n": 20,
+            "median": 813.3999999970256,
+            "p95": 814.0000000029795
+          },
+          "frameIntervalMs": {
+            "n": 961,
+            "median": 16.69999999999709,
+            "p95": 16.79999999998836
+          },
+          "prepareMs": {
+            "n": 20,
+            "median": 1.0,
+            "p95": 1.1000000089406967
+          },
+          "commitMs": {
+            "n": 20,
+            "median": 1.4000000059604645,
+            "p95": 1.6000000089406967
+          },
+          "measuredSettleMs": {
+            "n": 20,
+            "median": 798.2000000029802,
+            "p95": 798.7000000029802
+          },
+          "decodeHits": 0
+        },
+        {
+          "scene": "history-open",
+          "externalSettleMs": {
+            "n": 20,
+            "median": 1663.0999999940395,
+            "p95": 1679.599999997019
+          },
+          "frameIntervalMs": {
+            "n": 1984,
+            "median": 16.69999999999709,
+            "p95": 16.70000000001164
+          },
+          "prepareMs": {
+            "n": 20,
+            "median": 1.0999999940395355,
+            "p95": 29.700000002980232
+          },
+          "commitMs": {
+            "n": 20,
+            "median": 11.700000002980232,
+            "p95": 12.900000005960464
+          },
+          "measuredSettleMs": {
+            "n": 20,
+            "median": 1648,
+            "p95": 1664.5
+          },
+          "decodeHits": 0
+        },
+        {
+          "scene": "bout-open",
+          "externalSettleMs": {
+            "n": 20,
+            "median": 1228.9999999940337,
+            "p95": 1229.4999999910578
+          },
+          "frameIntervalMs": {
+            "n": 1461,
+            "median": 16.69999999999709,
+            "p95": 16.70000000001164
+          },
+          "prepareMs": {
+            "n": 20,
+            "median": 2.0,
+            "p95": 2.2999999970197678
+          },
+          "commitMs": {
+            "n": 20,
+            "median": 10.799999997019768,
+            "p95": 11.299999997019768
+          },
+          "measuredSettleMs": {
+            "n": 20,
+            "median": 1216.2999999970198,
+            "p95": 1216.7000000029802
+          },
+          "decodeHits": 0
+        },
+        {
+          "scene": "bout-return",
+          "externalSettleMs": {
+            "n": 20,
+            "median": 1229.8999999910593,
+            "p95": 1246.2999999970198
+          },
+          "frameIntervalMs": {
+            "n": 1464,
+            "median": 16.69999999999709,
+            "p95": 16.79999999998836
+          },
+          "prepareMs": {
+            "n": 20,
+            "median": 1.0999999940395355,
+            "p95": 1.2000000029802322
+          },
+          "commitMs": {
+            "n": 20,
+            "median": 19.799999997019768,
+            "p95": 20.400000005960464
+          },
+          "measuredSettleMs": {
+            "n": 20,
+            "median": 1217.9000000059605,
+            "p95": 1234.2000000029802
+          },
+          "decodeHits": 0
+        },
+        {
+          "scene": "rankings-return",
+          "externalSettleMs": {
+            "n": 20,
+            "median": 1162.5,
+            "p95": 1179.1999999970212
+          },
+          "frameIntervalMs": {
+            "n": 1385,
+            "median": 16.69999999999709,
+            "p95": 16.70000000001164
+          },
+          "prepareMs": {
+            "n": 20,
+            "median": 6.5,
+            "p95": 6.899999991059303
+          },
+          "commitMs": {
+            "n": 20,
+            "median": 5.0,
+            "p95": 5.600000008940697
+          },
+          "measuredSettleMs": {
+            "n": 20,
+            "median": 1145.7000000029802,
+            "p95": 1162.4000000059605
+          },
+          "decodeHits": 0
+        }
+      ],
+      "controlledFeedbackMs": {
+        "n": 10,
+        "median": 282.5,
+        "p95": 298.3999999910593
+      },
+      "controlledFirstBoutPrepareMs": {
+        "n": 10,
+        "median": 458.79999999701977,
+        "p95": 470.40000000596046
+      },
+      "controlledFirstBoutSettleMs": {
+        "n": 10,
+        "median": 2064.4000000059605,
+        "p95": 2080.5
+      },
+      "receipts": {
+        "warm": {
+          "path": "work/m8/before-warm.json",
+          "sha256": "b70fb9a04587cb732ab4c6881ab9b2950e145380c6e69ed32a53b705d746175f"
+        },
+        "feedback": {
+          "path": "work/m8/before-feedback.json",
+          "sha256": "d72eead4aa0c7ab1c895269d4cfb0b7eb8282839b908cb4ef988dcc4536d26db"
+        },
+        "first-bout": {
+          "path": "work/m8/before-first-bout.json",
+          "sha256": "ff99d8ba7f1b3d8e5caa4fe0e00d3b2ee592a79fe76c07f6078f5fd1a501a5b0"
+        }
+      },
+      "sourceTreeSha256": "662431325823d498820925ec6a802a472840e680246dae890fd2a0d7c9b93867"
+    },
+    "after": {
+      "buildId": "5dstoXjjNc7jExb2pkQVY",
+      "datasetVersion": "2026-10-14-5949094d82ded09a",
+      "viewport": {
+        "width": 1318,
+        "height": 808
+      },
+      "warm": [
+        {
+          "scene": "dial-next",
+          "externalSettleMs": {
+            "n": 20,
+            "median": 813.7999999999884,
+            "p95": 830.3000000029788
+          },
+          "frameIntervalMs": {
+            "n": 963,
+            "median": 16.69999999999709,
+            "p95": 16.70000000001164
+          },
+          "prepareMs": {
+            "n": 20,
+            "median": 1.6000000089406967,
+            "p95": 1.7000000029802322
+          },
+          "commitMs": {
+            "n": 20,
+            "median": 1.199999988079071,
+            "p95": 1.300000011920929
+          },
+          "measuredSettleMs": {
+            "n": 20,
+            "median": 798.5,
+            "p95": 814.7000000029802
+          },
+          "decodeHits": 20
+        },
+        {
+          "scene": "dial-previous",
+          "externalSettleMs": {
+            "n": 20,
+            "median": 813.4999999970169,
+            "p95": 830.0000000029831
+          },
+          "frameIntervalMs": {
+            "n": 962,
+            "median": 16.69999999999709,
+            "p95": 16.70000000001164
+          },
+          "prepareMs": {
+            "n": 20,
+            "median": 1.699999988079071,
+            "p95": 1.9000000059604645
+          },
+          "commitMs": {
+            "n": 20,
+            "median": 0.9000000059604645,
+            "p95": 1.0999999940395355
+          },
+          "measuredSettleMs": {
+            "n": 20,
+            "median": 798.2999999970198,
+            "p95": 814.7000000029802
+          },
+          "decodeHits": 20
+        },
+        {
+          "scene": "history-open",
+          "externalSettleMs": {
+            "n": 20,
+            "median": 1663.199999999997,
+            "p95": 1663.499999994041
+          },
+          "frameIntervalMs": {
+            "n": 1980,
+            "median": 16.69999999999709,
+            "p95": 16.70000000001164
+          },
+          "prepareMs": {
+            "n": 20,
+            "median": 0.9000000059604645,
+            "p95": 1
+          },
+          "commitMs": {
+            "n": 20,
+            "median": 11.599999994039536,
+            "p95": 12.400000005960464
+          },
+          "measuredSettleMs": {
+            "n": 20,
+            "median": 1648.0999999940395,
+            "p95": 1648.4000000059605
+          },
+          "decodeHits": 20
+        },
+        {
+          "scene": "bout-open",
+          "externalSettleMs": {
+            "n": 20,
+            "median": 1229.2000000029802,
+            "p95": 1245.8999999999942
+          },
+          "frameIntervalMs": {
+            "n": 1464,
+            "median": 16.69999999999709,
+            "p95": 16.79999999998836
+          },
+          "prepareMs": {
+            "n": 20,
+            "median": 1.800000011920929,
+            "p95": 2.199999988079071
+          },
+          "commitMs": {
+            "n": 20,
+            "median": 10.800000011920929,
+            "p95": 11.299999997019768
+          },
+          "measuredSettleMs": {
+            "n": 20,
+            "median": 1216.4000000059605,
+            "p95": 1232.7000000029802
+          },
+          "decodeHits": 20
+        },
+        {
+          "scene": "bout-return",
+          "externalSettleMs": {
+            "n": 20,
+            "median": 1229.7999999970198,
+            "p95": 1246.199999999997
+          },
+          "frameIntervalMs": {
+            "n": 1462,
+            "median": 16.69999999999709,
+            "p95": 16.70000000001164
+          },
+          "prepareMs": {
+            "n": 20,
+            "median": 0.7999999970197678,
+            "p95": 0.800000011920929
+          },
+          "commitMs": {
+            "n": 20,
+            "median": 19.700000002980232,
+            "p95": 20.799999997019768
+          },
+          "measuredSettleMs": {
+            "n": 20,
+            "median": 1217.8999999910593,
+            "p95": 1233.699999988079
+          },
+          "decodeHits": 20
+        },
+        {
+          "scene": "rankings-return",
+          "externalSettleMs": {
+            "n": 20,
+            "median": 1162.4999999970169,
+            "p95": 1163.2999999910608
+          },
+          "frameIntervalMs": {
+            "n": 1381,
+            "median": 16.69999999999709,
+            "p95": 16.79999999998836
+          },
+          "prepareMs": {
+            "n": 20,
+            "median": 1.2999999970197678,
+            "p95": 1.5
+          },
+          "commitMs": {
+            "n": 20,
+            "median": 5.199999988079071,
+            "p95": 5.5
+          },
+          "measuredSettleMs": {
+            "n": 20,
+            "median": 1145.7999999970198,
+            "p95": 1146.5999999940395
+          },
+          "decodeHits": 20
+        }
+      ],
+      "controlledFeedbackMs": {
+        "n": 10,
+        "median": 14.799999997019768,
+        "p95": 36.6000000089407
+      },
+      "controlledFirstBoutPrepareMs": {
+        "n": 10,
+        "median": 318.5,
+        "p95": 323.79999999701977
+      },
+      "controlledFirstBoutSettleMs": {
+        "n": 10,
+        "median": 1914.7999999970198,
+        "p95": 1914.9000000059605
+      },
+      "receipts": {
+        "warm": {
+          "path": "work/m8/after-warm.json",
+          "sha256": "a0324196db17a63dcd96ca157859f49893fd3269130ede60cd556478f3ae521c"
+        },
+        "feedback": {
+          "path": "work/m8/after-feedback.json",
+          "sha256": "dd961ff6448be19c26eaec7a56a196b11ac70e096cd18b05952d72fd5979b505"
+        },
+        "first-bout": {
+          "path": "work/m8/after-first-bout.json",
+          "sha256": "8b9c53f40488ef89f5167779822b0acba9f071f2e45e827c91db5f4e2a06939f"
+        }
+      },
+      "sourceTreeSha256": "138bc32b4f7bfccb5f461a887f3f41652fa58b7e3a60a25a0fdd35ca235d5197"
+    }
+  },
+  "limits": [
+    "Sequential before/after runs; no randomized rebuild crossover",
+    "Headless local Chromium; not deployed INP or GPU FPS",
+    "Controlled delays are mechanism experiments, not production latency",
+    "Broad M7 measurement acceptance remains open"
+  ],
+  "beforeSourceArchive": {
+    "path": "work/m8/before-source.tar.gz",
+    "sha256": "8036da34249c0070f64b73baecbbeb6df0369440de5b016bc0039bd2fa3e4bc3"
+  },
+  "afterSourceArchive": {
+    "path": "work/m8/after-source.tar.gz",
+    "sha256": "52f1687104bcc8c4f463b1cf86529a46b28aebef3b92166ef40d33cd4cb97ce0"
+  }
+}

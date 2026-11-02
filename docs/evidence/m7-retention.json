@@ -1,0 +1,107 @@
+{
+  "scope": "50 capture/ignored-selection/stop/clear cycles; forced GC at checkpoints",
+  "browserVersion": "156.0.8078.4",
+  "recorderObjects": {
+    "before": 1,
+    "after": 1,
+    "method": "Heap snapshot own-property shape: enabled, records, active, gestures, losses"
+  },
+  "samples": [
+    {
+      "cycle": 0,
+      "heapBytes": 4545692,
+      "status": {
+        "enabled": false,
+        "active": 0,
+        "retained": 0,
+        "losses": {
+          "evicted": 0,
+          "skipped": 0,
+          "failures": 0,
+          "gestures": 0,
+          "frames": 0
+        }
+      }
+    },
+    {
+      "cycle": 10,
+      "heapBytes": 4683652,
+      "status": {
+        "enabled": false,
+        "active": 0,
+        "retained": 0,
+        "losses": {
+          "evicted": 0,
+          "skipped": 0,
+          "failures": 0,
+          "gestures": 0,
+          "frames": 0
+        }
+      }
+    },
+    {
+      "cycle": 20,
+      "heapBytes": 4687392,
+      "status": {
+        "enabled": false,
+        "active": 0,
+        "retained": 0,
+        "losses": {
+          "evicted": 0,
+          "skipped": 0,
+          "failures": 0,
+          "gestures": 0,
+          "frames": 0
+        }
+      }
+    },
+    {
+      "cycle": 30,
+      "heapBytes": 4707916,
+      "status": {
+        "enabled": false,
+        "active": 0,
+        "retained": 0,
+        "losses": {
+          "evicted": 0,
+          "skipped": 0,
+          "failures": 0,
+          "gestures": 0,
+          "frames": 0
+        }
+      }
+    },
+    {
+      "cycle": 40,
+      "heapBytes": 4711060,
+      "status": {
+        "enabled": false,
+        "active": 0,
+        "retained": 0,
+        "losses": {
+          "evicted": 0,
+          "skipped": 0,
+          "failures": 0,
+          "gestures": 0,
+          "frames": 0
+        }
+      }
+    },
+    {
+      "cycle": 50,
+      "heapBytes": 4714560,
+      "status": {
+        "enabled": false,
+        "active": 0,
+        "retained": 0,
+        "losses": {
+          "evicted": 0,
+          "skipped": 0,
+          "failures": 0,
+          "gestures": 0,
+          "frames": 0
+        }
+      }
+    }
+  ]
+}

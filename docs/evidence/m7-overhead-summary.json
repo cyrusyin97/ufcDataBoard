@@ -1,0 +1,510 @@
+{
+  "date": "2026-10-30T03:44:35.214Z",
+  "datasetVersion": "2026-10-14-5949094d82ded09a",
+  "browser": "chromium",
+  "viewport": {
+    "width": 1318,
+    "height": 808
+  },
+  "status": "partial evidence; not full PM09 acceptance",
+  "limitations": [
+    "Not a cold HTTP cache comparison",
+    "External animation-frame cadence is not GPU FPS",
+    "No monitor-attributed native CPU trace",
+    "No heap-retention proof",
+    "No drag-reversal baseline"
+  ],
+  "comparisons": [
+    {
+      "scene": "dial-next",
+      "groups": [
+        {
+          "enabled": false,
+          "samples": 20,
+          "latency": {
+            "count": 20,
+            "median": 995.8999999985099,
+            "p95": 1021.8000000000029,
+            "max": 1060.1000000030035,
+            "above33": 20,
+            "above50": 20
+          },
+          "frameIntervals": {
+            "count": 762,
+            "median": 16.69999999999709,
+            "p95": 99.90000000002328,
+            "max": 116.70000000001164,
+            "above33": 95,
+            "above50": 41
+          },
+          "scriptMs": {
+            "count": 20,
+            "median": 15.571999999999697,
+            "p95": 21.21600000000079,
+            "max": 42.05599999999965,
+            "above33": 1,
+            "above50": 0
+          },
+          "layoutMs": {
+            "count": 20,
+            "median": 3.0849999999995603,
+            "p95": 4.131000000000107,
+            "max": 9.106999999999754,
+            "above33": 0,
+            "above50": 0
+          }
+        },
+        {
+          "enabled": true,
+          "samples": 20,
+          "latency": {
+            "count": 20,
+            "median": 927.0999999985215,
+            "p95": 1012.1000000044587,
+            "max": 1045.000000004482,
+            "above33": 20,
+            "above50": 20
+          },
+          "frameIntervals": {
+            "count": 762,
+            "median": 16.700000000004366,
+            "p95": 33.40000000002328,
+            "max": 116.80000000001746,
+            "above33": 96,
+            "above50": 33
+          },
+          "scriptMs": {
+            "count": 20,
+            "median": 16.782000000000963,
+            "p95": 27.327999999999797,
+            "max": 48.14199999999946,
+            "above33": 1,
+            "above50": 0
+          },
+          "layoutMs": {
+            "count": 20,
+            "median": 2.690999999999999,
+            "p95": 7.761999999999936,
+            "max": 8.278999999999925,
+            "above33": 0,
+            "above50": 0
+          }
+        }
+      ],
+      "medianDelta": -68.79999999998836,
+      "p95Delta": -9.699999995544204,
+      "frameP95Delta": -66.5,
+      "numericLimitsPass": true
+    },
+    {
+      "scene": "dial-previous",
+      "groups": [
+        {
+          "enabled": false,
+          "samples": 20,
+          "latency": {
+            "count": 20,
+            "median": 872.8999999985099,
+            "p95": 924.9000000014785,
+            "max": 933.6000000014901,
+            "above33": 20,
+            "above50": 20
+          },
+          "frameIntervals": {
+            "count": 680,
+            "median": 16.69999999999709,
+            "p95": 33.40000000002328,
+            "max": 116.70000000001164,
+            "above33": 102,
+            "above50": 28
+          },
+          "scriptMs": {
+            "count": 20,
+            "median": 15.300000000000091,
+            "p95": 32.30600000000017,
+            "max": 38.64800000000024,
+            "above33": 1,
+            "above50": 0
+          },
+          "layoutMs": {
+            "count": 20,
+            "median": 2.803000000000111,
+            "p95": 4.7559999999999825,
+            "max": 10.235999999999912,
+            "above33": 0,
+            "above50": 0
+          }
+        },
+        {
+          "enabled": true,
+          "samples": 20,
+          "latency": {
+            "count": 20,
+            "median": 875.6999999984982,
+            "p95": 900.8000000014872,
+            "max": 903.4000000044762,
+            "above33": 20,
+            "above50": 20
+          },
+          "frameIntervals": {
+            "count": 718,
+            "median": 16.69999999999709,
+            "p95": 33.40000000000873,
+            "max": 150,
+            "above33": 84,
+            "above50": 22
+          },
+          "scriptMs": {
+            "count": 20,
+            "median": 15.61199999999996,
+            "p95": 31.807999999999836,
+            "max": 51.80500000000032,
+            "above33": 1,
+            "above50": 1
+          },
+          "layoutMs": {
+            "count": 20,
+            "median": 2.842999999999929,
+            "p95": 6.9270000000001275,
+            "max": 10.479000000000127,
+            "above33": 0,
+            "above50": 0
+          }
+        }
+      ],
+      "medianDelta": 2.7999999999883585,
+      "p95Delta": -24.09999999999127,
+      "frameP95Delta": -1.4551915228366852e-11,
+      "numericLimitsPass": true
+    },
+    {
+      "scene": "history-open",
+      "groups": [
+        {
+          "enabled": false,
+          "samples": 20,
+          "latency": {
+            "count": 20,
+            "median": 1661.6000000014901,
+            "p95": 1746.4000000014785,
+            "max": 1813.3000000014872,
+            "above33": 20,
+            "above50": 20
+          },
+          "frameIntervals": {
+            "count": 1450,
+            "median": 16.70000000001164,
+            "p95": 33.40000000000873,
+            "max": 200,
+            "above33": 224,
+            "above50": 28
+          },
+          "scriptMs": {
+            "count": 20,
+            "median": 29.903000000000013,
+            "p95": 66.68400000000041,
+            "max": 77.23300000000054,
+            "above33": 7,
+            "above50": 3
+          },
+          "layoutMs": {
+            "count": 20,
+            "median": 20.59299999999986,
+            "p95": 33.68599999999988,
+            "max": 58.887000000000356,
+            "above33": 2,
+            "above50": 1
+          }
+        },
+        {
+          "enabled": true,
+          "samples": 20,
+          "latency": {
+            "count": 20,
+            "median": 1660.400000004447,
+            "p95": 1850.6000000044587,
+            "max": 1888.4000000029919,
+            "above33": 20,
+            "above50": 20
+          },
+          "frameIntervals": {
+            "count": 1520,
+            "median": 16.70000000001164,
+            "p95": 33.39999999999418,
+            "max": 116.70000000001164,
+            "above33": 225,
+            "above50": 15
+          },
+          "scriptMs": {
+            "count": 20,
+            "median": 32.04899999999977,
+            "p95": 40.9609999999998,
+            "max": 46.788000000000274,
+            "above33": 7,
+            "above50": 0
+          },
+          "layoutMs": {
+            "count": 20,
+            "median": 20.672000000000025,
+            "p95": 24.545999999999957,
+            "max": 29.315999999999896,
+            "above33": 0,
+            "above50": 0
+          }
+        }
+      ],
+      "medianDelta": -1.1999999970430508,
+      "p95Delta": 104.20000000298023,
+      "frameP95Delta": -1.4551915228366852e-11,
+      "numericLimitsPass": false
+    },
+    {
+      "scene": "bout-open",
+      "groups": [
+        {
+          "enabled": false,
+          "samples": 20,
+          "latency": {
+            "count": 20,
+            "median": 1237.1000000014901,
+            "p95": 1257.1999999984982,
+            "max": 1283.0999999985215,
+            "above33": 20,
+            "above50": 20
+          },
+          "frameIntervals": {
+            "count": 953,
+            "median": 16.70000000001164,
+            "p95": 33.40000000002328,
+            "max": 116.70000000001164,
+            "above33": 233,
+            "above50": 21
+          },
+          "scriptMs": {
+            "count": 20,
+            "median": 49.76499999999984,
+            "p95": 65.90500000000077,
+            "max": 74.42100000000008,
+            "above33": 20,
+            "above50": 9
+          },
+          "layoutMs": {
+            "count": 20,
+            "median": 49.99600000000015,
+            "p95": 62.262999999999735,
+            "max": 81.41899999999991,
+            "above33": 20,
+            "above50": 10
+          }
+        },
+        {
+          "enabled": true,
+          "samples": 20,
+          "latency": {
+            "count": 20,
+            "median": 1248.4000000029919,
+            "p95": 1342.1999999985128,
+            "max": 1345.2000000014668,
+            "above33": 20,
+            "above50": 20
+          },
+          "frameIntervals": {
+            "count": 962,
+            "median": 16.70000000001164,
+            "p95": 33.40000000002328,
+            "max": 116.69999999999709,
+            "above33": 243,
+            "above50": 23
+          },
+          "scriptMs": {
+            "count": 20,
+            "median": 50.060000000000215,
+            "p95": 57.44900000000008,
+            "max": 80.75299999999963,
+            "above33": 20,
+            "above50": 11
+          },
+          "layoutMs": {
+            "count": 20,
+            "median": 47.91800000000013,
+            "p95": 57.71000000000015,
+            "max": 73.82299999999998,
+            "above33": 20,
+            "above50": 9
+          }
+        }
+      ],
+      "medianDelta": 11.300000001501758,
+      "p95Delta": 85.00000000001455,
+      "frameP95Delta": 0,
+      "numericLimitsPass": false
+    },
+    {
+      "scene": "bout-return",
+      "groups": [
+        {
+          "enabled": false,
+          "samples": 20,
+          "latency": {
+            "count": 20,
+            "median": 1241.6000000030035,
+            "p95": 1323.8999999985099,
+            "max": 1355,
+            "above33": 20,
+            "above50": 20
+          },
+          "frameIntervals": {
+            "count": 958,
+            "median": 16.70000000001164,
+            "p95": 50,
+            "max": 166.60000000003492,
+            "above33": 230,
+            "above50": 32
+          },
+          "scriptMs": {
+            "count": 20,
+            "median": 64.7850000000001,
+            "p95": 101.67000000000037,
+            "max": 112.27499999999947,
+            "above33": 20,
+            "above50": 20
+          },
+          "layoutMs": {
+            "count": 20,
+            "median": 59.944999999999915,
+            "p95": 64.90800000000085,
+            "max": 65.16699999999975,
+            "above33": 20,
+            "above50": 18
+          }
+        },
+        {
+          "enabled": true,
+          "samples": 20,
+          "latency": {
+            "count": 20,
+            "median": 1255.3999999999942,
+            "p95": 1371.8000000014872,
+            "max": 1410.0000000044674,
+            "above33": 20,
+            "above50": 20
+          },
+          "frameIntervals": {
+            "count": 974,
+            "median": 16.70000000001164,
+            "p95": 50,
+            "max": 133.39999999999418,
+            "above33": 222,
+            "above50": 37
+          },
+          "scriptMs": {
+            "count": 20,
+            "median": 63.197000000000614,
+            "p95": 109.4330000000001,
+            "max": 249.6529999999999,
+            "above33": 20,
+            "above50": 20
+          },
+          "layoutMs": {
+            "count": 20,
+            "median": 57.58799999999997,
+            "p95": 65.23400000000024,
+            "max": 72.08499999999995,
+            "above33": 20,
+            "above50": 19
+          }
+        }
+      ],
+      "medianDelta": 13.799999996990664,
+      "p95Delta": 47.90000000297732,
+      "frameP95Delta": 0,
+      "numericLimitsPass": true
+    },
+    {
+      "scene": "rankings-return",
+      "groups": [
+        {
+          "enabled": false,
+          "samples": 20,
+          "latency": {
+            "count": 20,
+            "median": 1161.5000000029686,
+            "p95": 1300.6000000000058,
+            "max": 1345.6000000044587,
+            "above33": 20,
+            "above50": 20
+          },
+          "frameIntervals": {
+            "count": 980,
+            "median": 16.70000000001164,
+            "p95": 33.40000000000873,
+            "max": 366.59999999999854,
+            "above33": 174,
+            "above50": 14
+          },
+          "scriptMs": {
+            "count": 20,
+            "median": 35.90399999999949,
+            "p95": 96.7880000000001,
+            "max": 154.18299999999996,
+            "above33": 13,
+            "above50": 5
+          },
+          "layoutMs": {
+            "count": 20,
+            "median": 6.116999999999928,
+            "p95": 15.517000000000003,
+            "max": 17.799999999999816,
+            "above33": 0,
+            "above50": 0
+          }
+        },
+        {
+          "enabled": true,
+          "samples": 20,
+          "latency": {
+            "count": 20,
+            "median": 1170.0999999999767,
+            "p95": 1261.3000000029788,
+            "max": 1266.3999999985099,
+            "above33": 20,
+            "above50": 20
+          },
+          "frameIntervals": {
+            "count": 1012,
+            "median": 16.70000000001164,
+            "p95": 33.400000000001455,
+            "max": 116.70000000001164,
+            "above33": 174,
+            "above50": 6
+          },
+          "scriptMs": {
+            "count": 20,
+            "median": 33.88300000000122,
+            "p95": 49.573999999999785,
+            "max": 88.61200000000036,
+            "above33": 13,
+            "above50": 1
+          },
+          "layoutMs": {
+            "count": 20,
+            "median": 5.18900000000011,
+            "p95": 9.705999999999548,
+            "max": 9.926999999999797,
+            "above33": 0,
+            "above50": 0
+          }
+        }
+      ],
+      "medianDelta": 8.599999997008126,
+      "p95Delta": -39.299999997027044,
+      "frameP95Delta": -7.275957614183426e-12,
+      "numericLimitsPass": true
+    }
+  ],
+  "buildId": "PrtBdKm0CwhOXxkmiLAjE",
+  "baselineSourceCommit": "49be350c842d89f0a3ec1f48000891267d75abd3",
+  "candidateSourceTreeSha256": "b4362465d0c52690958a32dbdfbfe0b254cde4dca81dcc8f7e61293a2a68f438",
+  "rawReceipt": "m7-overhead-run.json.gz",
+  "rawReceiptSha256": "00aed807f0f1eec20dd336b454db40ba9f9b1a6315038858184b63edfcc19ad3"
+}

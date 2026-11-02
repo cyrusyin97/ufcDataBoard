@@ -19,6 +19,7 @@ src/
     domain/                     # Zod contracts, routes, selection, formatting, scoring
     navigation/controller.ts    # Browser entry ownership
     motion/                     # Controller, preparation, glyph helpers, timing constants
+    performance/                # Opt-in local recorder, frame collector, export contracts
     data/                       # Server readers, summaries, fighter and bout stores
   messages/en.ts                # Existing shared English labels
   data/roster.json              # Small reference fixture, not the live archive
@@ -55,3 +56,5 @@ Root `next.config.ts` pins the dataset and traces only necessary server artifact
 `vercel.json` and `.github/workflows/` define release and CI entry points.
 The schema directory is `data/schemas/`; configuration is `data/config/`; the production descriptor is `data/release.json`.
 New user-facing strings should use clear English and be prepared for future localization; current Bout labels also exist in `bout.tsx`.
+
+`src/components/performance/launcher.tsx` owns menu eligibility and lazy panel loading. `panel.tsx` owns the local diagnostics display. `src/lib/performance/live.ts` owns bounded live counters. These files do not own navigation or animation. Panel behavior tests are in `tests/e2e/performance-panel.spec.ts`; its opt-in three-mode comparison is in `performance-panel-benchmark.spec.ts`.

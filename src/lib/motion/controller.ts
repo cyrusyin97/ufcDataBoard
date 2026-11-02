@@ -163,8 +163,8 @@ export class MotionController {
     this.overlays.forEach((el) => el.remove());
     this.overlays = [];
   }
-  settle(complete: boolean) {
-    this.root?.dispatchEvent(new Event("ufc:motion-settle"));
+  settle(complete: boolean, settleDial = true) {
+    if (settleDial) this.root?.dispatchEvent(new Event("ufc:motion-settle"));
     this.abortCleanup?.();
     this.abortCleanup = null;
     this.timeline?.kill();
@@ -178,9 +178,9 @@ export class MotionController {
     this.onDone = null;
     done?.();
   }
-  cancel() {
+  cancel(preserveDial = false) {
     this.skipNext = false;
-    this.settle(false);
+    this.settle(false, !preserveDial);
   }
   async depart(
     from: ExperienceRoute,
@@ -191,7 +191,11 @@ export class MotionController {
       to.view !== "rankings" && this.previewId === to.fighterId
         ? this.source
         : new Map<string, Rect>();
-    this.settle(false);
+    const dialSelection =
+      from.view === "rankings" &&
+      to.view === "rankings" &&
+      from.divisionId === to.divisionId;
+    this.settle(false, !dialSelection);
     const boutOpen =
       from.view === "history" &&
       to.view === "bout" &&
@@ -278,7 +282,12 @@ export class MotionController {
     this.timeline = tl;
     if (this.kind === "bout-open" || this.kind === "bout-return") {
       const fading = this.track(this.boutFades());
-      if (fading.length) tl.to(fading, { opacity: 0, duration: 0.18 }, 0);
+      if (fading.length)
+        tl.to(
+          fading,
+          { opacity: 0, duration: this.kind === "bout-open" ? 0.14 : 0.18 },
+          0,
+        );
       else tl.to({}, { duration: 0.01 });
     } else if (this.kind === "category") {
       [...heading, ...rows].forEach((el) =>
@@ -296,9 +305,9 @@ export class MotionController {
           {
             x: leftAway(el),
             opacity: 0,
-            duration: 0.6,
+            duration: 0.3,
           },
-          Math.min(index, 3) * 0.035,
+          Math.min(index, 3) * 0.02,
         ),
       );
       if (!rows.length) tl.to({}, { duration: 0.01 });
@@ -408,6 +417,7 @@ export class MotionController {
     });
     this.timeline = tl;
     if (this.kind === "bout-open" || this.kind === "bout-return") {
+      const flightSeconds = this.kind === "bout-open" ? 0.8 : 1;
       // Animate the final live pixels and glyphs from their previous geometry.
       // The portrait container never owns opacity or an entrance animation.
       const portraits = this.track(
@@ -435,7 +445,13 @@ export class MotionController {
             y: source.y - target.y,
             scale: source.height / target.height,
           },
-          { x: 0, y: 0, scale: 1, duration: 1, ease: "power3.inOut" },
+          {
+            x: 0,
+            y: 0,
+            scale: 1,
+            duration: flightSeconds,
+            ease: "power3.inOut",
+          },
           0,
         );
       });
@@ -480,7 +496,7 @@ export class MotionController {
             y: 0,
             scale: 1,
             color: target.color,
-            duration: 1,
+            duration: flightSeconds,
             ease: "power3.inOut",
           },
           0,
@@ -490,7 +506,7 @@ export class MotionController {
       if (fading.length)
         tl.fromTo(fading, { opacity: 0 }, { opacity: 1, duration: 0.42 }, 0.12);
       // Maintain a bounded transaction even when source media or title is absent.
-      tl.to({}, { duration: 1 }, 0);
+      tl.to({}, { duration: flightSeconds }, 0);
       root.dataset.motionStage = "arriving";
       root.dataset.motionStart = String(performance.now());
       return;
@@ -565,7 +581,7 @@ export class MotionController {
                 x: this.figure!.x - measure(el).x,
                 y: this.figure!.y - measure(el).y,
               },
-              { x: 0, y: 0, duration: 0.85 },
+              { x: 0, y: 0, duration: this.kind === "open" ? 0.58 : 0.85 },
               0,
             ),
           );
@@ -574,8 +590,13 @@ export class MotionController {
           tl.fromTo(
             history,
             { opacity: 0, x: 42, scale: 0.965 },
-            { opacity: 1, x: 0, scale: 1, duration: 0.75 },
-            0.15,
+            {
+              opacity: 1,
+              x: 0,
+              scale: 1,
+              duration: this.kind === "open" ? 0.52 : 0.75,
+            },
+            this.kind === "open" ? 0.06 : 0.15,
           );
         const selector = this.track(
           this.nodes("[aria-label='Ranking selector']"),
@@ -584,7 +605,12 @@ export class MotionController {
           tl.fromTo(el, { x: leftAway(el) }, { x: 0, duration: 0.72 }, 0),
         );
       }
-      tl.fromTo(images, { opacity: 0 }, { opacity: 1, duration: 0.62 }, 0.18);
+      tl.fromTo(
+        images,
+        { opacity: 0 },
+        { opacity: 1, duration: this.kind === "open" ? 0.48 : 0.62 },
+        this.kind === "open" ? 0.08 : 0.18,
+      );
       if (this.overlays.length)
         tl.to(this.overlays, { opacity: 0, duration: 0.26 }, 0);
       if (this.kind === "opponent") tl.to({}, { duration: 1 }, 0);

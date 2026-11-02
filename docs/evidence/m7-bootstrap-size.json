@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-30",
+  "method": "Sum gzip bytes of ranking client-reference chunks plus rootMainFiles; unique paths per build",
+  "baselineCommit": "49be350c842d89f0a3ec1f48000891267d75abd3",
+  "candidate": "uncommitted M7 candidate",
+  "result": [
+    {
+      "root": "work/m7-base/.next",
+      "gzipBytes": 216268,
+      "files": [
+        {
+          "path": "static/chunks/app/not-found-ad224f4466eaead8.js",
+          "bytes": 3302
+        },
+        {
+          "path": "static/chunks/app/layout-a60a7a97929b8914.js",
+          "bytes": 169
+        },
+        {
+          "path": "static/chunks/25c8a87d-adb27371f706fa7b.js",
+          "bytes": 19741
+        },
+        {
+          "path": "static/chunks/924-9f3c7526b9ec1cf9.js",
+          "bytes": 35497
+        },
+        {
+          "path": "static/chunks/app/rankings/page-f039a71d00231800.js",
+          "bytes": 24220
+        },
+        {
+          "path": "static/chunks/webpack-61d0efc196e3c706.js",
+          "bytes": 1635
+        },
+        {
+          "path": "static/chunks/87c73c54-94dfd33dd614faf8.js",
+          "bytes": 64112
+        },
+        {
+          "path": "static/chunks/968-48fc94ed9c0a5195.js",
+          "bytes": 67372
+        },
+        {
+          "path": "static/chunks/main-app-6991dbd86fc4b33f.js",
+          "bytes": 220
+        }
+      ]
+    },
+    {
+      "root": ".next",
+      "gzipBytes": 217871,
+      "files": [
+        {
+          "path": "static/chunks/app/not-found-13064754e28ac492.js",
+          "bytes": 3294
+        },
+        {
+          "path": "static/chunks/app/layout-31c28b42a8752ce9.js",
+          "bytes": 167
+        },
+        {
+          "path": "static/chunks/c15bf2b0-182b384b62e205ff.js",
+          "bytes": 19743
+        },
+        {
+          "path": "static/chunks/556-a048b23cb3f32428.js",
+          "bytes": 35881
+        },
+        {
+          "path": "static/chunks/app/rankings/page-38f8a007b7d4fcc1.js",
+          "bytes": 25471
+        },
+        {
+          "path": "static/chunks/webpack-07ac0aaeaca67885.js",
+          "bytes": 1704
+        },
+        {
+          "path": "static/chunks/4bd1b696-c7408084347438ae.js",
+          "bytes": 64115
+        },
+        {
+          "path": "static/chunks/794-0ac5e2f0e81d2e0d.js",
+          "bytes": 67275
+        },
+        {
+          "path": "static/chunks/main-app-4a5d8f3ef84bf983.js",
+          "bytes": 221
+        }
+      ]
+    }
+  ],
+  "delta": 1603,
+  "limitBytes": 5120
+}

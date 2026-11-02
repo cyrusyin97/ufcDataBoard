@@ -393,3 +393,52 @@ The default production build passes on Node.js 24.22.0 with the promoted dataset
 Formatting, local links, and whitespace checks pass. Browser suites were not rerun because the data bytes and runtime implementation match the accepted M6 candidate.
 The snapshot date remains 2026-10-14. The source database was not changed or refreshed.
 All 528 media roles still lack approved publication rights. No artifact upload, hosted deployment, or rights approval occurred.
+
+## Deployed interaction audit
+
+Date: 2026-10-26.
+Checked the user-provided Vercel deployment through the in-app browser.
+See the [audit report](performance-audit-2026-10-26.md) for journey coverage, source references, and limits.
+Dial and first-navigation pending states were observed. Native bout return retained the tested document scroll position.
+No FPS, INP, network trace, or full release acceptance result is claimed. Runtime code was not changed.
+Only documentation formatting and whitespace checks apply to this audit change.
+
+## Measurement specification and plan
+
+Date: 2026-10-27.
+Added the planned measurement topic and M7 implementation sequence. The Product Spec index, glossary, decision log, and roadmap link to the new scope.
+No application, data, vendor configuration, or deployment changes were made. No monitoring overhead or performance improvement is claimed.
+Validation for this change is limited to changed-document formatting, local document links, and whitespace. Runtime tests are not applicable to this documentation-only change.
+
+## M7 measurement implementation
+
+Date: 2026-10-30.
+The default-off local measurement module and journey hooks are implemented. Node.js 24 production checks pass: TypeScript, 65 unit tests, and build. Lint has no errors and retains the existing unused-variable warning in `scripts/release-check.ts`.
+The final measurement browser suite passes five checks. The existing bout and bout-motion suites pass 16 checks. Two warm overhead runs complete 480 measured operations in total. The first fails two numeric scene limits; the second passes all six. A separate native trace check passes, and the capture/clear heap check retains one recorder object after 50 cycles.
+Bootstrap JavaScript adds 1,603 gzip bytes, below the 5KB budget. PM09 and the frozen baseline remain open because the timing runs differ and first-target timing cohorts are incomplete. No performance improvement is claimed. See the [M7 report](m7-report.md) for receipts and limits.
+
+## Local Stats for nerds panel
+
+Date: 2026-11-01.
+The final Node.js 24 production check passes TypeScript, 68 unit tests, and build. Lint has only the existing release-check unused-variable warning. Eight capture/panel browser checks pass; final-build validation also passes 16 bout/motion checks, three panel checks, and the three-mode overhead harness. There are 24 unique functional checks across these runs.
+The 120-operation warm dial comparison passes provisional median/P95 settle and frame-interval thresholds. The panel adds about 1.5–2.5ms median script time per operation against console-only capture in this sample. Initial gzip script growth is 934 bytes against that candidate. No general zero-cost or full M7 acceptance claim is made.
+Formatting, changed-topic local links, and whitespace checks pass. Desktop and narrow screenshots were reviewed. See the [M7 report](m7-report.md#stats-for-nerds-extension--2026-11-01). No source data, preserved prototype, or deployment changed.
+
+## M8 first interaction-performance pass
+
+Date: 2026-11-02.
+Preserved the before source and verified its hash/build against the checked M7 candidate. The same console recorder and external probe measured 120 warm operations per candidate. Two controlled-delay experiments measured ten trials per candidate each. Raw receipts and source archives remain in `work/m8/`; [summary](evidence/m8-comparison.json) records their hashes.
+The final Node.js 24 check passes TypeScript, 71 unit tests, and production build. Lint retains only the existing unused-variable warning. All 27 selected Chromium functional tests pass; six dial/motion cases also pass in Firefox and WebKit (39 distinct browser/case combinations total). All before/after benchmark fixtures complete. Formatting, local links, and whitespace checks pass.
+Controlled-delay dial feedback median changes from 282.5ms to 14.8ms. Controlled first-bout prepare median changes from 458.8ms to 318.5ms. These are mechanism experiments, not deployed latency. Warm next-fighter preparation changes from 18.2ms to 1.6ms, while most warm navigation total medians remain unchanged. See the [M8 report](m8-report.md) for all rows and limits. No GPU FPS, deployed INP, or full M7 acceptance is claimed. No data change or deployment occurred.
+
+## Forward-entry timing review
+
+Date: 2026-11-02.
+The user requested approximately one-second rankings-to-history and history-to-bout animations. Configured duration is now 0.94 seconds for each path, plus the retained painted-frame hold, preparation, and commit. Other paths retain their schedules.
+The production check passes with 71 unit tests; nine motion regressions and the timing fixture pass. Ten measured warm trials per path give total settle medians of 980.5ms and 981.9ms. This is an animation-duration revision, not a GPU FPS improvement. Read the [receipt](evidence/m8-entry-timing.json) and [M8 report](m8-report.md). No deployment occurred.
+
+## Compact draggable diagnostics review
+
+Date: 2026-11-02.
+The user requested only the live section, smaller text, a translucent background, and free movement. The panel now retains live status, frame/long-task metrics, trend, and interpretation. Lower breakdown, environment, and action sections were removed. Console controls remain available. Close and reopen restarts a paused display.
+The title bar uses pointer capture and direct coordinate writes. It reads dimensions at drag start and clamps to the viewport. Arrow keys move the focused title bar. The first production check passes 71 unit tests and retains the existing lint warning only. Final production build passes. All three panel browser checks pass, including pointer/keyboard movement, resizing a moved panel into a narrow viewport, native-menu exclusions, and close/reload cleanup. The compact desktop screenshot was reviewed. Formatting and whitespace checks pass. Earlier overhead receipts describe the expanded panel; this change does not claim a new overhead bound.

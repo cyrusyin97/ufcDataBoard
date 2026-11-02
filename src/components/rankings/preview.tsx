@@ -6,6 +6,8 @@ import {
   useState,
   type RefObject,
 } from "react";
+import { beginMeasurement } from "@/lib/performance/client";
+import type { Context } from "@/lib/performance/contracts";
 import { MotionText } from "@/lib/motion/text";
 import type { FighterBundle } from "@/lib/domain/contracts";
 import type { FighterStore } from "@/lib/data/fighter-store";
@@ -42,22 +44,50 @@ export function OpponentPreview({
   } | null>(null);
   const [error, setError] = useState(false);
   const [attempt, setAttempt] = useState(0);
+  const measurement = useRef<Context | undefined>(undefined);
   const card = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState({ left: 14, top: 14 });
   useEffect(() => {
     const controller = new AbortController();
+    const trace = beginMeasurement(
+      null,
+      { view: "history", divisionId, fighterId: anchor.id },
+      true,
+    );
+    measurement.current = trace;
+    const preparation = trace?.span("prepare");
     async function load() {
       try {
-        const bundle = await store.load(anchor.id, controller.signal);
-        const fighter = await store.summary(bundle, controller.signal);
+        const bundle = await store.load(
+          anchor.id,
+          controller.signal,
+          true,
+          trace,
+        );
+        const fighter = await store.summary(bundle, controller.signal, trace);
+        preparation?.();
         if (!controller.signal.aborted) setContent({ bundle, fighter });
       } catch {
+        trace?.end(
+          controller.signal.aborted ? "cancelled" : "error",
+          "request",
+        );
         if (!controller.signal.aborted) setError(true);
       }
     }
     void load();
-    return () => controller.abort();
-  }, [anchor.id, store, attempt]);
+    return () => {
+      trace?.end("cancelled", "unmount");
+      controller.abort();
+    };
+  }, [anchor.id, store, attempt, divisionId]);
+  useLayoutEffect(() => {
+    if (content) {
+      measurement.current?.mark("committed");
+      measurement.current?.mark("target");
+      measurement.current?.end("completed");
+    }
+  }, [content]);
   useLayoutEffect(() => {
     const place = () => {
       const trigger = triggerRef.current?.getBoundingClientRect();

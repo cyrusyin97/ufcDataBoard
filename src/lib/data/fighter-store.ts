@@ -1,3 +1,4 @@
+import type { Context, Stage } from "@/lib/performance/contracts";
 import {
   bundleSchema,
   idSchema,
@@ -21,23 +22,43 @@ export class FighterStore {
     private initial: FighterBundle | null,
     private request: typeof fetch = (input, init) => fetch(input, init),
   ) {}
-  private async json(file: string, signal: AbortSignal) {
-    const response = await this.request(
-      `/data/v1/${this.data.datasetVersion}/${file}`,
-      { signal },
-    );
-    if (!response.ok) throw new Error("Fighter request failed.");
-    return response.json();
+  private async json(file: string, signal: AbortSignal, trace?: Context) {
+    const stage: Stage = file.startsWith("fighters/")
+      ? "fighter"
+      : file.startsWith("bouts/")
+        ? "bout"
+        : file.startsWith("bout-references/")
+          ? "reference"
+          : file === "index.json"
+            ? "index"
+            : "media";
+    const end = trace?.span(stage, "miss");
+    try {
+      const response = await this.request(
+        `/data/v1/${this.data.datasetVersion}/${file}`,
+        { signal },
+      );
+      if (!response.ok) throw new Error("Fighter request failed.");
+      const json = await response.json();
+      end?.();
+      return json;
+    } catch (error) {
+      end?.(signal.aborted ? "cancelled" : "error");
+      throw error;
+    }
   }
   async load(
     id: string,
     signal: AbortSignal,
     full = true,
+    trace?: Context,
   ): Promise<FighterBundle> {
     if (!idSchema.safeParse(id).success) throw new UnknownFighterError();
     if (!this.data.fighters[id]) {
       if (!this.index) {
-        const index = indexSchema.parse(await this.json("index.json", signal));
+        const index = indexSchema.parse(
+          await this.json("index.json", signal, trace),
+        );
         if (index.datasetVersion !== this.data.datasetVersion)
           throw new Error("Archive version mismatch.");
         this.index = new Set(index.fighters.map((f) => f.id));
@@ -46,13 +67,17 @@ export class FighterStore {
     }
     const cached = this.bundles.get(id);
     if (cached) {
+      trace?.span("fighter", "hit")?.();
       this.bundles.delete(id);
       this.bundles.set(id, cached);
       return cached;
     }
-    if (!full && this.initial?.profile.id === id) return this.initial;
+    if (!full && this.initial?.profile.id === id) {
+      trace?.span("fighter", "hit")?.();
+      return this.initial;
+    }
     const bundle = bundleSchema.parse(
-      await this.json(`fighters/${id}.json`, signal),
+      await this.json(`fighters/${id}.json`, signal, trace),
     );
     if (
       bundle.datasetVersion !== this.data.datasetVersion ||
@@ -66,11 +91,13 @@ export class FighterStore {
       this.bundles.delete(this.bundles.keys().next().value!);
     return bundle;
   }
-  async summary(bundle: FighterBundle, signal: AbortSignal) {
+  async summary(bundle: FighterBundle, signal: AbortSignal, trace?: Context) {
     const ranked = this.data.fighters[bundle.profile.id];
     if (ranked) return ranked;
     if (!this.media) {
-      const media = mediaSchema.parse(await this.json("media.json", signal));
+      const media = mediaSchema.parse(
+        await this.json("media.json", signal, trace),
+      );
       if (media.datasetVersion !== this.data.datasetVersion)
         throw new Error("Media version mismatch.");
       this.media = media;

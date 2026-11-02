@@ -42,3 +42,15 @@ A committed view is the last complete, validated view shown to the user.
 A reference cohort is the historical population used to normalize a score.
 A component contribution is one normalized statistic multiplied by its axis weight.
 A reviewed media role identifies how an image can be used: headshot, half-body, or full-body.
+
+Planned diagnostics terms are defined by [journey measurement](performance-measurement.md):
+
+- A measurement transaction is one attempted navigation, with one final outcome.
+- A gesture groups wheel or pointer inputs and may contain several transactions.
+- A span is a measured stage with start and end timestamps. Spans can overlap.
+- A frame interval is the elapsed time between animation-frame callbacks. It is not a presented-frame count.
+- A baseline is a recorded result for a fixed build, dataset, environment, and operation sequence before optimization.
+
+Stats for nerds is an optional local diagnostics panel. FPS estimate means animation-frame callback cadence, not GPU-presented video or display frames. A long task is a browser-reported main-thread task of at least 50ms; it does not measure total JavaScript CPU utilization. Live snapshots are bounded rolling display data, separate from journey JSON exports.
+
+A pending dial position is visual feedback for an accepted selection request. It is not a committed fighter identity. A readiness cache retains a bounded set of successfully prepared image resources by immutable URL; it does not promise permanent GPU residency.

@@ -1,0 +1,130 @@
+{
+  "date": "2026-11-01",
+  "browser": "156.0.8078.4",
+  "viewport": {
+    "width": 1318,
+    "height": 808
+  },
+  "warmups": 2,
+  "repetitions": 20,
+  "scope": "Warm dial next/previous only; off/capture/panel rotated; independent probe in all modes",
+  "summary": [
+    {
+      "mode": "off",
+      "scene": "dial-next",
+      "n": 20,
+      "latency": {
+        "median": 890.0999999970227,
+        "p95": 926.2000000089465
+      },
+      "frames": {
+        "median": 16.69999999999709,
+        "p95": 33.400000000001455
+      },
+      "scriptMs": {
+        "median": 15.266999999999825,
+        "p95": 18.807999999999993
+      }
+    },
+    {
+      "mode": "off",
+      "scene": "dial-previous",
+      "n": 20,
+      "latency": {
+        "median": 890.5000000059663,
+        "p95": 914.8000000029788
+      },
+      "frames": {
+        "median": 16.69999999999709,
+        "p95": 33.40000000000873
+      },
+      "scriptMs": {
+        "median": 14.47400000000016,
+        "p95": 16.661999999999807
+      }
+    },
+    {
+      "mode": "capture",
+      "scene": "dial-next",
+      "n": 20,
+      "latency": {
+        "median": 886.5999999970227,
+        "p95": 911.4999999970169
+      },
+      "frames": {
+        "median": 16.69999999999709,
+        "p95": 33.400000000001455
+      },
+      "scriptMs": {
+        "median": 15.201999999999998,
+        "p95": 18.26599999999985
+      }
+    },
+    {
+      "mode": "capture",
+      "scene": "dial-previous",
+      "n": 20,
+      "latency": {
+        "median": 890.1999999999971,
+        "p95": 907.5000000029831
+      },
+      "frames": {
+        "median": 16.69999999999709,
+        "p95": 33.400000000001455
+      },
+      "scriptMs": {
+        "median": 15.177000000000135,
+        "p95": 16.914999999999964
+      }
+    },
+    {
+      "mode": "panel",
+      "scene": "dial-next",
+      "n": 20,
+      "latency": {
+        "median": 888.1000000059612,
+        "p95": 926.8000000089378
+      },
+      "frames": {
+        "median": 16.69999999999709,
+        "p95": 33.400000000001455
+      },
+      "scriptMs": {
+        "median": 16.734000000000037,
+        "p95": 20.687000000000126
+      }
+    },
+    {
+      "mode": "panel",
+      "scene": "dial-previous",
+      "n": 20,
+      "latency": {
+        "median": 889.7999999970198,
+        "p95": 941.8000000000029
+      },
+      "frames": {
+        "median": 16.69999999999709,
+        "p95": 33.40000000000873
+      },
+      "scriptMs": {
+        "median": 17.699999999999818,
+        "p95": 21.205000000000155
+      }
+    }
+  ],
+  "rawReceipt": {
+    "path": "work/m7/panel-overhead.json",
+    "sha256": "9b8fac5f3488a53b7df3e5531424a597e4c741f0f863cab78b3416acd21c990b",
+    "versioned": false
+  },
+  "buildId": "K6Wd7p6p_kTUYvSNMDxJj",
+  "sourceCommit": "49be350c842d89f0a3ec1f48000891267d75abd3",
+  "sourceState": "uncommitted candidate",
+  "sourceTreeSha256": "662431325823d498820925ec6a802a472840e680246dae890fd2a0d7c9b93867",
+  "limitations": [
+    "Warm dial selection in headless Chromium only",
+    "Script counters include external probe and automation",
+    "No native task attribution or cross-device panel overhead guarantee",
+    "No full M7 baseline acceptance"
+  ]
+}
