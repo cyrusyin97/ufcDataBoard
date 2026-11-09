@@ -356,7 +356,7 @@ test("opponent links preserve modified click and repeated navigation has one det
   await settle(page, feather.defaultFighterId);
   const length = await page.evaluate(() => window.history.length);
   const newPagePromise = context.waitForEvent("page");
-  await opponent(page, ranked).click({ modifiers: ["Meta"] });
+  await opponent(page, ranked).click({ modifiers: ["ControlOrMeta"] });
   const newPage = await newPagePromise;
   await settle(newPage, ranked);
   await settle(page, feather.defaultFighterId);

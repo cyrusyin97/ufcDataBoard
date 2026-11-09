@@ -256,6 +256,21 @@ test("desktop captures, missing image fallback, and narrow screen access", async
   const reference = JSON.parse(
     readFileSync("docs/evidence/m2/v8-geometry.json", "utf8"),
   );
+  // Profile content can change with a dataset update. Check shared column
+  // alignment and footer placement independently of the historical content height.
+  const experience = geometry["[data-region=experience]"];
+  expect(experience.height).toBeGreaterThanOrEqual(520);
+  for (const selector of [
+    "[aria-label='Selected fighter figure']",
+    "[aria-label='Fighter profile']",
+  ]) {
+    expect(
+      Math.abs(geometry[selector].height - (experience.height - 1)),
+    ).toBeLessThanOrEqual(1);
+  }
+  expect(
+    Math.abs(geometry.footer.y - (experience.y + experience.height)),
+  ).toBeLessThanOrEqual(1);
   for (const [actual, expected] of [
     ["header", ".masthead"],
     ["[data-region=experience]", ".experience"],
@@ -264,11 +279,22 @@ test("desktop captures, missing image fallback, and narrow screen access", async
     ["[aria-label='Fighter profile']", ".stats-panel"],
     ["footer", "footer"],
   ]) {
-    for (const field of ["x", "y", "width", "height"] as const)
+    for (const field of ["x", "y", "width", "height"] as const) {
+      if (
+        (field === "height" &&
+          [
+            "[data-region=experience]",
+            "[aria-label='Selected fighter figure']",
+            "[aria-label='Fighter profile']",
+          ].includes(actual)) ||
+        (actual === "footer" && field === "y")
+      )
+        continue;
       expect(
         Math.abs(geometry[actual][field] - reference[expected][field]),
         `${actual} ${field}`,
       ).toBeLessThanOrEqual(1);
+    }
   }
   await page.screenshot({
     path: "test-results/m2-featherweight.png",

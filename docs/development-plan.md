@@ -234,4 +234,4 @@ M9 checkpoint, 2026-11-09: The first manual cloud run passed. The verified datab
 
 ## Weekly publication implementation
 
-Date: 2026-11-09. The user approved automatic weekly source updates, website packaging, and deployment. The workflow, reviewed derivative reuse, descriptor URL support, publication guards, and deployment polling are implemented. First cloud execution and deployment verification are pending. Ranking refresh is separate. See [weekly operation](collector-migration.md#weekly-website-publication).
+Date: 2026-11-09. The user approved automatic weekly source updates, website packaging, and deployment. The workflow, reviewed derivative reuse, descriptor URL support, publication guards, and deployment polling are implemented. First full cloud execution and deployed HTTP verification passed in run `42550859658`. Future publishing runs include the full browser suite. Ranking refresh is separate. See [weekly operation](collector-migration.md#weekly-website-publication).

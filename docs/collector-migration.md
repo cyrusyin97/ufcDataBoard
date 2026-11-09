@@ -1,6 +1,6 @@
 # Collector migration
 
-Updated: 2026-11-09. Status: The manual cloud run passed and its source snapshot is published. Website automation and schedule cutover remain pending.
+Updated: 2026-11-09. Status: Weekly automation is active. The first full collection, website publication, and Vercel deployment passed in run `42550859658`.
 
 ## Scope and source
 
@@ -43,9 +43,9 @@ The workflow:
 
 The collection job has read-only repository permissions. Only the optional publisher has contents-write permission. A single concurrency group serializes manual runs. A failed job cannot publish its candidate. Actions artifacts are short-lived review evidence, not the durable baseline store. Database releases contain source data; they are separate from website data packages and do not approve website promotion.
 
-## Cutover and remaining work
+## Migration checkpoint before weekly activation
 
-Before activating a schedule:
+The manual migration checkpoint recorded these gates. The weekly implementation and first successful production run now supersede this checkpoint.
 
 - Baseline reconciliation passed locally: the selected source SHA-256 matches the production manifest. Integrity and append-only checks do not certify every statistical value. See the candidate report.
 - The first [manual candidate job](https://github.com/cyrusyin97/ufcDataBoard/actions/runs/41417007530) passed. The verified [database snapshot](https://github.com/cyrusyin97/ufcDataBoard/releases/tag/db-snapshot-41417007530-1) is available for the next explicit baseline selection. Use the SHA-256 in the [candidate report](collector-validation.md#cloud-candidate-and-durable-snapshot). GitHub release immutability is off. Treat each versioned tag as write-once and verify the pinned checksum when downloading it.
@@ -71,7 +71,7 @@ The weekly job performs these steps in order.
 1. Verify and restore the previous website artifact and database snapshot.
 2. Collect into a new database copy and validate its integrity, identities, counts, and bout pairing.
 3. Export with `--media-release` from the verified previous website version. Validate each media role against current source-hash reviews. Verify image bytes before copying derivatives. Fail when a reviewed role is missing. Retain ranking lists and their snapshot dates.
-4. Validate the dataset, package it, and restore it into a separate directory. Check media equality, application tests, production build, and bout browser tests.
+4. Validate the dataset, package it, and restore it into a separate directory. Check media equality, application tests, production build, and the full browser suite.
 5. Publish separate source and website releases with run/attempt tags. Verify uploaded asset hashes. Keep application Latest selection. An incomplete upload leaves a draft for inspection.
 6. Check that main still matches the run's starting commit. Commit both descriptors together and push normally. A concurrent change rejects promotion. Published orphan artifacts can remain available for inspection.
 7. Call the Vercel Deploy Hook, wait for the expected public dataset version, and run deployed HTTP checks. A failed or timed-out deployment fails the workflow. Inspect Vercel before retrying. A fresh run starts from the descriptors now in main.

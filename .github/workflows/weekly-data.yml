@@ -72,7 +72,7 @@ jobs:
           npm run test:pipeline
           npm run check
           npx playwright install --with-deps chromium
-          npm run test:e2e -- tests/e2e/bout.spec.ts
+          npm run test:e2e
       - name: Publish checked releases and advance descriptors
         if: env.VALIDATE_ONLY != 'true'
         run: python scripts/weekly-release.py publish

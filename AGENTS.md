@@ -88,7 +88,7 @@ Do not describe a planned feature as complete.
 | M6        | Bout analysis and weighted radar       | Accepted; release handled in M5                 |
 | M7        | Journey performance measurement        | In progress; measurement validation             |
 | M8        | Interaction performance fixes          | First pass implemented; local validation        |
-| M9        | Collector consolidation and automation | Weekly pipeline implemented; validation pending |
+| M9        | Collector consolidation and automation | Weekly pipeline active; first deployment passed |
 
 Update this index when document paths change.
 Update milestone status when its acceptance checks pass.

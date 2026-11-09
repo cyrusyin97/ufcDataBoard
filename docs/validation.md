@@ -459,3 +459,10 @@ The corrected candidate passes integrity and identity retention checks, full web
 
 Date: 2026-11-09.
 Manual run `41417007530` passed. The download checksum and independent snapshot validation match the Actions receipts. All four asset digests in the published source release match the local files. Website export, packaging, isolated restoration, ranking registry equality, and reviewed media equality passed. Read [cloud candidate validation](collector-validation.md#cloud-candidate-and-durable-snapshot) for dates, versions, and hashes. The cloud media recovery path and browser preview remain unverified. The website version and schedule did not change.
+
+## Weekly automatic publication
+
+Date: 2026-11-09.
+[Run 42550859658](https://github.com/cyrusyin97/ufcDataBoard/actions/runs/42550859658) completed collection, media reuse on a clean runner, dataset validation, packaging, isolated restoration, 14 collector tests, 39 pipeline tests, 72 application unit tests, production build, and 10 bout browser checks. It published both releases and committed both descriptors as `543a9b9`. Vercel deployment and the deployed HTTP checks passed. The public version is `2026-11-09-6aead45623d69efa`. Its source contains 4,586 fighters, 1,281 events, 23,234 perspective rows, 11,617 bout details, and 73,612 round-stat rows. Ranking snapshots and reviewed media were reused. Lint retains the existing release-check unused-variable warning.
+
+The parallel ordinary CI run first failed two existing browser assertions. The modified-click test used macOS Meta on Linux. It now uses ControlOrMeta. The historical fixed card-height assertion was replaced with shared-column alignment, minimum content height, and footer placement checks, while retaining the fixed reference positions and widths. Both corrected checks pass locally. Weekly publication now runs the full browser suite before publication. The first validate-only cloud run was cancelled during dependency setup after the deployment secret became available.

@@ -1,6 +1,6 @@
 # Deployment guide
 
-Status: M5 preparation is in progress. No Vercel deployment exists.
+Status: The repository is hosted on Vercel. Weekly data publication is configured through the collector workflow. See [weekly operation](collector-migration.md#weekly-website-publication).
 Read [the M5 report](m5-report.md) for completed local checks and open release inputs.
 
 ## Hosting model
@@ -32,9 +32,9 @@ A preview deployment gives reviewers a URL before production release.
 5. Set the project root to this directory.
 6. Use `npm ci` for installation.
 7. Use `npm run release:build` for the build command.
-8. Set `UFC_DATASET_URL` to an approved HTTPS artifact URL.
-   Keep its exact version and archive checksum in `data/release.json`.
-   The build restores and checks this artifact. It then checks media publication rights.
+8. Pin the HTTPS `artifactUrl`, dataset version, and archive checksum in `data/release.json`.
+   `UFC_DATASET_URL` is a fallback for older descriptors.
+   The build restores and checks this artifact.
 9. Deploy a preview.
 10. Run the M5 checks against its URL.
     Check all published division URLs and their detail links.
@@ -50,7 +50,7 @@ Read the pinned descriptor and [current artifact record](data-operations.md#curr
 Follow [artifact publication](data-operations.md#publish-a-build-artifact) to configure its HTTPS download URL.
 A successful role review does not supply publication rights.
 The current release has 528 media roles with unknown publication rights.
-`release:check` blocks the hosting build for those roles.
+The user previously disabled the media-rights blocking check for the hosted beta. Role approval and publication rights remain separate.
 
 ## Local release commands
 
