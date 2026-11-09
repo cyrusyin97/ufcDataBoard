@@ -1,6 +1,6 @@
 # Collector migration
 
-Date: 2026-11-02. Status: Local migration and isolated candidate collection validated. Remote cutover remains pending.
+Updated: 2026-11-09. Status: The manual cloud run passed and its source snapshot is published. Website automation and schedule cutover remain pending.
 
 ## Scope and source
 
@@ -48,10 +48,10 @@ The collection job has read-only repository permissions. Only the optional publi
 Before activating a schedule:
 
 - Baseline reconciliation passed locally: the selected source SHA-256 matches the production manifest. Integrity and append-only checks do not certify every statistical value. See the candidate report.
-- Run and review one manual candidate job after these files are committed and pushed.
-- Choose the durable immutable baseline and the procedure that selects the next baseline. The current workflow requires explicit selection; it does not maintain a rolling pointer.
+- The first [manual candidate job](https://github.com/cyrusyin97/ufcDataBoard/actions/runs/41417007530) passed. The verified [database snapshot](https://github.com/cyrusyin97/ufcDataBoard/releases/tag/db-snapshot-41417007530-1) is available for the next explicit baseline selection. Use the SHA-256 in the [candidate report](collector-validation.md#cloud-candidate-and-durable-snapshot). GitHub release immutability is off. Treat each versioned tag as write-once and verify the pinned checksum when downloading it.
+- Define how scheduled runs select the next baseline. The current workflow requires explicit selection and has no rolling pointer.
 - Keep the old collector disabled and establish one collection owner. Retain old snapshots for rollback.
-- Restore the reviewed media seed before export and implement independent ranking refresh/identity checks.
+- Restore reviewed media before export on a clean runner. Keep ranking refresh and its identity checks separate. This data update reuses the existing ranking lists and dates.
 - Connect validated candidates to export, package validation, immutable dataset publication, descriptor updates, preview checks, and website promotion.
 
 The website's `data/release.json`, public pointer, Vercel environment, and active dataset are unchanged. The migration is not an end-to-end automatic data release implementation.
@@ -59,3 +59,23 @@ The website's `data/release.json`, public pointer, Vercel environment, and activ
 ## Historical pairing closure
 
 Debut profiles can add earlier DWCS fights that are absent from the recent UFC event listing. After event reconciliation, inspect all fight perspectives. For a single-sided fight, read its source details, validate both stable fighter IDs, fetch the missing opponent profile, and store the source details. Repeat until histories are paired or the extra request budget is exhausted. `--repair-limit` defaults to 64 additional requests. A source identity mismatch, unavailable opponent history, or exhausted budget fails the job; no inverse outcome/statistics are fabricated. Candidate validation independently rejects unpaired fights before snapshot publication.
+
+## Weekly website publication
+
+Approved 2026-11-09. `.github/workflows/weekly-data.yml` runs each Monday at 14:17 UTC (22:17 Asia/Singapore). It also accepts a manual run. `validate_only` runs collection and all checks without publication. Both collector workflows share one concurrency group. The former ufcdb schedule remains disabled.
+
+`data/collector.json` pins the last published source snapshot and checksum. `data/release.json` pins the website version, checksum, and HTTPS artifact URL. The descriptor URL takes precedence over the legacy `UFC_DATASET_URL` environment variable. Local `--artifact` remains an explicit override.
+
+The weekly job performs these steps in order.
+
+1. Verify and restore the previous website artifact and database snapshot.
+2. Collect into a new database copy and validate its integrity, identities, counts, and bout pairing.
+3. Export with `--media-release` from the verified previous website version. Validate each media role against current source-hash reviews. Verify image bytes before copying derivatives. Fail when a reviewed role is missing. Retain ranking lists and their snapshot dates.
+4. Validate the dataset, package it, and restore it into a separate directory. Check media equality, application tests, production build, and bout browser tests.
+5. Publish separate source and website releases with run/attempt tags. Verify uploaded asset hashes. Keep application Latest selection. An incomplete upload leaves a draft for inspection.
+6. Check that main still matches the run's starting commit. Commit both descriptors together and push normally. A concurrent change rejects promotion. Published orphan artifacts can remain available for inspection.
+7. Call the Vercel Deploy Hook, wait for the expected public dataset version, and run deployed HTTP checks. A failed or timed-out deployment fails the workflow. Inspect Vercel before retrying. A fresh run starts from the descriptors now in main.
+
+Set the repository Actions secret `VERCEL_DEPLOY_HOOK` to a Vercel hook that targets main. Create it under Vercel Project Settings > Git > Deploy Hooks. The workflow checks this secret before a publishing run. Automatic commits use `GITHUB_TOKEN`. The hook explicitly starts deployment because automatic commits do not start another ordinary GitHub push workflow. Full validation runs before publication in this same workflow.
+
+For rollback, restore both descriptors from a prior successful data commit and push the change. Retain the referenced release assets. To pause automatic updates, disable `Weekly website data release` in Actions. GitHub schedules can be delayed and public repositories can disable inactive schedules after 60 days. Check Actions failure notifications and the workflow's recorded deployment result.

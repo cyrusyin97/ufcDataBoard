@@ -228,6 +228,10 @@ The user approved approximately one-second entry to fighter history and bout det
 ## M9: Collector consolidation and automated data updates
 
 The user approved collector migration on 2026-11-02. First step implemented and checked: collectors, CLI paths, offline tests, CI coverage, and a manual isolated candidate workflow. See [migration report](collector-migration.md).
-Remaining gates: authoritative baseline reconciliation, manual candidate run, durable snapshot selection, single-owner schedule activation, reviewed media seed recovery, ranking refresh, validated dataset publication, descriptor update, and preview/production verification. No collection or website promotion is authorized by normal CI. Do not mark full automation complete from code migration.
+No collection or website promotion is authorized by normal CI. Do not mark full automation complete from code migration.
 
-M9 checkpoint, 2026-11-02: The production-matching baseline and first local candidate update are validated through export, packaging, and restoration. Historical pairing closure was added after the real export caught a defect. See [candidate validation](collector-validation.md). Remote first run, durable snapshot publication, ranking refresh, clean-runner media recovery, and website promotion remain pending.
+M9 checkpoint, 2026-11-09: The first manual cloud run passed. The verified database snapshot is available as `db-snapshot-41417007530-1`. Its local website export passed packaging and isolated restoration. This candidate reuses the existing rankings and media. Clean-runner media recovery, website package publication, descriptor update, preview checks, and schedule activation remain pending. Ranking refresh is a separate task. See [candidate validation](collector-validation.md#cloud-candidate-and-durable-snapshot).
+
+## Weekly publication implementation
+
+Date: 2026-11-09. The user approved automatic weekly source updates, website packaging, and deployment. The workflow, reviewed derivative reuse, descriptor URL support, publication guards, and deployment polling are implemented. First cloud execution and deployment verification are pending. Ranking refresh is separate. See [weekly operation](collector-migration.md#weekly-website-publication).

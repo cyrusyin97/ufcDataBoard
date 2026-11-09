@@ -1,0 +1,105 @@
+name: Weekly website data release
+on:
+  schedule:
+    - cron: "17 14 * * 1"
+  workflow_dispatch:
+    inputs:
+      validate_only:
+        description: Collect and validate without publishing or deploying
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: collector-database
+  cancel-in-progress: false
+defaults:
+  run:
+    shell: bash
+jobs:
+  release:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      VALIDATE_ONLY: ${{ inputs.validate_only || false }}
+      VERCEL_DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check deployment configuration
+        run: |
+          if [[ "$VALIDATE_ONLY" != true && -z "$VERCEL_DEPLOY_HOOK" ]]; then
+            echo 'Configure the VERCEL_DEPLOY_HOOK Actions secret before automatic publication.' >&2
+            exit 1
+          fi
+      - run: npm ci
+      - run: |
+          python -m venv .venv
+          .venv/bin/pip install -r requirements-media.txt -r requirements-collector-test.txt
+      - name: Restore website and database baselines
+        run: |
+          npm run data:restore -- --root work/weekly/previous
+          mkdir -p work/weekly/baseline work/weekly/candidate
+          tag=$(jq -r .tag data/collector.json)
+          sha=$(jq -r .sha256 data/collector.json)
+          [[ "$tag" =~ ^db-snapshot-[0-9]+-[0-9]+$ ]]
+          gh release download "$tag" --pattern ufc.db --dir work/weekly/baseline
+          .venv/bin/python -m scripts.collector.snapshot prepare --baseline work/weekly/baseline/ufc.db --candidate work/weekly/candidate/ufc.db --sha256 "$sha" --receipt work/weekly/candidate/baseline.json
+      - name: Collect and validate source data
+        run: |
+          .venv/bin/python -m scripts.collector.update_db --db work/weekly/candidate/ufc.db
+          .venv/bin/python -m scripts.collector.snapshot validate --baseline work/weekly/baseline/ufc.db --candidate work/weekly/candidate/ufc.db --receipt work/weekly/candidate/snapshot.json
+          (cd work/weekly/candidate && sha256sum ufc.db > ufc.db.sha256)
+      - name: Export with verified existing media and rankings
+        run: |
+          previous=$(jq -r .datasetVersion data/release.json)
+          npm run data:export -- --db work/weekly/candidate/ufc.db --as-of "$(TZ=Asia/Singapore date +%F)" --bout-policy data/config/bout-policy.json --media-release "work/weekly/previous/v1/$previous" --output work/weekly/exports --publish-root public/data
+          npm run data:pack -- --output work/weekly/packages
+          python scripts/weekly-release.py prepare
+          npm run data:restore -- --descriptor work/weekly/packages/release.json --artifact "$(jq -r .archive work/weekly/release-state.json)" --root work/weekly/restored
+      - name: Validate application against candidate data
+        run: |
+          npm run test:collector
+          npm run test:pipeline
+          npm run check
+          npx playwright install --with-deps chromium
+          npm run test:e2e -- tests/e2e/bout.spec.ts
+      - name: Publish checked releases and advance descriptors
+        if: env.VALIDATE_ONLY != 'true'
+        run: python scripts/weekly-release.py publish
+      - name: Deploy and verify website version
+        if: env.VALIDATE_ONLY != 'true'
+        run: |
+          curl --fail --silent --show-error --retry 3 --request POST "$VERCEL_DEPLOY_HOOK" --output work/weekly/deploy.json
+          version=$(jq -r .datasetVersion data/release.json)
+          for attempt in $(seq 1 40); do
+            actual=$(curl --fail --silent --max-time 20 "https://ufc-data-board-gamma.vercel.app/data/current.json?run=$GITHUB_RUN_ID-$attempt" | jq -r .datasetVersion) || actual=unavailable
+            if [[ "$actual" == "$version" ]]; then
+              npm run release:http -- https://ufc-data-board-gamma.vercel.app
+              echo "Deployed dataset $version" >> "$GITHUB_STEP_SUMMARY"
+              exit 0
+            fi
+            sleep 15
+          done
+          echo 'Production did not serve the expected dataset. Inspect Vercel and rerun the workflow after recovery.' >&2
+          exit 1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: weekly-data-evidence-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            work/weekly/candidate/*.json
+            work/weekly/candidate/*.sha256
+            work/weekly/packages/release.json
+            work/weekly/release-state.json
+            test-results/
+          retention-days: 30

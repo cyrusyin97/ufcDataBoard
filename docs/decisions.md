@@ -302,3 +302,9 @@ Transient dial position can follow accepted intent independently of committed id
 Date: 2026-11-02. The user approved the first migration step.
 Move collector code, updater tests, and workflow ownership from ufcdb into this repository. Keep a dedicated Python package and lightweight dependencies. Collection remains an explicit offline-operations command, separate from the web runtime and read-only exporter.
 Preserve source provenance and use isolated, checksum-verified candidates. Start with manual invocation and optional immutable source snapshot publication. Do not activate a second schedule or promote stale upstream data. Baseline reconciliation, media seed recovery, ranking updates, and automatic website publication remain separate delivery gates.
+
+## D32: Publish weekly data with reviewed derivative reuse
+
+Date: 2026-11-09. The user requested weekly collection, packaging, and automatic website publication. Ranking refresh remains outside this update.
+Use the last verified website package as the media source for a clean runner. Preserve source hashes, role reviews, and variant bytes. This avoids dependence on a local original-image cache. New or changed reviewed roles require a separate media release before weekly reuse can pass.
+Publish checked artifacts before atomically advancing the source and website descriptors in one Git commit. Reject promotion when main advanced during collection. Use a Deploy Hook to explicitly request Vercel deployment, and verify the production dataset version afterward. Keep the previous artifacts for rollback. Use Monday 22:17 Asia/Singapore, offset from the hour to reduce schedule congestion.

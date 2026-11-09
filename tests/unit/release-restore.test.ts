@@ -1,4 +1,4 @@
-import { afterEach, describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import {
   mkdtempSync,
   mkdirSync,
@@ -18,6 +18,7 @@ import {
 const version = "2026-10-14-0123456789abcdef";
 const directories: string[] = [];
 afterEach(() => {
+  vi.unstubAllGlobals();
   directories
     .splice(0)
     .forEach((p) => rmSync(p, { recursive: true, force: true }));
@@ -56,6 +57,33 @@ async function fixture(
   return { artifact, root, descriptor: { datasetVersion: version, sha256 } };
 }
 describe("release archive restoration", () => {
+  it("pins the descriptor URL ahead of a stale environment URL", async () => {
+    const input = await fixture("pointer");
+    const bytes = readFileSync(input.artifact);
+    const request = vi.fn().mockResolvedValue({
+      ok: true,
+      url: "https://example.com/new.tar.gz",
+      body: new ReadableStream({
+        start(controller) {
+          controller.enqueue(bytes);
+          controller.close();
+        },
+      }),
+    });
+    vi.stubGlobal("fetch", request);
+    await expect(
+      restoreDataset({
+        ...input,
+        artifact: undefined,
+        descriptor: {
+          ...input.descriptor,
+          artifactUrl: "https://example.com/new.tar.gz",
+        },
+        url: "https://example.com/old.tar.gz",
+      }),
+    ).rejects.toThrow("pointer differs");
+    expect(request.mock.calls[0][0]).toBe("https://example.com/new.tar.gz");
+  });
   it.each(["outside", "symlink", "duplicate"] as const)(
     "rejects %s entries without replacing the active pointer",
     async (kind) => {

@@ -22,7 +22,7 @@ jobs:
         id: dataset
         shell: bash
         run: |
-          if [ -n "$UFC_DATASET_URL" ]; then
+          if [ -n "$UFC_DATASET_URL" ] || node -e 'process.exit(JSON.parse(require("fs").readFileSync("data/release.json")).artifactUrl ? 0 : 1)'; then
             npm run data:restore
             echo "ready=true" >> "$GITHUB_OUTPUT"
           else

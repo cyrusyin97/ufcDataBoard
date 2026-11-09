@@ -25,3 +25,5 @@ Revision 1.8, 2026-11-02: User requested a compact translucent Stats for nerds p
 Revision 1.9, 2026-11-02: Consolidate explicit source collection into scripts/collector with offline CI tests and isolated manual candidates. Keep scheduling, database freshness reconciliation, and website data promotion as separate gates.
 
 Revision 1.10, 2026-11-02: First live candidate validation exposed single-sided historical fights introduced by debut profiles. Require bounded source-based opponent closure and independent candidate pairing validation before export or publication.
+
+Revision 1.11, 2026-11-09: Approve weekly source collection, reviewed derivative reuse, checked website packaging, paired descriptor commits, and automatic Vercel deployment with version verification. Ranking refresh remains separate. Website descriptors now pin the download URL with version and checksum.

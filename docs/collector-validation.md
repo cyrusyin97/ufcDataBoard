@@ -42,4 +42,15 @@ All 14 collector/snapshot tests and all 38 existing pipeline tests pass. Expecte
 
 The original source database, `data/release.json`, public current pointer, production dataset, and Vercel configuration remain unchanged. No source snapshot or package was uploaded. No schedule was enabled and no GitHub workflow was executed remotely. The migration code remains uncommitted.
 
-Next, commit the migrated workflow and establish a durable verified source snapshot for a manual GitHub Actions run. Keep website promotion gated on ranking refresh, reviewed media seed restoration on a clean runner, conflict review, and application/preview checks. The rankings in this candidate still use the existing 2026-10-14 snapshot. Local media availability does not prove that a clean runner can rebuild them.
+At this checkpoint, the next step was to run the collector on GitHub and preserve the verified result. This local candidate reused the existing ranking snapshots. Local media availability does not establish clean-runner recovery.
+
+## Cloud candidate and durable snapshot
+
+Date: 2026-11-09.
+The [manual workflow run](https://github.com/cyrusyin97/ufcDataBoard/actions/runs/41417007530) passed on commit `c018191a330b6ea75174f8e36749085147206325`. The downloaded database matches the Actions checksum. Independent validation against the accepted baseline reproduced the Actions receipt byte for byte. Integrity, identity retention, nondecreasing counts, and two fighter perspectives per bout passed. The counts match the local candidate above. The latest completed event in the snapshot is UFC Fight Night: Moicano vs. Nolan, 2026-10-31.
+
+The [database release](https://github.com/cyrusyin97/ufcDataBoard/releases/tag/db-snapshot-41417007530-1) contains `ufc.db`, `ufc.db.sha256`, `baseline.json`, and `snapshot.json`. The four GitHub asset digests match their local SHA-256 checksums. The database is 20,955,136 bytes. Its SHA-256 is `697e3d87b3949fe071d8f70a3e7f4a87f48b07c9a33ebda2853f1206ad359809`. GitHub release immutability is off for this repository. Use the exact tag and verify this checksum. The app release `beta-0.0.2` remains Latest.
+
+The normal exporter generated website candidate `2026-11-09-0a2e8b3b48f816fd` from the cloud snapshot, using the existing local reviewed media. Dataset checks, packaging, and isolated restoration passed. The restored package contains 4,586 fighters, 23,202 fighter-perspective records, 11,601 bouts with analysis, and 6,215 scoring references. All 11 ranking lists and their snapshot dates (2026-10-13 or 2026-10-14) match the prior release. All 528 media roles and 1,232 image files match the prior release, apart from version prefixes in the media URLs.
+
+The local archive is `work/collector-migration/cloud-41417007530/packages/ufc-data-2026-11-09-0a2e8b3b48f816fd.tar.gz` (63,466,275 bytes). Its SHA-256 is `0fc80b19eef73ad1c161faad5d9e0e11e16fc88b0232090e62921edf572b5113`. Its website descriptor and checksum file are in the same directory. Website package upload, clean-runner media recovery, browser preview, and deployment remain pending. Ranking refresh is outside this update. The published website still uses its previous dataset.

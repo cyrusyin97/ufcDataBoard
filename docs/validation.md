@@ -454,3 +454,8 @@ Normal CI now includes the offline collector suite. The manual workflow has not 
 Date: 2026-11-02.
 The source baseline SHA-256 matches the production manifest. Three UFC events were collected on a copy. The first export rejected three single-sided DWCS histories; bounded source-ID-based opponent closure and an independent pairing gate were added. Fourteen collector/snapshot tests and 38 pipeline tests pass.
 The corrected candidate passes integrity and identity retention checks, full website export checks, packaging, and isolated restoration. The original source hash and active website version remain unchanged. Read [collector candidate validation](collector-validation.md) and its receipt for counts, checksums, and limits. Rankings and media discovery were not refreshed; no remote workflow, snapshot publication, website deployment, or new application browser matrix ran.
+
+## First cloud collector snapshot and website candidate
+
+Date: 2026-11-09.
+Manual run `41417007530` passed. The download checksum and independent snapshot validation match the Actions receipts. All four asset digests in the published source release match the local files. Website export, packaging, isolated restoration, ranking registry equality, and reviewed media equality passed. Read [cloud candidate validation](collector-validation.md#cloud-candidate-and-durable-snapshot) for dates, versions, and hashes. The cloud media recovery path and browser preview remain unverified. The website version and schedule did not change.

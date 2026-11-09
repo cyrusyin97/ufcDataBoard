@@ -1,4 +1,5 @@
 {
   "datasetVersion": "2026-10-14-5949094d82ded09a",
-  "sha256": "e5372188dfa6dff76358dec2754f597a87438bbf16bed64309e1bfa841184951"
+  "sha256": "e5372188dfa6dff76358dec2754f597a87438bbf16bed64309e1bfa841184951",
+  "artifactUrl": "https://github.com/cyrusyin97/ufcDataBoard/releases/download/beta-0.0.2/ufc-data-2026-10-14-5949094d82ded09a.tar.gz"
 }

@@ -12,6 +12,7 @@ from pathlib import Path
 from common import atomic_json, canonical, digest, file_digest, read_json
 from media import TRANSFORM_VERSION, cached_variants
 from bout_analysis import prepare_bouts
+from reuse_media import reuse_media
 
 PLACEHOLDERS = {'', '--', '—', '-', 'n/a', 'N/A'}
 
@@ -80,7 +81,7 @@ def validate_config(config, ids):
             raise ValueError('Invalid published champion')
 
 
-def prepare(db_path, config_path, cache_root, reviews_path, output_root, as_of, bout_policy_path=None):
+def prepare(db_path, config_path, cache_root, reviews_path, output_root, as_of, bout_policy_path=None, media_release=None):
     db_path = Path(db_path)
     before = file_digest(db_path)
     config = read_json(config_path)
@@ -171,7 +172,13 @@ def prepare(db_path, config_path, cache_root, reviews_path, output_root, as_of, 
     stage = Path(tempfile.mkdtemp(prefix='pending-', dir=output_root))
     media_dir = stage / 'media'
     source_media = []
-    for key, asset in sorted(receipt['assets'].items()):
+    if media_release:
+        reused = reuse_media(media_release, stage, reviews, ids, mappings)
+        for fid, roles in reused.items():
+            public_media[fid].update(roles)
+            source_media.extend({'fighterId': fid, 'role': role, 'sha256': asset['sourceSha256']}
+                                for role, asset in roles.items())
+    for key, asset in sorted(receipt['assets'].items()) if not media_release else []:
         review = reviews.get(key)
         if not review or review['state'] != 'approved':
             continue
@@ -237,10 +244,11 @@ def main():
     parser.add_argument('--output', default='work/exports')
     parser.add_argument('--as-of', required=True)
     parser.add_argument('--bout-policy', help='Enable bout analysis with a versioned policy JSON')
+    parser.add_argument('--media-release', help='Verified previous release with reviewed media variants')
     args = parser.parse_args()
     if not args.db: parser.error('Set UFC_DB_PATH or provide --db')
     dt.date.fromisoformat(args.as_of)
-    print(json.dumps(prepare(args.db, args.config, args.cache, args.reviews, args.output, args.as_of, args.bout_policy)))
+    print(json.dumps(prepare(args.db, args.config, args.cache, args.reviews, args.output, args.as_of, args.bout_policy, args.media_release)))
 
 
 if __name__ == '__main__': main()

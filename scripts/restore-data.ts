@@ -18,6 +18,10 @@ import { checkDataset } from "./check-data.ts";
 export const descriptorSchema = z
   .object({
     datasetVersion: z.string().regex(/^\d{4}-\d{2}-\d{2}-[a-f0-9]{16}$/),
+    artifactUrl: z
+      .url()
+      .refine((url) => new URL(url).protocol === "https:")
+      .optional(),
     sha256: z.string().regex(/^[a-f0-9]{64}$/),
   })
   .strict();
@@ -76,13 +80,14 @@ export async function restoreDataset(options: {
   root: string;
 }) {
   const descriptor = descriptorSchema.parse(options.descriptor);
-  if (!options.artifact && !options.url)
+  const url = descriptor.artifactUrl ?? options.url;
+  if (!options.artifact && !url)
     throw new Error(
       "Set UFC_DATASET_URL or pass --artifact. Local public files are not a release source.",
     );
   const bytes = options.artifact
     ? readFileSync(options.artifact)
-    : await download(options.url!);
+    : await download(url!);
   if (bytes.length > maxCompressed || digest(bytes) !== descriptor.sha256)
     throw new Error("Dataset archive checksum or size differs.");
   const stage = mkdtempSync(path.join(tmpdir(), "ufc-release-"));
