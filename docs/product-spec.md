@@ -1,6 +1,6 @@
 # Product Spec — UFC Rankings
 
-Version: 1.13. Updated: 2026-11-12.
+Version: 1.14. Updated: 2026-11-12.
 
 This index and the topic documents below form the sole current product logic standard.
 Each topic has one owning document. Update that document instead of copying its rules into plans, reports, or runbooks.

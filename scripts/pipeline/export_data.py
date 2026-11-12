@@ -201,20 +201,22 @@ def prepare(db_path, config_path, cache_root, reviews_path, output_root, as_of, 
     if analysis is not None:
         source['boutAnalysisSha256'] = digest(canonical(analysis))
         source['boutDeliveryVersion'] = 2
+    source['fighterDeliveryVersion'] = 2
     version = as_of + '-' + digest(canonical(source))[:16]
+    for roles in public_media.values():
+        for asset in roles.values():
+            if asset:
+                for variant in asset['variants']: variant['url'] = '/data/v1/' + version + '/' + variant.pop('path')
     bundles = []
     for profile in profiles:
-        value = {'schemaVersion': 1, 'datasetVersion': version, 'profile': profile, 'records': histories[profile['id']]}
+        value = {'schemaVersion': 1, 'datasetVersion': version, 'profile': profile, 'records': histories[profile['id']],
+                 'media': public_media[profile['id']]}
         bundles.append(value)
         atomic_json(stage / 'fighters' / (profile['id'] + '.json'), value)
     atomic_json(stage / 'index.json', {'schemaVersion': 1, 'datasetVersion': version,
         'fighters': [{'id': p['id'], 'name': p['name'], 'displayName': p['displayName'], 'ufcSlug': p['ufcSlug']} for p in profiles]})
     registry = {'schemaVersion': 1, 'datasetVersion': version, 'defaultDivisionId': config['defaultDivisionId'], 'divisions': config['divisions']}
     atomic_json(stage / 'divisions.json', registry)
-    for roles in public_media.values():
-        for asset in roles.values():
-            if asset:
-                for variant in asset['variants']: variant['url'] = '/data/v1/' + version + '/' + variant.pop('path')
     atomic_json(stage / 'media.json', {'schemaVersion': 1, 'datasetVersion': version, 'fighters': public_media})
     atomic_json(stage / 'conflicts.json', {'schemaVersion': 1, 'datasetVersion': version, 'observations': conflicts})
     if analysis is not None:

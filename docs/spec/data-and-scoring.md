@@ -74,3 +74,5 @@ Executable policy: [bout-policy.json](../../data/config/bout-policy.json). Runti
 Changes require an explicit spec/formula or policy version revision and rebuilt references; never silently reinterpret existing artifacts.
 
 Embedded reference update, 2026-11-12: A bout bundle can contain its scoring reference in `reference`. A `null` value means that the bout has no reference. The embedded reference identity must equal `referenceId`, and its content must equal the separate reference file. The same reference checks apply before analysis renders. A bundle without this field uses the separate reference file.
+
+Embedded media update, 2026-11-12: A fighter bundle can contain its media roles in `media`. The value has the three roles of the media manifest entry for that fighter. Absent roles remain `null`. Each variant URL must use the dataset version of the bundle. The embedded value must equal the media manifest entry. The media manifest remains the source for build preparation, release checks, and weekly media reuse. A bundle without this field uses the media manifest.

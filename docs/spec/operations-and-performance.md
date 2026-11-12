@@ -64,3 +64,9 @@ Approved 2026-11-09. Build and development startup validate source bundles and p
 Recorded 2026-11-12. A mouse hover or keyboard focus on a History or Bout link starts one speculative preparation after 150 milliseconds. It loads the target fighter bundle and portrait. For a Bout link it also loads the bout and the other participant bundle. Only one speculative target exists. Leaving the link, a hidden document, or a different target cancels it. Touch pointers and the data-saver preference do not start it. Navigation to the same target takes ownership of the pending work. A failed speculative load publishes no result; navigation then loads the data again.
 
 An exported bout bundle embeds its scoring reference. The browser then needs one request for bout analysis. Separate reference files remain in the dataset. The browser requests the separate file when a bundle has no embedded reference. Releases exported before this change have no embedded references. Later exports include them and its version identity records bout delivery version 2.
+
+### Unranked fighter loading
+
+Approved 2026-11-12. The browser opens an unranked fighter with one bundle request. The bundle supplies the profile, records, and media roles. The browser does not request the archive index. A 404 response for a well-formed fighter ID in the pinned version means that the fighter is not in the dataset. Other failed responses remain request failures with Retry. A malformed ID makes no request. For a bundle without embedded media the browser requests the media manifest once. The archive index and the media manifest remain in the dataset for build and release checks.
+
+The current published release has no embedded media. The next export includes it and its version identity records fighter delivery version 2. Restoration checks each manifest file, so a release with a missing bundle cannot pass the build.

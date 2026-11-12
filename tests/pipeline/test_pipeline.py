@@ -51,6 +51,24 @@ def image_bytes():
 
 
 class ExportContract(unittest.TestCase):
+    def test_fighter_bundle_embeds_versioned_media_equal_to_manifest(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder);db, config = fixture(root)
+            asset = {'sourceUrl': 'https://www.ufc.com/image.png', 'sourceSha256': 'd' * 64, 'role': 'headshot',
+                     'reviewedAt': '2026-10-14', 'rightsStatus': 'unknown',
+                     'variants': [{'width': 96, 'height': 96, 'bytes': 10, 'sha256': 'e' * 64, 'mime': 'image/webp',
+                                   'path': 'media/' + 'e' * 64 + '.webp'}]}
+            with patch('export_data.reuse_media', return_value={A: {'headshot': asset}}):
+                result = prepare(db, config, root / 'cache', root / 'reviews.json', root / 'exports', '2026-10-14',
+                                 media_release=root / 'previous')
+            stage = Path(result['stage']);manifest = read_json(stage / 'media.json')['fighters']
+            for fid in (A, B, C):
+                self.assertEqual(read_json(stage / 'fighters' / (fid + '.json'))['media'], manifest[fid])
+            variant = manifest[A]['headshot']['variants'][0]
+            self.assertEqual(variant['url'], '/data/v1/' + result['version'] + '/media/' + 'e' * 64 + '.webp')
+            self.assertNotIn('path', variant)
+            self.assertIsNone(manifest[C]['headshot'])
+
     def test_full_archive_third_division_short_ranking_and_missing_media(self):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder);db, config = fixture(root);before = file_digest(db)
@@ -63,6 +81,7 @@ class ExportContract(unittest.TestCase):
             self.assertIsNone(profile['profile']['heightCm'])
             self.assertIsNone(profile['profile']['ufcSlug'])
             self.assertEqual(read_json(stage / 'media.json')['fighters'][C], {'headshot': None, 'half_body': None, 'full_body': None})
+            self.assertEqual(profile['media'], {'headshot': None, 'half_body': None, 'full_body': None})
             self.assertEqual(before, file_digest(db))
             self.assertEqual(read_json(stage / 'conflicts.json')['observations'][0]['field'], 'careerRecord')
             a = read_json(stage / 'fighters' / (A + '.json'))

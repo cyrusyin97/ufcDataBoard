@@ -114,3 +114,47 @@ test("embedded bout reference avoids a second HTTP request", async ({
   expect(requests).toBe(0);
   await expect(page.getByText("BOUT SIGNATURE", { exact: true })).toBeVisible();
 });
+
+test("embedded media opens an unranked fighter without the index or media manifest", async ({
+  page,
+}) => {
+  const version = JSON.parse(
+    readFileSync("public/data/current.json", "utf8"),
+  ).datasetVersion;
+  const root = `public/data/v1/${version}`;
+  const ranked = new Set<string>(
+    JSON.parse(
+      readFileSync(`${root}/divisions.json`, "utf8"),
+    ).divisions.flatMap((d: { entries: { fighterId: string }[] }) =>
+      d.entries.map((e) => e.fighterId),
+    ),
+  );
+  const id: string = JSON.parse(
+    readFileSync(`${root}/index.json`, "utf8"),
+  ).fighters.find((f: { id: string }) => !ranked.has(f.id)).id;
+  const bundle = JSON.parse(
+    readFileSync(`${root}/fighters/${id}.json`, "utf8"),
+  );
+  const media = JSON.parse(readFileSync(`${root}/media.json`, "utf8"));
+  const requests: string[] = [];
+  page.on("request", (request) => requests.push(request.url()));
+  await page.route(`**/fighters/${id}.json`, (route) =>
+    route.fulfill({ json: { ...bundle, media: media.fighters[id] } }),
+  );
+  await page.goto(
+    `/rankings?division=featherweight&fighter=${id}&view=history`,
+  );
+  await expect(page.locator("main")).toHaveAttribute("data-phase", "history");
+  await expect(page.locator("[data-selected-fighter]")).toHaveAttribute(
+    "data-selected-fighter",
+    id,
+  );
+  expect(
+    requests.filter((url) => url.includes(`/fighters/${id}.json`)),
+  ).toHaveLength(1);
+  expect(
+    requests.some(
+      (url) => url.endsWith("/index.json") || url.endsWith("/media.json"),
+    ),
+  ).toBe(false);
+});

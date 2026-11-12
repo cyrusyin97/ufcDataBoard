@@ -86,8 +86,18 @@ export const bundleSchema = z
     datasetVersion: versionSchema,
     profile: profileSchema,
     records: z.array(fightSchema),
+    media: z.lazy(() => mediaRolesSchema).optional(),
   })
-  .strict();
+  .strict()
+  .superRefine((bundle, ctx) => {
+    const prefix = `/data/v1/${bundle.datasetVersion}/media/`;
+    for (const asset of Object.values(bundle.media ?? {}))
+      if (asset?.variants.some((variant) => !variant.url.startsWith(prefix)))
+        ctx.addIssue({
+          code: "custom",
+          message: "Embedded media version differs",
+        });
+  });
 
 export const divisionSchema = z
   .object({
@@ -161,20 +171,18 @@ export const mediaAssetSchema = z
       .min(1),
   })
   .strict();
+export const mediaRolesSchema = z
+  .object({
+    headshot: mediaAssetSchema.nullable(),
+    half_body: mediaAssetSchema.nullable(),
+    full_body: mediaAssetSchema.nullable(),
+  })
+  .strict();
 export const mediaSchema = z
   .object({
     schemaVersion,
     datasetVersion: versionSchema,
-    fighters: z.record(
-      idSchema,
-      z
-        .object({
-          headshot: mediaAssetSchema.nullable(),
-          half_body: mediaAssetSchema.nullable(),
-          full_body: mediaAssetSchema.nullable(),
-        })
-        .strict(),
-    ),
+    fighters: z.record(idSchema, mediaRolesSchema),
   })
   .strict();
 export const manifestSchema = z

@@ -148,6 +148,11 @@ export function checkDataset(directory: string) {
       bundle.datasetVersion === version && bundle.profile.id === id,
       "Bundle identity or version differs",
     );
+    assert(
+      bundle.media === undefined ||
+        JSON.stringify(bundle.media) === JSON.stringify(media.fighters[id]),
+      "Embedded media differs from the media manifest",
+    );
     const seen = new Set<string>();
     for (const row of bundle.records) {
       assert(

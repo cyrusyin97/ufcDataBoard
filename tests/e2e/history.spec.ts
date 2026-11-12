@@ -230,11 +230,15 @@ test("zero bouts, null facts, missing media, and unknown IDs remain recoverable"
       feather.defaultFighterId,
     );
   }
+  // A malformed ID makes no request. A well-formed unknown ID resolves from
+  // its missing bundle without the archive index.
+  expect(requests.some((url) => /fighters\/unknown\.json/.test(url))).toBe(
+    false,
+  );
   expect(
-    requests.some((url) =>
-      /fighters\/(unknown|ffffffffffffffff)\.json/.test(url),
-    ),
-  ).toBe(false);
+    requests.some((url) => /fighters\/ffffffffffffffff\.json/.test(url)),
+  ).toBe(true);
+  expect(requests.some((url) => url.endsWith("/index.json"))).toBe(false);
 });
 
 test("opponent preview supports hover, keyboard, Escape priority, and touch button", async ({

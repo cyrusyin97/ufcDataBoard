@@ -2,7 +2,6 @@ import type { Context, Stage } from "@/lib/performance/contracts";
 import {
   bundleSchema,
   idSchema,
-  indexSchema,
   mediaSchema,
   type FighterBundle,
 } from "@/lib/domain/contracts";
@@ -15,7 +14,6 @@ export class UnknownFighterError extends Error {
 }
 export class FighterStore {
   private bundles = new Map<string, FighterBundle>();
-  private index: Set<string> | null = null;
   private media: ReturnType<typeof mediaSchema.parse> | null = null;
   constructor(
     private data: RankingsData,
@@ -38,6 +36,9 @@ export class FighterStore {
         `/data/v1/${this.data.datasetVersion}/${file}`,
         { signal },
       );
+      // A missing versioned bundle identifies a fighter outside this dataset.
+      if (response.status === 404 && stage === "fighter")
+        throw new UnknownFighterError();
       if (!response.ok) throw new Error("Fighter request failed.");
       const json = await response.json();
       end?.();
@@ -54,17 +55,6 @@ export class FighterStore {
     trace?: Context,
   ): Promise<FighterBundle> {
     if (!idSchema.safeParse(id).success) throw new UnknownFighterError();
-    if (!this.data.fighters[id]) {
-      if (!this.index) {
-        const index = indexSchema.parse(
-          await this.json("index.json", signal, trace),
-        );
-        if (index.datasetVersion !== this.data.datasetVersion)
-          throw new Error("Archive version mismatch.");
-        this.index = new Set(index.fighters.map((f) => f.id));
-      }
-      if (!this.index.has(id)) throw new UnknownFighterError();
-    }
     const cached = this.bundles.get(id);
     if (cached) {
       trace?.span("fighter", "hit")?.();
@@ -94,6 +84,8 @@ export class FighterStore {
   async summary(bundle: FighterBundle, signal: AbortSignal, trace?: Context) {
     const ranked = this.data.fighters[bundle.profile.id];
     if (ranked) return ranked;
+    if (bundle.media !== undefined) return fighterSummary(bundle, bundle.media);
+    // Releases exported before embedded media use the shared manifest.
     if (!this.media) {
       const media = mediaSchema.parse(
         await this.json("media.json", signal, trace),

@@ -319,3 +319,10 @@ Move the existing rankings reader and contract checks into a build preparation s
 Date: 2026-11-12. This entry records work that continued the D33 loading improvements.
 Start one speculative preparation after hover or focus intent. Let navigation take ownership of matching work so that a click does not repeat requests. Keep a single target to bound network and decode cost.
 Embed the scoring reference in each bout bundle to remove a dependent request. Keep the separate reference files and the fallback request so that older releases remain readable. Record a bout delivery version in the dataset identity so that the new layout produces a new immutable version.
+
+## D35: Embed fighter media and identify unknown fighters from the bundle
+
+Date: 2026-11-12. The user approved this change.
+An unranked fighter needed three sequential requests: the archive index, the bundle, and the media manifest. The two shared files transferred approximately 250 KB compressed for one fighter of a few kilobytes. The user plans media for all fighters, which increases the media manifest with the fighter count.
+Embed each fighter's media roles in its bundle. The request size then depends on one fighter only. Use the 404 response of a versioned bundle as the unknown-fighter signal, as the bout store already does. Keep the media manifest and the index for build preparation, release checks, and media reuse. Keep the manifest fallback so that older releases remain readable. Record a fighter delivery version in the dataset identity.
+Parallel requests for the three files were rejected. They reduce round trips but keep the download size.

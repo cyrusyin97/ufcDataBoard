@@ -75,3 +75,5 @@ Failed or aborted requests must not publish partial cache results.
 Preparation update, 2026-11-02: Selected-fighter and portrait readiness can run concurrently with bout/reference work. Commit still joins all validated results. A failure aborts the remaining branch. During same-division ranking preparation only the dial's transient position can follow the pending target; committed identity, profile, portrait, and URL remain unchanged.
 
 Intent preparation update, 2026-11-12: Speculative preparation after hover or focus is not a navigation transaction. It does not change the route, the phase, browser history, or committed content. A navigation transaction can take ownership of matching speculative work. See [intent preparation](operations-and-performance.md#intent-preparation-and-embedded-references).
+
+Unknown fighter update, 2026-11-12: A missing bundle for a well-formed ID produces the unknown-fighter result in 4.4. The visible result and recovery actions do not change.

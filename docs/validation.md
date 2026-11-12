@@ -482,3 +482,10 @@ This release has no embedded references. The embedded-reference browser check us
 The first `next build` in three sessions stopped with exit code 1 after it printed a Next.js security upgrade notice. The immediate retry passed each time. The effect on CI and Vercel builds is not measured. No dependency was changed.
 Lint retains the existing release-check unused-variable warning. These are local checks. They do not certify deployed behavior.
 Before the push, main had advanced to the weekly release `2026-11-10-522ad8885ede5cfe` in commit `cb2d46c`. The two local commits were rebased onto it. The restore of this release matched its checksum and reported the same counts. It also has no embedded references. Unit tests, a production build, and 13 loading and bout browser checks passed with it.
+
+## Embedded fighter media and missing-bundle identity
+
+Date: 2026-11-12. Local checks used the restored `2026-11-10-522ad8885ede5cfe` release. Lint, TypeScript, 77 unit tests, 40 pipeline tests, `data:check`, formatting, and a production build passed. The Chromium browser suite passed 77 checks and skipped 7.
+New checks cover a 404 bundle without an index request, embedded media in one request, rejection of an embedded variant from a different version, the manifest fallback, and exported bundles that equal the media manifest. The unknown-ID browser check now expects one bundle request and no index request.
+The restored release has no embedded media. The embedded-media browser check uses a fulfilled response. No dataset with embedded media has been exported or published. The production host returned 404 for a nonexistent fighter bundle on 2026-11-12.
+Lint retains the existing release-check unused-variable warning. These are local checks. They do not certify deployed behavior.
