@@ -71,9 +71,9 @@ The HTTP checker writes `outputs/releases/http-validation.json`.
 HTTP checks do not certify hydration, browser Back, or motion.
 Run the full browser matrix against the accepted preview.
 
-Configure the `UFC_DATASET_URL` GitHub Actions secret for full CI release validation.
-Without this secret, CI still checks source, unit tests, formatting, and the pipeline.
-It explicitly skips the production build and browser checks.
+CI restores the dataset from the descriptor `artifactUrl`. It then runs the production build and browser checks.
+The `UFC_DATASET_URL` secret is a fallback for a descriptor without this URL.
+Without either source, CI checks source, unit tests, formatting, and the pipeline. It explicitly skips the production build and browser checks.
 A source-only CI success does not certify a release.
 
 ## Domain connection
@@ -99,6 +99,8 @@ Check response headers on the deployed preview.
 A new dataset version must not reuse old immutable paths.
 
 ## Update and rollback
+
+The production host is `https://ufc-data-board-gamma.vercel.app`. The weekly workflow performs these steps automatically and verifies the deployed dataset version. It does not create a separate preview. Use the manual sequence for other releases.
 
 1. Run the source scraper as a separate approved operation.
 2. Export a new dataset version.

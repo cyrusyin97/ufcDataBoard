@@ -29,3 +29,5 @@ Revision 1.10, 2026-11-02: First live candidate validation exposed single-sided 
 Revision 1.11, 2026-11-09: Approve weekly source collection, reviewed derivative reuse, checked website packaging, paired descriptor commits, and automatic Vercel deployment with version verification. Ranking refresh remains separate. Website descriptors now pin the download URL with version and checksum.
 
 Revision 1.12, 2026-11-09: Generate the rankings summary before build or development startup. Reuse the pinned summary across server requests. Start ranked portrait readiness concurrently with fighter data loading.
+
+Revision 1.13, 2026-11-12: Record intent preparation for History and Bout links and the embedded bout scoring reference. Record the hosted beta and weekly publication in status statements. The formal M5 release gates remain open.

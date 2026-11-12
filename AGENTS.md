@@ -4,7 +4,7 @@
 
 Build and maintain the UFC rankings website defined by [Product Spec](docs/product-spec.md).
 The Product Spec index and its topic documents form the sole product logic standard. It covers current journeys, design, motion, data meaning, architecture, and critical tests.
-The user accepted M6 for submission on 2026-10-24. M5 hosting release remains pending. The default dataset now includes accepted M6 analysis.
+The user accepted M6 for submission on 2026-10-24. A hosted beta runs on Vercel with weekly data publication. The formal M5 release gates remain open. The default dataset includes accepted M6 analysis.
 
 ## Read order
 
@@ -84,7 +84,7 @@ Do not describe a planned feature as complete.
 | M2        | Rankings interface                     | Implemented, checks recorded                    |
 | M3        | History and navigation                 | Implemented, checks recorded                    |
 | M4        | Motion and visual parity               | Implemented, checks recorded                    |
-| M5        | Release and hosting                    | In progress; release pending                    |
+| M5        | Release and hosting                    | Hosted beta live; release gates open            |
 | M6        | Bout analysis and weighted radar       | Accepted; release handled in M5                 |
 | M7        | Journey performance measurement        | In progress; measurement validation             |
 | M8        | Interaction performance fixes          | First pass implemented; local validation        |

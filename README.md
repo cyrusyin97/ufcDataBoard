@@ -8,8 +8,8 @@ The user approved the mobile composition on 2026-10-15.
 M4 acceptance is complete for the agreed desktop baseline and mobile composition.
 The report retains the open release checks.
 Read [the M4 report](docs/m4-report.md) for evidence and limits.
-M5 release preparation is in progress. Read [the M5 report](docs/m5-report.md).
-M6 bout analysis was accepted for submission on 2026-10-24. The default dataset includes M6 analysis. Hosting release remains pending under M5.
+M5 is in progress. A hosted beta runs on Vercel with weekly data publication. The formal release gates remain open. Read [the deployment guide](docs/deployment.md) and [the M5 report](docs/m5-report.md).
+M6 bout analysis was accepted for submission on 2026-10-24. The default dataset includes M6 analysis.
 Read [the M6 interface report](docs/m6-interface-report.md) for current review changes.
 
 ## Start
@@ -88,10 +88,11 @@ Read [the collection report](docs/ranked-media-expansion.md) for coverage and de
 ## Release preparation
 
 Use Node.js 24.x.
-Restore the pinned dataset with `npm run data:restore -- --artifact /absolute/path/to/artifact.tar.gz`.
-CI and hosting use the `UFC_DATASET_URL` secret instead of a local artifact path.
+Restore the pinned dataset with `npm run data:restore`. It downloads the `artifactUrl` in `data/release.json`.
+Use `-- --artifact /absolute/path/to/artifact.tar.gz` for a local archive.
+`UFC_DATASET_URL` is a fallback for a descriptor without `artifactUrl`.
 Run `npm run release:check` before a hosting build.
-The current media rights status blocks deployment.
+Media publication rights remain unknown. The user disabled the blocking check for the hosted beta.
 Read [the deployment guide](docs/deployment.md) for the remaining inputs.
 
 The public repository excludes generated datasets, captured images, browser trace archives, and local design outputs.

@@ -72,3 +72,5 @@ Flag any selected bout or round shorter than 60 seconds as a short sample.
 Version weights, policy, bounds, source checksum, and dataset together.
 Executable policy: [bout-policy.json](../../data/config/bout-policy.json). Runtime algorithm: [bout-scoring.ts](../../src/lib/domain/bout-scoring.ts).
 Changes require an explicit spec/formula or policy version revision and rebuilt references; never silently reinterpret existing artifacts.
+
+Embedded reference update, 2026-11-12: A bout bundle can contain its scoring reference in `reference`. A `null` value means that the bout has no reference. The embedded reference identity must equal `referenceId`, and its content must equal the separate reference file. The same reference checks apply before analysis renders. A bundle without this field uses the separate reference file.

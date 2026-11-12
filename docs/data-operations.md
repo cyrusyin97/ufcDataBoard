@@ -155,7 +155,7 @@ Production release checks must run against a real artifact.
 ## Remaining release work
 
 M2 through M4 implement the interface, navigation, and motion.
-M5 must check media rights, hosting delivery, and the update schedule.
+The hosted beta and the weekly update schedule are active. M5 must still check media rights and the remaining release gates.
 M1 does not guarantee official images for every archive fighter.
 
 ## Optional bout analysis export
@@ -214,15 +214,14 @@ Media role review does not approve publication rights. `release:check` must pass
 
 ## Current pinned artifact
 
-Promoted locally on 2026-10-24 after M6 acceptance.
-Version: `2026-10-14-5949094d82ded09a`. Snapshot date: 2026-10-14.
-Archive: `outputs/datasets/ufc-data-2026-10-14-5949094d82ded09a.tar.gz`.
-Size: 63,433,729 bytes. SHA-256: `e5372188dfa6dff76358dec2754f597a87438bbf16bed64309e1bfa841184951`.
-The matching sidecar and version-specific descriptor are in the same directory. `data/release.json` pins this archive.
-No remote artifact URL has been configured by this promotion. The package still contains media with unknown publication rights.
+`data/release.json` is the authority for the current version, checksum, and download URL. The weekly workflow updates it.
+At 2026-11-12 it pins `2026-11-09-6aead45623d69efa` from the GitHub release `website-data-42550859658-1`.
+`data/collector.json` pins the matching source snapshot.
+The previous version `2026-10-14-5949094d82ded09a` was promoted locally on 2026-10-24. Its archive, sidecar, and descriptor remain in `outputs/datasets/` on the original workstation.
+Each package still contains media with unknown publication rights.
 
 ## Collector ownership
 
-The collector code and manual candidate workflow moved into this repository on 2026-11-02. See [migration and cutover](collector-migration.md). The schedule is not enabled. CI runs offline fixtures; it does not crawl sources. Source snapshots and public website packages remain separate artifacts.
+The collector code and manual candidate workflow moved into this repository on 2026-11-02. See [migration and cutover](collector-migration.md). The weekly publication schedule has been active since 2026-11-09. CI runs offline fixtures; it does not crawl sources. Source snapshots and public website packages remain separate artifacts.
 
 The [isolated collector validation](collector-validation.md) records the production-matching baseline and first live candidate. Historical opponent pairing is a required candidate check before export or snapshot publication.

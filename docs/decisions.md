@@ -313,3 +313,9 @@ Publish checked artifacts before atomically advancing the source and website des
 
 Date: 2026-11-09. The user approved loading performance improvements.
 Move the existing rankings reader and contract checks into a build preparation script. Preserve its output exactly and trace the generated versioned file into the server deployment. Keep initial fighter loading separate. Start portrait preparation from the existing ranked summary while the fighter request runs. Unranked fighters still resolve their summary from the fetched bundle. Keep the transition commit barrier and cancellation behavior.
+
+## D34: Prepare on intent and embed the bout reference
+
+Date: 2026-11-12. This entry records work that continued the D33 loading improvements.
+Start one speculative preparation after hover or focus intent. Let navigation take ownership of matching work so that a click does not repeat requests. Keep a single target to bound network and decode cost.
+Embed the scoring reference in each bout bundle to remove a dependent request. Keep the separate reference files and the fallback request so that older releases remain readable. Record a bout delivery version in the dataset identity so that the new layout produces a new immutable version.

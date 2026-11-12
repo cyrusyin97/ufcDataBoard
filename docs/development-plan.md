@@ -43,7 +43,8 @@ Current motion rules are in [animation](spec/animation.md).
 ## M5: Release
 
 Status: In progress. M4 is accepted. Local release preparation is implemented.
-Preview, hosting, domain, and publication rights remain pending.
+Status update, 2026-11-12: A hosted beta runs at `https://ufc-data-board-gamma.vercel.app`. Weekly data publication deploys it. See [weekly operation](collector-migration.md#weekly-website-publication).
+The exit gate below remains open. No record shows an approved domain, publication rights, a complete acceptance matrix against the deployment, or a rollback exercise.
 Read [the M5 report](m5-report.md).
 User input: Check public name, domain, hosting account, and data update policy.
 

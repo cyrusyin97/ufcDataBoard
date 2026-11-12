@@ -1,6 +1,6 @@
 # Product Spec — UFC Rankings
 
-Version: 1.12. Updated: 2026-11-09.
+Version: 1.13. Updated: 2026-11-12.
 
 This index and the topic documents below form the sole current product logic standard.
 Each topic has one owning document. Update that document instead of copying its rules into plans, reports, or runbooks.
@@ -34,7 +34,7 @@ The split changes document organization only. It does not change product behavio
 4. Update the affected topic and the shared changelog. Keep current delivery status in the development plan and check results in validation.
 
 J01–J17 and C01–C20 remain unchanged. PM01–PM12 define measurement and live-panel checks. Topic section numbers remain stable after the split.
-M6 was accepted for submission on 2026-10-24. M5 hosting release remains pending. The default dataset now includes accepted M6 analysis.
+M6 was accepted for submission on 2026-10-24. A hosted beta runs on Vercel with weekly data publication. The formal M5 release gates remain open. The default dataset includes accepted M6 analysis.
 
 ## Supporting documents
 

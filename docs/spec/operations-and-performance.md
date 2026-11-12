@@ -58,3 +58,9 @@ Approved 2026-11-09. Weekly collection, checked packaging, and production public
 ### Rankings preparation
 
 Approved 2026-11-09. Build and development startup validate source bundles and prepare a versioned rankings summary under `work/runtime/`. Deployment tracing includes this generated file. Server requests reuse the summary in process memory and load only the selected initial fighter bundle. A new deployment pins a new version. For ranked fighters, prepare portrait readiness concurrently with the fighter bundle request. Commit only after both complete and retain cancellation and identity checks.
+
+### Intent preparation and embedded references
+
+Recorded 2026-11-12. A mouse hover or keyboard focus on a History or Bout link starts one speculative preparation after 150 milliseconds. It loads the target fighter bundle and portrait. For a Bout link it also loads the bout and the other participant bundle. Only one speculative target exists. Leaving the link, a hidden document, or a different target cancels it. Touch pointers and the data-saver preference do not start it. Navigation to the same target takes ownership of the pending work. A failed speculative load publishes no result; navigation then loads the data again.
+
+An exported bout bundle embeds its scoring reference. The browser then needs one request for bout analysis. Separate reference files remain in the dataset. The browser requests the separate file when a bundle has no embedded reference. The release `2026-11-09-6aead45623d69efa` has no embedded references. The next export includes them and its version identity records bout delivery version 2.

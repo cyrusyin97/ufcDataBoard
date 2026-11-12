@@ -471,3 +471,13 @@ The parallel ordinary CI run first failed two existing browser assertions. The m
 
 Date: 2026-11-09. Application checks passed with 72 unit tests and a production build. Seventeen loading, bout, and motion browser checks passed. The new request-order test holds the fighter response and verifies that the portrait request starts before releasing it. The generated summary is present in the server output trace.
 For the local `2026-10-14-5949094d82ded09a` dataset, six runs of the original rankings assembly took 34.2–44.3ms. Reading and parsing the prepared summary took 0.60–0.65ms. Its size is 231,328 bytes. Each result was compared for exact JSON equality. These are local server-data measurements, not deployed navigation latency. Initial image priority already uses eager loading and high fetch priority. Bout-reference consolidation and intent prefetch remain future work.
+
+## Intent preparation, embedded reference, and document synchronization
+
+Date: 2026-11-12. The earlier statement that bout-reference consolidation and intent prefetch remain future work is superseded. Both are implemented in commit `2ba09c7`.
+Checks before that commit used the local `2026-10-14-5949094d82ded09a` dataset. Formatting, lint, TypeScript, 75 unit tests, 39 pipeline tests, a production build, and three loading browser checks passed.
+`npm run data:restore` then installed the pinned `2026-11-09-6aead45623d69efa` release. The archive checksum matched the descriptor. The restore reported 4,586 fighters, 23,234 records, 11,617 bouts, 11 divisions, and 528 media assets.
+With this release, lint, TypeScript, 75 unit tests, formatting, and a production build passed. The Chromium browser suite passed 76 checks and skipped 7. After a clean rebuild, 13 loading and bout checks passed again.
+This release has no embedded references. The embedded-reference browser check uses a fulfilled response. No dataset with embedded references has been exported or published.
+The first `next build` in two sessions stopped with exit code 1 after it printed a Next.js security upgrade notice. The immediate retry passed each time. The effect on CI and Vercel builds is not measured. No dependency was changed.
+Lint retains the existing release-check unused-variable warning. These are local checks. They do not certify deployed behavior.
