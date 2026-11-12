@@ -82,10 +82,19 @@ export const boutBundleSchema = z
     periods: z.array(boutPeriodSchema),
     issues: z.array(boutIssueSchema),
     referenceId: hash.nullable(),
+    reference: z
+      .lazy(() => scoringReferenceSchema)
+      .nullable()
+      .optional(),
   })
   .strict()
   .superRefine((bout, ctx) => {
     const fail = (message: string) => ctx.addIssue({ code: "custom", message });
+    if (
+      bout.reference !== undefined &&
+      (bout.reference?.id ?? null) !== bout.referenceId
+    )
+      fail("Embedded reference identity differs");
     if (bout.fighterIds[0] === bout.fighterIds[1])
       fail("Bout participants must differ");
     const rounds = bout.periods.map((p) => p.round);

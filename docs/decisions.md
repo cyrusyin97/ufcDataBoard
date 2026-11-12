@@ -308,3 +308,8 @@ Preserve source provenance and use isolated, checksum-verified candidates. Start
 Date: 2026-11-09. The user requested weekly collection, packaging, and automatic website publication. Ranking refresh remains outside this update.
 Use the last verified website package as the media source for a clean runner. Preserve source hashes, role reviews, and variant bytes. This avoids dependence on a local original-image cache. New or changed reviewed roles require a separate media release before weekly reuse can pass.
 Publish checked artifacts before atomically advancing the source and website descriptors in one Git commit. Reject promotion when main advanced during collection. Use a Deploy Hook to explicitly request Vercel deployment, and verify the production dataset version afterward. Keep the previous artifacts for rollback. Use Monday 22:17 Asia/Singapore, offset from the hour to reduce schedule congestion.
+
+## D33: Precompute rankings and overlap portrait preparation
+
+Date: 2026-11-09. The user approved loading performance improvements.
+Move the existing rankings reader and contract checks into a build preparation script. Preserve its output exactly and trace the generated versioned file into the server deployment. Keep initial fighter loading separate. Start portrait preparation from the existing ranked summary while the fighter request runs. Unranked fighters still resolve their summary from the fetched bundle. Keep the transition commit barrier and cancellation behavior.

@@ -99,6 +99,14 @@ export function checkBouts(
       file === bout.id + ".json" && bout.datasetVersion === version,
       "Bout identity or version differs",
     );
+    if (bout.reference !== undefined)
+      assert(
+        JSON.stringify(bout.reference) ===
+          JSON.stringify(
+            bout.referenceId ? references.get(bout.referenceId) : null,
+          ),
+        "Embedded reference differs from checked reference",
+      );
     const fighters = boutParticipants.get(bout.id);
     assert(
       fighters?.size === 2 && bout.fighterIds.every((id) => fighters.has(id)),

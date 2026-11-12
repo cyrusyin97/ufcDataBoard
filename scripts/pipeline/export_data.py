@@ -200,6 +200,7 @@ def prepare(db_path, config_path, cache_root, reviews_path, output_root, as_of, 
               'contentSha256': digest(canonical({'profiles': profiles, 'histories': dict(histories)}))}
     if analysis is not None:
         source['boutAnalysisSha256'] = digest(canonical(analysis))
+        source['boutDeliveryVersion'] = 2
     version = as_of + '-' + digest(canonical(source))[:16]
     bundles = []
     for profile in profiles:
@@ -219,7 +220,9 @@ def prepare(db_path, config_path, cache_root, reviews_path, output_root, as_of, 
     if analysis is not None:
         atomic_json(stage / 'bout-policy.json', analysis['policy'])
         for bout in analysis['bouts']:
-            atomic_json(stage / 'bouts' / (bout['id'] + '.json'), {**bout, 'datasetVersion': version})
+            reference = analysis['references'].get(bout['referenceId'])
+            atomic_json(stage / 'bouts' / (bout['id'] + '.json'), {**bout, 'datasetVersion': version,
+                'reference': {**reference, 'datasetVersion': version} if reference else None})
         for reference in analysis['references'].values():
             atomic_json(stage / 'bout-references' / (reference['id'] + '.json'), {**reference, 'datasetVersion': version})
     files = {str(p.relative_to(stage)): {'sha256': file_digest(p), 'bytes': p.stat().st_size}

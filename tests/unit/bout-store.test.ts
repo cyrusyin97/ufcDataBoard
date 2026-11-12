@@ -23,6 +23,25 @@ function setup() {
   };
 }
 describe("lazy versioned bout store", () => {
+  it("loads an embedded reference in one request and rejects mismatched references", async () => {
+    const { store, signal, request } = setup();
+    request.mockResolvedValue(
+      response({ ...fixture.bout, reference: fixture.reference }),
+    );
+    const data = await store.load(id, fighter, "all", signal);
+    expect(data.reference).toEqual(fixture.reference);
+    expect(request).toHaveBeenCalledTimes(1);
+    const other = setup();
+    other.request.mockResolvedValue(
+      response({
+        ...fixture.bout,
+        reference: { ...fixture.reference, cutoffExclusive: "2021-09-26" },
+      }),
+    );
+    await expect(other.store.load(id, fighter, "all", signal)).rejects.toThrow(
+      "reference",
+    );
+  });
   it("loads one bout and reference then reuses them for round and participant changes", async () => {
     const { store, request, signal } = setup();
     await store.load(id, fighter, "all", signal);

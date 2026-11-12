@@ -32,7 +32,9 @@
     "release:http": "node scripts/check-deployment.ts",
     "data:collect": "node scripts/run-data.ts collect",
     "data:bootstrap-db": "node scripts/run-data.ts bootstrap-db",
-    "test:collector": "node scripts/run-collector-tests.ts"
+    "test:collector": "node scripts/run-collector-tests.ts",
+    "prebuild": "node scripts/prepare-rankings.ts",
+    "predev": "node scripts/prepare-rankings.ts"
   },
   "dependencies": {
     "@gsap/react": "2.1.2",

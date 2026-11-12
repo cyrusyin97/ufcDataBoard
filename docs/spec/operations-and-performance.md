@@ -54,3 +54,7 @@ Collector validation update, 2026-11-02: A candidate must retain both real fight
 ### Weekly data publication
 
 Approved 2026-11-09. Weekly collection, checked packaging, and production publication are authorized through the workflow in [collector migration](../collector-migration.md#weekly-website-publication). Reuse verified reviewed media derivatives and preserve ranking snapshots. Pin the source snapshot and website artifact in version control. A website descriptor can include `artifactUrl`; this URL takes precedence over the legacy environment URL. Check application behavior before publication and the expected public version after deployment. A failed check blocks subsequent steps. Concurrent main updates block descriptor promotion. Existing artifacts remain available for rollback.
+
+### Rankings preparation
+
+Approved 2026-11-09. Build and development startup validate source bundles and prepare a versioned rankings summary under `work/runtime/`. Deployment tracing includes this generated file. Server requests reuse the summary in process memory and load only the selected initial fighter bundle. A new deployment pins a new version. For ranked fighters, prepare portrait readiness concurrently with the fighter bundle request. Commit only after both complete and retain cancellation and identity checks.

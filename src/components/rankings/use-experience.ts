@@ -14,6 +14,8 @@ import { MotionController } from "@/lib/motion/controller";
 import { prepareFighter } from "@/lib/motion/prepare";
 import type { FighterBundle } from "@/lib/domain/contracts";
 import { sameRoute, type ExperienceRoute } from "@/lib/domain/routes";
+import { IntentPreloader } from "@/lib/data/intent-preloader";
+import { parseRoute, routeUrl } from "@/lib/domain/routes";
 import { FighterStore, UnknownFighterError } from "@/lib/data/fighter-store";
 import {
   BoutStore,
@@ -102,6 +104,7 @@ export function useExperience(
       ),
   );
   const [motion] = useState(() => new MotionController());
+  const [preloader] = useState(() => new IntentPreloader());
   const [store] = useState(() => new FighterStore(data, initialBundle));
   const [state, dispatch] = useReducer(reducer, {
     route: initialRoute,
@@ -184,22 +187,35 @@ export function useExperience(
       r.pending = target;
       dispatch({ type: "prepare", generation, target });
       try {
+        await preloader.take(routeUrl(route), controller.signal);
+        controller.signal.throwIfAborted();
         // Data and image readiness for the selected fighter do not depend on
         // the bout/reference response. Start them together and join before commit.
         const selectedReady = (async () => {
-          const bundle = await store.load(
+          const bundleReady = store.load(
             route.fighterId,
             controller.signal,
             route.view !== "rankings",
             trace,
           );
-          const summary = await store.summary(bundle, controller.signal, trace);
-          const fighter = await prepareFighter(
-            summary,
-            route.view !== "rankings",
-            controller.signal,
-            trace,
+          const summaryReady = data.fighters[route.fighterId]
+            ? Promise.resolve(data.fighters[route.fighterId])
+            : bundleReady.then((bundle) =>
+                store.summary(bundle, controller.signal, trace),
+              );
+          const fighterReady = summaryReady.then((summary) =>
+            prepareFighter(
+              summary,
+              route.view !== "rankings",
+              controller.signal,
+              trace,
+            ),
           );
+          const [bundle, summary, fighter] = await Promise.all([
+            bundleReady,
+            summaryReady,
+            fighterReady,
+          ]);
           return { bundle, summary, fighter };
         })();
         const boutReady =
@@ -303,7 +319,7 @@ export function useExperience(
         if (generation === r.generation) r.pending = null;
       }
     },
-    [store, boutStore, motion],
+    [store, boutStore, motion, data.fighters, preloader],
   );
   const cancel = useCallback(() => {
     const r = lifecycle.current;
@@ -351,6 +367,97 @@ export function useExperience(
       routeController.current = null;
     };
   }, [data, cancel, navigate, motion]);
+  useEffect(() => {
+    const root = document.querySelector("main");
+    if (!root) return;
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    const stop = () => {
+      clearTimeout(timer);
+      preloader.cancel();
+    };
+    const anchor = (target: EventTarget | null) =>
+      target instanceof Element ? target.closest("a[href]") : null;
+    const begin = (event: Event) => {
+      if (event instanceof PointerEvent && event.pointerType !== "mouse")
+        return;
+      const link = anchor(event.target);
+      if (
+        !link ||
+        link.contains((event as MouseEvent).relatedTarget as Node | null)
+      )
+        return;
+      const url = new URL(link.getAttribute("href")!, location.href);
+      if (
+        url.origin !== location.origin ||
+        url.pathname !== "/rankings" ||
+        !["history", "bout"].includes(url.searchParams.get("view") ?? "")
+      )
+        return;
+      const connection = (
+        navigator as Navigator & { connection?: { saveData?: boolean } }
+      ).connection;
+      if (document.hidden || connection?.saveData) return;
+      const target = parseRoute(
+        url.searchParams,
+        data.divisions,
+        data.defaultDivisionId,
+      );
+      if (preloader.has(routeUrl(target))) return;
+      stop();
+      timer = setTimeout(
+        () =>
+          preloader.start(routeUrl(target), async (signal) => {
+            const fighterReady = async (id: string, portrait: boolean) => {
+              const bundle = await store.load(id, signal);
+              const summary = await store.summary(bundle, signal);
+              if (portrait) await prepareFighter(summary, true, signal);
+            };
+            await Promise.all([
+              fighterReady(target.fighterId, true),
+              target.view === "bout"
+                ? boutStore
+                    .load(target.boutId, target.fighterId, target.round, signal)
+                    .then((result) =>
+                      Promise.all(
+                        result.bout.fighterIds
+                          .filter((id) => id !== target.fighterId)
+                          .map((id) => fighterReady(id, false)),
+                      ),
+                    )
+                : Promise.resolve(),
+            ]);
+          }),
+        150,
+      );
+    };
+    const leave = (event: Event) => {
+      const link = anchor(event.target);
+      if (
+        link &&
+        !link.contains((event as MouseEvent).relatedTarget as Node | null)
+      )
+        stop();
+    };
+    const visibility = () => {
+      if (document.hidden) stop();
+    };
+    const click = () => clearTimeout(timer);
+    root.addEventListener("click", click);
+    root.addEventListener("pointerover", begin);
+    root.addEventListener("pointerout", leave);
+    root.addEventListener("focusin", begin);
+    root.addEventListener("focusout", leave);
+    document.addEventListener("visibilitychange", visibility);
+    return () => {
+      stop();
+      root.removeEventListener("click", click);
+      root.removeEventListener("pointerover", begin);
+      root.removeEventListener("pointerout", leave);
+      root.removeEventListener("focusin", begin);
+      root.removeEventListener("focusout", leave);
+      document.removeEventListener("visibilitychange", visibility);
+    };
+  }, [data, store, boutStore, preloader]);
   const retry = () => {
     const target = state.target;
     if (target) void navigate(target.route, target.write);

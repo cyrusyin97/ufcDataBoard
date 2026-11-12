@@ -67,15 +67,18 @@ export class BoutStore {
       );
       if (bout.id !== id || bout.datasetVersion !== this.version)
         throw new Error("Bout identity mismatch");
-      const reference = bout.referenceId
-        ? scoringReferenceSchema.parse(
-            await this.json(
-              `bout-references/${bout.referenceId}.json`,
-              signal,
-              trace,
-            ),
-          )
-        : null;
+      const reference =
+        bout.reference !== undefined
+          ? bout.reference
+          : bout.referenceId
+            ? scoringReferenceSchema.parse(
+                await this.json(
+                  `bout-references/${bout.referenceId}.json`,
+                  signal,
+                  trace,
+                ),
+              )
+            : null;
       if (
         reference &&
         (reference.id !== bout.referenceId ||

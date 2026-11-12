@@ -32,9 +32,7 @@ const config: NextConfig = {
   },
   outputFileTracingIncludes: {
     "/rankings": [
-      `${base}/manifest.json`,
-      `${base}/divisions.json`,
-      `${base}/media.json`,
+      `./work/runtime/${datasetVersion}.json`,
       ...Array.from(rankedIds, (id) => `${base}/fighters/${id}.json`),
     ],
   },
