@@ -215,7 +215,7 @@ Media role review does not approve publication rights. `release:check` must pass
 ## Current pinned artifact
 
 `data/release.json` is the authority for the current version, checksum, and download URL. The weekly workflow updates it.
-At 2026-11-12 it pins `2026-11-09-6aead45623d69efa` from the GitHub release `website-data-42550859658-1`.
+Each weekly run replaces the pinned version. Read the descriptor instead of a version copied into a document.
 `data/collector.json` pins the matching source snapshot.
 The previous version `2026-10-14-5949094d82ded09a` was promoted locally on 2026-10-24. Its archive, sidecar, and descriptor remain in `outputs/datasets/` on the original workstation.
 Each package still contains media with unknown publication rights.
