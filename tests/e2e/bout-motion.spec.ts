@@ -248,8 +248,10 @@ test("result badges and recent form open internal bout details with a history pa
       .evaluate((e) => getComputedStyle(e).fontFamily),
   ).toBe(family);
   await page
-    .getByRole("link", { name: /Open recent bout:/ })
-    .nth(1)
+    .getByRole("link", {
+      name: "Open recent bout: UFC 321: Aspinall vs. Gane",
+      exact: true,
+    })
     .click();
   await idle(page, "bout");
   await expect(page.locator("#bout-heading")).toHaveText(

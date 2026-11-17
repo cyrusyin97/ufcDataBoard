@@ -231,15 +231,20 @@ test("mobile and reduced motion preserve portrait, disclosure and history return
 test("insufficient cohorts expose raw data and short periods receive a label", async ({
   page,
 }) => {
+  const insufficient = (reference: object) => ({
+    ...reference,
+    distinctBoutCount: 49,
+    status: "insufficient-cohort",
+  });
+  // Current releases embed the reference. Older releases fetch it separately.
+  await page.route(`**/bouts/${bout}.json`, async (r) => {
+    const value = await (await r.fetch()).json();
+    if (value.reference) value.reference = insufficient(value.reference);
+    await r.fulfill({ json: value });
+  });
   await page.route(`**/bout-references/*.json`, async (r) => {
     const response = await r.fetch();
-    await r.fulfill({
-      json: {
-        ...(await response.json()),
-        distinctBoutCount: 49,
-        status: "insufficient-cohort",
-      },
-    });
+    await r.fulfill({ json: insufficient(await response.json()) });
   });
   await page.goto(url());
   await settle(page);
